@@ -6,6 +6,6 @@
 // "service_role" key or any password here.
 
 window.CLOUD = {
-  url: "",      // Project URL, e.g. "https://abcdefgh.supabase.co"
-  anonKey: "",  // the "Publishable key" (sb_publishable_…) or the legacy "anon public" key
+  url: "https://zgsnzfkqpkhbyvjedlsm.supabase.co",
+  anonKey: "sb_publishable_2Dgukj3avarmL90Gs518PQ_73qalSH8", // public by design (see above)
 };
