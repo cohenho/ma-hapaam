@@ -8,5 +8,6 @@ window.CATEGORIES = [
   { id: "trendy",   name: "טרנדי",          icon: "✨", desc: "מה שכולם קוראים" },
   { id: "thriller", name: "מותחן",          icon: "🔍", desc: "לא תצליחו להניח" },
   { id: "horror",   name: "אימה",           icon: "🕯️", desc: "רק לא לפני השינה" },
+  { id: "classic",  name: "קלאסיקה",        icon: "🏛️", desc: "ספרים לקרוא פעם בחיים" },
   { id: "romance",  name: "רומנטי/אירוטי",  icon: "🌹", desc: "אהבה, תשוקה ולב", adultOnly: true },
 ];

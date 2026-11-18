@@ -33,28 +33,35 @@ def normalize(text):
     return re.sub(r"[^a-z0-9]", "", text.lower())
 
 
+def search(**params):
+    params.update(limit=10, fields="title,author_name,cover_i,edition_count")
+    url = f"{SEARCH_URL}?{urllib.parse.urlencode(params)}"
+    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+    with urllib.request.urlopen(req, timeout=20) as resp:
+        return json.load(resp).get("docs", [])
+
+
 def lookup_cover(title, author):
     """Return an Open Library cover id for the book, or None."""
-    params = urllib.parse.urlencode({
-        "title": title,
-        "author": author,
-        "limit": 10,
-        "fields": "title,author_name,cover_i,edition_count",
-    })
-    req = urllib.request.Request(f"{SEARCH_URL}?{params}", headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=20) as resp:
-        docs = json.load(resp).get("docs", [])
-
     wanted = normalize(title)
-    # Prefer an exact title match with a cover; among those, the most-published
-    # edition, which is usually the well-known cover.
+    surname = normalize(author.split()[-1])
+    most_published = lambda docs: max(docs, key=lambda d: d.get("edition_count", 0))["cover_i"]
+
+    # 1. Exact English title by this author; the most-published edition is
+    #    usually the well-known cover.
+    docs = search(title=title, author=author)
     matches = [d for d in docs if d.get("cover_i") and normalize(d.get("title", "")) == wanted]
     if not matches:
         matches = [d for d in docs if d.get("cover_i") and wanted in normalize(d.get("title", ""))]
-    if not matches:
-        return None
-    best = max(matches, key=lambda d: d.get("edition_count", 0))
-    return best["cover_i"]
+    if matches:
+        return most_published(matches)
+
+    # 2. Translated books are often listed under their original title, so do a
+    #    free-text search and accept a result by the same author.
+    docs = search(q=f"{title} {author}")
+    matches = [d for d in docs if d.get("cover_i") and
+               any(surname in normalize(a) for a in d.get("author_name", []))]
+    return most_published(matches) if matches else None
 
 
 def short_summary(text, max_sentences=3):
