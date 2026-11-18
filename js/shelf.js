@@ -63,6 +63,7 @@ const Shelf = (() => {
               style="--c:${colour};--len:${len}%;--t:${thick}px;--x:${shift}px"
               aria-label="${esc(book.title)} מאת ${esc(book.author)}">
         <span class="bk-label">${esc(shelfLetters(book))}</span>
+        ${Store.state.books[book.id]?.rating ? `<span class="bk-stars" aria-label="${Store.state.books[book.id].rating} כוכבים">★${Store.state.books[book.id].rating}</span>` : ""}
         <span class="fit" data-max="26"><span class="bk-title">${esc(book.title)}</span></span>
         <span class="bk-author">${esc(book.author)}</span>
       </button>`;

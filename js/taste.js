@@ -20,7 +20,7 @@ const Taste = (() => {
     { label: "מרגש",          re: "מרגש(?:ים|ות|ת)?|בכיתי|דמעות|נוגע ללב|שובר(?: את)? הלב|מרסק", f: ["tag:מרגש", "style:emotional"] },
     { label: "מחמם לב",       re: "מחמם לב|מחממ(?:י|ת|ות|ים) לב|מחמם את הלב|חמים|אופטימי(?:ים)?", f: ["style:warm"] },
     { label: "קצב מהיר",      re: "קצב מהיר|קצבי(?:ים|ות)?|סוחפ(?:ים|ות)?|סוחף|לא יכולתי להניח(?: אותו)?|לא הצלחתי להניח(?: אותו)?|לא יכולתי להפסיק|בנשימה אחת|בלעתי(?: אותו)?|זורם(?:ים)?", f: ["style:fast"] },
-    { label: "קצב איטי",      re: "קצב איטי|איטי(?:ים|ות)?|שקט(?:ים|ה)?|מדיטטיבי(?:ים)?", f: ["style:slow"] },
+    { label: "קצב איטי",      re: "קצב איטי|איטי(?:ים|ות|ת)?|שקט(?:ים|ה)?|מדיטטיבי(?:ים)?", f: ["style:slow"] },
     { label: "טוויסטים",      re: "טוויסט(?:ים)?|הפתע(?:ה|ות)|מפתיע(?:ים|ה)?|סוף מפתיע|תפנית|לא ציפיתי", f: ["style:twists"] },
     { label: "אפל",           re: "אפל(?:ים|ות|ה)?|קודר(?:ים|ת)?|חשוך|מדכא(?:ים)?", f: ["style:dark"] },
     { label: "דמויות טובות",  re: "דמויות|דמות|גיבור(?:ה|ים|ות)?", f: ["style:character"] },
@@ -175,5 +175,14 @@ const Taste = (() => {
     });
   }
 
-  return { read, weights, isEmpty, learn, empty, bookFeatures, LABELS };
+  // Nudge single features (used by the quick tags and the comment on a rating).
+  function nudge(profile, features, amount) {
+    profile.learned ||= {};
+    features.forEach((f) => {
+      const v = (profile.learned[f] || 0) + amount;
+      profile.learned[f] = Math.max(-6, Math.min(6, Math.round(v * 100) / 100));
+    });
+  }
+
+  return { read, weights, isEmpty, learn, nudge, empty, bookFeatures, featuresOfLabel, LABELS };
 })();

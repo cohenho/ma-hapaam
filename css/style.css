@@ -865,6 +865,85 @@ body.onboarding #view { padding-bottom: calc(env(safe-area-inset-bottom) + 28px)
 /* returned books: a paler stack */
 .my-stack.returned-stack .bk { filter: saturate(.45) brightness(1.05); opacity: .85; }
 
+/* ---------- rating: the "return card" ---------- */
+
+.install.rating { align-items: flex-end; }
+.return-card { position: relative; text-align: right; padding-top: 14px; }
+.return-card .card-top { margin-left: 48px; margin-right: 0; }
+.return-card h2 { margin: 14px 0 0; font-size: 26px; line-height: 1.15; }
+.return-card .card-author { margin: 4px 0 0; }
+.return-card .chip-title { margin: 16px 0 8px; }
+.return-card .recorder { margin: 4px 0 10px; }
+.return-card .rec-btn { width: 96px; height: 96px; border-width: 4px; box-shadow: 0 0 0 5px var(--paper-2), 0 0 0 7px var(--red-line); }
+.return-card .rec-mic svg { width: 40px; height: 40px; }
+.return-card .rec-waves { height: 40px; gap: 4px; }
+.return-card .rec-waves i { width: 4px; }
+.return-card .rec-hint { margin-top: 10px; font-size: 15px; }
+.return-card .note-card textarea { min-height: 96px; }
+.return-card .rate-save { margin-top: 18px; }
+.return-card .rate-snooze { display: block; margin: 10px auto 0; }
+
+.rate-q { margin: 16px 0 4px; font-weight: 900; font-size: 22px; text-align: center; }
+
+.stars { display: flex; justify-content: center; gap: 6px; }
+.stars.nudge { animation: nudge .4s ease; }
+.star {
+  width: 54px;
+  height: 54px;
+  font-size: 44px;
+  line-height: 1;
+  color: transparent;
+  -webkit-text-stroke: 2px #b9a684;
+  transition: transform .15s ease, color .15s ease;
+}
+.star.on { color: var(--red); -webkit-text-stroke: 2px var(--red); }
+.star:active { transform: scale(1.2) rotate(-8deg); }
+.star-word { min-height: 1.4em; margin: 4px 0 0; text-align: center; color: var(--red); font-size: 15px; }
+
+.chips.quick .chip { font-size: 14px; padding: 5px 10px; }
+.chips.quick .chip.on { color: var(--blue); border: 2px solid var(--blue); border-style: solid; }
+
+/* the reminder: a note pinned to the board */
+.install.reminder { align-items: center; padding: 20px; }
+.reminder-card {
+  position: relative;
+  max-width: 380px;
+  padding: 30px 22px 18px;
+  border-radius: 2px;
+  border: 1px solid var(--edge);
+  box-shadow: 0 14px 34px rgba(60, 40, 20, .35);
+  transform: rotate(-1.5deg);
+  background-image: repeating-linear-gradient(transparent 0 31px, var(--line) 31px 32px);
+}
+.reminder-card .pin {
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #e46b62, var(--red));
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+  transform: translateX(-50%);
+}
+.reminder-date { margin: 0; font-size: 13px; color: var(--red); }
+.reminder-card h2 { margin: 8px 0 18px; font-size: 26px; line-height: 1.25; }
+.reminder-card .rem-snooze { display: block; margin: 12px auto 0; }
+
+/* stars on a book's spine and in its card */
+.bk-stars {
+  flex-shrink: 0;
+  padding: 1px 5px;
+  font-family: var(--sans);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--red);
+  background: var(--paper-2);
+  border-radius: 2px;
+  transform: rotate(-4deg);
+}
+.note-stars { color: var(--red); font-style: normal; letter-spacing: 1px; display: inline-block; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }

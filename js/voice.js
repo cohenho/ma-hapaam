@@ -27,9 +27,11 @@ const Voice = (() => {
   };
 
   // Ask nicely, once, before the browser's own microphone question.
-  function explainMic() {
-    if (Store.state.micExplained) return Promise.resolve(true);
-    return new Promise((resolve) => {
+  // onOk runs inside the "הבנתי" tap itself: iPhone only lets a page listen when
+  // listening starts directly from a tap, not a moment later.
+  function explainMic(onOk) {
+    if (Store.state.micExplained) { onOk(); return; }
+    new Promise((resolve) => {
       const box = document.createElement("div");
       box.className = "install";
       box.innerHTML = `
@@ -45,7 +47,7 @@ const Voice = (() => {
       document.body.appendChild(box);
       requestAnimationFrame(() => box.classList.add("show"));
       const done = (ok) => {
-        if (ok) { Store.state.micExplained = true; Store.save(); }
+        if (ok) { Store.state.micExplained = true; Store.save(); onOk(); }
         box.classList.remove("show");
         setTimeout(() => box.remove(), 300);
         resolve(ok);
@@ -90,10 +92,20 @@ const Voice = (() => {
       rec.onerror = (e) => {
         if (e.error === "no-speech" || e.error === "aborted") return;
         listening = false;
-        const blocked = e.error === "not-allowed" || e.error === "service-not-allowed";
-        setState("failed", blocked
-          ? `אין גישה למיקרופון. אפשר להקליד, או ללחוץ על סמל המיקרופון שבמקלדת של הטלפון.`
-          : `ההקלטה לא הצליחה הפעם. אפשר לנסות שוב, או להקליד.`);
+        if (restarts > 0) {
+          // an automatic restart after a pause was refused: just stop, keep the text
+          setState(textarea.value.trim() ? "done" : "idle");
+          onChange("done");
+          return;
+        }
+        const installed = window.navigator.standalone === true;
+        const why = {
+          "not-allowed": `הטלפון לא נתן רשות למיקרופון. אפשר לאשר ב: הגדרות ← אפליקציות ← Safari ← מיקרופון ← "שאל" או "אפשר".`,
+          "service-not-allowed": installed
+            ? `באפליקציה שנפתחת מהמסך הבית, האייפון לא מאפשר הקלטה. אפשר לפתוח את האתר ב-Safari כדי להקליט, או להקליד.`
+            : `זיהוי הדיבור של האייפון כבוי. אפשר להדליק ב: הגדרות ← כללי ← מקלדת ← "הפעלת הכתבה".`,
+        }[e.error] || `ההקלטה לא הצליחה הפעם. אפשר לנסות שוב, או להקליד.`;
+        setState("failed", `${why} בינתיים אפשר להקליד, או ללחוץ על המיקרופון שבמקלדת. (קוד: ${e.error})`);
         onChange("failed");
       };
       rec.onend = () => {
@@ -109,8 +121,7 @@ const Voice = (() => {
       rec.start();
     }
 
-    async function start() {
-      if (!(await explainMic())) return;
+    function start() {
       committed = textarea.value;
       restarts = 0;
       listening = true;
@@ -135,7 +146,7 @@ const Voice = (() => {
       onChange("done");
     }
 
-    btn.addEventListener("click", () => (listening ? stop() : start()));
+    btn.addEventListener("click", () => (listening ? stop() : explainMic(start)));
     return { stop: () => listening && stop() };
   }
 

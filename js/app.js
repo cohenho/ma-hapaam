@@ -191,18 +191,24 @@ function openMyBook(book, spine) {
   const rec = Store.state.books[book.id];
   const actions =
     rec.status === "taken" ? [
-      { id: "finished", label: "סיימתי לקרוא", kind: "stamp-blue" },
+      { id: "rate",     label: `${g("סיימתי", "סיימתי", "סיימנו")}, לדרג`, kind: "stamp-blue" },
       { id: "disliked", label: "קראתי ולא התחברתי", kind: "link" },
       { id: "remove",   label: "להוציא מהרשימה", kind: "link" },
     ] :
     rec.status === "rejected" ? [
       { id: "restore",  label: "להחזיר להמלצות", kind: "stamp-blue" },
     ] :
-    [{ id: "remove", label: "להוציא מהרשימה", kind: "link" }];
+    [
+      { id: "rate",   label: rec.rating ? "לשנות את הדירוג" : "לדרג", kind: "stamp-blue" },
+      { id: "remove", label: "להוציא מהרשימה", kind: "link" },
+    ];
 
   const note =
     rec.status === "taken" ? `נלקח ב-${formatDate(rec.date)}` :
     rec.status === "rejected" ? `${g("החזרת", "החזרת", "החזרתם")} לערימה ב-${formatDate(rec.date)}` :
+    rec.rating ? `<span class="note-stars">${Rating.starsText(rec.rating)}</span> · ${formatDate(rec.date)}` +
+      (rec.quick?.length ? `<br>${rec.quick.map(esc).join(" · ")}` : "") +
+      (rec.comment ? `<br>"${esc(rec.comment)}"` : "") :
     rec.liked === false ? `קראת ולא התחברת · ${formatDate(rec.date)}` :
     `קראת · ${formatDate(rec.date)}`;
 
@@ -211,6 +217,15 @@ function openMyBook(book, spine) {
     note,
     actions,
     onAction: (id) => {
+      if (id === "rate") {
+        spine.classList.remove("pulled");
+        spine.closest(".stack")?.classList.remove("has-pulled");
+        Rating.open(book, {
+          onSaved: () => { showMyBooks(); Toast.show("הדירוג נשמר, וההמלצות ילמדו ממנו."); },
+          onSnoozed: () => Toast.show(`בסדר, ${g("אזכיר לך", "אזכיר לך", "אזכיר לכם")} בעוד שבוע.`),
+        });
+        return;
+      }
       const undo =
         id === "finished" ? applyChoice(book, "read", {}, 0.5) :
         id === "disliked" ? applyChoice(book, "read", { liked: false }, -1.5) :
@@ -228,8 +243,12 @@ function openMyBook(book, spine) {
 // ---------- start ----------
 
 Store.load();
-if (Store.state.onboarded) showHome();
-else Onboarding.start();
+if (Store.state.onboarded) {
+  showHome();
+  setTimeout(Rating.maybeRemind, 1200); // "סיימת את…? איך היה?"
+} else {
+  Onboarding.start();
+}
 Install.maybeShowHelp();
 
 if ("serviceWorker" in navigator) {
