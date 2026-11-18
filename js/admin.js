@@ -215,14 +215,17 @@
 
   // ---------- numbers ----------
 
+  let withNames = true; // until the database has the display_name column
   async function fetchEvents(days) {
     const since = new Date(Date.now() - days * 864e5).toISOString();
     const all = [];
     for (let from = 0; from < 50000; from += 1000) {
-      const res = await fetch(`${cfg.url}/rest/v1/events?select=user_id,kind,book_id,rating,created_at&created_at=gte.${since}&order=created_at.asc`, {
+      const cols = "user_id,kind,book_id,rating,created_at" + (withNames ? ",display_name" : "");
+      const res = await fetch(`${cfg.url}/rest/v1/events?select=${cols}&created_at=gte.${since}&order=created_at.asc`, {
         headers: { apikey: cfg.anonKey, Authorization: `Bearer ${session.access_token}`, Range: `${from}-${from + 999}`, "Range-Unit": "items" },
       });
       if (res.status === 401) { signOut(); throw new Error("צריך להתחבר שוב."); }
+      if (res.status === 400 && withNames) { withNames = false; return fetchEvents(days); }
       if (!res.ok && res.status !== 206) throw new Error(`לא הצלחתי לקרוא את המספרים (${res.status}).`);
       const rows = await res.json();
       all.push(...rows);
@@ -271,6 +274,21 @@
     }));
 
     const title = (id) => (bookById(id) || { title: id }).title;
+
+    // one row per phone: its latest name (if given), what it took and read, last visit
+    const readers = {};
+    let anonNo = 0;
+    ev.forEach((e) => {
+      const r = (readers[e.user_id] ||= { name: null, taken: new Set(), read: new Set(), ratings: [], last: e.created_at });
+      if (e.display_name) r.name = e.display_name;
+      if (e.kind === "taken") r.taken.add(e.book_id);
+      if (e.kind === "read" || e.kind === "rated" || e.kind === "disliked") r.read.add(e.book_id);
+      if (e.kind === "rated" && e.rating) r.ratings.push(e.rating);
+      if (e.created_at > r.last) r.last = e.created_at;
+    });
+    const readerRows = Object.values(readers)
+      .sort((a, b) => b.last.localeCompare(a.last))
+      .map((r) => ({ ...r, label: r.name || `אנונימי/ת ${++anonNo}` }));
     body.innerHTML = `
       <div class="stat-grid">
         <div class="stat"><b>${active7}</b><span>${active7 === 1 ? "קוראת/קורא" : "אנשים"} השבוע</span></div>
@@ -283,6 +301,18 @@
         <h3>כמה אנשים פתחו את האפליקציה</h3>
         <div class="bars">${days.map((d, i) => `
           <div class="bar"><span class="bar-n typed">${d.n || ""}</span><i style="height:${(d.n / max) * 100}%"></i><span class="bar-d typed">${i % 2 ? "" : d.label}</span></div>`).join("")}</div>
+      </section>
+
+      <section class="set-card">
+        <h3>הקוראים</h3>
+        ${!withNames ? `<p class="set-note err">כדי לראות שמות, צריך להריץ פעם אחת ב-Supabase את הקובץ tools/supabase-add-name.sql.</p>` : ""}
+        ${readerRows.length ? `<div class="readers">${readerRows.map((r) => `
+          <details class="reader">
+            <summary><b>${esc(r.label)}</b><span class="typed">${r.taken.size} נלקחו · ${r.read.size} נקראו · ${new Date(r.last).toLocaleDateString("he-IL")}</span></summary>
+            ${r.taken.size ? `<p class="set-note"><b>לקח/ה:</b> ${[...r.taken].map((id) => esc(title(id))).join(", ")}</p>` : ""}
+            ${r.read.size ? `<p class="set-note"><b>קרא/ה:</b> ${[...r.read].map((id) => esc(title(id))).join(", ")}</p>` : ""}
+            ${r.ratings.length ? `<p class="set-note"><b>דירוג ממוצע:</b> ★${(r.ratings.reduce((a, b) => a + b, 0) / r.ratings.length).toFixed(1)}</p>` : ""}
+          </details>`).join("")}</div>` : `<p class="set-note">עוד אין קוראים.</p>`}
       </section>
 
       ${pickRows.length ? `<section class="set-card">
@@ -301,7 +331,7 @@
         ${topRated.length ? `<ol class="rank-list">${topRated.map(([id, avg, n]) => `<li><span>${esc(title(id))}</span><span class="typed">★${avg.toFixed(1)} · ${n} ${n === 1 ? "דירוג" : "דירוגים"}</span></li>`).join("")}</ol>`
           : `<p class="set-note">עוד אין דירוגים.</p>`}
       </section>
-      <p class="set-note">כל המספרים אנונימיים: לכל טלפון יש מספר אקראי, בלי שם ובלי פרטים.</p>`;
+      <p class="set-note">לכל טלפון יש מספר אקראי. שם מופיע רק אצל מי שבחר/ה לתת אותו.</p>`;
   }
 
   // ---------- start ----------

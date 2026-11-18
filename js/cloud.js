@@ -59,7 +59,10 @@ const Cloud = (() => {
   function track(kind, bookId = null, rating = null) {
     if (!sharing()) return;
     const queue = (Store.state.outbox ||= []);
-    queue.push({ user_id: anonId(), kind, book_id: bookId, rating, created_at: new Date().toISOString() });
+    const event = { user_id: anonId(), kind, book_id: bookId, rating, created_at: new Date().toISOString() };
+    const name = (Store.state.settings.name || "").trim();
+    if (name) event.display_name = name.slice(0, 40); // only if you chose to give it
+    queue.push(event);
     if (queue.length > 200) queue.splice(0, queue.length - 200); // don't grow forever offline
     Store.save();
     flush();
@@ -87,6 +90,10 @@ const Cloud = (() => {
       });
       if (res.ok) {
         Store.state.outbox.splice(0, batch.length);
+        Store.save();
+      } else if (res.status === 400 && batch.some((e) => "display_name" in e)) {
+        // the database hasn't got the name column yet: keep the events, drop the names
+        batch.forEach((e) => delete e.display_name);
         Store.save();
       }
     } catch { /* try again next time */ }

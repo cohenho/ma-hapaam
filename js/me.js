@@ -148,7 +148,7 @@ function showTaste() {
 // ---------- הגדרות ----------
 // How the app addresses you and your age are set once, in the introduction.
 
-const APP_VERSION = "8";
+const APP_VERSION = "9";
 let versionTaps = 0;
 
 function showSettings() {
@@ -188,9 +188,12 @@ function showSettings() {
       <label class="cat-toggle">
         <input type="checkbox" class="share-toggle" ${s.share === false ? "" : "checked"}>
         <span class="box" aria-hidden="true"></span>
-        <span>לשתף מידע אנונימי עם הספרנית</span>
+        <span>לשתף מידע עם הספרנית</span>
       </label>
-      <p class="set-note">נשלח רק מספר אקראי בלי שם, ואילו ספרים נלקחו, נקראו ודורגו. ככה הספרנית יודעת מה אהוב.</p>
+      <p class="set-note">נשלחים רק אילו ספרים נלקחו, נקראו ודורגו, ${s.name ? "יחד עם השם שלמטה" : "עם מספר אקראי בלי שם"}. ככה הספרנית יודעת מה אהוב.</p>
+      <label class="field set-name"><span>השם שלך (לא חובה)</span>
+        <input class="name-input" maxlength="40" value="${esc(s.name || "")}" placeholder="שם פרטי או כינוי" autocomplete="name"></label>
+      <p class="set-note">${g("מחקי", "מחק", "מחקו")} את השם כדי להישאר ${g("אנונימית", "אנונימי", "אנונימיים")}.</p>
     </section>` : ""}
 
     <p class="version typed">By the Book · גרסה ${APP_VERSION}</p>
@@ -217,6 +220,11 @@ function showSettings() {
     Cloud.setSharing(e.target.checked);
     if (e.target.checked) { Store.state.privacySeen = true; Store.save(); }
     Toast.show(e.target.checked ? "תודה! המידע האנונימי יעזור לספרנית." : "בסדר, לא יישלח יותר מידע.");
+  });
+  view.querySelector(".name-input")?.addEventListener("change", (e) => {
+    s.name = e.target.value.trim(); st.namePrompted = true; Store.save();
+    Toast.show(s.name ? `השם נשמר: ${s.name}` : "השם נמחק. מעכשיו הכול אנונימי.");
+    showSettings();
   });
   view.querySelector(".do-backup").addEventListener("click", async () => {
     if (await Backup.exportNow()) { showSettings(); Toast.show("הגיבוי מוכן. כדאי לשמור אותו במקום בטוח."); }

@@ -13,6 +13,7 @@ const Store = (() => {
         adult: true,      // over 18?
         gender: "f",      // "f" | "m" | "x" — how the app talks to you
         hiddenCats: [],   // drawers you chose to hide from the catalogue
+        name: "",         // optional; shown to the librarian with your choices
       },
       // bookId -> { status: "taken" | "read" | "rejected", date: ISO string,
       //            liked: false when "קראתי ולא התחברתי" }

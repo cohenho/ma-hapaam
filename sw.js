@@ -2,7 +2,7 @@
 // App files: try the network first so updates arrive, fall back to the saved copy.
 // Covers and fonts: use the saved copy first, they never change.
 
-const VERSION = "v13";
+const VERSION = "v14";
 const APP_CACHE = `app-${VERSION}`;
 const EXTRA_CACHE = "covers-fonts";
 

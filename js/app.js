@@ -56,14 +56,23 @@ function showHome() {
     </header>
     ${Cloud.enabled && !Store.state.privacySeen ? `
       <aside class="backup-slip privacy-slip">
-        <p><b>קצת על פרטיות.</b> כדי שהספרנית תדע אילו ספרים אוהבים, האפליקציה שולחת מידע אנונימי:
-          מספר אקראי בלי שם, ואילו ספרים נלקחו ודורגו. שום דבר אחר. אפשר לכבות את זה בהגדרות.</p>
+        <p><b>קצת על פרטיות.</b> כדי שהספרנית תדע אילו ספרים אוהבים, האפליקציה שולחת לה אילו ספרים נלקחו ודורגו,
+          ${Store.state.settings.name ? `יחד עם השם ${g("שבחרת", "שבחרת", "שבחרתם")} (${esc(Store.state.settings.name)})` : "עם מספר אקראי, בלי שם"}. שום דבר אחר. אפשר לכבות או למחוק את השם בהגדרות.</p>
         <div class="slip-actions"><button class="stamp stamp-blue privacy-ok">הבנתי</button></div>
       </aside>` : ""}
     <button class="scan-btn">
       <span class="scan-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3 7.2 5H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.2L15 3zm3 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></span>
       <span><b>${g("ראית", "ראית", "ראיתם")} ספר בספרייה?</b><br>${g("צלמי", "צלם", "צלמו")} את הכריכה, ואגיד לך אם ${g("תתחברי", "תתחבר", "תתחברו")} אליו</span>
     </button>
+    ${Cloud.enabled && Store.state.privacySeen && !Store.state.namePrompted ? `
+      <aside class="backup-slip name-slip">
+        <p><b>איך קוראים לך?</b> אם ${g("תרצי", "תרצה", "תרצו")}, הספרנית תראה את השם יחד עם הספרים ${g("שלקחת", "שלקחת", "שלקחתם")} ודירגת. לא חובה.</p>
+        <input class="slip-name" maxlength="40" placeholder="שם פרטי או כינוי" autocomplete="name">
+        <div class="slip-actions">
+          <button class="stamp stamp-blue name-ok">שמירה</button>
+          <button class="card-link name-no">בלי שם, תודה</button>
+        </div>
+      </aside>` : ""}
     <div class="lib-slot">${librarianHtml()}</div>
     ${Backup.shouldNag() ? `
       <aside class="backup-slip">
@@ -88,6 +97,16 @@ function showHome() {
     e.target.closest(".privacy-slip").remove();
     Cloud.trackOpen();
   });
+  const nameSlip = view.querySelector(".name-slip");
+  if (nameSlip) {
+    const done = (name) => {
+      Store.state.settings.name = name; Store.state.namePrompted = true; Store.save();
+      nameSlip.remove();
+      if (name) Toast.show(`תודה, ${name}!`);
+    };
+    nameSlip.querySelector(".name-ok").addEventListener("click", () => done(nameSlip.querySelector(".slip-name").value.trim()));
+    nameSlip.querySelector(".name-no").addEventListener("click", () => done(""));
+  }
   wireLibrarian();
   view.querySelector(".scan-btn").addEventListener("click", Scan.start);
   const slip = view.querySelector(".backup-slip:not(.privacy-slip)");

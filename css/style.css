@@ -1269,6 +1269,28 @@ body.onboarding #view { padding-bottom: calc(env(safe-area-inset-bottom) + 28px)
 .verdict-no { border-color: var(--red); }
 .verdict-no b { color: var(--red); }
 
+/* ---------- name ---------- */
+
+.ob-name, .slip-name, .set-name input {
+  display: block;
+  width: 100%;
+  min-height: 48px;
+  margin-top: 6px;
+  padding: 6px 2px;
+  font-family: var(--serif);
+  font-size: 22px;
+  color: var(--ink);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--line);
+  outline: none;
+}
+.slip-name { font-size: 18px; background: rgba(255, 253, 246, .7); border: 1px solid #e6cf94; padding: 6px 10px; margin-top: 10px; }
+.set-name { margin-top: 14px; font-family: var(--sans); font-size: 14px; color: var(--soft); }
+.set-name span { font-weight: 700; }
+.set-name input { font-size: 18px; border: 1.5px solid #c9b994; border-radius: 4px; padding: 6px 10px; background: var(--paper); }
+.ob-name-why { margin-top: 12px; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }

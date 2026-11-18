@@ -1,4 +1,4 @@
-// First-time introduction: how to talk to you → age → your taste → "הבנתי ש…".
+// First-time introduction: name (optional) → how to talk to you → age → your taste → "הבנתי ש…".
 // The taste part (Onboarding.taste) can also be run again later on its own.
 
 const Onboarding = (() => {
@@ -9,7 +9,7 @@ const Onboarding = (() => {
   function screen(html, step) {
     document.body.classList.add("onboarding");
     view.innerHTML = `
-      ${step ? `<p class="ob-step typed">שלב ${step} מתוך 4</p>` : ""}
+      ${step ? `<p class="ob-step typed">שלב ${step} מתוך 5</p>` : ""}
       ${html}`;
     view.dataset.screen = "onboarding";
     window.scrollTo(0, 0);
@@ -22,7 +22,6 @@ const Onboarding = (() => {
     showHome();
   }
 
-  // ---------- 1. how should we talk to you ----------
 
   const GENDERS = [
     { id: "m", name: "גבר על",     desc: "פנו אליי בלשון זכר" },
@@ -30,12 +29,43 @@ const Onboarding = (() => {
     { id: "x", name: "חתול סיני",  desc: "פנו אליי בלשון רבים, כמו לבני מלוכה" },
   ];
 
+  // ---------- 1. your name (optional) ----------
+
   function start() {
     screen(`
       <header class="ob-head">
         <div class="brand-stamp small" aria-hidden="true">By the<br>Book</div>
         <h1>נעים להכיר!</h1>
-        <p class="ob-sub">רגע לפני שמתחילים: איך לפנות אליך?</p>
+        <p class="ob-sub">איך קוראים לך?</p>
+      </header>
+      <label class="note-card">
+        <span class="note-card-head typed">כרטיס קורא/ת · שם</span>
+        <input class="ob-name" maxlength="40" autocomplete="name" placeholder="שם פרטי או כינוי" value="${esc(Store.state.settings.name || "")}">
+      </label>
+      <p class="set-note ob-name-why">השם עוזר לספרנית להכיר את הקוראים: היא תראה אותו יחד עם הספרים שלקחת ודירגת. לא חובה, ואפשר למחוק אותו בכל רגע בהגדרות.</p>
+      <button class="stamp stamp-red ob-go">המשך</button>
+      <button class="card-link ob-skip">בלי שם, תודה</button>
+      <button class="card-link ob-restore">יש לי גיבוי מטלפון קודם, לשחזר אותו</button>`, 1);
+    const input = view.querySelector(".ob-name");
+    const next = (name) => {
+      Store.state.settings.name = name;
+      Store.state.namePrompted = true;
+      Store.save();
+      genders();
+    };
+    view.querySelector(".ob-go").addEventListener("click", () => next(input.value.trim()));
+    view.querySelector(".ob-skip").addEventListener("click", () => next(""));
+    view.querySelector(".ob-restore").addEventListener("click", () => Backup.pickAndRestore());
+  }
+
+  // ---------- 2. how should we talk to you ----------
+
+  function genders() {
+    screen(`
+      <header class="ob-head">
+        <div class="brand-stamp small" aria-hidden="true">By the<br>Book</div>
+        <h1>עוד שאלה קטנה</h1>
+        <p class="ob-sub">${Store.state.settings.name ? `${esc(Store.state.settings.name)}, איך` : "רגע לפני שמתחילים: איך"} לפנות אליך?</p>
       </header>
       <div class="catalogue">
         ${GENDERS.map((x, i) => `
@@ -44,9 +74,7 @@ const Onboarding = (() => {
             <span class="ic-name">${x.name}</span>
             <span class="ic-desc">${x.desc}</span>
           </button>`).join("")}
-      </div>
-      <button class="card-link ob-restore">יש לי גיבוי מטלפון קודם, לשחזר אותו</button>`, 1);
-    view.querySelector(".ob-restore").addEventListener("click", () => Backup.pickAndRestore());
+      </div>`, 2);
     view.querySelectorAll("[data-gender]").forEach((b) => b.addEventListener("click", () => {
       Store.state.settings.gender = b.dataset.gender;
       Store.save();
@@ -55,27 +83,27 @@ const Onboarding = (() => {
     }));
   }
 
-  // ---------- 2. age ----------
+  // ---------- 3. age ----------
 
   function age() {
     screen(`
       <header class="ob-head">
         <h1>${g("את מעל", "אתה מעל", "אתם מעל")}<br>גיל 18?</h1>
         <p class="ob-sub">ככה אדע אם להציע גם ספרים עם תוכן למבוגרים בלבד.
-          אפשר לשנות את זה בהמשך בהגדרות.</p>
+          </p>
       </header>
       <div class="ob-stamps">
         <button class="stamp stamp-blue" data-adult="1">כן</button>
         <button class="stamp stamp-red" data-adult="0">לא</button>
-      </div>`, 2);
+      </div>`, 3);
     view.querySelectorAll("[data-adult]").forEach((b) => b.addEventListener("click", () => {
       Store.state.settings.adult = b.dataset.adult === "1";
       Store.save();
-      taste({ then: finish, step: 3 });
+      taste({ then: finish, step: 4 });
     }));
   }
 
-  // ---------- 3. tell me about your taste ----------
+  // ---------- 4. tell me about your taste ----------
 
   let thenOriginal = finish;
   function taste({ then = finish, step = null, text = null } = {}) {
@@ -140,7 +168,7 @@ const Onboarding = (() => {
     view.querySelector(".ob-skip").addEventListener("click", () => { recorder?.stop(); draft = ""; afterTaste(); });
   }
 
-  // ---------- 4. "הבנתי ש…" ----------
+  // ---------- 5. "הבנתי ש…" ----------
 
   function confirm(found, step) {
     const state = {
