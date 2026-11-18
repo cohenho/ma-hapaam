@@ -143,11 +143,80 @@ const Taste = (() => {
   }
 
   function empty() {
-    return { text: "", likes: [], dislikes: [], books: [], authors: [], learned: {}, updatedAt: null };
+    return { text: "", likes: [], dislikes: [], books: [], authors: [], forgetBefore: null, updatedAt: null };
   }
 
-  // Weight per feature, from what you told us plus what we learned since.
-  function weights(profile) {
+  // ---------- learning from your books (statistics, not single books) ----------
+  //
+  // Every book you took, read, rated or returned is one "observation" for each of
+  // its features (author, genres, style). A feature's score is the average of its
+  // observations, pulled towards neutral by PRIOR imaginary neutral books, so one
+  // book never decides much. Negative conclusions need at least two books.
+
+  const PRIOR = 3;
+  const STRENGTH = { author: 3, other: 2.5 };
+
+  // Quick tags on a rating: what each one says about the features it touches.
+  const QUICK_TAGS = {
+    "דמויות מעולות": [["style:character", 1]],
+    "סוף מפתיע":     [["style:twists", 1]],
+    "קצב סוחף":      [["style:fast", 1]],
+    "כתיבה יפה":     [["style:smart", 0.6]],
+    "מצחיק":         [["style:funny", 1]],
+    "מרגש":          [["style:emotional", 1]],
+    "קצב איטי":      [["style:slow", -1]],
+    "צפוי מראש":     [["style:twists", 0.6]],
+    "ארוך מדי":      [["style:short", 0.6]],
+    "קשה מדי":       [["cat:light", 0.5], ["style:dark", -0.5]],
+  };
+
+  // How much one book record says: +1 loved … −1 not for me.
+  function signalOf(r) {
+    if (r.rating) return (r.rating - 3) / 2;
+    if (r.liked === false) return -0.8;
+    if (r.status === "rejected") return -0.3;
+    if (r.status === "taken") return 0.4;
+    if (r.status === "read") return 0.3;
+    return 0;
+  }
+
+  const commentCache = new Map();
+  function commentFeatures(text) {
+    if (!commentCache.has(text)) {
+      const said = read(text);
+      const out = [];
+      // in a review "איטי" is a complaint, not a wish
+      said.likes.forEach((l) => featuresOfLabel(l).forEach((f) => out.push([f, l === "קצב איטי" ? -0.6 : 0.6])));
+      said.dislikes.forEach((l) => featuresOfLabel(l).forEach((f) => out.push([f, -0.6])));
+      commentCache.set(text, out);
+    }
+    return commentCache.get(text);
+  }
+
+  function learned(books, since) {
+    const sum = {}, count = {};
+    const observe = (f, v) => { sum[f] = (sum[f] || 0) + v; count[f] = (count[f] || 0) + 1; };
+    for (const [id, r] of Object.entries(books || {})) {
+      if (r.from === "intro") continue;                 // counted in what you told us
+      if (since && r.date && r.date < since) continue;  // "לשכוח את מה שלמדתי"
+      const book = window.BOOKS.find((b) => b.id === id);
+      if (!book) continue;
+      const v = signalOf(r);
+      if (v) bookFeatures(book).forEach((f) => observe(f, v));
+      (r.quick || []).forEach((q) => (QUICK_TAGS[q] || []).forEach(([f, x]) => observe(f, x)));
+      if (r.comment) commentFeatures(r.comment).forEach(([f, x]) => observe(f, x));
+    }
+    const out = {};
+    for (const f of Object.keys(sum)) {
+      let score = sum[f] / (count[f] + PRIOR);
+      if (score < 0 && count[f] < 2) score *= 0.3;     // one book is not a pattern
+      out[f] = score * (f.startsWith("author:") ? STRENGTH.author : STRENGTH.other);
+    }
+    return out;
+  }
+
+  // Weight per feature: what you told us, plus what your books show.
+  function weights(profile, books = Store.state.books) {
     const w = {};
     const add = (f, v) => { w[f] = (w[f] || 0) + v; };
     profile.likes.forEach((l) => featuresOfLabel(l).forEach((f) => add(f, 2)));
@@ -157,32 +226,15 @@ const Taste = (() => {
       const b = window.BOOKS.find((x) => x.id === id);
       if (b) bookFeatures(b).forEach((f) => add(f, f.startsWith("author:") ? sign * 2 : sign * 0.8));
     });
-    Object.entries(profile.learned || {}).forEach(([f, v]) => add(f, v));
+    Object.entries(learned(books, profile.forgetBefore)).forEach(([f, v]) => add(f, v));
     return w;
   }
 
-  function isEmpty(profile) {
-    return !profile || (!profile.likes.length && !profile.dislikes.length &&
-      !profile.books.length && !profile.authors.length && !Object.keys(profile.learned || {}).length);
+  function isEmpty(profile, books = Store.state.books) {
+    const told = profile && (profile.likes.length || profile.dislikes.length ||
+      profile.books.length || profile.authors.length);
+    return !told && !Object.keys(learned(books, profile && profile.forgetBefore)).length;
   }
 
-  // Nudge the profile after something you did with a book.
-  function learn(profile, book, amount) {
-    profile.learned ||= {};
-    bookFeatures(book).forEach((f) => {
-      const v = (profile.learned[f] || 0) + amount * (f.startsWith("author:") ? 1.5 : 0.5);
-      profile.learned[f] = Math.max(-6, Math.min(6, Math.round(v * 100) / 100));
-    });
-  }
-
-  // Nudge single features (used by the quick tags and the comment on a rating).
-  function nudge(profile, features, amount) {
-    profile.learned ||= {};
-    features.forEach((f) => {
-      const v = (profile.learned[f] || 0) + amount;
-      profile.learned[f] = Math.max(-6, Math.min(6, Math.round(v * 100) / 100));
-    });
-  }
-
-  return { read, weights, isEmpty, learn, nudge, empty, bookFeatures, featuresOfLabel, LABELS };
+  return { read, weights, isEmpty, learned, empty, bookFeatures, featuresOfLabel, LABELS, QUICK_TAGS: Object.keys(QUICK_TAGS) };
 })();

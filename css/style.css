@@ -1017,6 +1017,36 @@ body.onboarding #view { padding-bottom: calc(env(safe-area-inset-bottom) + 28px)
 .version { margin: 20px 0 14px; text-align: center; font-size: 13px; color: #a8977f; user-select: none; }
 .tabbar button span:last-child { white-space: nowrap; }
 
+/* ---------- backup slip on the home screen ---------- */
+
+.backup-slip {
+  position: relative;
+  margin: 0 0 18px;
+  padding: 12px 14px;
+  font-family: var(--sans);
+  font-size: 15px;
+  background: #fdf3d8;
+  border: 1px solid #e6cf94;
+  box-shadow: 0 4px 10px rgba(80, 60, 30, .12);
+  transform: rotate(-.8deg);
+}
+.backup-slip p { margin: 0; }
+.slip-actions { display: flex; align-items: center; gap: 12px; margin-top: 10px; }
+.slip-actions .stamp { flex: 0 1 auto; min-height: 44px; padding: 0 18px; font-size: 16px; }
+.ob-restore { display: block; margin: 22px auto 0; }
+
+/* ---------- ranks ---------- */
+
+.rank-box { margin-top: 10px; padding: 10px 12px; background: var(--paper); border-right: 3px solid var(--red); }
+.rank-next { margin: 0; font-family: var(--sans); font-size: 15px; }
+.rank-ladder summary { margin-top: 8px; font-family: var(--sans); font-size: 14px; color: var(--blue); cursor: pointer; }
+.rank-ladder ol { list-style: none; margin: 8px 0 0; padding: 0; display: grid; gap: 4px; }
+.rank-ladder li { display: flex; justify-content: space-between; gap: 10px; padding: 3px 6px; font-size: 15px; color: var(--soft); }
+.rank-ladder li .typed { font-size: 12px; }
+.rank-ladder li.done { color: var(--ink); }
+.rank-ladder li.done span:first-child::after { content: " ✓"; color: var(--blue); }
+.rank-ladder li.here { color: var(--red); font-weight: 700; border: 2px solid var(--red); border-radius: 4px; transform: rotate(-1deg); }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }

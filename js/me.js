@@ -45,6 +45,42 @@ function tasteSummary() {
   };
 }
 
+// ---------- reading ranks: they go up as you finish books ----------
+
+const Ranks = (() => {
+  const LEVELS = [
+    { from: 0,  name: () => g("מנויה חדשה", "מנוי חדש", "מנויים חדשים") },
+    { from: 1,  name: () => g("קוראת מזדמנת", "קורא מזדמן", "קוראים מזדמנים") },
+    { from: 3,  name: () => g("תולעת ספרים", "תולעת ספרים", "תולעי ספרים") },
+    { from: 6,  name: () => g("חברת מועדון הקריאה", "חבר מועדון הקריאה", "חברי מועדון הקריאה") },
+    { from: 11, name: () => g("ספרנית של כבוד", "ספרן של כבוד", "ספרנים של כבוד") },
+    { from: 21, name: () => g("שומרת הקטלוג", "שומר הקטלוג", "שומרי הקטלוג") },
+    { from: 36, name: () => "אגדה של הספרייה" },
+  ];
+
+  // Books you finished through the app (not the ones you told about in the introduction).
+  const finished = () => Object.values(Store.state.books).filter((r) => r.status === "read" && r.from !== "intro").length;
+
+  function current() {
+    const n = finished();
+    let i = 0;
+    LEVELS.forEach((l, k) => { if (n >= l.from) i = k; });
+    const next = LEVELS[i + 1];
+    return { n, index: i, name: LEVELS[i].name(), next: next && { name: next.name(), left: next.from - n } };
+  }
+
+  function celebrateIfUp() {
+    const { index, name } = current();
+    const seen = Store.state.rankSeen ?? index;
+    if (index > seen) {
+      Toast.show(`עלית דרגה! מעכשיו ${g("את", "אתה", "אתם")}: ${name} 🎉`);
+    }
+    if (Store.state.rankSeen !== index) { Store.state.rankSeen = index; Store.save(); }
+  }
+
+  return { LEVELS, current, celebrateIfUp };
+})();
+
 // ---------- הטעם שלי ----------
 
 function showTaste() {
@@ -54,8 +90,8 @@ function showTaste() {
   const rated = books.filter((b) => b.rating);
   const avg = rated.length ? (rated.reduce((s, b) => s + b.rating, 0) / rated.length).toFixed(1) : null;
   const sum = tasteSummary();
-  const empty = !sum.likes.length && !sum.dislikes.length && !sum.authorsLiked.length;
-  const title = { f: "אשת חיל", m: "גבר על", x: "חתול סיני" }[st.settings.gender];
+  const empty = !sum.likes.length && !sum.authorsLiked.length;
+  const rank = Ranks.current();
   const chipRow = (items, cls) => `<div class="chips">${items.map((x) => `<span class="chip ${cls}">${esc(x)}</span>`).join("")}</div>`;
 
   render(`
@@ -63,19 +99,30 @@ function showTaste() {
     <section class="reader-card">
       <div class="card-top typed"><span>כרטיס קורא/ת</span><span>By the Book</span></div>
       <dl class="reader-fields">
-        <dt>דרגה:</dt><dd class="typed">${title}</dd>
+        <dt>דרגה:</dt><dd class="typed">${esc(rank.name)}</dd>
         <dt>${g("חברה", "חבר", "חברים")} מאז:</dt><dd class="typed">${new Date(st.createdAt).toLocaleDateString("he-IL")}</dd>
         <dt>לקחת:</dt><dd class="typed">${books.filter((b) => b.status === "taken" || b.takenAt).length} ספרים</dd>
         <dt>קראת:</dt><dd class="typed">${books.filter((b) => b.status === "read").length} ספרים${avg ? ` · ממוצע ★${avg}` : ""}</dd>
       </dl>
+      <div class="rank-box">
+        <p class="rank-next">${rank.next
+          ? `עוד ${rank.next.left === 1 ? "ספר אחד" : rank.next.left + " ספרים"} ${g("שתסיימי", "שתסיים", "שתסיימו")}, ו${g("תהיי", "תהיה", "תהיו")}: <b>${esc(rank.next.name)}</b>`
+          : `הגעת לדרגה הכי גבוהה. כל הכבוד!`}</p>
+        <details class="rank-ladder">
+          <summary>כל הדרגות</summary>
+          <ol>${Ranks.LEVELS.map((l, i) => `
+            <li class="${i === rank.index ? "here" : i < rank.index ? "done" : ""}">
+              <span>${esc(l.name())}</span><span class="typed">${l.from === 0 ? "מההתחלה" : `${l.from} ספרים`}</span>
+            </li>`).join("")}</ol>
+          <p class="set-note">ספר נחשב כשמסמנים אותו כ"קראתי" או מדרגים אותו.</p>
+        </details>
+      </div>
 
       ${empty ? `
         <p class="reader-empty">עוד לא ${g("סיפרת", "סיפרת", "סיפרתם")} לי מה ${g("את אוהבת", "אתה אוהב", "אתם אוהבים")}, אז בינתיים אני מציעה בעיקר ספרים מוכרים ואהובים מאוד.</p>
       ` : `
         ${sum.likes.length ? `<p class="chip-title">${g("את אוהבת", "אתה אוהב", "אתם אוהבים")}</p>${chipRow(sum.likes, "chip-like")}` : ""}
         ${sum.authorsLiked.length ? `<p class="chip-title">סופרים ${g("שאת אוהבת", "שאתה אוהב", "שאתם אוהבים")}</p>${chipRow(sum.authorsLiked, "chip-author")}` : ""}
-        ${sum.dislikes.length ? `<p class="chip-title">פחות</p>${chipRow(sum.dislikes, "chip-dislike")}` : ""}
-        ${sum.authorsNot.length ? `<p class="chip-title">סופרים שפחות</p>${chipRow(sum.authorsNot, "chip-dislike")}` : ""}
       `}
 
       ${st.profile.text ? `
@@ -84,14 +131,14 @@ function showTaste() {
       <p class="reader-learn">כל דירוג, "לקחתי" ו"תחזיר לערימה" מלמדים אותי עוד קצת.</p>
     </section>
     <button class="stamp stamp-red tell-again" style="width:100%;margin-top:18px">${empty ? "לספר לי מה " + g("את אוהבת", "אתה אוהב", "אתם אוהבים") : "לספר לי שוב"}</button>
-    ${Object.keys(st.profile.learned || {}).length ? `<button class="card-link forget" style="display:block;margin:12px auto 0">לשכוח את מה שלמדתי מהדירוגים</button>` : ""}
+    ${Object.keys(Taste.learned(st.books, st.profile.forgetBefore)).length ? `<button class="card-link forget" style="display:block;margin:12px auto 0">לשכוח את מה שלמדתי מהדירוגים</button>` : ""}
   `, "taste");
 
   view.querySelector(".tell-again").addEventListener("click", () =>
     Onboarding.taste({ then: showTaste, text: st.profile.text || "" }));
   view.querySelector(".forget")?.addEventListener("click", () => {
     if (!confirm("לשכוח את כל מה שלמדתי מהדירוגים ומהבחירות? מה שסיפרת לי בטקסט יישאר.")) return;
-    st.profile.learned = {};
+    st.profile.forgetBefore = new Date().toISOString();
     Store.save();
     showTaste();
     Toast.show("שכחתי. מתחילים ללמוד מחדש.");
@@ -99,36 +146,19 @@ function showTaste() {
 }
 
 // ---------- הגדרות ----------
+// How the app addresses you and your age are set once, in the introduction.
 
-const APP_VERSION = "6";
+const APP_VERSION = "7";
 let versionTaps = 0;
 
 function showSettings() {
   setTab("settings");
-  const s = Store.state.settings;
-  const option = (name, value, label, current) =>
-    `<button class="opt ${current === value ? "on" : ""}" data-${name}="${value}">${label}</button>`;
+  const st = Store.state;
+  const s = st.settings;
+  const last = st.lastBackup ? new Date(st.lastBackup).toLocaleDateString("he-IL") : null;
 
   render(`
     <header class="page-head"><h2 class="page-title">הגדרות</h2></header>
-
-    <section class="set-card">
-      <h3>איך לפנות אליך</h3>
-      <div class="opts">
-        ${option("gender", "m", "גבר על", s.gender)}
-        ${option("gender", "f", "אשת חיל", s.gender)}
-        ${option("gender", "x", "חתול סיני", s.gender)}
-      </div>
-    </section>
-
-    <section class="set-card">
-      <h3>גיל</h3>
-      <div class="opts">
-        ${option("adult", "1", "מעל 18", s.adult ? "1" : "0")}
-        ${option("adult", "0", "מתחת ל-18", s.adult ? "1" : "0")}
-      </div>
-      <p class="set-note">מתחת ל-18 לא מוצגים המגירה "רומנטי/אירוטי" וספרים עם תוכן למבוגרים בלבד.</p>
-    </section>
 
     <section class="set-card">
       <h3>מגירות בקטלוג</h3>
@@ -145,30 +175,23 @@ function showSettings() {
 
     <section class="set-card">
       <h3>גיבוי ושחזור</h3>
-      <p class="set-note">בשלב הבא: שמירת כל המידע שלך בקובץ, כדי שלא ילך לאיבוד בהחלפת טלפון.</p>
-    </section>
-
-    <section class="set-card">
-      <h3>ההיכרות</h3>
-      <button class="card-link again">לעבור שוב את ההיכרות מההתחלה</button>
+      <p class="set-note">כל המידע שלך שמור רק בטלפון הזה. גיבוי שומר הכול בקובץ אחד:
+        הספרים, הדירוגים, הטעם וההגדרות. באייפון ${g("בחרי", "בחר", "בחרו")} <b>"שמירה בקבצים"</b>, ואפשר לשמור ב-iCloud Drive.</p>
+      <p class="set-note typed">${last ? `גיבוי אחרון: ${last}` : "עוד לא היה גיבוי"}</p>
+      <button class="stamp stamp-blue do-backup" style="width:100%;margin-top:12px">ייצוא גיבוי</button>
+      <button class="card-link do-restore" style="display:block;margin:10px auto 0">שחזור מגיבוי</button>
     </section>
 
     <p class="version typed">By the Book · גרסה ${APP_VERSION}</p>
-    <section class="set-card test-tools" ${Store.state.testMode ? "" : "hidden"}>
+    <section class="set-card test-tools" ${st.testMode ? "" : "hidden"}>
       <h3>מצב בדיקה</h3>
       <p class="set-note">כלים לבדוק דברים שבדרך כלל לוקחים זמן.</p>
       <button class="stamp stamp-blue test-remind" style="width:100%">להציג עכשיו "סיימת את…? איך היה?"</button>
+      <button class="stamp stamp-blue test-backup" style="width:100%;margin-top:12px">להציג עכשיו את תזכורת הגיבוי</button>
       <button class="card-link test-off" style="display:block;margin:10px auto 0">לסגור את מצב הבדיקה</button>
     </section>
   `, "settings");
 
-  view.querySelectorAll("[data-gender]").forEach((b) => b.addEventListener("click", () => {
-    s.gender = b.dataset.gender; Store.save(); showSettings();
-    Toast.show(g("מעכשיו אפנה אלייך בלשון נקבה.", "מעכשיו אפנה אליך בלשון זכר.", "מעכשיו אפנה אליכם בלשון רבים."));
-  }));
-  view.querySelectorAll("[data-adult]").forEach((b) => b.addEventListener("click", () => {
-    s.adult = b.dataset.adult === "1"; Store.save(); showSettings();
-  }));
   view.querySelectorAll("[data-cat]").forEach((box) => box.addEventListener("change", () => {
     const hidden = new Set(s.hiddenCats || []);
     box.checked ? hidden.delete(box.dataset.cat) : hidden.add(box.dataset.cat);
@@ -178,23 +201,28 @@ function showSettings() {
     }
     s.hiddenCats = [...hidden]; Store.save();
   }));
-  view.querySelector(".again").addEventListener("click", () => {
-    if (!confirm("לעבור שוב את ההיכרות? הספרים שלך יישארו.")) return;
-    Onboarding.start();
+
+  view.querySelector(".do-backup").addEventListener("click", async () => {
+    if (await Backup.exportNow()) { showSettings(); Toast.show("הגיבוי מוכן. כדאי לשמור אותו במקום בטוח."); }
   });
+  view.querySelector(".do-restore").addEventListener("click", () => Backup.pickAndRestore());
 
   // Tap the version five times to open the testing tools.
   view.querySelector(".version").addEventListener("click", () => {
     if (++versionTaps < 5) return;
     versionTaps = 0;
-    Store.state.testMode = true; Store.save();
+    st.testMode = true; Store.save();
     view.querySelector(".test-tools").hidden = false;
     Toast.show("מצב בדיקה נפתח.");
   });
   view.querySelector(".test-remind").addEventListener("click", () => {
     if (!Rating.maybeRemind(true)) Toast.show(`קודם צריך ללחוץ "לקחתי" על ספר שעוד לא דורג.`);
   });
+  view.querySelector(".test-backup").addEventListener("click", () => {
+    st.forceBackupNag = true; Store.save();
+    showHome();
+  });
   view.querySelector(".test-off").addEventListener("click", () => {
-    Store.state.testMode = false; Store.save(); showSettings();
+    st.testMode = false; Store.save(); showSettings();
   });
 }

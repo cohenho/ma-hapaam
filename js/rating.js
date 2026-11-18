@@ -4,21 +4,11 @@
 const Rating = (() => {
   const WEEK = 7 * 24 * 60 * 60 * 1000;
 
-  // Quick tags and what they teach the profile.
+  // Quick tags (what each one teaches lives in Taste, together with the statistics).
   const QUICK = [
-    { label: "דמויות מעולות", nudge: [["style:character", 1]] },
-    { label: "סוף מפתיע",     nudge: [["style:twists", 1]] },
-    { label: "קצב סוחף",      nudge: [["style:fast", 1]] },
-    { label: "כתיבה יפה",     nudge: [["style:smart", 0.6]] },
-    { label: "מצחיק",         nudge: [["style:funny", 1]] },
-    { label: "מרגש",          nudge: [["style:emotional", 1]] },
-    { label: "קצב איטי",      nudge: [["style:slow", -1], ["style:fast", 0.4]] },
-    { label: "משעמם",         nudge: "book" },                 // less of books like this
-    { label: "צפוי מראש",     nudge: [["style:twists", 0.6]] }, // wants more surprises
-    { label: "ארוך מדי",      nudge: [["style:short", 0.6]] },
-    { label: "סוף מאכזב",     nudge: [] },
-    { label: "קשה מדי",       nudge: [["cat:light", 0.5], ["style:dark", -0.5]] },
-  ];
+    "דמויות מעולות", "סוף מפתיע", "קצב סוחף", "כתיבה יפה", "מצחיק", "מרגש",
+    "קצב איטי", "משעמם", "צפוי מראש", "ארוך מדי", "סוף מאכזב", "קשה מדי",
+  ].map((label) => ({ label }));
 
   const STAR_WORDS = ["", "לא בשבילי", "ככה ככה", "היה נחמד", "ממש טוב", "מושלם!"];
 
@@ -108,28 +98,9 @@ const Rating = (() => {
   }
 
   function save(book, { stars, quick, comment }) {
+    // No direct "lesson" here: the rating becomes one more book in the
+    // statistics that Taste works out from all your books.
     const before = Store.state.books[book.id] || {};
-    const profile = Store.state.profile;
-    // Ratings teach more than anything else; re-rating replaces the old lesson.
-    if (before.rating) Taste.learn(profile, book, -(before.rating - 3) * 0.8);
-    Taste.learn(profile, book, (stars - 3) * 0.8);
-
-    const newQuick = quick.filter((q) => !(before.quick || []).includes(q));
-    newQuick.forEach((label) => {
-      const q = QUICK.find((x) => x.label === label);
-      if (!q) return;
-      if (q.nudge === "book") Taste.learn(profile, book, -0.6);
-      else q.nudge.forEach(([f, v]) => Taste.nudge(profile, [f], v * 0.8));
-    });
-
-    if (comment && comment !== before.comment) {
-      const said = Taste.read(comment);
-      // in a review, "איטי" is a complaint, not a wish
-      const COMPLAINTS = ["קצב איטי"];
-      said.likes.forEach((l) => Taste.nudge(profile, Taste.featuresOfLabel(l), COMPLAINTS.includes(l) ? -0.6 : 0.6));
-      said.dislikes.forEach((l) => Taste.nudge(profile, Taste.featuresOfLabel(l), -0.6));
-    }
-
     Store.state.books[book.id] = {
       ...before,
       status: "read",
@@ -142,6 +113,7 @@ const Rating = (() => {
     };
     delete Store.state.books[book.id].remindAfter;
     Store.save();
+    setTimeout(Ranks.celebrateIfUp, 900);
   }
 
   function snooze(book) {

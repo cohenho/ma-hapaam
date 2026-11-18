@@ -44,7 +44,9 @@ const Onboarding = (() => {
             <span class="ic-name">${x.name}</span>
             <span class="ic-desc">${x.desc}</span>
           </button>`).join("")}
-      </div>`, 1);
+      </div>
+      <button class="card-link ob-restore">יש לי גיבוי מטלפון קודם, לשחזר אותו</button>`, 1);
+    view.querySelector(".ob-restore").addEventListener("click", () => Backup.pickAndRestore());
     view.querySelectorAll("[data-gender]").forEach((b) => b.addEventListener("click", () => {
       Store.state.settings.gender = b.dataset.gender;
       Store.save();

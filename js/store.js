@@ -27,23 +27,31 @@ const Store = (() => {
 
   let state = fresh();
 
+  // Fill in anything missing (older saves and backups lack newer fields).
+  function complete(saved) {
+    return {
+      ...fresh(),
+      ...saved,
+      settings: { ...fresh().settings, ...saved.settings },
+      profile: { ...fresh().profile, ...saved.profile },
+    };
+  }
+
   function load() {
     state = fresh();
     try {
       const raw = localStorage.getItem(KEY);
-      if (raw) {
-        const saved = JSON.parse(raw);
-        state = {
-          ...fresh(),
-          ...saved,
-          settings: { ...fresh().settings, ...saved.settings },
-          profile: { ...fresh().profile, ...saved.profile },
-        };
-      }
+      if (raw) state = complete(JSON.parse(raw));
     } catch (err) {
       console.warn("Could not read saved data; starting fresh.", err);
     }
     return state;
+  }
+
+  // Restore from a backup: everything here is replaced.
+  function replaceAll(saved) {
+    state = complete(saved);
+    save();
   }
 
   function save() {
@@ -78,6 +86,7 @@ const Store = (() => {
     setBookStatus,
     clearBookStatus,
     restoreBook,
+    replaceAll,
   };
 })();
 

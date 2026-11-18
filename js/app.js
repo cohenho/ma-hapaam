@@ -54,6 +54,14 @@ function showHome() {
       <h1>מה<br>הפעם?</h1>
       <p class="hero-sub">${g("שלפי", "שלוף", "שלפו")} כרטיס מהקטלוג</p>
     </header>
+    ${Backup.shouldNag() ? `
+      <aside class="backup-slip">
+        <p><b>כדאי לגבות את הספרים שלך.</b> הכול שמור רק בטלפון הזה, וגיבוי שומר אותו גם אם הטלפון יתחלף.</p>
+        <div class="slip-actions">
+          <button class="stamp stamp-blue slip-go">לגבות עכשיו</button>
+          <button class="card-link slip-later">אחר כך</button>
+        </div>
+      </aside>` : ""}
     <section class="catalogue">
       ${visibleCategories().map((c, i) => `
         <button class="index-card" data-cat="${esc(c.id)}" style="--tab:${[14, 110, 206, 60, 160, 240][i % 6]}px">
@@ -64,6 +72,14 @@ function showHome() {
         </button>`).join("")}
     </section>
   `, "home");
+  const slip = view.querySelector(".backup-slip");
+  if (slip) {
+    Backup.markNagged(); // once a month is enough, even if ignored
+    slip.querySelector(".slip-go").addEventListener("click", async () => {
+      if (await Backup.exportNow()) { slip.remove(); Toast.show("הגיבוי מוכן. כדאי לשמור אותו במקום בטוח."); }
+    });
+    slip.querySelector(".slip-later").addEventListener("click", () => slip.remove());
+  }
   view.querySelectorAll(".index-card").forEach((btn) =>
     btn.addEventListener("click", () => {
       btn.classList.add("pulling");
@@ -80,25 +96,21 @@ const PICK_ACTIONS = [
   { id: "rejected", label: "תחזיר לערימה",       kind: "link" },
 ];
 
-// learn: how much this choice nudges your taste profile towards (+) or away from (−) books like it
 const PICK_RESULT = {
-  taken:    { status: "taken",    learn: 0.5,  toast: () => "הספר עבר ל\"הספרים שלי\". קריאה מהנה!" },
-  read:     { status: "read",     learn: 0.3,  toast: () => "רשמתי שכבר קראת אותו." },
-  disliked: { status: "read",     learn: -1.5, extra: { liked: false }, toast: () => "רשמתי. אציע פחות ספרים כאלה." },
-  rejected: { status: "rejected", learn: -0.4, toast: () => "החזרתי לערימה. לא אציע אותו שוב." },
+  taken:    { status: "taken",    toast: () => "הספר עבר ל\"הספרים שלי\". קריאה מהנה!" },
+  read:     { status: "read",     toast: () => "רשמתי שכבר קראת אותו." },
+  disliked: { status: "read",     extra: { liked: false }, toast: () => "רשמתי. אציע פחות ספרים כאלה." },
+  rejected: { status: "rejected", toast: () => "החזרתי לערימה. לא אציע אותו שוב." },
 };
 
-// Change a book's status and teach the profile; returns a function that undoes both.
-function applyChoice(book, status, extra, learnAmount) {
+// Change a book's status; returns a function that undoes it. (What the app
+// learns is worked out from all your books together, so undo needs nothing else.)
+function applyChoice(book, status, extra) {
   const before = Store.state.books[book.id];
-  const learnedBefore = JSON.stringify(Store.state.profile.learned || {});
   if (status) Store.setBookStatus(book.id, status, extra);
   else Store.clearBookStatus(book.id);
-  if (learnAmount) { Taste.learn(Store.state.profile, book, learnAmount); Store.save(); }
-  return () => {
-    Store.state.profile.learned = JSON.parse(learnedBefore);
-    Store.restoreBook(book.id, before);
-  };
+  setTimeout(Ranks.celebrateIfUp, 700);
+  return () => Store.restoreBook(book.id, before);
 }
 
 // current: ids on the desk now (so "ערימה אחרת" brings different ones).
@@ -142,7 +154,7 @@ function showRecommendations(categoryId, current = [], samePicks = null) {
       actions: PICK_ACTIONS,
       onAction: async (actionId) => {
         const result = PICK_RESULT[actionId];
-        const undo = applyChoice(book, result.status, result.extra, result.learn);
+        const undo = applyChoice(book, result.status, result.extra);
         await Shelf.removeBook(spine, actionId === "taken" ? "out" : "away");
         if (!view.querySelector(".stack .bk")) view.querySelector(".desk-empty").hidden = false;
         Toast.show(result.toast(), () => {
@@ -236,10 +248,10 @@ function openMyBook(book, spine) {
         return;
       }
       const undo =
-        id === "finished" ? applyChoice(book, "read", {}, 0.5) :
-        id === "disliked" ? applyChoice(book, "read", { liked: false }, -1.5) :
-        id === "restore" ? applyChoice(book, null, null, 0.4) : // takes back the "returned" nudge
-        applyChoice(book, null, null, 0);
+        id === "finished" ? applyChoice(book, "read", {}) :
+        id === "disliked" ? applyChoice(book, "read", { liked: false }) :
+        id === "restore" ? applyChoice(book, null, null) :
+        applyChoice(book, null, null);
       showMyBooks();
       Toast.show(
         id === "remove" ? "הוצאתי מהרשימה." :
