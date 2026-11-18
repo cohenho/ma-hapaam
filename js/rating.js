@@ -154,19 +154,20 @@ const Rating = (() => {
   // ---------- the weekly reminder ----------
 
   // The oldest taken book that has waited a week (or past its snooze).
-  function due() {
+  // force: ignore the waiting time (the "מצב בדיקה" button in the settings).
+  function due(force = false) {
     const now = Date.now();
     return Object.entries(Store.state.books)
       .filter(([, r]) => r.status === "taken" && !r.rating)
-      .filter(([, r]) => now >= (r.remindAfter ? Date.parse(r.remindAfter) : Date.parse(r.date) + WEEK))
+      .filter(([, r]) => force || now >= (r.remindAfter ? Date.parse(r.remindAfter) : Date.parse(r.date) + WEEK))
       .sort((a, b) => a[1].date.localeCompare(b[1].date))
       .map(([id]) => window.BOOKS.find((b) => b.id === id))
       .find(Boolean);
   }
 
-  function maybeRemind() {
-    const book = due();
-    if (!book || document.querySelector(".install")) return;
+  function maybeRemind(force = false) {
+    const book = due(force === true);
+    if (!book || document.querySelector(".install")) return false;
     const box = document.createElement("div");
     box.className = "install reminder";
     box.innerHTML = `
@@ -191,6 +192,7 @@ const Rating = (() => {
       close();
       Toast.show(`בסדר, ${g("אזכיר לך", "אזכיר לך", "אזכיר לכם")} בעוד שבוע.`);
     });
+    return true;
   }
 
   // after rating from the reminder, show the result if "הספרים שלי" is open

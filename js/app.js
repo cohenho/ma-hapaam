@@ -5,8 +5,15 @@ const tabbar = document.querySelector(".tabbar");
 
 const bookById = (id) => window.BOOKS.find((b) => b.id === id);
 
-function visibleCategories() {
+// Drawers you can use: adult-only ones need the age setting.
+function allowedCategories() {
   return window.CATEGORIES.filter((c) => Store.state.settings.adult || !c.adultOnly);
+}
+
+// …and of those, the ones you didn't hide in the settings.
+function visibleCategories() {
+  const hidden = Store.state.settings.hiddenCats || [];
+  return allowedCategories().filter((c) => !hidden.includes(c.id));
 }
 
 function formatDate(iso) {
@@ -26,6 +33,8 @@ tabbar.addEventListener("click", (e) => {
   Shelf.close();
   if (btn.dataset.tab === "home") showHome();
   if (btn.dataset.tab === "mybooks") showMyBooks();
+  if (btn.dataset.tab === "taste") showTaste();
+  if (btn.dataset.tab === "settings") showSettings();
 });
 
 function render(html, screen) {

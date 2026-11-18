@@ -75,8 +75,10 @@ const Onboarding = (() => {
 
   // ---------- 3. tell me about your taste ----------
 
+  let thenOriginal = finish;
   function taste({ then = finish, step = null, text = null } = {}) {
-    afterTaste = then;
+    thenOriginal = then;
+    afterTaste = () => { document.body.classList.remove("onboarding"); then(); };
     if (text !== null) draft = text;
     screen(`
       <header class="ob-head">
@@ -203,7 +205,7 @@ const Onboarding = (() => {
       }));
 
       view.querySelector(".ob-go").addEventListener("click", () => save(state));
-      view.querySelector(".ob-back").addEventListener("click", () => taste({ then: afterTaste, step: step ? step - 1 : null }));
+      view.querySelector(".ob-back").addEventListener("click", () => taste({ then: thenOriginal, step: step ? step - 1 : null }));
     };
     paint();
   }

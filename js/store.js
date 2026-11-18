@@ -8,9 +8,11 @@ const Store = (() => {
   function fresh() {
     return {
       version: VERSION,
+      createdAt: new Date().toISOString(), // when you started using the app
       settings: {
-        adult: true,      // over 18? (the age question arrives in stage 3)
-        gender: "f",      // "f" | "m" | "x" — how the app talks to you (stage 3)
+        adult: true,      // over 18?
+        gender: "f",      // "f" | "m" | "x" — how the app talks to you
+        hiddenCats: [],   // drawers you chose to hide from the catalogue
       },
       // bookId -> { status: "taken" | "read" | "rejected", date: ISO string,
       //            liked: false when "קראתי ולא התחברתי" }
