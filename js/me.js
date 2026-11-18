@@ -148,7 +148,7 @@ function showTaste() {
 // ---------- הגדרות ----------
 // How the app addresses you and your age are set once, in the introduction.
 
-const APP_VERSION = "7";
+const APP_VERSION = "8";
 let versionTaps = 0;
 
 function showSettings() {
@@ -182,6 +182,17 @@ function showSettings() {
       <button class="card-link do-restore" style="display:block;margin:10px auto 0">שחזור מגיבוי</button>
     </section>
 
+    ${Cloud.enabled ? `
+    <section class="set-card">
+      <h3>פרטיות</h3>
+      <label class="cat-toggle">
+        <input type="checkbox" class="share-toggle" ${s.share === false ? "" : "checked"}>
+        <span class="box" aria-hidden="true"></span>
+        <span>לשתף מידע אנונימי עם הספרנית</span>
+      </label>
+      <p class="set-note">נשלח רק מספר אקראי בלי שם, ואילו ספרים נלקחו, נקראו ודורגו. ככה הספרנית יודעת מה אהוב.</p>
+    </section>` : ""}
+
     <p class="version typed">By the Book · גרסה ${APP_VERSION}</p>
     <section class="set-card test-tools" ${st.testMode ? "" : "hidden"}>
       <h3>מצב בדיקה</h3>
@@ -202,6 +213,11 @@ function showSettings() {
     s.hiddenCats = [...hidden]; Store.save();
   }));
 
+  view.querySelector(".share-toggle")?.addEventListener("change", (e) => {
+    Cloud.setSharing(e.target.checked);
+    if (e.target.checked) { Store.state.privacySeen = true; Store.save(); }
+    Toast.show(e.target.checked ? "תודה! המידע האנונימי יעזור לספרנית." : "בסדר, לא יישלח יותר מידע.");
+  });
   view.querySelector(".do-backup").addEventListener("click", async () => {
     if (await Backup.exportNow()) { showSettings(); Toast.show("הגיבוי מוכן. כדאי לשמור אותו במקום בטוח."); }
   });

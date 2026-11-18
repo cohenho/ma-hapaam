@@ -2,14 +2,14 @@
 // App files: try the network first so updates arrive, fall back to the saved copy.
 // Covers and fonts: use the saved copy first, they never change.
 
-const VERSION = "v9";
+const VERSION = "v11";
 const APP_CACHE = `app-${VERSION}`;
 const EXTRA_CACHE = "covers-fonts";
 
 const APP_FILES = [
   "./", "index.html", "manifest.webmanifest", "css/style.css",
-  "js/store.js", "js/taste.js", "js/recommend.js", "js/shelf.js", "js/install.js", "js/voice.js", "js/onboarding.js", "js/rating.js", "js/me.js", "js/backup.js", "js/app.js",
-  "data/categories.js", "data/books.js",
+  "js/store.js", "js/taste.js", "js/recommend.js", "js/shelf.js", "js/install.js", "js/voice.js", "js/onboarding.js", "js/rating.js", "js/me.js", "js/backup.js", "js/cloud.js", "js/app.js",
+  "js/config.js", "data/categories.js", "data/books.js",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
 ];
 
@@ -30,6 +30,8 @@ self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
   const url = new URL(req.url);
+
+  if (url.hostname.endsWith("supabase.co")) return; // live data, never cached
 
   if (url.origin === location.origin) {
     event.respondWith(

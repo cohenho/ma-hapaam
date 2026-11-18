@@ -114,6 +114,7 @@ const Rating = (() => {
     delete Store.state.books[book.id].remindAfter;
     Store.save();
     setTimeout(Ranks.celebrateIfUp, 900);
+    Cloud.track("rated", book.id, stars);
   }
 
   function snooze(book) {

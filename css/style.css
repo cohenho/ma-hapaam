@@ -20,6 +20,7 @@
   --sans: "Assistant", -apple-system, "Segoe UI", Arial, sans-serif;
   --typed: "Courier New", Courier, monospace;
   --latin: "DM Serif Display", Georgia, serif;
+  --hand: "Amatic SC", "Frank Ruhl Libre", cursive;
   --tabbar-h: 62px;
 }
 
@@ -1046,6 +1047,147 @@ body.onboarding #view { padding-bottom: calc(env(safe-area-inset-bottom) + 28px)
 .rank-ladder li.done { color: var(--ink); }
 .rank-ladder li.done span:first-child::after { content: " ✓"; color: var(--blue); }
 .rank-ladder li.here { color: var(--red); font-weight: 700; border: 2px solid var(--red); border-radius: 4px; transform: rotate(-1deg); }
+
+/* ---------- הספרנית ממליצה: display stand ---------- */
+
+.hand { font-family: var(--hand); font-weight: 700; }
+
+.lib-stand {
+  position: relative;
+  margin: 0 -18px 26px;
+  padding: 16px 14px 22px;
+  overflow: hidden;
+  background: linear-gradient(#4a2f19, #3a2413);
+}
+.lib-wall { /* blurred shelves behind the stand */
+  position: absolute;
+  inset: 0;
+  opacity: .32;
+  filter: blur(1.5px);
+  background:
+    repeating-linear-gradient(90deg, #7a2430 0 18px, #2c3550 18px 32px, #8a6a2c 32px 44px, #284a3c 44px 64px, #5a4a3a 64px 74px, #6b2a2a 74px 92px) 0 18px / 100% 130px no-repeat,
+    linear-gradient(#a87a45, #7d5530) 0 148px / 100% 10px no-repeat,
+    repeating-linear-gradient(90deg, #2f3e55 0 14px, #7a5a2c 14px 30px, #4f5d4a 30px 50px, #7a2430 50px 62px, #3a3a3a 62px 80px) 0 172px / 100% 130px no-repeat,
+    linear-gradient(#a87a45, #7d5530) 0 302px / 100% 10px no-repeat;
+}
+.lib-stand > *:not(.lib-wall) { position: relative; }
+
+.lib-sign {
+  width: max-content;
+  margin: 0 auto;
+  padding: 2px 20px 0;
+  font-size: 32px;
+  line-height: 1.3;
+  color: var(--ink);
+  background: var(--paper-2);
+  border: 1px solid var(--edge);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .35);
+  transform: rotate(-1.5deg);
+}
+.lib-sign::before, .lib-sign::after {
+  content: "";
+  position: absolute;
+  top: -6px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #e46b62, var(--red));
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .5);
+}
+.lib-sign::before { right: 10px; }
+.lib-sign::after { left: 10px; }
+.lib-week { margin: 6px 0 12px; text-align: center; font-size: 12px; color: #e7d6b6; }
+
+.lib-row { display: flex; justify-content: center; gap: 10px; z-index: 1; }
+.lib-item { display: flex; flex-direction: column; align-items: center; width: 31%; max-width: 150px; }
+.lib-item:active .lib-cover { transform: translateY(-4px); }
+
+.lib-cover { position: relative; display: block; width: 100%; aspect-ratio: 2 / 3; transition: transform .2s ease; }
+.lib-cover img, .lib-drawn {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px 4px 4px 2px;
+  box-shadow: 0 10px 14px rgba(0, 0, 0, .5), inset 3px 0 0 rgba(0, 0, 0, .2);
+  transform: perspective(500px) rotateX(5deg);
+  transform-origin: bottom;
+  background: var(--paper-3);
+}
+.lib-drawn {
+  display: grid;
+  place-items: center;
+  padding: 8px;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--gold);
+  background: var(--c);
+  outline: 1px solid rgba(233, 201, 122, .7);
+  outline-offset: -6px;
+}
+.lib-mark {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  padding: 2px 10px;
+  font-family: var(--sans);
+  font-weight: 900;
+  font-size: 15px;
+  color: var(--red);
+  border: 2.5px solid var(--red);
+  border-radius: 4px;
+  background: rgba(255, 253, 246, .85);
+  transform: translateX(-50%) rotate(-12deg);
+}
+
+.lib-cover::after { /* the wooden ledge the covers stand on; pieces overlap into one ledge */
+  content: "";
+  position: absolute;
+  z-index: 1;
+  left: -9px;
+  right: -9px;
+  bottom: -12px;
+  height: 16px;
+  background: linear-gradient(var(--oak-hi) 0 3px, var(--oak) 3px 75%, var(--oak-lo));
+  box-shadow: 0 6px 8px rgba(0, 0, 0, .4);
+  pointer-events: none;
+}
+
+.lib-card {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 8px 6px 6px;
+  background: var(--paper-2);
+  background-image: linear-gradient(var(--red-line), var(--red-line));
+  background-size: 100% 1.5px;
+  background-position: 0 44px;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+}
+.lib-item:nth-child(1) .lib-card { transform: rotate(-2deg); }
+.lib-item:nth-child(2) .lib-card { transform: rotate(1.5deg); }
+.lib-item:nth-child(3) .lib-card { transform: rotate(-1deg); }
+.lib-card::before { /* the paper clip */
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 50%;
+  width: 10px;
+  height: 18px;
+  border: 2.5px solid #9aa0a6;
+  border-radius: 6px;
+  transform: translateX(-50%);
+}
+.lib-card .fit { display: flex; align-items: center; justify-content: center; height: 34px; overflow: hidden; }
+.lib-title { display: block; font-weight: 900; line-height: 1.05; text-align: center; color: var(--ink); }
+.lib-author { display: block; margin-top: 4px; font-family: var(--sans); font-size: 11px; text-align: center; color: var(--soft); }
+.lib-note { display: block; margin-top: 3px; font-size: 19px; line-height: 1.05; text-align: center; color: var(--blue); }
+.lib-quote { font-size: 24px; font-style: normal; color: var(--blue); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }

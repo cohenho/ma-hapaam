@@ -54,6 +54,13 @@ function showHome() {
       <h1>מה<br>הפעם?</h1>
       <p class="hero-sub">${g("שלפי", "שלוף", "שלפו")} כרטיס מהקטלוג</p>
     </header>
+    ${Cloud.enabled && !Store.state.privacySeen ? `
+      <aside class="backup-slip privacy-slip">
+        <p><b>קצת על פרטיות.</b> כדי שהספרנית תדע אילו ספרים אוהבים, האפליקציה שולחת מידע אנונימי:
+          מספר אקראי בלי שם, ואילו ספרים נלקחו ודורגו. שום דבר אחר. אפשר לכבות את זה בהגדרות.</p>
+        <div class="slip-actions"><button class="stamp stamp-blue privacy-ok">הבנתי</button></div>
+      </aside>` : ""}
+    <div class="lib-slot">${librarianHtml()}</div>
     ${Backup.shouldNag() ? `
       <aside class="backup-slip">
         <p><b>כדאי לגבות את הספרים שלך.</b> הכול שמור רק בטלפון הזה, וגיבוי שומר אותו גם אם הטלפון יתחלף.</p>
@@ -72,7 +79,13 @@ function showHome() {
         </button>`).join("")}
     </section>
   `, "home");
-  const slip = view.querySelector(".backup-slip");
+  view.querySelector(".privacy-ok")?.addEventListener("click", (e) => {
+    Store.state.privacySeen = true; Store.save();
+    e.target.closest(".privacy-slip").remove();
+    Cloud.trackOpen();
+  });
+  wireLibrarian();
+  const slip = view.querySelector(".backup-slip:not(.privacy-slip)");
   if (slip) {
     Backup.markNagged(); // once a month is enough, even if ignored
     slip.querySelector(".slip-go").addEventListener("click", async () => {
@@ -85,6 +98,68 @@ function showHome() {
       btn.classList.add("pulling");
       setTimeout(() => showRecommendations(btn.dataset.cat), 260);
     }));
+}
+
+// ---------- הספרנית ממליצה: the display stand on the home screen ----------
+
+function librarianHtml() {
+  const lib = Store.state.librarian;
+  const picks = (lib && lib.picks || [])
+    .map((p) => ({ ...p, book: bookById(p.book_id) }))
+    .filter((p) => p.book);
+  if (!picks.length) return "";
+  const when = new Date(lib.week + "T12:00:00").toLocaleDateString("he-IL", { day: "numeric", month: "long" });
+  return `
+    <section class="lib-stand" aria-label="הספרנית ממליצה">
+      <div class="lib-wall" aria-hidden="true"></div>
+      <div class="lib-sign hand">הספרנית ממליצה</div>
+      <p class="lib-week typed">השבוע של ${when}</p>
+      <div class="lib-row">
+        ${picks.map((p) => {
+          const st = Store.state.books[p.book.id];
+          const mark = st ? { taken: "נלקח", read: "נקרא", rejected: "הוחזר" }[st.status] : "";
+          return `
+          <button class="lib-item" data-id="${esc(p.book.id)}" aria-label="${esc(p.book.title)}">
+            <span class="lib-cover">${p.book.cover
+              ? `<img src="${coverUrl(p.book, "M")}" alt="" loading="lazy">`
+              : `<span class="lib-drawn" style="--c:${CLOTH[hashOf(p.book.id, CLOTH.length)]}">${esc(p.book.title)}</span>`}
+              ${mark ? `<span class="lib-mark">${mark}</span>` : ""}</span>
+            <span class="lib-card">
+              <span class="fit" data-max="16" data-min="10"><span class="lib-title">${esc(p.book.title)}</span></span>
+              <span class="lib-author">${esc(p.book.author)}</span>
+              ${p.note ? `<span class="lib-note hand">${esc(p.note)}</span>` : ""}
+            </span>
+          </button>`;
+        }).join("")}
+      </div>
+    </section>`;
+}
+
+function wireLibrarian() {
+  view.querySelectorAll(".lib-item").forEach((btn) => btn.addEventListener("click", () => {
+    const book = bookById(btn.dataset.id);
+    const pick = (Store.state.librarian.picks || []).find((p) => p.book_id === book.id) || {};
+    Shelf.open(book, {
+      actions: Store.state.books[book.id] ? [{ id: "close", label: "סגירה", kind: "link" }] : PICK_ACTIONS,
+      note: pick.note ? `<span class="hand lib-quote">"${esc(pick.note)}" · הספרנית</span>` : "",
+      onAction: (actionId) => {
+        if (actionId === "close") return;
+        const result = PICK_RESULT[actionId];
+        const undo = applyChoice(book, result.status, result.extra);
+        showHome();
+        Toast.show(result.toast(), () => { undo(); showHome(); });
+      },
+    });
+  }));
+}
+
+// After fresh picks arrive, redraw the stand if the home screen is showing.
+function refreshLibrarian() {
+  const slot = view.dataset.screen === "home" && view.querySelector(".lib-slot");
+  if (!slot) return;
+  slot.innerHTML = librarianHtml();
+  fitTitles(slot);
+  wireLibrarian();
 }
 
 // ---------- recommendations: three books on the lending desk ----------
@@ -109,6 +184,10 @@ function applyChoice(book, status, extra) {
   const before = Store.state.books[book.id];
   if (status) Store.setBookStatus(book.id, status, extra);
   else Store.clearBookStatus(book.id);
+  // anonymous usage for the librarian's numbers (see js/cloud.js)
+  const kind = status === "read" && extra && extra.liked === false ? "disliked"
+    : status || (before && before.status === "rejected" ? "restored" : null);
+  if (kind) Cloud.track(kind, book.id);
   setTimeout(Ranks.celebrateIfUp, 700);
   return () => Store.restoreBook(book.id, before);
 }
@@ -271,6 +350,11 @@ if (Store.state.onboarded) {
   Onboarding.start();
 }
 Install.maybeShowHelp();
+if (Cloud.enabled) {
+  Cloud.trackOpen();
+  Cloud.flush();
+  Cloud.fetchPicks().then(refreshLibrarian);
+}
 
 if ("serviceWorker" in navigator) {
   navigator.serviceWorker.register("sw.js").catch(() => {});
