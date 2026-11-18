@@ -86,25 +86,54 @@ const Onboarding = (() => {
           "ספר לי על ספר שממש תפס אותך, או איזה סוג ספרים אתה הכי אוהב",
           "ספרו לי על ספר שממש תפס אתכם, או איזה סוג ספרים אתם הכי אוהבים")}</p>
       </header>
-      <label class="note-card">
+      ${Voice.supported ? Voice.html() : ""}
+      <label class="note-card" ${Voice.supported && !draft ? "hidden" : ""}>
         <span class="note-card-head typed">כרטיס קורא/ת · טעם אישי</span>
         <textarea rows="6" placeholder="${g(
           "למשל: אהבתי מאוד את נעלמת, אני אוהבת מותחנים עם טוויסטים, ופחות אימה",
           "למשל: אהבתי מאוד את נעלמת, אני אוהב מותחנים עם טוויסטים, ופחות אימה",
           "למשל: אהבנו מאוד את נעלמת, אנחנו אוהבים מותחנים עם טוויסטים, ופחות אימה")}">${esc(draft)}</textarea>
       </label>
-      <button class="stamp stamp-red ob-go">המשך</button>
+      <button class="stamp stamp-red ob-go" ${Voice.supported && !draft ? "hidden" : ""}>המשך</button>
+      ${Voice.supported ? `<button class="card-link ob-type">${g("אני מעדיפה להקליד", "אני מעדיף להקליד", "אנחנו מעדיפים להקליד")}</button>` : ""}
       <button class="card-link ob-skip">${g("דלגי", "דלג", "דלגו")}, ${g("אספר", "אספר", "נספר")} בפעם אחרת</button>
     `, step);
 
     const box = view.querySelector("textarea");
-    box.addEventListener("input", () => { draft = box.value; });
-    view.querySelector(".ob-go").addEventListener("click", () => {
+    const card = view.querySelector(".note-card");
+    const go = view.querySelector(".ob-go");
+    const showText = () => { card.hidden = false; go.hidden = false; };
+    box.addEventListener("input", () => { draft = box.value; if (draft.trim()) showText(); });
+
+    let recorder = null;
+    if (Voice.supported) {
+      recorder = Voice.attach(view.querySelector(".recorder"), box, (state) => {
+        if (state === "listening") showText();
+        if (state === "failed") {
+          // keep the explanation visible, but drop the button that can't work here
+          view.querySelector(".rec-btn")?.remove();
+          view.querySelector(".ob-type")?.remove();
+          showText();
+        }
+      });
+    }
+    // Switch to typing: hide the recorder and open the keyboard.
+    const typeInstead = (focus = true) => {
+      recorder?.stop();
+      view.querySelector(".recorder")?.remove();
+      view.querySelector(".ob-type")?.remove();
+      showText();
+      if (focus) box.focus();
+    };
+    view.querySelector(".ob-type")?.addEventListener("click", () => typeInstead());
+
+    go.addEventListener("click", () => {
+      recorder?.stop();
       draft = box.value.trim();
       if (!draft) { box.focus(); box.classList.add("nudge"); setTimeout(() => box.classList.remove("nudge"), 500); return; }
       confirm(Taste.read(draft), step ? step + 1 : null);
     });
-    view.querySelector(".ob-skip").addEventListener("click", () => { draft = ""; afterTaste(); });
+    view.querySelector(".ob-skip").addEventListener("click", () => { recorder?.stop(); draft = ""; afterTaste(); });
   }
 
   // ---------- 4. "הבנתי ש…" ----------

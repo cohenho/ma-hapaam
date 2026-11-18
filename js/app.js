@@ -166,7 +166,7 @@ function showMyBooks() {
   const stackBlock = (status, title, empty) => {
     const list = of(status);
     return `
-      <section class="my-stack">
+      <section class="my-stack ${status === "rejected" ? "returned-stack" : ""}">
         <h3>${title} <span class="count typed">${list.length}</span></h3>
         ${list.length
           ? `<div class="desk small" data-status="${status}"><div class="desk-books">${Shelf.stackHtml(list.map((e) => e.book))}</div><div class="desk-top"></div></div>`
@@ -174,47 +174,37 @@ function showMyBooks() {
       </section>`;
   };
 
-  const rejected = of("rejected");
   render(`
     <header class="page-head"><h2 class="page-title">הספרים שלי</h2></header>
     ${stackBlock("taken", "לקחתי",
       `עוד לא לקחת ספרים. ${g("כשתלחצי", "כשתלחץ", "כשתלחצו")} "לקחתי", הספר יחכה כאן.`)}
     ${stackBlock("read", "קראתי", "כאן יחכו ספרים שכבר קראת.")}
-    <details class="returned">
-      <summary>ספרים שהחזרתי לערימה <span class="count typed">${rejected.length}</span></summary>
-      ${rejected.length ? `<ul>${rejected.map((e) => `
-        <li data-id="${esc(e.book.id)}">
-          <span><strong>${esc(e.book.title)}</strong> · ${esc(e.book.author)}</span>
-          <button class="card-link restore">להחזיר להמלצות</button>
-        </li>`).join("")}</ul>` : `<p>אין כאן כלום.</p>`}
-    </details>
+    ${stackBlock("rejected", "החזרתי לערימה",
+      `כאן יחכו ספרים ${g("שהחזרת", "שהחזרת", "שהחזרתם")} לערימה. אם ${g("תתחרטי", "תתחרט", "תתחרטו")}, אפשר להחזיר אותם להמלצות.`)}
   `, "mybooks");
 
   view.querySelectorAll(".desk-books").forEach((area) =>
     wireBooks(area, (book, spine) => openMyBook(book, spine)));
-
-  view.querySelectorAll(".restore").forEach((btn) => btn.addEventListener("click", () => {
-    Store.clearBookStatus(btn.closest("li").dataset.id);
-    showMyBooks();
-    view.querySelector(".returned").open = true;
-  }));
 }
 
 function openMyBook(book, spine) {
   const rec = Store.state.books[book.id];
-  const actions = rec.status === "taken"
-    ? [
-        { id: "finished", label: "סיימתי לקרוא", kind: "stamp-blue" },
-        { id: "disliked", label: "קראתי ולא התחברתי", kind: "link" },
-        { id: "remove",   label: "להוציא מהרשימה", kind: "link" },
-      ]
-    : [{ id: "remove", label: "להוציא מהרשימה", kind: "link" }];
+  const actions =
+    rec.status === "taken" ? [
+      { id: "finished", label: "סיימתי לקרוא", kind: "stamp-blue" },
+      { id: "disliked", label: "קראתי ולא התחברתי", kind: "link" },
+      { id: "remove",   label: "להוציא מהרשימה", kind: "link" },
+    ] :
+    rec.status === "rejected" ? [
+      { id: "restore",  label: "להחזיר להמלצות", kind: "stamp-blue" },
+    ] :
+    [{ id: "remove", label: "להוציא מהרשימה", kind: "link" }];
 
-  const note = rec.status === "taken"
-    ? `נלקח ב-${formatDate(rec.date)}`
-    : rec.liked === false
-      ? `קראת ולא התחברת · ${formatDate(rec.date)}`
-      : `קראת · ${formatDate(rec.date)}`;
+  const note =
+    rec.status === "taken" ? `נלקח ב-${formatDate(rec.date)}` :
+    rec.status === "rejected" ? `${g("החזרת", "החזרת", "החזרתם")} לערימה ב-${formatDate(rec.date)}` :
+    rec.liked === false ? `קראת ולא התחברת · ${formatDate(rec.date)}` :
+    `קראת · ${formatDate(rec.date)}`;
 
   Shelf.open(book, {
     spine,
@@ -224,10 +214,12 @@ function openMyBook(book, spine) {
       const undo =
         id === "finished" ? applyChoice(book, "read", {}, 0.5) :
         id === "disliked" ? applyChoice(book, "read", { liked: false }, -1.5) :
+        id === "restore" ? applyChoice(book, null, null, 0.4) : // takes back the "returned" nudge
         applyChoice(book, null, null, 0);
       showMyBooks();
       Toast.show(
-        id === "remove" ? "הוצאתי מהרשימה." : "הספר עבר לערימת \"קראתי\".",
+        id === "remove" ? "הוצאתי מהרשימה." :
+        id === "restore" ? "הספר חזר להמלצות." : "הספר עבר לערימת \"קראתי\".",
         () => { undo(); showMyBooks(); });
     },
   });

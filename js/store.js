@@ -16,6 +16,7 @@ const Store = (() => {
       //            liked: false when "קראתי ולא התחברתי" }
       books: {},
       seenInstallHelp: false,
+      micExplained: false, // we explained why the microphone is needed
       onboarded: false,   // finished (or skipped) the first-time introduction
       // what the app knows about your taste (see js/taste.js)
       profile: { text: "", likes: [], dislikes: [], books: [], authors: [], learned: {}, updatedAt: null },
