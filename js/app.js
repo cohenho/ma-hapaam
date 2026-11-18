@@ -60,6 +60,10 @@ function showHome() {
           מספר אקראי בלי שם, ואילו ספרים נלקחו ודורגו. שום דבר אחר. אפשר לכבות את זה בהגדרות.</p>
         <div class="slip-actions"><button class="stamp stamp-blue privacy-ok">הבנתי</button></div>
       </aside>` : ""}
+    <button class="scan-btn">
+      <span class="scan-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 3 7.2 5H4a2 2 0 0 0-2 2v11a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-3.2L15 3zm3 5a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"/></svg></span>
+      <span><b>${g("ראית", "ראית", "ראיתם")} ספר בספרייה?</b><br>${g("צלמי", "צלם", "צלמו")} את הכריכה, ואגיד לך אם ${g("תתחברי", "תתחבר", "תתחברו")} אליו</span>
+    </button>
     <div class="lib-slot">${librarianHtml()}</div>
     ${Backup.shouldNag() ? `
       <aside class="backup-slip">
@@ -85,6 +89,7 @@ function showHome() {
     Cloud.trackOpen();
   });
   wireLibrarian();
+  view.querySelector(".scan-btn").addEventListener("click", Scan.start);
   const slip = view.querySelector(".backup-slip:not(.privacy-slip)");
   if (slip) {
     Backup.markNagged(); // once a month is enough, even if ignored

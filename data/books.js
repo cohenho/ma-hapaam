@@ -106,8 +106,8 @@ window.BOOKS = [
   "enAuthor": "Richard Osman",
   "year": 2020,
   "cats": [
-   "thriller",
    "light",
+   "thriller",
    "trendy"
   ],
   "tags": [
@@ -180,8 +180,8 @@ window.BOOKS = [
   "enAuthor": "Liane Moriarty",
   "year": 2013,
   "cats": [
-   "thriller",
-   "light"
+   "light",
+   "thriller"
   ],
   "tags": [
    "דרמה",
@@ -349,7 +349,7 @@ window.BOOKS = [
   "year": 2008,
   "cats": [
    "thriller",
-   "light"
+   "ya"
   ],
   "tags": [
    "מתח",
@@ -571,7 +571,7 @@ window.BOOKS = [
   "year": 2002,
   "cats": [
    "horror",
-   "light"
+   "ya"
   ],
   "tags": [
    "אימה",
@@ -868,8 +868,8 @@ window.BOOKS = [
   "enAuthor": "John Green",
   "year": 2012,
   "cats": [
-   "light",
-   "romance"
+   "romance",
+   "ya"
   ],
   "tags": [
    "רומנטי",
@@ -894,7 +894,6 @@ window.BOOKS = [
   "enAuthor": "Jojo Moyes",
   "year": 2012,
   "cats": [
-   "light",
    "romance"
   ],
   "tags": [
@@ -1158,7 +1157,6 @@ window.BOOKS = [
   "year": 1813,
   "cats": [
    "romance",
-   "light",
    "classic"
   ],
   "tags": [
@@ -1284,8 +1282,8 @@ window.BOOKS = [
   "enAuthor": "Agatha Christie",
   "year": 1934,
   "cats": [
-   "thriller",
    "light",
+   "thriller",
    "classic"
   ],
   "tags": [
@@ -1309,8 +1307,8 @@ window.BOOKS = [
   "enAuthor": "Agatha Christie",
   "year": 1937,
   "cats": [
-   "thriller",
-   "light"
+   "light",
+   "thriller"
   ],
   "tags": [
    "תעלומה",
@@ -1503,8 +1501,8 @@ window.BOOKS = [
   "year": 2019,
   "cats": [
    "thriller",
-   "light",
-   "trendy"
+   "trendy",
+   "ya"
   ],
   "tags": [
    "תעלומה",
@@ -1529,7 +1527,8 @@ window.BOOKS = [
   "year": 2014,
   "cats": [
    "thriller",
-   "trendy"
+   "trendy",
+   "ya"
   ],
   "tags": [
    "מתח",
@@ -1578,7 +1577,7 @@ window.BOOKS = [
   "year": 2000,
   "cats": [
    "thriller",
-   "light"
+   "ya"
   ],
   "tags": [
    "מתח",
@@ -2102,8 +2101,8 @@ window.BOOKS = [
   "enAuthor": "Ayelet Gundar-Goshen",
   "year": 2018,
   "cats": [
-   "trendy",
-   "light"
+   "light",
+   "trendy"
   ],
   "tags": [
    "רומן",
@@ -2127,8 +2126,8 @@ window.BOOKS = [
   "enAuthor": "Noa Yedlin",
   "year": 2016,
   "cats": [
-   "trendy",
-   "light"
+   "light",
+   "trendy"
   ],
   "tags": [
    "רומן",
@@ -2536,7 +2535,7 @@ window.BOOKS = [
   "year": 2013,
   "cats": [
    "horror",
-   "light"
+   "ya"
   ],
   "tags": [
    "פנטזיה",
@@ -2587,7 +2586,7 @@ window.BOOKS = [
   "enAuthor": "R. J. Palacio",
   "year": 2012,
   "cats": [
-   "light"
+   "ya"
   ],
   "tags": [
    "נוער",
@@ -2611,7 +2610,8 @@ window.BOOKS = [
   "enAuthor": "Mark Haddon",
   "year": 2003,
   "cats": [
-   "light"
+   "light",
+   "ya"
   ],
   "tags": [
    "רומן",
@@ -2636,7 +2636,7 @@ window.BOOKS = [
   "enAuthor": "J. K. Rowling",
   "year": 1997,
   "cats": [
-   "light"
+   "ya"
   ],
   "tags": [
    "פנטזיה",
@@ -2660,8 +2660,8 @@ window.BOOKS = [
   "enAuthor": "J. R. R. Tolkien",
   "year": 1937,
   "cats": [
-   "light",
-   "classic"
+   "classic",
+   "ya"
   ],
   "tags": [
    "פנטזיה",
@@ -2684,7 +2684,7 @@ window.BOOKS = [
   "enAuthor": "Louis Sachar",
   "year": 1998,
   "cats": [
-   "light"
+   "ya"
   ],
   "tags": [
    "נוער",
@@ -2709,7 +2709,7 @@ window.BOOKS = [
   "enAuthor": "Stephen Chbosky",
   "year": 1999,
   "cats": [
-   "light"
+   "ya"
   ],
   "tags": [
    "נוער",
@@ -2733,7 +2733,7 @@ window.BOOKS = [
   "enAuthor": "Terry Pratchett",
   "year": 1990,
   "cats": [
-   "light"
+   "classic"
   ],
   "tags": [
    "הומור",
@@ -2756,7 +2756,6 @@ window.BOOKS = [
   "enAuthor": "Douglas Adams",
   "year": 1979,
   "cats": [
-   "light",
    "classic"
   ],
   "tags": [
@@ -2781,8 +2780,8 @@ window.BOOKS = [
   "enAuthor": "Louisa May Alcott",
   "year": 1868,
   "cats": [
-   "light",
-   "classic"
+   "classic",
+   "ya"
   ],
   "tags": [
    "קלאסיקה",
@@ -2805,7 +2804,6 @@ window.BOOKS = [
   "enAuthor": "Jane Austen",
   "year": 1815,
   "cats": [
-   "light",
    "romance",
    "classic"
   ],
@@ -2880,7 +2878,7 @@ window.BOOKS = [
   "enAuthor": "John Green",
   "year": 2008,
   "cats": [
-   "light"
+   "ya"
   ],
   "tags": [
    "נוער",
@@ -2903,7 +2901,7 @@ window.BOOKS = [
   "enAuthor": "John Green",
   "year": 2005,
   "cats": [
-   "light"
+   "ya"
   ],
   "tags": [
    "נוער",
@@ -2951,7 +2949,6 @@ window.BOOKS = [
   "enAuthor": "Jostein Gaarder",
   "year": 1991,
   "cats": [
-   "light",
    "classic"
   ],
   "tags": [
@@ -3000,7 +2997,7 @@ window.BOOKS = [
   "enAuthor": "Ernest Cline",
   "year": 2011,
   "cats": [
-   "light"
+   "classic"
   ],
   "tags": [
    "מדע בדיוני",
@@ -3023,8 +3020,8 @@ window.BOOKS = [
   "enAuthor": "L. M. Montgomery",
   "year": 1908,
   "cats": [
-   "light",
-   "classic"
+   "classic",
+   "ya"
   ],
   "tags": [
    "קלאסיקה",
@@ -3047,8 +3044,8 @@ window.BOOKS = [
   "enAuthor": "Frances Hodgson Burnett",
   "year": 1911,
   "cats": [
-   "light",
-   "classic"
+   "classic",
+   "ya"
   ],
   "tags": [
    "קלאסיקה",
@@ -3071,7 +3068,7 @@ window.BOOKS = [
   "enAuthor": "Cornelia Funke",
   "year": 2003,
   "cats": [
-   "light"
+   "ya"
   ],
   "tags": [
    "פנטזיה",
@@ -3094,7 +3091,7 @@ window.BOOKS = [
   "enAuthor": "Rick Riordan",
   "year": 2005,
   "cats": [
-   "light"
+   "ya"
   ],
   "tags": [
    "פנטזיה",
@@ -3118,8 +3115,8 @@ window.BOOKS = [
   "enAuthor": "Antoine de Saint-Exupery",
   "year": 1943,
   "cats": [
-   "light",
-   "classic"
+   "classic",
+   "ya"
   ],
   "tags": [
    "קלאסיקה",
@@ -3143,7 +3140,6 @@ window.BOOKS = [
   "enAuthor": "Neil Gaiman",
   "year": 1999,
   "cats": [
-   "light",
    "romance"
   ],
   "tags": [
@@ -3484,8 +3480,7 @@ window.BOOKS = [
   "enAuthor": "George Orwell",
   "year": 1945,
   "cats": [
-   "classic",
-   "light"
+   "classic"
   ],
   "tags": [
    "קלאסיקה",
@@ -3625,7 +3620,8 @@ window.BOOKS = [
   "enAuthor": "J. D. Salinger",
   "year": 1951,
   "cats": [
-   "classic"
+   "classic",
+   "ya"
   ],
   "tags": [
    "קלאסיקה",
@@ -3697,8 +3693,7 @@ window.BOOKS = [
   "enAuthor": "Jules Verne",
   "year": 1870,
   "cats": [
-   "classic",
-   "light"
+   "classic"
   ],
   "tags": [
    "הרפתקאות",
@@ -4086,8 +4081,7 @@ window.BOOKS = [
   "enAuthor": "Nicholas Sparks",
   "year": 1996,
   "cats": [
-   "romance",
-   "light"
+   "romance"
   ],
   "tags": [
    "רומנטי",
@@ -4112,7 +4106,7 @@ window.BOOKS = [
   "year": 1999,
   "cats": [
    "romance",
-   "light"
+   "ya"
   ],
   "tags": [
    "רומנטי",
@@ -4162,7 +4156,7 @@ window.BOOKS = [
   "year": 2005,
   "cats": [
    "romance",
-   "light"
+   "ya"
   ],
   "tags": [
    "רומנטי",
@@ -4257,8 +4251,8 @@ window.BOOKS = [
   "enAuthor": "Jojo Moyes",
   "year": 2019,
   "cats": [
-   "trendy",
-   "light"
+   "light",
+   "trendy"
   ],
   "tags": [
    "רומן",
@@ -4307,8 +4301,7 @@ window.BOOKS = [
   "enAuthor": "Kristin Hannah",
   "year": 2008,
   "cats": [
-   "trendy",
-   "light"
+   "trendy"
   ],
   "tags": [
    "רומן",
@@ -4571,7 +4564,7 @@ window.BOOKS = [
   "year": 2011,
   "cats": [
    "thriller",
-   "light"
+   "ya"
   ],
   "tags": [
    "דיסטופיה",
@@ -4595,7 +4588,7 @@ window.BOOKS = [
   "year": 2009,
   "cats": [
    "thriller",
-   "light"
+   "ya"
   ],
   "tags": [
    "דיסטופיה",
@@ -4620,7 +4613,8 @@ window.BOOKS = [
   "year": 1985,
   "cats": [
    "thriller",
-   "classic"
+   "classic",
+   "ya"
   ],
   "tags": [
    "מדע בדיוני"
@@ -4642,8 +4636,8 @@ window.BOOKS = [
   "enAuthor": "Lois Lowry",
   "year": 1993,
   "cats": [
-   "light",
-   "classic"
+   "classic",
+   "ya"
   ],
   "tags": [
    "דיסטופיה",
@@ -4667,7 +4661,8 @@ window.BOOKS = [
   "enAuthor": "Jay Asher",
   "year": 2007,
   "cats": [
-   "thriller"
+   "thriller",
+   "ya"
   ],
   "tags": [
    "נוער",
