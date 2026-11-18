@@ -1,5 +1,5 @@
-// The bookshelf: book spines, the book that slides off the shelf, and the little
-// note that pops up at the bottom ("toast") with a "ביטול" button.
+// Books lying in a stack on the lending desk, the library card that opens when you
+// pick one, and the little paper slip ("toast") with a "ביטול" button.
 
 const esc = (s) => String(s).replace(/[&<>"']/g, (c) => (
   { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
@@ -10,104 +10,135 @@ function hashOf(id, mod, seed = 7) {
   return [...id].reduce((h, ch) => (h * 31 + ch.charCodeAt(0) + seed) % 100003, seed) % mod;
 }
 
-// Cloth / leather colours for spines: [hue, saturation, lightness]
-const SPINE_COLOURS = [
-  [355, 52, 30], [18, 55, 34], [32, 45, 40], [150, 30, 24], [200, 35, 26],
-  [222, 30, 30], [270, 22, 30], [40, 62, 44], [8, 38, 22], [170, 25, 32],
-  [345, 30, 40], [28, 25, 52], [95, 20, 30], [210, 15, 20],
-];
+// Old cloth bindings: oxblood, bottle green, navy, mustard, plum, slate, rust, teal...
+const CLOTH = ["#7a2430", "#284a3c", "#2c3550", "#8a6a2c", "#5b3350", "#3f4a52",
+               "#8c4a2a", "#2f5a5e", "#6b2a2a", "#4f5d3a", "#43355e", "#7a5a3a"];
 
 function coverUrl(book, size = "L") {
   return `https://covers.openlibrary.org/b/id/${book.cover}-${size}.jpg?default=false`;
 }
 
+// Where to look on the shelf: Hebrew fiction is shelved by the author's surname,
+// and the spine label usually shows its first letters.
+function shelfLetters(book) {
+  const firstAuthor = book.author.split(" ו")[0].trim();
+  const surname = firstAuthor.split(/\s+/).pop().replace(/["״.]/g, "");
+  // First three letters; a geresh (ג' ז' צ') stays with its letter.
+  let out = "", letters = 0;
+  for (const ch of surname) {
+    if (ch === "'" || ch === "׳") { if (letters) out += "'"; continue; }
+    if (letters === 3) break;
+    out += ch;
+    letters++;
+  }
+  return out;
+}
+
+// Shrink each title until it fits inside its book (never spills over the edge).
+function fitTitles(root = document) {
+  root.querySelectorAll(".fit").forEach((box) => {
+    const t = box.firstElementChild;
+    let size = parseFloat(box.dataset.max || 26);
+    const min = parseFloat(box.dataset.min || 12);
+    t.style.fontSize = size + "px";
+    while ((t.scrollHeight > box.clientHeight + 0.5 || t.scrollWidth > box.clientWidth + 0.5) && size > min) {
+      size -= 0.5;
+      t.style.fontSize = size + "px";
+    }
+  });
+}
+// Fonts arrive a moment after the page; measure again when they do.
+if (document.fonts) document.fonts.ready.then(() => fitTitles());
+
 const Shelf = (() => {
-  // ---------- spines ----------
+  // ---------- a book lying on its side ----------
 
-  function spineHtml(book) {
-    const [h, s, l] = SPINE_COLOURS[hashOf(book.id, SPINE_COLOURS.length)];
-    const len = book.title.length;
-    const width = Math.min(78, Math.max(50, 38 + len * 1.5));
-    const height = 168 + hashOf(book.id, 5, 3) * 8;          // 168–200px
-    const style = ["bands", "label", "foil", "split"][hashOf(book.id, 4, 11)];
+  function bookHtml(book) {
+    const colour = CLOTH[hashOf(book.id, CLOTH.length)];
+    const len = 86 + hashOf(book.id, 15, 3);                 // 86–100% of the desk
+    const shift = (hashOf(book.id, 9, 5) - 4) * 3;            // a slightly untidy stack
+    const thick = book.title.length > 14 ? 74 : 60 + hashOf(book.id, 3, 2) * 4;
     return `
-      <div class="spine-slot">
-        <button class="spine spine-${style}" data-id="${esc(book.id)}"
-                style="--h:${h};--s:${s}%;--l:${l}%;--w:${width}px;--ht:${height}px"
-                aria-label="${esc(book.title)} מאת ${esc(book.author)}">
-          <span class="spine-title">${esc(book.title)}</span>
-          <span class="spine-author">${esc(book.author)}</span>
-        </button>
-      </div>`;
+      <button class="bk" data-id="${esc(book.id)}"
+              style="--c:${colour};--len:${len}%;--t:${thick}px;--x:${shift}px"
+              aria-label="${esc(book.title)} מאת ${esc(book.author)}">
+        <span class="bk-label">${esc(shelfLetters(book))}</span>
+        <span class="fit" data-max="26"><span class="bk-title">${esc(book.title)}</span></span>
+        <span class="bk-author">${esc(book.author)}</span>
+      </button>`;
   }
 
-  // A row of books standing on a wooden board.
-  function shelfHtml(books, { wrap = false, ends = !wrap } = {}) {
-    return `
-      <div class="shelf ${wrap ? "shelf-wrap" : ""}">
-        ${ends ? `<div class="spine-slot bookend-slot"><div class="bookend"></div></div>` : ""}
-        ${books.map(spineHtml).join("")}
-        ${ends ? `<div class="spine-slot bookend-slot"><div class="bookend flip"></div></div>` : ""}
-      </div>`;
+  function stackHtml(books) {
+    return `<div class="stack">${books.map(bookHtml).join("")}</div>`;
   }
 
-  // ---------- the book off the shelf ----------
+  // ---------- the library card ----------
 
   const backdrop = document.querySelector(".sheet-backdrop");
   const sheet = document.querySelector(".sheet");
-  let pulledSpine = null;
+  let pulled = null;
   let onClose = null;
 
   function coverBlock(book) {
-    const [h, s, l] = SPINE_COLOURS[hashOf(book.id, SPINE_COLOURS.length)];
-    const drawn = `<div class="big-cover drawn" style="--h:${h};--s:${s}%;--l:${l}%">
+    const colour = CLOTH[hashOf(book.id, CLOTH.length)];
+    const drawn = `<div class="card-cover drawn" style="--c:${colour}">
         <span class="drawn-title">${esc(book.title)}</span>
         <span class="drawn-author">${esc(book.author)}</span>
       </div>`;
     if (!book.cover) return drawn;
-    return `<div class="big-cover-wrap" data-fallback="${esc(drawn)}">
-        <img class="big-cover" src="${coverUrl(book)}" alt="כריכת ${esc(book.title)}">
+    return `<div class="card-cover-wrap" data-fallback="${esc(drawn)}">
+        <img class="card-cover" src="${coverUrl(book)}" alt="כריכת ${esc(book.title)}">
       </div>`;
   }
 
-  // actions: [{ id, label, kind: "primary" | "soft" | "quiet" }]
+  // actions: [{ id, label, kind: "stamp-red" | "stamp-blue" | "link" }]
   function open(book, { spine, actions, note = "", onAction, closed }) {
-    pulledSpine = spine || null;
+    pulled = spine || null;
     onClose = closed || null;
-    if (pulledSpine) pulledSpine.classList.add("pulled");
+    if (pulled) {
+      pulled.closest(".stack")?.classList.add("has-pulled");
+      pulled.classList.add("pulled");
+    }
 
+    const stamps = actions.filter((a) => a.kind !== "link");
+    const links = actions.filter((a) => a.kind === "link");
     sheet.innerHTML = `
       <div class="sheet-grip" aria-hidden="true"></div>
       <button class="sheet-close" aria-label="סגירה">✕</button>
-      <div class="sheet-book">
+      <div class="card-top typed"><span>${esc(shelfLetters(book))} · סיפורת</span><span>${book.year}</span></div>
+      <div class="card-book">
         ${coverBlock(book)}
-        <div class="sheet-head">
+        <div class="card-head">
           <h2>${esc(book.title)}</h2>
-          <p class="sheet-author">${esc(book.author)} · ${book.year}</p>
-          <ul class="tags">${book.tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
+          <p class="card-author typed">${esc(book.author)}</p>
+          <p class="card-tags typed">${book.tags.map(esc).join(" / ")}</p>
         </div>
       </div>
-      <p class="sheet-summary">${esc(book.summary)}</p>
-      ${note ? `<p class="sheet-note">${note}</p>` : ""}
-      <div class="sheet-actions">
-        ${actions.map((a) =>
-          `<button class="btn btn-${a.kind || "soft"}" data-action="${a.id}">${a.label}</button>`).join("")}
-      </div>`;
+      <p class="card-summary">${esc(book.summary)}</p>
+      <p class="card-where"><b>איפה במדף?</b> במדף הסיפורת, לפי שם המשפחה.
+        ${g("חפשי", "חפש", "חפשו")} את המדבקה <span class="typed">${esc(shelfLetters(book))}</span></p>
+      ${note ? `<p class="card-note">${note}</p>` : ""}
+      <div class="card-stamps">
+        ${stamps.map((a) => `<button class="stamp ${a.kind}" data-action="${a.id}">${a.label}</button>`).join("")}
+      </div>
+      ${links.length ? `<div class="card-links">
+        ${links.map((a) => `<button class="card-link" data-action="${a.id}">${a.label}</button>`).join("")}
+      </div>` : ""}`;
 
-    const img = sheet.querySelector("img.big-cover");
+    const img = sheet.querySelector("img.card-cover");
     if (img) img.addEventListener("error", () => {
       img.parentElement.outerHTML = img.parentElement.dataset.fallback;
     });
 
     sheet.querySelector(".sheet-close").addEventListener("click", () => close());
     sheet.querySelectorAll("[data-action]").forEach((btn) =>
-      btn.addEventListener("click", () => {
+      btn.addEventListener("click", async () => {
         const id = btn.dataset.action;
+        if (id === "taken") await stampCard("נלקח");
         close({ keepPulled: true });
         onAction(id);
       }));
 
-    // wait for the spine to slide out, then bring the book forward
     setTimeout(() => {
       backdrop.hidden = false;
       sheet.hidden = false;
@@ -116,7 +147,15 @@ const Shelf = (() => {
         backdrop.classList.add("show");
         sheet.classList.add("show");
       });
-    }, pulledSpine ? 230 : 0);
+    }, pulled ? 260 : 0);
+  }
+
+  // A big date stamp lands on the card, like at the library desk.
+  function stampCard(word) {
+    const date = new Date().toLocaleDateString("en-GB", { day: "2-digit", month: "short", year: "numeric" }).toUpperCase();
+    sheet.insertAdjacentHTML("beforeend",
+      `<div class="big-stamp" aria-hidden="true"><span>${word}</span><span class="typed">${date}</span></div>`);
+    return new Promise((r) => setTimeout(r, 750));
   }
 
   function close({ keepPulled = false } = {}) {
@@ -125,15 +164,18 @@ const Shelf = (() => {
     sheet.classList.remove("show");
     sheet.style.transform = "";
     setTimeout(() => { sheet.hidden = true; backdrop.hidden = true; }, 320);
-    if (pulledSpine && !keepPulled) pulledSpine.classList.remove("pulled");
-    pulledSpine = null;
+    if (pulled && !keepPulled) {
+      pulled.classList.remove("pulled");
+      pulled.closest(".stack")?.classList.remove("has-pulled");
+    }
+    pulled = null;
     if (onClose && !keepPulled) onClose();
   }
 
   backdrop.addEventListener("click", () => close());
   document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
 
-  // swipe the book down to put it back
+  // swipe the card down to put the book back
   let startY = null;
   sheet.addEventListener("touchstart", (e) => {
     startY = sheet.scrollTop <= 0 ? e.touches[0].clientY : null;
@@ -151,17 +193,21 @@ const Shelf = (() => {
     else sheet.style.transform = "";
   });
 
-  // Remove a spine from the shelf with a little animation.
-  function removeSpine(spine, direction = "up") {
-    const slot = spine.closest(".spine-slot");
-    slot.classList.add(`leaving-${direction}`);
-    return new Promise((resolve) => setTimeout(() => { slot.remove(); resolve(); }, 380));
+  // Take a book off the stack with a little animation.
+  function removeBook(spine, direction = "out") {
+    const stack = spine.closest(".stack");
+    spine.classList.add(`leaving-${direction}`);
+    return new Promise((resolve) => setTimeout(() => {
+      spine.remove();
+      stack?.classList.remove("has-pulled");
+      resolve();
+    }, 380));
   }
 
-  return { spineHtml, shelfHtml, open, close, removeSpine };
+  return { bookHtml, stackHtml, open, close, removeBook };
 })();
 
-// ---------- toast ----------
+// ---------- toast: a paper slip at the bottom ----------
 
 const Toast = (() => {
   const el = document.querySelector(".toast");

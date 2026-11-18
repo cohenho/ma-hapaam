@@ -52,9 +52,9 @@ const Install = (() => {
         <rect x="22" y="20" width="64" height="30" rx="15" fill="none" stroke="${gold}" stroke-width="3.5"/>
         <text x="54" y="41" text-anchor="middle" font-weight="700" fill="#1d6fd8">הוספה</text>
       </g>
-      <rect x="186" y="62" width="40" height="40" rx="10" fill="#24170f"/>
-      <rect x="194" y="70" width="6" height="26" fill="#8c2f39"/><rect x="202" y="74" width="6" height="22" fill="${gold}"/>
-      <rect x="210" y="68" width="6" height="28" fill="#2f5d50"/>
+      <rect x="186" y="62" width="40" height="40" rx="10" fill="#f3ead6" stroke="#d8ccb2"/>
+      <rect x="192" y="70" width="26" height="7" rx="1.5" fill="#7a2430"/><rect x="195" y="77" width="27" height="8" rx="1.5" fill="#284a3c"/>
+      <rect x="190" y="85" width="28" height="8" rx="1.5" fill="#2c3550"/><rect x="186" y="93" width="40" height="9" rx="2" fill="#a87a45"/>
       <text x="174" y="88" text-anchor="end" font-family="DM Serif Display, serif" font-size="17" fill="${ink}">By the Book</text>
     </svg>`;
 
@@ -72,7 +72,7 @@ const Install = (() => {
           <li>${pic2}<p>${g("גללי", "גלול", "גללו")} למטה ו${g("בחרי", "בחר", "בחרו")} <b>הוספה למסך הבית</b>.</p></li>
           <li>${pic3}<p>${g("לחצי", "לחץ", "לחצו")} <b>הוספה</b> בפינה, וזהו!</p></li>
         </ol>
-        <button class="btn btn-primary btn-wide install-ok">הבנתי</button>
+        <button class="stamp stamp-red install-ok" style="width:100%">הבנתי</button>
       </div>`;
     document.body.appendChild(box);
     requestAnimationFrame(() => box.classList.add("show"));
