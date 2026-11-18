@@ -9345,7 +9345,7 @@ window.BOOKS = [
   "pop": 3,
   "adult": false,
   "summary": "על גבעה בשומרון קם מאחז קטן שלא קיים על המפות, ומשם הוא רק גדל. שני אחים, אחד שחוזר מאמריקה ואחד שמגדל עזים, מגיעים לגור בו. סאטירה מצחיקה על ביורוקרטיה.",
-  "cover": null
+  "cover": 8045813
  },
  {
   "id": "good-people-baram",
@@ -10868,5 +10868,1678 @@ window.BOOKS = [
   "adult": false,
   "summary": "חייזרים השתלטו על כדור הארץ ונכנסו לגופים של בני האדם. \"הנודדת\" מקבלת את הגוף של מלני, אבל מלני מסרבת להיעלם, ומובילה אותה אל האהבה שלה ואל המורדים.",
   "cover": 3366731
+ },
+ {
+  "id": "styles",
+  "title": "הרצח המסתורי בסטאייל",
+  "author": "אגתה כריסטי",
+  "en": "The Mysterious Affair at Styles",
+  "enAuthor": "Agatha Christie",
+  "year": 1920,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "תעלומה",
+   "בלשי"
+  ],
+  "style": [
+   "mystery",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אישה עשירה מתה בהרעלה באחוזה כפרית באנגליה, ובני הבית כולם חשודים. בלש בלגי פליט, בשם הרקול פוארו, נכנס לחקירה הראשונה שלו.",
+  "cover": 13699667
+ },
+ {
+  "id": "sign-of-four",
+  "title": "חותם הארבעה",
+  "author": "ארתור קונן דויל",
+  "en": "The Sign of the Four",
+  "enAuthor": "Arthur Conan Doyle",
+  "year": 1890,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "בלשי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "mystery",
+   "short",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "צעירה מבקשת משרלוק הולמס לגלות למה היא מקבלת כל שנה פנינה מאדם אלמוני, מאז שאביה נעלם. החקירה מובילה לאוצר מהודו ולברית סודית.",
+  "cover": 13405534
+ },
+ {
+  "id": "adventures-holmes",
+  "title": "הרפתקאותיו של שרלוק הולמס",
+  "author": "ארתור קונן דויל",
+  "en": "The Adventures of Sherlock Holmes",
+  "enAuthor": "Arthur Conan Doyle",
+  "year": 1892,
+  "cats": [
+   "thriller",
+   "classic",
+   "light"
+  ],
+  "tags": [
+   "בלשי",
+   "קלאסיקה",
+   "קצר"
+  ],
+  "style": [
+   "mystery",
+   "short"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "שנים עשר סיפורי בלש קצרים ומבריקים, שבהם שרלוק הולמס וד\"ר ווטסון פותרים תעלומות מבייקר סטריט. אפשר לקרוא סיפור בערב.",
+  "cover": 6717853
+ },
+ {
+  "id": "big-sleep",
+  "title": "השינה הגדולה",
+  "author": "ריימונד צ'נדלר",
+  "en": "The Big Sleep",
+  "enAuthor": "Raymond Chandler",
+  "year": 1939,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "בלשי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "dark",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "גנרל עשיר וחולה שוכר את הבלש הפרטי פיליפ מארלו בגלל סחיטה של בתו הצעירה. בלוס אנג'לס האפלה של שנות ה-30, תיק פשוט הופך לסבך של רציחות.",
+  "cover": 7268475
+ },
+ {
+  "id": "jamaica-inn",
+  "title": "פונדק ג'מייקה",
+  "author": "דפנה דה מורייה",
+  "en": "Jamaica Inn",
+  "enAuthor": "Daphne du Maurier",
+  "year": 1936,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "מתח",
+   "גותי"
+  ],
+  "style": [
+   "dark",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מרי, יתומה בת 23, מגיעה לגור אצל דודתה בפונדק מבודד בביצות של קורנוול. מהר מאוד היא מבינה שבעל הפונדק, דודה, מנהל שם משהו אפל ומסוכן.",
+  "cover": 8765960
+ },
+ {
+  "id": "woman-in-white",
+  "title": "האישה בלבן",
+  "author": "וילקי קולינס",
+  "en": "The Woman in White",
+  "enAuthor": "Wilkie Collins",
+  "year": 1859,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "תעלומה",
+   "קלאסיקה"
+  ],
+  "style": [
+   "mystery",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מורה לציור צעיר פוגש בלילה בדרך ללונדון אישה מסתורית לבושה לבן, שברחה מבית משוגעים. ההיכרות מובילה לסוד שמאיים על האישה שהוא מתאהב בה.",
+  "cover": 4684227
+ },
+ {
+  "id": "moonstone",
+  "title": "אבן הירח",
+  "author": "וילקי קולינס",
+  "en": "The Moonstone",
+  "enAuthor": "Wilkie Collins",
+  "year": 1868,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "בלשי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "mystery",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יהלום הודי מקולל, שהגיע במתנת יום הולדת לצעירה אנגלית, נעלם מחדרה באותו לילה. בני הבית ומשרתיו מספרים כל אחד את חלקו בתעלומה.",
+  "cover": 8237041
+ },
+ {
+  "id": "casino-royale",
+  "title": "קזינו רויאל",
+  "author": "איאן פלמינג",
+  "en": "Casino Royale",
+  "enAuthor": "Ian Fleming",
+  "year": 1953,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "ריגול",
+   "מותחן"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'יימס בונד, סוכן 007, נשלח לקזינו בצרפת כדי להביס בבקרה סוכן סובייטי שהפסיד כספי ארגון. ההרפתקה הראשונה של המרגל המפורסם בעולם.",
+  "cover": 5540820
+ },
+ {
+  "id": "from-russia",
+  "title": "מרוסיה באהבה",
+  "author": "איאן פלמינג",
+  "en": "From Russia, with Love",
+  "enAuthor": "Ian Fleming",
+  "year": 1957,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "ריגול",
+   "מותחן"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פקידת צופן סובייטית יפה מציעה לערוק לבריטים יחד עם מכונת הצפנה, בתנאי שג'יימס בונד יבוא לקחת אותה. בונד נוסע לאיסטנבול, ישר אל המלכודת.",
+  "cover": 109458
+ },
+ {
+  "id": "tinker-tailor",
+  "title": "החפרפרת",
+  "author": "ג'ון לה קארה",
+  "en": "Tinker Tailor Soldier Spy",
+  "enAuthor": "John le Carre",
+  "year": 1974,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "ריגול",
+   "מותחן"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ורג' סמיילי, מרגל בריטי שהודח, נקרא בסתר לחזור, כדי לגלות מי מבין ראשי השירות החשאי הוא סוכן סובייטי. מותחן ריגול מחוכם ושקט.",
+  "cover": 7021556
+ },
+ {
+  "id": "odessa-file",
+  "title": "תיק אודסה",
+  "author": "פרדריק פורסייט",
+  "en": "The Odessa File",
+  "enAuthor": "Frederick Forsyth",
+  "year": 1972,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "היסטורי"
+  ],
+  "style": [
+   "fast",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1963: עיתונאי גרמני צעיר מוצא יומן של ניצול שואה שהתאבד, ויוצא לחפש את מפקד המחנה שעוד חי בגרמניה. בדרך הוא נתקל בארגון סודי של אנשי אס-אס לשעבר.",
+  "cover": 6630437
+ },
+ {
+  "id": "dogs-of-war",
+  "title": "כלבי המלחמה",
+  "author": "פרדריק פורסייט",
+  "en": "The Dogs of War",
+  "enAuthor": "Frederick Forsyth",
+  "year": 1974,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "איל כרייה בריטי מגלה הר עשיר בפלטינה במדינה אפריקאית קטנה, ושוכר שכיר חרב כדי להפיל את השליט שלה. התכנון המדוקדק של ההפיכה הוא לב הספר.",
+  "cover": 4510081
+ },
+ {
+  "id": "red-october",
+  "title": "המרדף אחר אוקטובר האדום",
+  "author": "טום קלנסי",
+  "en": "The Hunt for Red October",
+  "enAuthor": "Tom Clancy",
+  "year": 1984,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ריגול"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מפקד הצוללת הסובייטית החדשה והשקטה מכולן מחליט לערוק איתה לארצות הברית. הצי הסובייטי רודף אחריו, ואנליסט CIA צעיר צריך לשכנע את כולם מה הוא מתכנן.",
+  "cover": 683604
+ },
+ {
+  "id": "congo-crichton",
+  "title": "קונגו",
+  "author": "מייקל קרייטון",
+  "en": "Congo",
+  "enAuthor": "Michael Crichton",
+  "year": 1980,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "הרפתקאות"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "משלחת מדענים נשלחת לג'ונגל של קונגו, בעקבות צוות קודם שנעלם ליד עיר אבודה ומכרה יהלומים. איתם נוסעת גורילה שיודעת שפת סימנים.",
+  "cover": 10653144
+ },
+ {
+  "id": "andromeda-strain",
+  "title": "זרע אנדרומדה",
+  "author": "מייקל קרייטון",
+  "en": "The Andromeda Strain",
+  "enAuthor": "Michael Crichton",
+  "year": 1969,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "מדע בדיוני"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לוויין צבאי נופל ליד עיירה קטנה באריזונה, וכמעט כל התושבים מתים בתוך דקות. צוות מדענים במעבדה תת-קרקעית סודית מנסה לזהות את היצור שהגיע מהחלל.",
+  "cover": 9330577
+ },
+ {
+  "id": "foucaults-pendulum",
+  "title": "המטוטלת של פוקו",
+  "author": "אומברטו אקו",
+  "en": "Foucault's Pendulum",
+  "enAuthor": "Umberto Eco",
+  "year": 1988,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "תעלומה",
+   "רומן"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שלושה עורכים במילאנו ממציאים, בשביל הכיף, \"תוכנית\" סודית של אבירים טמפלרים לשלוט בעולם. הבעיה מתחילה כשמישהו מתחיל להאמין להם.",
+  "cover": 1002977
+ },
+ {
+  "id": "club-dumas",
+  "title": "מועדון דיומא",
+  "author": "ארתורו פרס-רברטה",
+  "en": "The Club Dumas",
+  "enAuthor": "Arturo Perez-Reverte",
+  "year": 1993,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "תעלומה",
+   "ספרים"
+  ],
+  "style": [
+   "mystery",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לוקאס קורסו, צייד ספרים נדירים, מקבל שתי משימות: לאמת כתב יד של \"שלושת המוסקטרים\", ולבדוק ספר מהמאה ה-17 שאמור לזמן את השטן. בדרך מישהו עוקב אחריו.",
+  "cover": null
+ },
+ {
+  "id": "running-man",
+  "title": "הנרדף",
+  "author": "סטיבן קינג",
+  "en": "The Running Man",
+  "enAuthor": "Stephen King",
+  "year": 1982,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "דיסטופיה",
+   "מותחן"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בעתיד עני ואכזר, בן ריצ'רדס מצטרף לתוכנית ריאליטי שבה המתמודד בורח וציידים רודפים אחריו, כדי להשיג כסף לתרופות לבתו. כל שעה שהוא שורד שווה כסף.",
+  "cover": 14651762
+ },
+ {
+  "id": "shawshank",
+  "title": "ריטה הייוורת' וגאולת שושנק",
+  "author": "סטיבן קינג",
+  "en": "Rita Hayworth and Shawshank Redemption",
+  "enAuthor": "Stephen King",
+  "year": 1982,
+  "cats": [
+   "trendy",
+   "classic"
+  ],
+  "tags": [
+   "דרמה",
+   "קצר"
+  ],
+  "style": [
+   "emotional",
+   "short",
+   "character"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אנדי דופרן, בנקאי שקט, נשלח למאסר עולם בכלא שושנק על רצח שהוא אומר שלא ביצע. אסיר ותיק בשם רד מספר על השנים שבהן אנדי שמר על תקווה. נובלה קצרה ומרגשת.",
+  "cover": 14653969
+ },
+ {
+  "id": "the-body-king",
+  "title": "הגופה",
+  "author": "סטיבן קינג",
+  "en": "The Body",
+  "enAuthor": "Stephen King",
+  "year": 1982,
+  "cats": [
+   "ya",
+   "trendy"
+  ],
+  "tags": [
+   "דרמה",
+   "חברות",
+   "קצר"
+  ],
+  "style": [
+   "emotional",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קיץ 1960: ארבעה חברים בני 12 יוצאים למסע ברגל לאורך מסילת רכבת, כדי לראות גופה של ילד שנעלם. מסע של יומיים שבו הם מתבגרים. הנובלה שעליה מבוסס \"אני והחבר'ה\".",
+  "cover": 14655703
+ },
+ {
+  "id": "needful-things",
+  "title": "דברים שצריך",
+  "author": "סטיבן קינג",
+  "en": "Needful Things",
+  "enAuthor": "Stephen King",
+  "year": 1991,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "על-טבעי"
+  ],
+  "style": [
+   "dark",
+   "scary"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חנות חדשה ומוזרה נפתחת בעיירה קסל רוק, ובה כל אחד מוצא בדיוק את מה שהוא הכי רוצה. המחיר הוא רק \"תעלול קטן\" נגד שכן, והעיירה מתחילה להשתגע.",
+  "cover": 8404327
+ },
+ {
+  "id": "tommyknockers",
+  "title": "טומינוקרס",
+  "author": "סטיבן קינג",
+  "en": "The Tommyknockers",
+  "enAuthor": "Stephen King",
+  "year": 1987,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "מדע בדיוני"
+  ],
+  "style": [
+   "scary",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סופרת מוצאת ביער ליד ביתה במיין חתיכת מתכת שקבורה באדמה, ומתחילה לחפור. מה שקבור שם משנה את כל תושבי העיירה.",
+  "cover": 6997458
+ },
+ {
+  "id": "bag-of-bones",
+  "title": "שק של עצמות",
+  "author": "סטיבן קינג",
+  "en": "Bag of Bones",
+  "enAuthor": "Stephen King",
+  "year": 1998,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "רוחות"
+  ],
+  "style": [
+   "scary",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סופר מצליח שאיבד את אשתו ואת היכולת לכתוב עובר לבית האגם שלהם. הבית מלא רוחות, ונראה שהן מנסות לספר לו משהו על העבר של העיירה.",
+  "cover": 14653458
+ },
+ {
+  "id": "cell-king",
+  "title": "סלולרי",
+  "author": "סטיבן קינג",
+  "en": "Cell",
+  "enAuthor": "Stephen King",
+  "year": 2006,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "דיסטופיה"
+  ],
+  "style": [
+   "fast",
+   "scary"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יום אחד, אות מסתורי ברשת הסלולרית הופך את כל מי שמדבר בטלפון ליצור אלים. אמן קומיקס מבוסטון יוצא ברגל לחפש את בנו.",
+  "cover": 14654054
+ },
+ {
+  "id": "duma-key",
+  "title": "דומא קי",
+  "author": "סטיבן קינג",
+  "en": "Duma Key",
+  "enAuthor": "Stephen King",
+  "year": 2008,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "על-טבעי"
+  ],
+  "style": [
+   "scary",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אדגר, קבלן שאיבד את ידו בתאונה, עובר להחלים באי בפלורידה ומתחיל לצייר. הציורים שלו טובים מאוד, ומתחילים לשנות את המציאות.",
+  "cover": 14652203
+ },
+ {
+  "id": "gunslinger",
+  "title": "האקדוחן",
+  "author": "סטיבן קינג",
+  "en": "The Gunslinger",
+  "enAuthor": "Stephen King",
+  "year": 1982,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "פנטזיה",
+   "אימה"
+  ],
+  "style": [
+   "dark",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "\"האיש בשחור נמלט במדבר, והאקדוחן הלך בעקבותיו.\" רולנד, אחרון האקדוחנים, רודף בעולם מתפורר אחרי קוסם מסתורי, בדרך אל המגדל האפל.",
+  "cover": 8396638
+ },
+ {
+  "id": "thinner",
+  "title": "רזה",
+  "author": "סטיבן קינג",
+  "en": "Thinner",
+  "enAuthor": "Stephen King",
+  "year": 1984,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "על-טבעי"
+  ],
+  "style": [
+   "scary",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "עורך דין שמן ומצליח דורס זקנה צוענייה ויוצא זכאי. אביה נוגע בלחי שלו ולוחש מילה אחת: \"רזה\". מאותו יום הוא מתחיל לרדת במשקל, ולא מפסיק.",
+  "cover": 8274288
+ },
+ {
+  "id": "night-shift",
+  "title": "משמרת לילה",
+  "author": "סטיבן קינג",
+  "en": "Night Shift",
+  "enAuthor": "Stephen King",
+  "year": 1978,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "סיפורים קצרים"
+  ],
+  "style": [
+   "scary",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קובץ סיפורי האימה הקצרים הראשון של סטיבן קינג: חולדות במרתף מפעל, מכונות שמתעוררות לחיים, וילדים בשדה התירס. סיפור אחד לכל לילה.",
+  "cover": 14651337
+ },
+ {
+  "id": "four-past-midnight",
+  "title": "ארבע אחרי חצות",
+  "author": "סטיבן קינג",
+  "en": "Four Past Midnight",
+  "enAuthor": "Stephen King",
+  "year": 1990,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "קצר"
+  ],
+  "style": [
+   "scary"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ארבע נובלות אימה: נוסעים שמתעוררים בטיסה שבה כל השאר נעלמו, סופר שמואשם בגניבת סיפור, מצלמה שמצלמת כלב מפחיד, ועוד.",
+  "cover": 8413143
+ },
+ {
+  "id": "sleepy-hollow",
+  "title": "האגדה על סליפי הולו",
+  "author": "וושינגטון אירווינג",
+  "en": "The Legend of Sleepy Hollow",
+  "enAuthor": "Washington Irving",
+  "year": 1820,
+  "cats": [
+   "horror",
+   "classic"
+  ],
+  "tags": [
+   "אימה",
+   "קלאסיקה",
+   "קצר"
+  ],
+  "style": [
+   "short",
+   "scary"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "איכבוד קריין, מורה כפרי ושאפתן, מתחרה על לבה של בת איכר עשיר. בלילה אחד, בדרך הביתה, הוא נתקל בפרש חסר הראש המפורסם של העמק.",
+  "cover": 8243083
+ },
+ {
+  "id": "call-of-cthulhu",
+  "title": "קריאתו של קת'ולהו",
+  "author": "ה. פ. לאבקרפט",
+  "en": "The Call of Cthulhu",
+  "enAuthor": "H. P. Lovecraft",
+  "year": 1928,
+  "cats": [
+   "horror",
+   "classic"
+  ],
+  "tags": [
+   "אימה",
+   "קצר"
+  ],
+  "style": [
+   "scary",
+   "short",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "צעיר מוצא בעזבון של דודו רשימות על פולחן מסתורי סביב יצור עתיק שישן במעמקי הים. ככל שהוא קורא, כך מתבהר שלא הכול נשאר שקוע.",
+  "cover": 11263527
+ },
+ {
+  "id": "psycho",
+  "title": "פסיכו",
+  "author": "רוברט בלוך",
+  "en": "Psycho",
+  "enAuthor": "Robert Bloch",
+  "year": 1959,
+  "cats": [
+   "horror",
+   "thriller"
+  ],
+  "tags": [
+   "אימה",
+   "פסיכולוגי"
+  ],
+  "style": [
+   "scary",
+   "short",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מרי, מזכירה שגנבה כסף מהמעסיק שלה, עוצרת ללילה במוטל קטן ליד הכביש. בעל המוטל, נורמן בייטס, נחמד מאוד, אבל אמו הזקנה שגרה בבית שעל הגבעה לא אוהבת זרים.",
+  "cover": 477808
+ },
+ {
+  "id": "jaws",
+  "title": "מלתעות",
+  "author": "פיטר בנצ'לי",
+  "en": "Jaws",
+  "enAuthor": "Peter Benchley",
+  "year": 1974,
+  "cats": [
+   "thriller",
+   "horror"
+  ],
+  "tags": [
+   "מותחן",
+   "אימה"
+  ],
+  "style": [
+   "fast",
+   "scary"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "כריש לבן ענק מתחיל לתקוף שוחים בחופי עיירת קיט קטנה, רגע לפני עונת התיירות. מפקד המשטרה רוצה לסגור את החופים, וכולם נגדו.",
+  "cover": 8440296
+ },
+ {
+  "id": "stepford-wives",
+  "title": "נשות סטפפורד",
+  "author": "אירה לוין",
+  "en": "The Stepford Wives",
+  "enAuthor": "Ira Levin",
+  "year": 1972,
+  "cats": [
+   "horror",
+   "thriller"
+  ],
+  "tags": [
+   "אימה",
+   "קצר"
+  ],
+  "style": [
+   "scary",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ואנה עוברת עם בעלה וילדיה לפרבר מושלם בקונטיקט. כל הנשים בשכונה יפות, מטופחות ומתעניינות רק בניקיון, והיא מתחילה לחשוד שזה לא במקרה.",
+  "cover": 8409254
+ },
+ {
+  "id": "in-cold-blood",
+  "title": "בדם קר",
+  "author": "טרומן קפוטה",
+  "en": "In Cold Blood",
+  "enAuthor": "Truman Capote",
+  "year": 1966,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "מתח",
+   "פשע אמיתי"
+  ],
+  "style": [
+   "dark",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1959: משפחה של ארבעה נרצחת בחווה בקנזס. טרומן קפוטה משחזר את הפשע, את המרדף ואת חייהם של שני הרוצחים, בספר שנקרא כמו רומן. סיפור אמיתי.",
+  "cover": 228066
+ },
+ {
+  "id": "shogun",
+  "title": "שוגון",
+  "author": "ג'יימס קלאוול",
+  "en": "Shogun",
+  "enAuthor": "James Clavell",
+  "year": 1975,
+  "cats": [
+   "trendy",
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "הרפתקאות"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1600: ספינה אנגלית נטרפת מול חופי יפן, והנווט ג'ון בלקת'ורן מוצא את עצמו בעולם זר של סמוראים ומאבקי כוח. הוא נקשר לאדון מלחמה שאפתן, ולאישה שמתרגמת עבורו.",
+  "cover": 10231097
+ },
+ {
+  "id": "lord-of-the-rings",
+  "title": "שר הטבעות",
+  "author": "ג'. ר. ר. טולקין",
+  "en": "The Lord of the Rings",
+  "enAuthor": "J. R. R. Tolkien",
+  "year": 1954,
+  "cats": [
+   "classic",
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "slow",
+   "character"
+  ],
+  "pop": 5,
+  "adult": false,
+  "summary": "פרודו באגינס, הוביט צעיר, יורש טבעת שמתגלה כנשק המסוכן ביותר של אדון האופל. יחד עם שמונה חברים הוא יוצא למסע ארוך כדי להשמיד אותה, לפני שתשמיד את העולם.",
+  "cover": 14625765
+ },
+ {
+  "id": "prince-caspian",
+  "title": "הנסיך כספיאן",
+  "author": "ק. ס. לואיס",
+  "en": "Prince Caspian",
+  "enAuthor": "C. S. Lewis",
+  "year": 1951,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "warm",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ארבעת האחים נמשכים שוב לנרניה, ומגלים שעברו שם מאות שנים. נרניה תחת שלטון אכזר, ונסיך צעיר בשם כספיאן מבקש את עזרתם.",
+  "cover": 45897
+ },
+ {
+  "id": "dawn-treader",
+  "title": "המסע בדורך השחר",
+  "author": "ק. ס. לואיס",
+  "en": "The Voyage of the Dawn Treader",
+  "enAuthor": "C. S. Lewis",
+  "year": 1952,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הרפתקאות"
+  ],
+  "style": [
+   "warm",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אדמונד, לוסי ובן דודם המעצבן יוסטאס נשאבים לתוך תמונה של ספינה, ומוצאים את עצמם על סיפונה עם המלך כספיאן, במסע אל קצה העולם.",
+  "cover": 9184719
+ },
+ {
+  "id": "charlottes-web",
+  "title": "חוות הקסמים",
+  "author": "א. ב. וייט",
+  "en": "Charlotte's Web",
+  "enAuthor": "E. B. White",
+  "year": 1952,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "נוער",
+   "מרגש",
+   "קלאסיקה"
+  ],
+  "style": [
+   "warm",
+   "emotional",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "וילבר, חזרזיר קטן בחווה, מגלה שמתכננים לשחוט אותו. שרלוט, עכבישה חכמה שגרה ברפת, מחליטה להציל אותו, בעזרת מילים שהיא טווה ברשת.",
+  "cover": 8461797
+ },
+ {
+  "id": "pippi",
+  "title": "בילבי",
+  "author": "אסטריד לינדגרן",
+  "en": "Pippi Longstocking",
+  "enAuthor": "Astrid Lindgren",
+  "year": 1945,
+  "cats": [
+   "ya",
+   "light"
+  ],
+  "tags": [
+   "נוער",
+   "הומור",
+   "קלאסיקה"
+  ],
+  "style": [
+   "funny",
+   "short"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "בילבי, הילדה החזקה בעולם, גרה לבד בווילה עם סוס וקוף, עם מזוודה מלאה מטבעות זהב ובלי אף מבוגר שיגיד לה מה לעשות. שני הילדים של השכנים לא מאמינים למזלם.",
+  "cover": 12391198
+ },
+ {
+  "id": "emil-detectives",
+  "title": "אמיל והבלשים",
+  "author": "אריך קסטנר",
+  "en": "Emil and the Detectives",
+  "enAuthor": "Erich Kastner",
+  "year": 1929,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "תעלומה",
+   "קלאסיקה"
+  ],
+  "style": [
+   "fast",
+   "funny",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אמיל נוסע לבד ברכבת לברלין, ונרדם. כשהוא מתעורר, הכסף שאמו נתנה לו נעלם, וגם האיש עם המגבעת. בעזרת חבורת ילדים מהעיר הוא יוצא לתפוס את הגנב.",
+  "cover": null
+ },
+ {
+  "id": "tom-sawyer",
+  "title": "הרפתקאותיו של תום סויר",
+  "author": "מארק טוויין",
+  "en": "The Adventures of Tom Sawyer",
+  "enAuthor": "Mark Twain",
+  "year": 1876,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "הומור",
+   "קלאסיקה"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "תום סויר, שובב מעיירה על גדות המיסיסיפי, משכנע חברים לסייד במקומו גדר, מתאהב בבקי ועד בטעות לרצח בבית הקברות. מכאן ההרפתקאות רק מתחילות.",
+  "cover": 12043351
+ },
+ {
+  "id": "huck-finn",
+  "title": "הרפתקאותיו של האקלברי פין",
+  "author": "מארק טוויין",
+  "en": "Adventures of Huckleberry Finn",
+  "enAuthor": "Mark Twain",
+  "year": 1884,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "funny",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "האק פין בורח מאביו השיכור, ופוגש על אי בנהר את ג'ים, עבד שברח. השניים יוצאים על רפסודה במורד המיסיסיפי, במסע שבו האק לומד מה זה להיות חבר.",
+  "cover": 8157718
+ },
+ {
+  "id": "black-beauty",
+  "title": "הסייח השחור",
+  "author": "אנה סוול",
+  "en": "Black Beauty",
+  "enAuthor": "Anna Sewell",
+  "year": 1877,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "נוער",
+   "מרגש",
+   "קלאסיקה"
+  ],
+  "style": [
+   "emotional",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סוס שחור ויפה מספר את סיפור חייו באנגליה של המאה ה-19: מהשדות של ילדותו, דרך בעלים אוהבים ואכזריים, ועד עבודה קשה ברחובות לונדון.",
+  "cover": 14770679
+ },
+ {
+  "id": "jungle-book",
+  "title": "ספר הג'ונגל",
+  "author": "רודיארד קיפלינג",
+  "en": "The Jungle Book",
+  "enAuthor": "Rudyard Kipling",
+  "year": 1894,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "נוער",
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "warm",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מוגלי, ילד אדם, גדל בג'ונגל בין זאבים, עם הדוב באלו והפנתר בגירה שמלמדים אותו את חוקי הג'ונגל. אבל הנמר שיר חאן לא שוכח שהוא אדם.",
+  "cover": 3344204
+ },
+ {
+  "id": "oliver-twist",
+  "title": "אוליבר טוויסט",
+  "author": "צ'רלס דיקנס",
+  "en": "Oliver Twist",
+  "enAuthor": "Charles Dickens",
+  "year": 1838,
+  "cats": [
+   "classic",
+   "ya"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "דרמה"
+  ],
+  "style": [
+   "emotional",
+   "character"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אוליבר, יתום שגדל בבית מחסה, בורח ללונדון ונקלט בחבורת כייסים של פייגין הערמומי. נער טוב לב בעולם אכזר, שמחפש מקום משלו.",
+  "cover": 13300802
+ },
+ {
+  "id": "david-copperfield",
+  "title": "דייוויד קופרפילד",
+  "author": "צ'רלס דיקנס",
+  "en": "David Copperfield",
+  "enAuthor": "Charles Dickens",
+  "year": 1850,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "רומן"
+  ],
+  "style": [
+   "character",
+   "warm",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "דייוויד מספר על חייו, מילדות קשה עם אב חורג אכזר, דרך עבודה במפעל בגיל עשר, ועד שהפך לסופר. בדרך הוא פוגש כמה מהדמויות הבלתי נשכחות של דיקנס.",
+  "cover": 1048892
+ },
+ {
+  "id": "great-expectations",
+  "title": "תקוות גדולות",
+  "author": "צ'רלס דיקנס",
+  "en": "Great Expectations",
+  "enAuthor": "Charles Dickens",
+  "year": 1861,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "רומן"
+  ],
+  "style": [
+   "character",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פיפ, יתום עני, מקבל ירושה מנדיב אלמוני ונשלח ללונדון להיות ג'נטלמן. הוא בטוח שהוא יודע מי עומד מאחורי זה, ושהוא מיועד לאסטלה היפה והקרה.",
+  "cover": 13322313
+ },
+ {
+  "id": "christmas-carol",
+  "title": "מזמור חג המולד",
+  "author": "צ'רלס דיקנס",
+  "en": "A Christmas Carol",
+  "enAuthor": "Charles Dickens",
+  "year": 1843,
+  "cats": [
+   "classic",
+   "light"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "קצר",
+   "מרגש"
+  ],
+  "style": [
+   "short",
+   "warm"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "סקרוג', קמצן זקן ומר, מקבל בערב חג המולד ביקור משלוש רוחות: של העבר, ההווה והעתיד. לילה אחד שעשוי לשנות את כל חייו.",
+  "cover": 12875748
+ },
+ {
+  "id": "two-cities",
+  "title": "בין שתי ערים",
+  "author": "צ'רלס דיקנס",
+  "en": "A Tale of Two Cities",
+  "enAuthor": "Charles Dickens",
+  "year": 1859,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "היסטורי"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "\"אלה היו הטובים בזמנים, אלה היו הרעים בזמנים.\" לונדון ופריז בזמן המהפכה הצרפתית: אציל צרפתי שוויתר על תוארו, אישה שהוא אוהב, ועורך דין שיכור שאוהב אותה גם.",
+  "cover": 13301713
+ },
+ {
+  "id": "fauntleroy",
+  "title": "לורד פונטלרוי הקטן",
+  "author": "פרנסס הודג'סון ברנט",
+  "en": "Little Lord Fauntleroy",
+  "enAuthor": "Frances Hodgson Burnett",
+  "year": 1886,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "נוער",
+   "קלאסיקה"
+  ],
+  "style": [
+   "warm",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סדריק, ילד אמריקאי עני ומתוק, מגלה שהוא יורש של רוזן אנגלי עשיר ונרגן. הוא עובר לאנגליה, וטוב הלב שלו מתחיל לרכך את הסבא הקשוח.",
+  "cover": 29376
+ },
+ {
+  "id": "wind-willows",
+  "title": "הרוח בערבי הנחל",
+  "author": "קנת גרהאם",
+  "en": "The Wind in the Willows",
+  "enAuthor": "Kenneth Grahame",
+  "year": 1908,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "נוער",
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "warm",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חפרפר נמאס לו מניקיון האביב, והוא יוצא אל הנהר. שם הוא מתיידד עם עכברוש המים, הגירית החכם והקרפד המשוגע על מכוניות, שתמיד מסתבך.",
+  "cover": 13335427
+ },
+ {
+  "id": "winnie-the-pooh",
+  "title": "פו הדב",
+  "author": "א. א. מילן",
+  "en": "Winnie-the-Pooh",
+  "enAuthor": "A. A. Milne",
+  "year": 1926,
+  "cats": [
+   "ya",
+   "light"
+  ],
+  "tags": [
+   "נוער",
+   "הומור",
+   "קלאסיקה"
+  ],
+  "style": [
+   "warm",
+   "funny",
+   "short"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "פו, דוב קטן שאוהב דבש ולא מבין הרבה, וחבריו חזרזיר, איה, ינשוף וארנב, חיים ביער מאת הדונמים עם כריסטופר רובין. סיפורים קטנים, מתוקים ומצחיקים.",
+  "cover": 8610816
+ },
+ {
+  "id": "railway-children",
+  "title": "ילדי המסילה",
+  "author": "אדית נסביט",
+  "en": "The Railway Children",
+  "enAuthor": "E. Nesbit",
+  "year": 1906,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "נוער",
+   "משפחה",
+   "קלאסיקה"
+  ],
+  "style": [
+   "warm",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אחרי שאביהם נלקח מהבית בנסיבות מסתוריות, שלושה ילדים עוברים עם אמם לבית קטן ליד מסילת רכבת בכפר. הם מנפנפים לרכבות, ומגלים חברים והרפתקאות.",
+  "cover": 13241123
+ },
+ {
+  "id": "mixed-up-files",
+  "title": "המסמכים הסודיים של גברת פרנקוויילר",
+  "author": "א. ל. קוניגסבורג",
+  "en": "From the Mixed-Up Files of Mrs. Basil E. Frankweiler",
+  "enAuthor": "E. L. Konigsburg",
+  "year": 1967,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "תעלומה",
+   "הרפתקאות"
+  ],
+  "style": [
+   "funny",
+   "mystery",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קלאודיה בת ה-11 בורחת מהבית עם אחיה הקטן, ושניהם מתחבאים במוזיאון המטרופוליטן בניו יורק. שם הם נתקלים בפסל מסתורי שאולי פיסל מיכלאנג'לו.",
+  "cover": 541206
+ },
+ {
+  "id": "thief-lord",
+  "title": "מלך הגנבים",
+  "author": "קורנליה פונקה",
+  "en": "The Thief Lord",
+  "enAuthor": "Cornelia Funke",
+  "year": 2000,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "הרפתקאות"
+  ],
+  "style": [
+   "fast",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שני אחים יתומים בורחים לוונציה ומצטרפים לחבורת ילדי רחוב, שמנהיג אותה נער מסתורי שקורא לעצמו מלך הגנבים. בלש פרטי יוצא בעקבותיהם.",
+  "cover": 3348719
+ },
+ {
+  "id": "ronia",
+  "title": "רוניה בת השודד",
+  "author": "אסטריד לינדגרן",
+  "en": "Ronia, the Robber's Daughter",
+  "enAuthor": "Astrid Lindgren",
+  "year": 1981,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "הרפתקאות"
+  ],
+  "style": [
+   "warm",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רוניה, בתו של ראש כנופיית שודדים, גדלה בטירה ביער. היא מתיידדת עם בירק, בנו של השודד היריב, והחברות הזאת מאיימת על שתי המשפחות.",
+  "cover": 1026597
+ },
+ {
+  "id": "lionheart",
+  "title": "האחים לב-ארי",
+  "author": "אסטריד לינדגרן",
+  "en": "The Brothers Lionheart",
+  "enAuthor": "Astrid Lindgren",
+  "year": 1973,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "פנטזיה",
+   "מרגש"
+  ],
+  "style": [
+   "emotional",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קרל החולה מקשיב לסיפורים של אחיו הגדול יונתן על ארץ קסומה בשם נאנגיאלה. כשהם מגיעים לשם, הם נאלצים להילחם בעריץ ובדרקונית שלו.",
+  "cover": 955438
+ },
+ {
+  "id": "mio-my-son",
+  "title": "מיו, מיו שלי",
+  "author": "אסטריד לינדגרן",
+  "en": "Mio, My Son",
+  "enAuthor": "Astrid Lindgren",
+  "year": 1954,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "פנטזיה"
+  ],
+  "style": [
+   "warm",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בוסה, ילד יתום ובודד מסטוקהולם, נלקח בקסם לארץ הרחוקה, ושם מגלה שהוא בנו של המלך. אבל בארץ יש גם אביר רשע, ומיו צריך להתעמת איתו.",
+  "cover": 955437
+ },
+ {
+  "id": "karlsson",
+  "title": "קארלסון המעופף",
+  "author": "אסטריד לינדגרן",
+  "en": "Karlsson-on-the-Roof",
+  "enAuthor": "Astrid Lindgren",
+  "year": 1955,
+  "cats": [
+   "ya",
+   "light"
+  ],
+  "tags": [
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לילד קטן בסטוקהולם יש חבר סודי: קארלסון, איש קטן ושמנמן עם מדחף על הגב, שגר על הגג ועושה רק שטויות. אף אחד לא מאמין שהוא קיים.",
+  "cover": 8479839
+ },
+ {
+  "id": "bad-beginning",
+  "title": "התחלה נוראה",
+  "author": "למוני סניקט",
+  "en": "The Bad Beginning",
+  "enAuthor": "Lemony Snicket",
+  "year": 1999,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "הומור",
+   "תעלומה"
+  ],
+  "style": [
+   "funny",
+   "dark",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שלושת יתומי בודלר, חכמים ואמיצים, נשלחים לגור אצל הרוזן אולף, קרוב משפחה מרושע שרוצה רק את הירושה שלהם. המספר מזהיר מראש: לא יהיה כאן סוף טוב.",
+  "cover": 7255974
+ },
+ {
+  "id": "wimpy-kid",
+  "title": "יומנו של חנון",
+  "author": "ג'ף קיני",
+  "en": "Diary of a Wimpy Kid",
+  "enAuthor": "Jeff Kinney",
+  "year": 2007,
+  "cats": [
+   "ya",
+   "light"
+  ],
+  "tags": [
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "short",
+   "fast"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "גרג הפלי, תלמיד חטיבה קטן ובטוח בעצמו, כותב יומן (לא \"יומן סודי\"!) על השנה שלו בבית הספר, על אח גדול מציק ועל חבר הכי טוב תמים. עם ציורים מצחיקים.",
+  "cover": 14376136
+ },
+ {
+  "id": "cinder",
+  "title": "סינדר",
+  "author": "מריסה מאייר",
+  "en": "Cinder",
+  "enAuthor": "Marissa Meyer",
+  "year": 2012,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "מדע בדיוני",
+   "רומנטי"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סינדר, מכונאית סייבורג בבייג'ינג של העתיד, מתקנת יום אחד את הרובוט של הנסיך. ביחד עם מגפה קטלנית ומלכה מאיימת מהירח, \"סינדרלה\" מקבלת גרסה חדשה.",
+  "cover": 6998634
+ },
+ {
+  "id": "little-nicolas",
+  "title": "ניקולא הקטן",
+  "author": "רנה גוסיני",
+  "en": "Le Petit Nicolas",
+  "enAuthor": "Rene Goscinny",
+  "year": 1959,
+  "cats": [
+   "ya",
+   "light"
+  ],
+  "tags": [
+   "נוער",
+   "הומור",
+   "קצר"
+  ],
+  "style": [
+   "funny",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ניקולא, ילד צרפתי קטן, מספר על החברים שלו בכיתה, על המורה ועל ההורים, בצורה תמימה ומצחיקה. סיפורים קצרים שמצחיקים ילדים ומבוגרים.",
+  "cover": 12856967
+ },
+ {
+  "id": "time-machine",
+  "title": "מכונת הזמן",
+  "author": "ה. ג'. ולס",
+  "en": "The Time Machine",
+  "enAuthor": "H. G. Wells",
+  "year": 1895,
+  "cats": [
+   "classic",
+   "ya"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "קלאסיקה",
+   "קצר"
+  ],
+  "style": [
+   "short",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ממציא אנגלי בונה מכונה שנוסעת בזמן, ומגיע לשנת 802,701. האנושות שם התפצלה לשני מינים, ואחד מהם חי מתחת לאדמה.",
+  "cover": 9009316
+ },
+ {
+  "id": "war-of-worlds",
+  "title": "מלחמת העולמות",
+  "author": "ה. ג'. ולס",
+  "en": "The War of the Worlds",
+  "enAuthor": "H. G. Wells",
+  "year": 1898,
+  "cats": [
+   "classic",
+   "thriller"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "קלאסיקה"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חלליות נוחתות באנגליה, ומתוכן יוצאים אנשי מאדים עם מכונות מלחמה ענקיות וקרן חום. המספר מנסה לשרוד ולמצוא את אשתו בלונדון שנופלת.",
+  "cover": 36314
+ },
+ {
+  "id": "invisible-man-wells",
+  "title": "הרואה ואינו נראה",
+  "author": "ה. ג'. ולס",
+  "en": "The Invisible Man",
+  "enAuthor": "H. G. Wells",
+  "year": 1897,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "קלאסיקה",
+   "קצר"
+  ],
+  "style": [
+   "short",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "זר עטוף תחבושות מגיע לפונדק בכפר אנגלי. מתברר שהוא מדען שהפך את עצמו לבלתי נראה, ולא מצליח לחזור. הכוח הזה מתחיל לשגע אותו.",
+  "cover": 6419199
+ },
+ {
+  "id": "center-of-earth",
+  "title": "מסע אל בטן האדמה",
+  "author": "ז'ול ורן",
+  "en": "Journey to the Center of the Earth",
+  "enAuthor": "Jules Verne",
+  "year": 1864,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פרופסור גרמני נלהב מפענח כתב סתרים עתיק, ויוצא עם אחיינו ומדריך איסלנדי אל לוע הר געש. משם הם יורדים אל עולם שלם בבטן כדור הארץ.",
+  "cover": 11991658
+ },
+ {
+  "id": "mysterious-island",
+  "title": "אי התעלומות",
+  "author": "ז'ול ורן",
+  "en": "The Mysterious Island",
+  "enAuthor": "Jules Verne",
+  "year": 1875,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חמישה אסירים בורחים בכדור פורח בזמן מלחמת האזרחים האמריקאית, ונוחתים על אי לא מוכר. הם בונים חיים מאפס, ומרגישים שמישהו נסתר עוזר להם.",
+  "cover": 12093618
  }
 ];
