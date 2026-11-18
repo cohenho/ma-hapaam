@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="room" cx="50%" cy="0%" r="100%">
+      <stop offset="0" stop-color="#5a3a22"/><stop offset=".6" stop-color="#2c1c12"/><stop offset="1" stop-color="#1c110a"/>
+    </radialGradient>
+    <linearGradient id="board" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#c08a52"/><stop offset=".25" stop-color="#8a5a2e"/><stop offset="1" stop-color="#5a3719"/>
+    </linearGradient>
+    <linearGradient id="round" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#000" stop-opacity=".4"/><stop offset=".35" stop-color="#fff" stop-opacity=".16"/>
+      <stop offset=".6" stop-color="#fff" stop-opacity=".03"/><stop offset="1" stop-color="#000" stop-opacity=".45"/>
+    </linearGradient>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f6d98a"/><stop offset=".5" stop-color="#c9962b"/><stop offset="1" stop-color="#8a6418"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#room)"/>
+  <!-- books -->
+  <g>
+    <rect x="96" y="150" width="78" height="250" rx="5" fill="#8c2f39"/><rect x="96" y="150" width="78" height="250" rx="5" fill="url(#round)"/>
+    <rect x="96" y="172" width="78" height="6" fill="#f0cf7a" opacity=".85"/><rect x="96" y="372" width="78" height="6" fill="#f0cf7a" opacity=".85"/>
+    <rect x="180" y="118" width="92" height="282" rx="5" fill="#2f5d50"/><rect x="180" y="118" width="92" height="282" rx="5" fill="url(#round)"/>
+    <rect x="196" y="190" width="60" height="96" rx="3" fill="#f6ecd8"/>
+    <text x="226" y="262" font-family="DejaVu Serif, Georgia, serif" font-weight="bold" font-size="76" text-anchor="middle" fill="#2f5d50">B</text>
+    <rect x="278" y="168" width="64" height="232" rx="5" fill="#c9962b"/><rect x="278" y="168" width="64" height="232" rx="5" fill="url(#round)"/>
+    <rect x="290" y="186" width="40" height="196" rx="2" fill="none" stroke="#5a3a0c" stroke-width="3" opacity=".6"/>
+    <!-- leaning book -->
+    <g transform="rotate(14 350 400)">
+      <rect x="350" y="176" width="66" height="224" rx="5" fill="#3d4f6e"/><rect x="350" y="176" width="66" height="224" rx="5" fill="url(#round)"/>
+      <rect x="350" y="200" width="66" height="5" fill="#f0cf7a" opacity=".8"/>
+    </g>
+  </g>
+  <!-- shelf board -->
+  <rect x="0" y="400" width="512" height="34" fill="url(#board)"/>
+  <rect x="0" y="434" width="512" height="18" fill="#000" opacity=".35"/>
+</svg>

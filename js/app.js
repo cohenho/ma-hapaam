@@ -3,38 +3,15 @@
 const view = document.getElementById("view");
 const tabbar = document.querySelector(".tabbar");
 
-const esc = (s) => String(s).replace(/[&<>"']/g, (c) => (
-  { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]
-));
-
 const bookById = (id) => window.BOOKS.find((b) => b.id === id);
 
 function visibleCategories() {
   return window.CATEGORIES.filter((c) => Store.state.settings.adult || !c.adultOnly);
 }
 
-// ---------- covers ----------
-
-// A drawn cover in the book's own colour, used when there is no picture
-// (or the picture fails to load, e.g. without internet).
-function placeholderHtml(book) {
-  const hue = [...book.id].reduce((h, ch) => (h * 31 + ch.charCodeAt(0)) % 360, 7);
-  return `<div class="cover placeholder" style="--hue:${hue}"><span>${esc(book.title)}</span></div>`;
+function formatDate(iso) {
+  return new Date(iso).toLocaleDateString("he-IL", { day: "numeric", month: "long", year: "numeric" });
 }
-
-function coverHtml(book, size = "M") {
-  if (!book.cover) return placeholderHtml(book);
-  return `<img class="cover" alt="כריכת ${esc(book.title)}" loading="lazy" data-id="${esc(book.id)}"
-    src="https://covers.openlibrary.org/b/id/${book.cover}-${size}.jpg?default=false">`;
-}
-
-// Image errors don't bubble, so listen in the capture phase.
-view.addEventListener("error", (e) => {
-  const img = e.target;
-  if (img.tagName === "IMG" && img.classList.contains("cover")) {
-    img.outerHTML = placeholderHtml(bookById(img.dataset.id));
-  }
-}, true);
 
 // ---------- navigation ----------
 
@@ -46,124 +23,120 @@ function setTab(tab) {
 tabbar.addEventListener("click", (e) => {
   const btn = e.target.closest("button[data-tab]");
   if (!btn) return;
+  Shelf.close();
   if (btn.dataset.tab === "home") showHome();
   if (btn.dataset.tab === "mybooks") showMyBooks();
 });
 
-function render(html) {
+function render(html, screen) {
   view.innerHTML = html;
+  view.dataset.screen = screen;
   window.scrollTo(0, 0);
 }
 
-// ---------- home ----------
+// ---------- home: the card-catalogue cabinet ----------
 
 function showHome() {
   setTab("home");
   render(`
     <header class="hero">
+      <p class="brand">By the Book</p>
       <h1>מה הפעם?</h1>
-      <p>על מה בא לך היום?</p>
+      <p class="hero-sub">איזו מגירה ${g("נפתח", "נפתח", "נפתח")} היום?</p>
     </header>
-    <section class="categories">
+    <section class="cabinet">
       ${visibleCategories().map((c) => `
-        <button class="category" data-cat="${esc(c.id)}">
-          <span class="cat-icon">${c.icon}</span>
-          <span class="cat-name">${esc(c.name)}</span>
-          <span class="cat-desc">${esc(c.desc)}</span>
+        <button class="drawer" data-cat="${esc(c.id)}">
+          <span class="drawer-label">
+            <span class="drawer-name">${esc(c.name)}</span>
+            <span class="drawer-desc">${esc(c.desc)}</span>
+          </span>
+          <span class="drawer-pull" aria-hidden="true"></span>
         </button>`).join("")}
     </section>
-  `);
-  view.querySelectorAll(".category").forEach((btn) =>
-    btn.addEventListener("click", () => showRecommendations(btn.dataset.cat)));
+  `, "home");
+  view.querySelectorAll(".drawer").forEach((btn) =>
+    btn.addEventListener("click", () => {
+      btn.classList.add("opening");
+      setTimeout(() => showRecommendations(btn.dataset.cat), 260);
+    }));
 }
 
-// ---------- recommendations ----------
+// ---------- recommendations: three books on a shelf ----------
 
-const ACTIONS = {
-  taken:    { label: "לקחתי",     done: () => "נשמר ב\"הספרים שלי\". קריאה מהנה!" },
-  rejected: { label: "לא לקחתי",  done: () => "בסדר, לא אציע אותו שוב." },
-  read:     { label: "כבר קראתי", done: () => "רשמתי שכבר קראת אותו." },
+const PICK_ACTIONS = [
+  { id: "taken",    label: "לקחתי",              kind: "primary" },
+  { id: "read",     label: "כבר קראתי",          kind: "soft" },
+  { id: "disliked", label: "קראתי ולא התחברתי",  kind: "soft" },
+  { id: "rejected", label: "תחזיר למדף",         kind: "quiet" },
+];
+
+const PICK_RESULT = {
+  taken:    { status: "taken",    toast: () => "הספר עבר ל\"הספרים שלי\". קריאה מהנה!" },
+  read:     { status: "read",     toast: () => "רשמתי שכבר קראת אותו." },
+  disliked: { status: "read",     extra: { liked: false }, toast: () => "רשמתי. אציע פחות ספרים כאלה." },
+  rejected: { status: "rejected", toast: () => "החזרתי למדף. לא אציע אותו שוב." },
 };
 
-function showRecommendations(categoryId, current = []) {
+// current: ids on the shelf now (so "תציע לי אחרים" brings different ones).
+// samePicks: show exactly these books again (used by "ביטול").
+function showRecommendations(categoryId, current = [], samePicks = null) {
   setTab("home");
   const cat = window.CATEGORIES.find((c) => c.id === categoryId);
-  const picks = Recommend.next(categoryId, current);
-
-  const cards = picks.length
-    ? picks.map(bookCard).join("")
-    : `<div class="empty">
-         <p>עברת על כל הספרים בקטגוריה הזו!</p>
-         <p>בקרוב יתווספו עוד. בינתיים אפשר לנסות קטגוריה אחרת.</p>
-       </div>`;
+  const picks = samePicks || Recommend.next(categoryId, current);
 
   render(`
     <header class="page-head">
       <button class="back" aria-label="חזרה">→</button>
-      <h2>${cat.icon} ${esc(cat.name)}</h2>
+      <div class="plaque"><span>${esc(cat.name)}</span></div>
     </header>
-    <section class="cards">${cards}</section>
-    ${picks.length ? `<button class="big-btn more">תציע לי אחרים</button>` : ""}
-  `);
+    <p class="hint">${picks.length
+      ? `${g("געי", "גע", "געו")} בספר כדי להוציא אותו מהמדף`
+      : "עברת על כל הספרים במגירה הזו! בקרוב יתווספו עוד."}</p>
+    <div class="shelf-area">${Shelf.shelfHtml(picks)}</div>
+    <p class="shelf-empty" hidden>המדף התרוקן.</p>
+    ${picks.length ? `<button class="btn btn-wide more">תציע לי אחרים</button>` : ""}
+  `, "recs");
 
   view.querySelector(".back").addEventListener("click", showHome);
   const more = view.querySelector(".more");
-  if (more) more.addEventListener("click", () =>
-    showRecommendations(categoryId, picks.map((b) => b.id)));
+  if (more) more.addEventListener("click", () => {
+    view.querySelector(".shelf").classList.add("swap-out");
+    setTimeout(() => showRecommendations(categoryId, picks.map((b) => b.id)), 300);
+  });
 
-  view.querySelectorAll(".card").forEach(wireCard);
-}
-
-function bookCard(book) {
-  return `
-    <article class="card" data-id="${esc(book.id)}">
-      <div class="card-body">
-        ${coverHtml(book)}
-        <div class="card-text">
-          <h3>${esc(book.title)}</h3>
-          <p class="author">${esc(book.author)}</p>
-          <p class="summary">${esc(book.summary)}</p>
-          <ul class="tags">${book.tags.map((t) => `<li>${esc(t)}</li>`).join("")}</ul>
-        </div>
-      </div>
-      <div class="card-actions">
-        ${Object.entries(ACTIONS).map(([status, a]) =>
-          `<button class="act act-${status}" data-status="${status}">${a.label}</button>`).join("")}
-      </div>
-      <div class="card-done" hidden>
-        <span class="done-text"></span>
-        <button class="undo">ביטול</button>
-      </div>
-    </article>`;
-}
-
-function wireCard(card) {
-  const id = card.dataset.id;
-  const done = card.querySelector(".card-done");
-  const actions = card.querySelector(".card-actions");
-
-  card.querySelectorAll(".act").forEach((btn) => btn.addEventListener("click", () => {
-    const status = btn.dataset.status;
-    Store.setBookStatus(id, status);
-    done.querySelector(".done-text").textContent = ACTIONS[status].done();
-    card.classList.add("is-done", `done-${status}`);
-    actions.hidden = true;
-    done.hidden = false;
-  }));
-
-  done.querySelector(".undo").addEventListener("click", () => {
-    Store.clearBookStatus(id);
-    card.className = "card";
-    actions.hidden = false;
-    done.hidden = true;
+  wireShelf(view.querySelector(".shelf-area"), (book, spine) => {
+    Shelf.open(book, {
+      spine,
+      actions: PICK_ACTIONS,
+      onAction: async (actionId) => {
+        const result = PICK_RESULT[actionId];
+        const before = Store.state.books[book.id];
+        Store.setBookStatus(book.id, result.status, result.extra);
+        await Shelf.removeSpine(spine, actionId === "rejected" ? "down" : "up");
+        if (!view.querySelector(".shelf .spine")) {
+          view.querySelector(".shelf-empty").hidden = false;
+        }
+        Toast.show(result.toast(), () => {
+          Store.restoreBook(book.id, before);
+          // the same shelf again, with this book back in place
+          showRecommendations(categoryId, current,
+            picks.filter((b) => !Store.state.books[b.id]));
+        });
+      },
+    });
   });
 }
 
-// ---------- my books ----------
-
-function formatDate(iso) {
-  return new Date(iso).toLocaleDateString("he-IL", { day: "numeric", month: "long", year: "numeric" });
+// One click handler for every spine inside a container.
+function wireShelf(container, onPick) {
+  container.addEventListener("click", (e) => {
+    const spine = e.target.closest(".spine");
+    if (spine) onPick(bookById(spine.dataset.id), spine);
+  });
 }
+
+// ---------- my books: your own shelves ----------
 
 function showMyBooks() {
   setTab("mybooks");
@@ -171,45 +144,84 @@ function showMyBooks() {
     .map(([id, info]) => ({ book: bookById(id), ...info }))
     .filter((e) => e.book)
     .sort((a, b) => b.date.localeCompare(a.date));
+  const of = (status) => entries.filter((e) => e.status === status);
 
-  const section = (status, title, empty, extra = () => "") => {
-    const list = entries.filter((e) => e.status === status);
+  const shelfBlock = (status, title, empty) => {
+    const list = of(status);
     return `
-      <section class="shelf">
-        ${title ? `<h3>${title} <span class="count">${list.length}</span></h3>` : ""}
-        ${list.length ? `<ul class="shelf-list">${list.map((e) => `
-          <li class="shelf-item" data-id="${esc(e.book.id)}">
-            ${coverHtml(e.book, "S")}
-            <div>
-              <strong>${esc(e.book.title)}</strong>
-              <span class="author">${esc(e.book.author)}</span>
-              <span class="date">${formatDate(e.date)}</span>
-            </div>
-            ${extra(e)}
-          </li>`).join("")}</ul>` : `<p class="muted">${empty}</p>`}
+      <section class="my-shelf">
+        <h3><span>${title}</span> <span class="count">${list.length}</span></h3>
+        ${list.length
+          ? `<div class="shelf-area" data-status="${status}">${Shelf.shelfHtml(list.map((e) => e.book), { wrap: true })}</div>`
+          : `<div class="shelf shelf-wrap is-empty"><p>${empty}</p></div>`}
       </section>`;
   };
 
+  const rejected = of("rejected");
   render(`
-    <header class="page-head"><h2>הספרים שלי</h2></header>
-    ${section("taken", "לקחתי",
-      `עוד לא לקחת ספרים. ${g("כשתלחצי", "כשתלחץ", "כשתלחצו")} "לקחתי", הספר יופיע כאן.`)}
-    ${section("read", "קראתי", "כאן יופיעו ספרים שכבר קראת.")}
-    <details class="rejected">
-      <summary>ספרים שוויתרתי עליהם</summary>
-      ${section("rejected", "", "אין כאן כלום.", () =>
-        `<button class="restore">להחזיר להמלצות</button>`)}
+    <header class="page-head"><h2 class="page-title">הספרים שלי</h2></header>
+    ${shelfBlock("taken", "לקחתי",
+      `עוד לא לקחת ספרים. ${g("כשתלחצי", "כשתלחץ", "כשתלחצו")} "לקחתי", הספר יעמוד כאן.`)}
+    ${shelfBlock("read", "קראתי", "כאן יעמדו ספרים שכבר קראת.")}
+    <details class="returned">
+      <summary>ספרים שהחזרתי למדף <span class="count">${rejected.length}</span></summary>
+      ${rejected.length ? `<ul>${rejected.map((e) => `
+        <li data-id="${esc(e.book.id)}">
+          <span><strong>${esc(e.book.title)}</strong> · ${esc(e.book.author)}</span>
+          <button class="btn btn-quiet restore">להחזיר להמלצות</button>
+        </li>`).join("")}</ul>` : `<p>אין כאן כלום.</p>`}
     </details>
-  `);
+  `, "mybooks");
+
+  view.querySelectorAll(".shelf-area").forEach((area) =>
+    wireShelf(area, (book, spine) => openMyBook(book, spine)));
 
   view.querySelectorAll(".restore").forEach((btn) => btn.addEventListener("click", () => {
-    Store.clearBookStatus(btn.closest(".shelf-item").dataset.id);
+    Store.clearBookStatus(btn.closest("li").dataset.id);
     showMyBooks();
-    view.querySelector(".rejected").open = true;
+    view.querySelector(".returned").open = true;
   }));
+}
+
+function openMyBook(book, spine) {
+  const rec = Store.state.books[book.id];
+  const actions = rec.status === "taken"
+    ? [
+        { id: "finished", label: "סיימתי לקרוא", kind: "primary" },
+        { id: "disliked", label: "קראתי ולא התחברתי", kind: "soft" },
+        { id: "remove",   label: "להוציא מהרשימה", kind: "quiet" },
+      ]
+    : [{ id: "remove", label: "להוציא מהרשימה", kind: "quiet" }];
+
+  const note = rec.status === "taken"
+    ? `לקחת אותו ב-${formatDate(rec.date)}`
+    : rec.liked === false
+      ? `קראת ולא התחברת · ${formatDate(rec.date)}`
+      : `קראת · ${formatDate(rec.date)}`;
+
+  Shelf.open(book, {
+    spine,
+    note,
+    actions,
+    onAction: (id) => {
+      const before = { ...rec };
+      if (id === "finished") Store.setBookStatus(book.id, "read");
+      if (id === "disliked") Store.setBookStatus(book.id, "read", { liked: false });
+      if (id === "remove") Store.clearBookStatus(book.id);
+      showMyBooks();
+      Toast.show(
+        id === "remove" ? "הוצאתי מהרשימה." : "הספר עבר למדף \"קראתי\".",
+        () => { Store.restoreBook(book.id, before); showMyBooks(); });
+    },
+  });
 }
 
 // ---------- start ----------
 
 Store.load();
 showHome();
+Install.maybeShowHelp();
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("sw.js").catch(() => {});
+}

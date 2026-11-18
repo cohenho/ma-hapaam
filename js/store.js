@@ -12,8 +12,10 @@ const Store = (() => {
         adult: true,      // over 18? (the age question arrives in stage 3)
         gender: "f",      // "f" | "m" | "x" — how the app talks to you (stage 3)
       },
-      // bookId -> { status: "taken" | "read" | "rejected", date: ISO string }
+      // bookId -> { status: "taken" | "read" | "rejected", date: ISO string,
+      //            liked: false when "קראתי ולא התחברתי" }
       books: {},
+      seenInstallHelp: false,
     };
   }
 
@@ -41,8 +43,15 @@ const Store = (() => {
     }
   }
 
-  function setBookStatus(bookId, status) {
-    state.books[bookId] = { status, date: new Date().toISOString() };
+  function setBookStatus(bookId, status, extra = {}) {
+    state.books[bookId] = { status, date: new Date().toISOString(), ...extra };
+    save();
+  }
+
+  // Put back an exact earlier record (used by "ביטול").
+  function restoreBook(bookId, record) {
+    if (record) state.books[bookId] = record;
+    else delete state.books[bookId];
     save();
   }
 
@@ -57,6 +66,7 @@ const Store = (() => {
     get state() { return state; },
     setBookStatus,
     clearBookStatus,
+    restoreBook,
   };
 })();
 
