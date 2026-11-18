@@ -71,12 +71,26 @@ const PICK_ACTIONS = [
   { id: "rejected", label: "תחזיר לערימה",       kind: "link" },
 ];
 
+// learn: how much this choice nudges your taste profile towards (+) or away from (−) books like it
 const PICK_RESULT = {
-  taken:    { status: "taken",    toast: () => "הספר עבר ל\"הספרים שלי\". קריאה מהנה!" },
-  read:     { status: "read",     toast: () => "רשמתי שכבר קראת אותו." },
-  disliked: { status: "read",     extra: { liked: false }, toast: () => "רשמתי. אציע פחות ספרים כאלה." },
-  rejected: { status: "rejected", toast: () => "החזרתי לערימה. לא אציע אותו שוב." },
+  taken:    { status: "taken",    learn: 0.5,  toast: () => "הספר עבר ל\"הספרים שלי\". קריאה מהנה!" },
+  read:     { status: "read",     learn: 0.3,  toast: () => "רשמתי שכבר קראת אותו." },
+  disliked: { status: "read",     learn: -1.5, extra: { liked: false }, toast: () => "רשמתי. אציע פחות ספרים כאלה." },
+  rejected: { status: "rejected", learn: -0.4, toast: () => "החזרתי לערימה. לא אציע אותו שוב." },
 };
+
+// Change a book's status and teach the profile; returns a function that undoes both.
+function applyChoice(book, status, extra, learnAmount) {
+  const before = Store.state.books[book.id];
+  const learnedBefore = JSON.stringify(Store.state.profile.learned || {});
+  if (status) Store.setBookStatus(book.id, status, extra);
+  else Store.clearBookStatus(book.id);
+  if (learnAmount) { Taste.learn(Store.state.profile, book, learnAmount); Store.save(); }
+  return () => {
+    Store.state.profile.learned = JSON.parse(learnedBefore);
+    Store.restoreBook(book.id, before);
+  };
+}
 
 // current: ids on the desk now (so "ערימה אחרת" brings different ones).
 // samePicks: show exactly these books again (used by "ביטול").
@@ -119,12 +133,11 @@ function showRecommendations(categoryId, current = [], samePicks = null) {
       actions: PICK_ACTIONS,
       onAction: async (actionId) => {
         const result = PICK_RESULT[actionId];
-        const before = Store.state.books[book.id];
-        Store.setBookStatus(book.id, result.status, result.extra);
+        const undo = applyChoice(book, result.status, result.extra, result.learn);
         await Shelf.removeBook(spine, actionId === "taken" ? "out" : "away");
         if (!view.querySelector(".stack .bk")) view.querySelector(".desk-empty").hidden = false;
         Toast.show(result.toast(), () => {
-          Store.restoreBook(book.id, before);
+          undo();
           showRecommendations(categoryId, current, picks.filter((b) => !Store.state.books[b.id]));
         });
       },
@@ -208,14 +221,14 @@ function openMyBook(book, spine) {
     note,
     actions,
     onAction: (id) => {
-      const before = { ...rec };
-      if (id === "finished") Store.setBookStatus(book.id, "read");
-      if (id === "disliked") Store.setBookStatus(book.id, "read", { liked: false });
-      if (id === "remove") Store.clearBookStatus(book.id);
+      const undo =
+        id === "finished" ? applyChoice(book, "read", {}, 0.5) :
+        id === "disliked" ? applyChoice(book, "read", { liked: false }, -1.5) :
+        applyChoice(book, null, null, 0);
       showMyBooks();
       Toast.show(
         id === "remove" ? "הוצאתי מהרשימה." : "הספר עבר לערימת \"קראתי\".",
-        () => { Store.restoreBook(book.id, before); showMyBooks(); });
+        () => { undo(); showMyBooks(); });
     },
   });
 }
@@ -223,7 +236,8 @@ function openMyBook(book, spine) {
 // ---------- start ----------
 
 Store.load();
-showHome();
+if (Store.state.onboarded) showHome();
+else Onboarding.start();
 Install.maybeShowHelp();
 
 if ("serviceWorker" in navigator) {

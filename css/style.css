@@ -676,6 +676,88 @@ button {
 .tabbar button.active { color: var(--red); }
 .tab-icon svg { display: block; width: 24px; height: 24px; fill: currentColor; }
 
+/* ---------- first-time introduction ---------- */
+
+body.onboarding .tabbar { display: none; }
+body.onboarding #view { padding-bottom: calc(env(safe-area-inset-bottom) + 28px); }
+
+.ob-step { margin: 4px 0 0; font-size: 13px; color: var(--red); text-align: left; }
+
+.ob-head { position: relative; padding: 18px 0 22px; }
+.ob-head h1 { margin: 0; font-weight: 900; font-size: clamp(40px, 12vw, 54px); line-height: 1.05; }
+.ob-sub { margin: 12px 0 0; font-size: 19px; line-height: 1.5; color: var(--soft); }
+
+.brand-stamp.small { top: 6px; width: 76px; height: 76px; padding-top: 20px; font-size: 13px; }
+
+.ob-stamps { display: flex; gap: 16px; margin-top: 10px; }
+.ob-stamps .stamp { min-height: 72px; font-size: 26px; }
+
+.ob-go { display: block; width: 100%; margin-top: 22px; }
+.ob-skip, .ob-back { display: block; margin: 12px auto 0; }
+
+/* the card you write your taste on */
+.note-card {
+  display: block;
+  padding: 10px 14px 6px;
+  background: var(--paper-2);
+  border: 1px solid var(--edge);
+  box-shadow: 0 2px 0 #e3d6ba, 0 6px 14px rgba(80, 60, 30, .1);
+}
+.note-card-head {
+  display: block;
+  padding-bottom: 6px;
+  font-size: 12px;
+  color: var(--red);
+  border-bottom: 2px solid var(--red-line);
+}
+.note-card textarea {
+  display: block;
+  width: 100%;
+  min-height: 190px;
+  margin-top: 4px;
+  padding: 0;
+  font-family: var(--serif);
+  font-size: 18px;
+  line-height: 32px;
+  color: var(--ink);
+  background: repeating-linear-gradient(transparent 0 31px, var(--line) 31px 32px);
+  border: none;
+  outline: none;
+  resize: vertical;
+}
+.note-card textarea::placeholder { color: #a8977f; font-style: italic; }
+.note-card textarea.nudge { animation: nudge .4s ease; }
+@keyframes nudge { 25% { transform: translateX(-6px); } 75% { transform: translateX(6px); } }
+
+/* what we understood */
+.catalog-card {
+  padding: 12px 14px 14px;
+  background: var(--paper-2);
+  border: 1px solid var(--edge);
+  box-shadow: 0 2px 0 #e3d6ba, 0 6px 14px rgba(80, 60, 30, .1);
+}
+.chip-group + .chip-group { margin-top: 12px; }
+.chip-title { margin: 0 0 6px; font-family: var(--sans); font-size: 14px; font-weight: 700; color: var(--soft); }
+.chips, .picker { display: flex; flex-wrap: wrap; gap: 8px; }
+.picker { margin-top: 12px; padding-top: 12px; border-top: 1px dashed #c9b994; }
+.picker[hidden] { display: none; }
+.chip {
+  padding: 6px 12px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  border: 2px solid;
+  border-radius: 6px;
+  background: transparent;
+}
+.chip span { font-size: 11px; opacity: .7; margin-right: 4px; }
+.chip-like, .chip-author, .chip-book { color: var(--blue); border-color: var(--blue); }
+.chip-dislike, .chip-author-neg, .chip-book-neg { color: var(--red); border-color: var(--red); text-decoration: line-through; text-decoration-thickness: 1.5px; }
+.chip-add { color: var(--soft); border: 1.5px dashed #b9a684; font-weight: 600; }
+.chip:nth-child(3n+1) { transform: rotate(-1.5deg); }
+.chip:nth-child(3n+2) { transform: rotate(1deg); }
+.add-more { margin-top: 10px; }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }

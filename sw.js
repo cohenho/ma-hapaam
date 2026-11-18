@@ -2,13 +2,13 @@
 // App files: try the network first so updates arrive, fall back to the saved copy.
 // Covers and fonts: use the saved copy first, they never change.
 
-const VERSION = "v4";
+const VERSION = "v5";
 const APP_CACHE = `app-${VERSION}`;
 const EXTRA_CACHE = "covers-fonts";
 
 const APP_FILES = [
   "./", "index.html", "manifest.webmanifest", "css/style.css",
-  "js/store.js", "js/recommend.js", "js/shelf.js", "js/install.js", "js/app.js",
+  "js/store.js", "js/taste.js", "js/recommend.js", "js/shelf.js", "js/install.js", "js/onboarding.js", "js/app.js",
   "data/categories.js", "data/books.js",
   "icons/icon-192.png", "icons/icon-512.png", "icons/apple-touch-icon.png",
 ];

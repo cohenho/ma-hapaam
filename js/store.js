@@ -16,6 +16,9 @@ const Store = (() => {
       //            liked: false when "קראתי ולא התחברתי" }
       books: {},
       seenInstallHelp: false,
+      onboarded: false,   // finished (or skipped) the first-time introduction
+      // what the app knows about your taste (see js/taste.js)
+      profile: { text: "", likes: [], dislikes: [], books: [], authors: [], learned: {}, updatedAt: null },
     };
   }
 
@@ -27,7 +30,12 @@ const Store = (() => {
       const raw = localStorage.getItem(KEY);
       if (raw) {
         const saved = JSON.parse(raw);
-        state = { ...fresh(), ...saved, settings: { ...fresh().settings, ...saved.settings } };
+        state = {
+          ...fresh(),
+          ...saved,
+          settings: { ...fresh().settings, ...saved.settings },
+          profile: { ...fresh().profile, ...saved.profile },
+        };
       }
     } catch (err) {
       console.warn("Could not read saved data; starting fresh.", err);

@@ -1,6 +1,6 @@
-// Picks 3 books for a category.
-// Stage 1: by popularity, with a little randomness, and a mix of newer and well-known books.
-// Stage 3 adds the taste profile to scoreBook().
+// Picks 3 books for a category: books that match your taste profile, helped by
+// popularity, with a little randomness, and a mix of newer and well-known books.
+// With no profile yet (you skipped the introduction), popularity leads.
 
 const Recommend = (() => {
   const NEW_SINCE_YEARS = 8;   // "new-ish" = published in the last 8 years
@@ -18,8 +18,10 @@ const Recommend = (() => {
     );
   }
 
-  function scoreBook(book) {
-    return book.pop + Math.random() * 2;
+  function scoreBook(book, weights, hasProfile) {
+    if (!hasProfile) return book.pop + Math.random() * 2;
+    const match = Taste.bookFeatures(book).reduce((sum, f) => sum + (weights[f] || 0), 0);
+    return match + book.pop * 0.6 + Math.random() * 1.5;
   }
 
   function pickMix(sorted) {
@@ -49,8 +51,11 @@ const Recommend = (() => {
       if (fresh.length < PICK) fresh = pool;
     }
 
+    const profile = Store.state.profile;
+    const hasProfile = !Taste.isEmpty(profile);
+    const weights = hasProfile ? Taste.weights(profile) : {};
     const sorted = fresh
-      .map((b) => ({ b, s: scoreBook(b) }))
+      .map((b) => ({ b, s: scoreBook(b, weights, hasProfile) }))
       .sort((x, y) => y.s - x.s)
       .map((x) => x.b);
     const picks = pickMix(sorted);
