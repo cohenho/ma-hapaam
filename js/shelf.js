@@ -20,6 +20,10 @@ function coverUrl(book, size = "L") {
 
 // Where to look on the shelf: Hebrew fiction is shelved by the author's surname,
 // and the spine label usually shows its first letters.
+// Non-fiction is shelved by subject (Dewey numbers), not by the author's name.
+const isNonfiction = (book) => book.cats.includes("nonfiction");
+const shelfMark = (book) => (isNonfiction(book) ? "עיון" : "ס");
+
 function shelfLetters(book) {
   const firstAuthor = book.author.split(" ו")[0].trim();
   const surname = firstAuthor.split(/\s+/).pop().replace(/["״.]/g, "");
@@ -62,7 +66,7 @@ const Shelf = (() => {
       <button class="bk" data-id="${esc(book.id)}"
               style="--c:${colour};--len:${len}%;--t:${thick}px;--x:${shift}px"
               aria-label="${esc(book.title)} מאת ${esc(book.author)}">
-        <span class="bk-label">${esc(shelfLetters(book))}</span>
+        <span class="bk-label"><span class="bk-mark">${shelfMark(book)}</span>${isNonfiction(book) ? "" : `<br>${esc(shelfLetters(book))}`}</span>
         ${Store.state.books[book.id]?.rating ? `<span class="bk-stars" aria-label="${Store.state.books[book.id].rating} כוכבים">★${Store.state.books[book.id].rating}</span>` : ""}
         <span class="fit" data-max="26"><span class="bk-title">${esc(book.title)}</span></span>
         <span class="bk-author">${esc(book.author)}</span>
@@ -106,7 +110,7 @@ const Shelf = (() => {
     sheet.innerHTML = `
       <div class="sheet-grip" aria-hidden="true"></div>
       <button class="sheet-close" aria-label="סגירה">✕</button>
-      <div class="card-top typed"><span>${esc(shelfLetters(book))} · סיפורת</span><span>${book.year}</span></div>
+      <div class="card-top typed"><span>${isNonfiction(book) ? "עיון" : `ס · ${esc(shelfLetters(book))}`}</span><span>${book.year}</span></div>
       <div class="card-book">
         ${coverBlock(book)}
         <div class="card-head">
@@ -116,8 +120,10 @@ const Shelf = (() => {
         </div>
       </div>
       <p class="card-summary">${esc(book.summary)}</p>
-      <p class="card-where"><b>איפה במדף?</b> במדף הסיפורת, לפי שם המשפחה.
-        ${g("חפשי", "חפש", "חפשו")} את המדבקה <span class="typed">${esc(shelfLetters(book))}</span></p>
+      <p class="card-where"><b>איפה במדף?</b> ${isNonfiction(book)
+        ? `במדפי העיון, לפי נושא. הכי קל לשאול את הספרנית.`
+        : `במדף הסיפורת, לפי שם המשפחה של ${book.author.includes(" ו") ? "הכותבים" : "הסופר/ת"}.
+        ${g("חפשי", "חפש", "חפשו")} מדבקה עם <span class="typed">ס</span> ומתחתיה <span class="typed">${esc(shelfLetters(book))}</span>`}</p>
       ${note ? `<p class="card-note">${note}</p>` : ""}
       <div class="card-stamps">
         ${stamps.map((a) => `<button class="stamp ${a.kind}" data-action="${a.id}">${a.label}</button>`).join("")}

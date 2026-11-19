@@ -32,6 +32,7 @@ tabbar.addEventListener("click", (e) => {
   if (!btn) return;
   Shelf.close();
   if (btn.dataset.tab === "home") showHome();
+  if (btn.dataset.tab === "librarian") showLibrarian();
   if (btn.dataset.tab === "mybooks") showMyBooks();
   if (btn.dataset.tab === "taste") showTaste();
   if (btn.dataset.tab === "settings") showSettings();
@@ -73,7 +74,6 @@ function showHome() {
           <button class="card-link name-no">בלי שם, תודה</button>
         </div>
       </aside>` : ""}
-    <div class="lib-slot">${librarianHtml()}</div>
     ${Backup.shouldNag() ? `
       <aside class="backup-slip">
         <p><b>כדאי לגבות את הספרים שלך.</b> הכול שמור רק בטלפון הזה, וגיבוי שומר אותו גם אם הטלפון יתחלף.</p>
@@ -107,7 +107,6 @@ function showHome() {
     nameSlip.querySelector(".name-ok").addEventListener("click", () => done(nameSlip.querySelector(".slip-name").value.trim()));
     nameSlip.querySelector(".name-no").addEventListener("click", () => done(""));
   }
-  wireLibrarian();
   view.querySelector(".scan-btn").addEventListener("click", Scan.start);
   const slip = view.querySelector(".backup-slip:not(.privacy-slip)");
   if (slip) {
@@ -124,66 +123,100 @@ function showHome() {
     }));
 }
 
-// ---------- הספרנית ממליצה: the display stand on the home screen ----------
+// ---------- הספרנית: the librarian's tab ----------
+// The librarian's weekly picks on a display stand, and the book readers love most.
+
+function standItem(book, noteHtml, extraMark = "") {
+  const st = Store.state.books[book.id];
+  const mark = st ? { taken: "נלקח", read: "נקרא", rejected: "הוחזר" }[st.status] : extraMark;
+  return `
+    <button class="lib-item" data-id="${esc(book.id)}" aria-label="${esc(book.title)}">
+      <span class="lib-cover">${book.cover
+        ? `<img src="${coverUrl(book, "M")}" alt="" loading="lazy">`
+        : `<span class="lib-drawn" style="--c:${CLOTH[hashOf(book.id, CLOTH.length)]}">${esc(book.title)}</span>`}
+        ${mark ? `<span class="lib-mark">${mark}</span>` : ""}</span>
+      <span class="lib-card">
+        <span class="fit" data-max="16" data-min="10"><span class="lib-title">${esc(book.title)}</span></span>
+        <span class="lib-author">${esc(book.author)}</span>
+        ${noteHtml}
+      </span>
+    </button>`;
+}
+
+function librarianPicks() {
+  const lib = Store.state.librarian;
+  return (lib && lib.picks || []).map((p) => ({ ...p, book: bookById(p.book_id) })).filter((p) => p.book);
+}
+
+// The highest-rated book in our list that isn't already one of the picks.
+function topRatedBook() {
+  const picked = new Set(librarianPicks().map((p) => p.book.id));
+  const row = (Store.state.topRated || []).find((r) => bookById(r.book_id) && !picked.has(r.book_id));
+  return row ? { book: bookById(row.book_id), avg: Number(row.avg_rating), n: Number(row.ratings) } : null;
+}
 
 function librarianHtml() {
+  const picks = librarianPicks();
   const lib = Store.state.librarian;
-  const picks = (lib && lib.picks || [])
-    .map((p) => ({ ...p, book: bookById(p.book_id) }))
-    .filter((p) => p.book);
-  if (!picks.length) return "";
-  const when = new Date(lib.week + "T12:00:00").toLocaleDateString("he-IL", { day: "numeric", month: "long" });
+  const top = topRatedBook();
+  const when = lib && lib.week ? new Date(lib.week + "T12:00:00").toLocaleDateString("he-IL", { day: "numeric", month: "long" }) : "";
   return `
+    ${picks.length ? `
     <section class="lib-stand" aria-label="הספרנית ממליצה">
       <div class="lib-wall" aria-hidden="true"></div>
       <div class="lib-sign hand">הספרנית ממליצה</div>
       <p class="lib-week typed">השבוע של ${when}</p>
       <div class="lib-row">
-        ${picks.map((p) => {
-          const st = Store.state.books[p.book.id];
-          const mark = st ? { taken: "נלקח", read: "נקרא", rejected: "הוחזר" }[st.status] : "";
-          return `
-          <button class="lib-item" data-id="${esc(p.book.id)}" aria-label="${esc(p.book.title)}">
-            <span class="lib-cover">${p.book.cover
-              ? `<img src="${coverUrl(p.book, "M")}" alt="" loading="lazy">`
-              : `<span class="lib-drawn" style="--c:${CLOTH[hashOf(p.book.id, CLOTH.length)]}">${esc(p.book.title)}</span>`}
-              ${mark ? `<span class="lib-mark">${mark}</span>` : ""}</span>
-            <span class="lib-card">
-              <span class="fit" data-max="16" data-min="10"><span class="lib-title">${esc(p.book.title)}</span></span>
-              <span class="lib-author">${esc(p.book.author)}</span>
-              ${p.note ? `<span class="lib-note hand">${esc(p.note)}</span>` : ""}
-            </span>
-          </button>`;
-        }).join("")}
+        ${picks.map((p) => standItem(p.book, p.note ? `<span class="lib-note hand">${esc(p.note)}</span>` : "")).join("")}
       </div>
-    </section>`;
+    </section>` : ""}
+    ${top ? `
+    <section class="lib-stand lib-top" aria-label="הכי אהוב על הקוראים">
+      <div class="lib-wall" aria-hidden="true"></div>
+      <div class="lib-sign hand">הכי אהוב על הקוראים</div>
+      <p class="lib-week typed">לפי הדירוגים של כל מי שקורא כאן</p>
+      <div class="lib-row">
+        ${standItem(top.book, `<span class="lib-note hand">★${top.avg.toFixed(1)} · ${top.n === 1 ? "דירוג אחד" : `${top.n} דירוגים`}</span>`)}
+      </div>
+    </section>` : ""}`;
+}
+
+function showLibrarian() {
+  setTab("librarian");
+  const content = librarianHtml();
+  render(`
+    <header class="page-head"><h2 class="page-title">הספרנית</h2></header>
+    ${content.trim() ? content : `
+      <p class="empty-note">הספרנית עוד בוחרת את ההמלצות של השבוע. ${g("בואי", "בוא", "בואו")} לבדוק שוב בקרוב!</p>`}
+    <p class="lib-soon hand">בקרוב: "במיוחד בשבילך", לפי מה שקוראים דומים ${g("לך", "לך", "לכם")} אוהבים</p>
+  `, "librarian");
+  wireLibrarian();
 }
 
 function wireLibrarian() {
   view.querySelectorAll(".lib-item").forEach((btn) => btn.addEventListener("click", () => {
     const book = bookById(btn.dataset.id);
-    const pick = (Store.state.librarian.picks || []).find((p) => p.book_id === book.id) || {};
+    const pick = librarianPicks().find((p) => p.book.id === book.id);
+    const top = topRatedBook();
+    const note = pick && pick.note ? `<span class="hand lib-quote">"${esc(pick.note)}" · הספרנית</span>`
+      : top && top.book.id === book.id ? `<span class="hand lib-quote">★${top.avg.toFixed(1)} מהקוראים</span>` : "";
     Shelf.open(book, {
       actions: Store.state.books[book.id] ? [{ id: "close", label: "סגירה", kind: "link" }] : PICK_ACTIONS,
-      note: pick.note ? `<span class="hand lib-quote">"${esc(pick.note)}" · הספרנית</span>` : "",
+      note,
       onAction: (actionId) => {
         if (actionId === "close") return;
         const result = PICK_RESULT[actionId];
         const undo = applyChoice(book, result.status, result.extra);
-        showHome();
-        Toast.show(result.toast(), () => { undo(); showHome(); });
+        showLibrarian();
+        Toast.show(result.toast(), () => { undo(); showLibrarian(); });
       },
     });
   }));
 }
 
-// After fresh picks arrive, redraw the stand if the home screen is showing.
+// After fresh picks or ratings arrive, redraw the librarian's tab if it's showing.
 function refreshLibrarian() {
-  const slot = view.dataset.screen === "home" && view.querySelector(".lib-slot");
-  if (!slot) return;
-  slot.innerHTML = librarianHtml();
-  fitTitles(slot);
-  wireLibrarian();
+  if (view.dataset.screen === "librarian") showLibrarian();
 }
 
 // ---------- recommendations: three books on the lending desk ----------
@@ -377,7 +410,7 @@ Install.maybeShowHelp();
 if (Cloud.enabled) {
   Cloud.trackOpen();
   Cloud.flush();
-  Cloud.fetchPicks().then(refreshLibrarian);
+  Promise.all([Cloud.fetchPicks(), Cloud.fetchTopRated()]).then(refreshLibrarian);
 }
 
 if ("serviceWorker" in navigator) {

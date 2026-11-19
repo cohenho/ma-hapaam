@@ -32,6 +32,7 @@
   const coverUrl = (b, size = "S") => `https://covers.openlibrary.org/b/id/${b.cover}-${size}.jpg?default=false`;
 
   async function api(path, { method = "GET", body, headers = {} } = {}) {
+    if (!(await ensureSession())) { signOut(); throw new Error("צריך להתחבר שוב."); }
     const res = await fetch(`${cfg.url}${path}`, {
       method,
       headers: {
@@ -47,16 +48,50 @@
     return res.status === 204 || method !== "GET" ? null : res.json();
   }
 
-  // ---------- sign in ----------
+  // ---------- sign in (stays signed in on this device, renewing itself) ----------
+
+  const store = {
+    get: (k) => { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+    set: (k, v) => { try { localStorage.setItem(k, JSON.stringify(v)); } catch { /* private mode */ } },
+    del: (k) => { try { localStorage.removeItem(k); } catch { /* private mode */ } },
+  };
+
+  function keep(data) {
+    session = {
+      access_token: data.access_token,
+      refresh_token: data.refresh_token,
+      expires_at: data.expires_at || Math.floor(Date.now() / 1000) + (data.expires_in || 3600),
+    };
+    store.set(SESSION_KEY, session);
+  }
 
   function loadSession() {
-    try { session = JSON.parse(sessionStorage.getItem(SESSION_KEY)); } catch { session = null; }
-    if (session && session.expires_at * 1000 < Date.now() + 60000) session = null;
+    session = store.get(SESSION_KEY);
+  }
+
+  // A sign-in lasts an hour; after that, quietly swap the refresh token for a new one.
+  async function ensureSession() {
+    if (!session) return false;
+    if (session.expires_at * 1000 > Date.now() + 60000) return true;
+    if (!session.refresh_token) return false;
+    try {
+      const res = await fetch(`${cfg.url}/auth/v1/token?grant_type=refresh_token`, {
+        method: "POST",
+        headers: { apikey: cfg.anonKey, "Content-Type": "application/json" },
+        body: JSON.stringify({ refresh_token: session.refresh_token }),
+      });
+      const data = await res.json();
+      if (!res.ok || !data.access_token) return false;
+      keep(data);
+      return true;
+    } catch {
+      return false;
+    }
   }
 
   function signOut() {
     session = null;
-    try { sessionStorage.removeItem(SESSION_KEY); } catch { /* private mode */ }
+    store.del(SESSION_KEY);
     showLogin();
   }
 
@@ -72,9 +107,9 @@
         <h1>חדר<br>הספרנית</h1>
         <p class="hero-sub">הכניסה לצוות בלבד</p>
       </header>
-      <form class="set-card login-card">
+      <form class="set-card login-card" method="post" action="#">
         <h3>כניסה</h3>
-        <label class="field"><span>אימייל</span><input type="email" name="email" autocomplete="username" required dir="ltr"></label>
+        <label class="field"><span>אימייל</span><input type="email" name="email" autocomplete="username" required dir="ltr" value="${esc(store.get("bythebook-librarian-email") || "")}"></label>
         <label class="field"><span>סיסמה</span><input type="password" name="password" autocomplete="current-password" required dir="ltr"></label>
         ${message ? `<p class="set-note err">${esc(message)}</p>` : ""}
         <button class="stamp stamp-red" style="width:100%;margin-top:14px">כניסה</button>
@@ -90,8 +125,8 @@
         });
         const data = await res.json();
         if (!res.ok || !data.access_token) throw new Error();
-        session = { access_token: data.access_token, expires_at: data.expires_at || Math.floor(Date.now() / 1000) + 3600 };
-        try { sessionStorage.setItem(SESSION_KEY, JSON.stringify(session)); } catch { /* private mode */ }
+        keep(data);
+        store.set("bythebook-librarian-email", f.get("email"));
         showRoom();
       } catch {
         showLogin("האימייל או הסיסמה לא נכונים.");
@@ -217,6 +252,7 @@
 
   let withNames = true; // until the database has the display_name column
   async function fetchEvents(days) {
+    if (!(await ensureSession())) { signOut(); throw new Error("צריך להתחבר שוב."); }
     const since = new Date(Date.now() - days * 864e5).toISOString();
     const all = [];
     for (let from = 0; from < 50000; from += 1000) {
@@ -337,5 +373,5 @@
   // ---------- start ----------
 
   loadSession();
-  if (session) showRoom(); else showLogin();
+  ensureSession().then((ok) => (ok ? showRoom() : showLogin()));
 })();

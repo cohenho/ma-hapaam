@@ -41,6 +41,30 @@ const Cloud = (() => {
     }
   }
 
+  // The book readers rate highest (only averages come back, never who rated what).
+  // Needs tools/supabase-top-rated.sql; without it this quietly returns nothing.
+  async function fetchTopRated() {
+    if (!enabled) return null;
+    const call = async (min) => {
+      const res = await fetch(`${cfg.url}/rest/v1/rpc/top_rated_books`, {
+        method: "POST",
+        headers: headers(),
+        body: JSON.stringify({ min_count: min, max_rows: 5 }),
+      });
+      if (!res.ok) throw new Error(res.status);
+      return res.json();
+    };
+    try {
+      let rows = await call(2);
+      if (!rows.length) rows = await call(1); // early days: one rating is enough
+      Store.state.topRated = rows;
+      Store.save();
+      return rows;
+    } catch {
+      return Store.state.topRated || null;
+    }
+  }
+
   // ---------- anonymous usage ----------
 
   function anonId() {
@@ -109,5 +133,5 @@ const Cloud = (() => {
     Store.save();
   }
 
-  return { enabled, headers, weekStart, fetchPicks, track, trackOpen, flush, setSharing, cfg };
+  return { enabled, headers, weekStart, fetchPicks, fetchTopRated, track, trackOpen, flush, setSharing, cfg };
 })();

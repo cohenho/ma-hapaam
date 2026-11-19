@@ -5917,7 +5917,8 @@ window.BOOKS = [
   "year": 1947,
   "cats": [
    "ya",
-   "classic"
+   "classic",
+   "nonfiction"
   ],
   "tags": [
    "נוער",
@@ -7983,7 +7984,8 @@ window.BOOKS = [
   "year": 2002,
   "cats": [
    "classic",
-   "trendy"
+   "trendy",
+   "nonfiction"
   ],
   "tags": [
    "ספרות ישראלית",
@@ -8879,7 +8881,8 @@ window.BOOKS = [
   "enAuthor": "Etgar Keret",
   "year": 2015,
   "cats": [
-   "light"
+   "light",
+   "nonfiction"
   ],
   "tags": [
    "הומור",
@@ -11678,7 +11681,8 @@ window.BOOKS = [
   "year": 1966,
   "cats": [
    "thriller",
-   "classic"
+   "classic",
+   "nonfiction"
   ],
   "tags": [
    "מתח",
@@ -12774,7 +12778,7 @@ window.BOOKS = [
   "pop": 4,
   "adult": false,
   "summary": "השטן מגיע למוסקבה הסובייטית עם פמליה מוזרה, כולל חתול שחור ענק שמדבר, ומפיל את העיר לכאוס. במקביל, מרגריטה מחפשת את אהובה, סופר שכתב רומן על פונטיוס פילטוס.",
-  "cover": null
+  "cover": 15013644
  },
  {
   "id": "lolita",
@@ -13089,7 +13093,8 @@ window.BOOKS = [
   "enAuthor": "Primo Levi",
   "year": 1947,
   "cats": [
-   "classic"
+   "classic",
+   "nonfiction"
   ],
   "tags": [
    "היסטורי",
@@ -13467,7 +13472,8 @@ window.BOOKS = [
   "enAuthor": "Maya Angelou",
   "year": 1969,
   "cats": [
-   "classic"
+   "classic",
+   "nonfiction"
   ],
   "tags": [
    "משפחה",
@@ -14122,5 +14128,430 @@ window.BOOKS = [
   "adult": false,
   "summary": "סופר צעיר ומופנם נוסע לכרתים כדי לפתוח מכרה, ולוקח איתו את זורבה, איש עבודה מבוגר, פרוע ומלא חיים. זורבה מלמד אותו לרקוד, לאהוב ולחיות.",
   "cover": 14567040
+ },
+ {
+  "id": "sapiens",
+  "title": "קיצור תולדות האנושות",
+  "author": "יובל נח הררי",
+  "en": "Sapiens",
+  "enAuthor": "Yuval Noah Harari",
+  "year": 2011,
+  "cats": [
+   "nonfiction",
+   "trendy"
+  ],
+  "tags": [
+   "עיון",
+   "היסטוריה"
+  ],
+  "style": [
+   "smart",
+   "fast"
+  ],
+  "pop": 5,
+  "adult": false,
+  "summary": "איך הפך קוף לא חשוב באפריקה לשליט כדור הארץ? יובל נח הררי עובר על 70 אלף שנות היסטוריה, מהמהפכה הקוגניטיבית, דרך החקלאות והכסף ועד המדע, בשפה בהירה ומלאת הומור.",
+  "cover": 8634250
+ },
+ {
+  "id": "homo-deus",
+  "title": "ההיסטוריה של המחר",
+  "author": "יובל נח הררי",
+  "en": "Homo Deus",
+  "enAuthor": "Yuval Noah Harari",
+  "year": 2015,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "עתיד"
+  ],
+  "style": [
+   "smart"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אחרי שהאנושות התגברה ברובה על רעב, מגפות ומלחמות, מה יהיו המטרות הבאות שלה? הררי בוחן אלמוות, אושר ובינה מלאכותית, ומה הם עלולים לעשות לנו.",
+  "cover": 14060659
+ },
+ {
+  "id": "21-lessons",
+  "title": "21 מחשבות על המאה ה-21",
+  "author": "יובל נח הררי",
+  "en": "21 Lessons for the 21st Century",
+  "enAuthor": "Yuval Noah Harari",
+  "year": 2018,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "אקטואליה"
+  ],
+  "style": [
+   "smart",
+   "short"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "פרקים קצרים על השאלות הבוערות של ימינו: פייק ניוז, טרור, עבודה בעידן הבינה המלאכותית, דת וחינוך. אפשר לקרוא פרק אחד בכל פעם.",
+  "cover": 10108277
+ },
+ {
+  "id": "nexus",
+  "title": "נקסוס",
+  "author": "יובל נח הררי",
+  "en": "Nexus",
+  "enAuthor": "Yuval Noah Harari",
+  "year": 2024,
+  "cats": [
+   "nonfiction",
+   "trendy"
+  ],
+  "tags": [
+   "עיון",
+   "אקטואליה",
+   "היסטוריה"
+  ],
+  "style": [
+   "smart"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "תולדות רשתות המידע, מסיפורים ומסמכים ועד אלגוריתמים. הררי שואל למה מידע רב לא בהכרח עושה אותנו חכמים יותר, ומה הבינה המלאכותית משנה.",
+  "cover": 14812834
+ },
+ {
+  "id": "steve-jobs-bio",
+  "title": "סטיב ג'ובס",
+  "author": "וולטר אייזקסון",
+  "en": "Steve Jobs",
+  "enAuthor": "Walter Isaacson",
+  "year": 2011,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה"
+  ],
+  "style": [
+   "character",
+   "fast"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "הביוגרפיה המורשית של מייסד אפל, שנכתבה מתוך עשרות שיחות איתו ועם הקרובים לו. סיפור על גאונות, עקשנות ויופי, וגם על אדם קשה מאוד.",
+  "cover": 12374726
+ },
+ {
+  "id": "elon-musk-bio",
+  "title": "אילון מאסק",
+  "author": "וולטר אייזקסון",
+  "en": "Elon Musk",
+  "enAuthor": "Walter Isaacson",
+  "year": 2023,
+  "cats": [
+   "nonfiction",
+   "trendy"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "אקטואליה"
+  ],
+  "style": [
+   "character",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אייזקסון ליווה את אילון מאסק במשך שנתיים, בחברות שלו ובחיים הפרטיים. מילדות קשה בדרום אפריקה ועד טסלה, ספייס-X וטוויטר.",
+  "cover": 14420016
+ },
+ {
+  "id": "einstein-bio",
+  "title": "איינשטיין: חייו והיקום שלו",
+  "author": "וולטר אייזקסון",
+  "en": "Einstein: His Life and Universe",
+  "enAuthor": "Walter Isaacson",
+  "year": 2007,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "מדע"
+  ],
+  "style": [
+   "smart",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חייו של אלברט איינשטיין, הפקיד הצעיר במשרד הפטנטים שהפך את הפיזיקה. מסביר בפשטות את הרעיונות שלו, ומראה גם את האדם, המשפחה והפוליטיקה.",
+  "cover": 12374726
+ },
+ {
+  "id": "thinking-fast-slow",
+  "title": "לחשוב מהר, לחשוב לאט",
+  "author": "דניאל כהנמן",
+  "en": "Thinking, Fast and Slow",
+  "enAuthor": "Daniel Kahneman",
+  "year": 2011,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "פסיכולוגיה"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "חתן פרס נובל הישראלי מסביר שבראש שלנו פועלות שתי מערכות: אחת מהירה ואינטואיטיבית, ואחת איטית ושקולה. הספר מראה איך הן מטעות אותנו בהחלטות של כל יום.",
+  "cover": 13290711
+ },
+ {
+  "id": "guns-germs-steel",
+  "title": "רובים, חיידקים ופלדה",
+  "author": "ג'ארד דיימונד",
+  "en": "Guns, Germs, and Steel",
+  "enAuthor": "Jared Diamond",
+  "year": 1997,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "היסטוריה"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "למה אירופאים כבשו את אמריקה, ולא להפך? דיימונד מראה איך גאוגרפיה, צמחים וחיות הבית קבעו את גורלן של חברות שלמות.",
+  "cover": 7884018
+ },
+ {
+  "id": "freakonomics",
+  "title": "פריקונומיקס",
+  "author": "סטיבן לוויט וסטיבן דאבנר",
+  "en": "Freakonomics",
+  "enAuthor": "Steven Levitt",
+  "year": 2005,
+  "cats": [
+   "nonfiction",
+   "light"
+  ],
+  "tags": [
+   "עיון",
+   "כלכלה"
+  ],
+  "style": [
+   "funny",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "כלכלן סקרן שואל שאלות מוזרות: מה משותף למורים ולמתאבקי סומו? למה סוחרי סמים גרים אצל אמא? ספר מצחיק שמראה איך כלכלה מסבירה כמעט הכול.",
+  "cover": 11172914
+ },
+ {
+  "id": "power-of-habit",
+  "title": "כוחו של הרגל",
+  "author": "צ'ארלס דוהיג",
+  "en": "The Power of Habit",
+  "enAuthor": "Charles Duhigg",
+  "year": 2012,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "פסיכולוגיה"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "למה אנחנו עושים מה שאנחנו עושים, ואיך משנים הרגל? עיתונאי מסביר את המדע של ההרגלים, עם סיפורים מעולם העסקים, הספורט והחיים האישיים.",
+  "cover": 9078085
+ },
+ {
+  "id": "man-wife-hat",
+  "title": "האיש שחשב שאשתו היא כובע",
+  "author": "אוליבר סאקס",
+  "en": "The Man Who Mistook His Wife for a Hat",
+  "enAuthor": "Oliver Sacks",
+  "year": 1985,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "מדע"
+  ],
+  "style": [
+   "warm",
+   "smart",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "נוירולוג מספר על מטופלים מיוחדים: אדם שלא מזהה פרצופים, אישה שאיבדה את תחושת הגוף שלה, ותאומים שמשחקים במספרים ענקיים. סיפורים אנושיים ומרתקים על המוח.",
+  "cover": 6986188
+ },
+ {
+  "id": "brief-history-time",
+  "title": "קיצור תולדות הזמן",
+  "author": "סטיבן הוקינג",
+  "en": "A Brief History of Time",
+  "enAuthor": "Stephen Hawking",
+  "year": 1988,
+  "cats": [
+   "nonfiction",
+   "classic"
+  ],
+  "tags": [
+   "עיון",
+   "מדע"
+  ],
+  "style": [
+   "smart",
+   "short"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "מהו הזמן? איך התחיל היקום? מה קורה בתוך חור שחור?",
+  "cover": 10432365
+ },
+ {
+  "id": "catch-67",
+  "title": "מלכוד 67",
+  "author": "מיכה גודמן",
+  "en": "Catch-67",
+  "enAuthor": "Micah Goodman",
+  "year": 2017,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "אקטואליה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "smart",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "למה הוויכוח על השטחים כל כך תקוע? מיכה גודמן מציג בהגינות את הרעיונות של הימין ושל השמאל, ומציע דרך לחשוב על הבעיה בלי לצעוק.",
+  "cover": 9185762
+ },
+ {
+  "id": "i-am-malala",
+  "title": "אני מלאלה",
+  "author": "מלאלה יוספזאי",
+  "en": "I Am Malala",
+  "enAuthor": "Malala Yousafzai",
+  "year": 2013,
+  "cats": [
+   "nonfiction",
+   "ya"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "אקטואליה"
+  ],
+  "style": [
+   "emotional",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מלאלה, נערה מפקיסטן שנאבקה על הזכות של בנות ללמוד, נורתה בראשה בידי הטליבאן בדרך לבית הספר, ושרדה. סיפורה, מעמק סוואט ועד פרס נובל לשלום.",
+  "cover": 9358664
+ },
+ {
+  "id": "mans-search-meaning",
+  "title": "האדם מחפש משמעות",
+  "author": "ויקטור פרנקל",
+  "en": "Man's Search for Meaning",
+  "enAuthor": "Viktor Frankl",
+  "year": 1946,
+  "cats": [
+   "nonfiction",
+   "classic"
+  ],
+  "tags": [
+   "עיון",
+   "פסיכולוגיה",
+   "השראה"
+  ],
+  "style": [
+   "short",
+   "emotional"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "ויקטור פרנקל, פסיכיאטר יהודי מווינה, מתאר את השנים שעבר במחנות הריכוז, ומה למד שם: שגם כשלוקחים מאדם הכול, נשאר לו החופש לבחור את היחס שלו.",
+  "cover": 11203708
+ },
+ {
+  "id": "glass-castle",
+  "title": "טירת הזכוכית",
+  "author": "ג'נט וולס",
+  "en": "The Glass Castle",
+  "enAuthor": "Jeannette Walls",
+  "year": 2005,
+  "cats": [
+   "nonfiction",
+   "trendy"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "משפחה"
+  ],
+  "style": [
+   "emotional",
+   "character"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "ג'נט וולס גדלה עם אב מבריק ושיכור ואם אמנית שלא רצתה לבשל, בנדודים בין עיירות ובעוני. סיפור אמיתי על ילדות פרועה, ועל אהבה למשפחה למרות הכול.",
+  "cover": 11517692
+ },
+ {
+  "id": "paris-apartment",
+  "title": "הדירה בפריז",
+  "author": "לוסי פולי",
+  "en": "The Paris Apartment",
+  "enAuthor": "Lucy Foley",
+  "year": 2022,
+  "cats": [
+   "thriller",
+   "trendy"
+  ],
+  "tags": [
+   "מותחן",
+   "תעלומה"
+  ],
+  "style": [
+   "twists",
+   "fast",
+   "mystery"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "ג'ס, שצריכה מקום לגור בו, מגיעה לדירה של אחיה בבניין יוקרתי בפריז, אבל הוא לא שם. ככל שהיא שואלת את השכנים, ברור שכל אחד מהם יודע משהו.",
+  "cover": 11541298
  }
 ];

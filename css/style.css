@@ -318,6 +318,7 @@ button {
 .bk-label {
   flex-shrink: 0;
   min-width: 34px;
+  line-height: 1.15;
   padding: 3px 5px;
   font-family: var(--typed);
   font-size: 12px;
@@ -1294,3 +1295,10 @@ body.onboarding #view { padding-bottom: calc(env(safe-area-inset-bottom) + 28px)
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; }
 }
+
+.bk-mark { font-size: 11px; }
+
+.lib-top { margin-top: -10px; }
+.lib-top .lib-item { width: 40%; max-width: 170px; }
+.lib-soon { margin: 6px 0 0; text-align: center; font-size: 22px; color: var(--soft); }
+.tabbar button { font-size: 12px; }

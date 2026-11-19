@@ -9,6 +9,7 @@ window.CATEGORIES = [
   { id: "thriller", name: "מותחן",          icon: "🔍", desc: "לא תצליחו להניח" },
   { id: "horror",   name: "אימה",           icon: "🕯️", desc: "רק לא לפני השינה" },
   { id: "ya",       name: "נוער",           icon: "🎒", desc: "לבני נוער, וגם למי שמרגיש כזה" },
+  { id: "nonfiction", name: "עיון וביוגרפיות", icon: "📰", desc: "אקטואליה, ביוגרפיות וסיפורים אמיתיים" },
   { id: "classic",  name: "קלאסיקה",        icon: "🏛️", desc: "ספרים לקרוא פעם בחיים" },
   { id: "romance",  name: "רומנטי/אירוטי",  icon: "🌹", desc: "אהבה, תשוקה ולב", adultOnly: true },
 ];
