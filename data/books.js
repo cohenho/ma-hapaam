@@ -16570,5 +16570,914 @@ window.BOOKS = [
   "adult": false,
   "summary": "1962: אדוארד ופלורנס, זוג צעיר ואוהב, מגיעים למלון ליד החוף בליל הכלולות שלהם. שניהם מפחדים, ואף אחד לא מעז לומר מה הוא מרגיש.",
   "cover": 5016260
+ },
+ {
+  "id": "city-of-bones",
+  "title": "עיר של עצמות",
+  "author": "קסנדרה קלייר",
+  "en": "City of Bones",
+  "enAuthor": "Cassandra Clare",
+  "year": 2007,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קליירי, נערה ניו יורקית רגילה, רואה במועדון שלושה צעירים הורגים מישהו, ואף אחד אחר לא רואה אותם. הם \"ציידי צללים\", ועד מהרה גם אמה נעלמת.",
+  "cover": 10121449
+ },
+ {
+  "id": "house-of-night",
+  "title": "בית הלילה",
+  "author": "פ. ק. קאסט וקריסטין קאסט",
+  "en": "Marked",
+  "enAuthor": "P. C. Cast",
+  "year": 2007,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "ערפדים",
+   "פנטזיה"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "זואי, בת 16, מסומנת יום אחד כערפדה מתחילה ונשלחת לבית הספר \"בית הלילה\". שם היא מגלה שיש לה כוחות מיוחדים, ושלא כל מי שמחייך הוא חבר.",
+  "cover": 181187
+ },
+ {
+  "id": "solitude-primes",
+  "title": "בדידותם של המספרים הראשוניים",
+  "author": "פאולו ג'ורדנו",
+  "en": "The Solitude of Prime Numbers",
+  "enAuthor": "Paolo Giordano",
+  "year": 2008,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "מרגש"
+  ],
+  "style": [
+   "slow",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אליס ומאטיה, כל אחד פגוע מאירוע בילדות, נפגשים בתיכון ומרגישים קרובים כמו שני מספרים ראשוניים תאומים: קרובים מאוד, ותמיד נפרדים. סיפור על בדידות לאורך שנים.",
+  "cover": 5724446
+ },
+ {
+  "id": "white-tiger",
+  "title": "הטיגריס הלבן",
+  "author": "ארווינד אדיגה",
+  "en": "The White Tiger",
+  "enAuthor": "Aravind Adiga",
+  "year": 2008,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "הומור"
+  ],
+  "style": [
+   "dark",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בלראם, בן לכפר עני בהודו, נעשה נהג של משפחה עשירה, ומספר במכתבים לראש ממשלת סין איך הפך ליזם מצליח. התשובה מצחיקה, אפלה וחדה.",
+  "cover": 10497892
+ },
+ {
+  "id": "three-body",
+  "title": "בעיית שלושת הגופים",
+  "author": "ליו צ'יסין",
+  "en": "The Three-Body Problem",
+  "enAuthor": "Liu Cixin",
+  "year": 2008,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "מדענים בסין מתאבדים בזה אחר זה, וחוקר ננו-טכנולוגיה מתחיל לראות ספירה לאחור בעיניו. הדרך לתשובה עוברת במשחק מחשב מוזר ובאות שנשלח לחלל לפני עשרות שנים.",
+  "cover": 10526598
+ },
+ {
+  "id": "metro-2033",
+  "title": "מטרו 2033",
+  "author": "דמיטרי גלוכובסקי",
+  "en": "Metro 2033",
+  "enAuthor": "Dmitry Glukhovsky",
+  "year": 2005,
+  "cats": [
+   "horror",
+   "thriller"
+  ],
+  "tags": [
+   "דיסטופיה",
+   "אימה"
+  ],
+  "style": [
+   "dark",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אחרי מלחמה גרעינית, שרידי מוסקבה חיים בתחנות הרכבת התחתית. ארטיום, צעיר מתחנה בקצה הקו, יוצא למסע במנהרות החשוכות כדי להציל את כולם מאיום חדש.",
+  "cover": 9931150
+ },
+ {
+  "id": "bernadette",
+  "title": "איפה את, ברנדט",
+  "author": "מריה סמפל",
+  "en": "Where'd You Go, Bernadette",
+  "enAuthor": "Maria Semple",
+  "year": 2012,
+  "cats": [
+   "light"
+  ],
+  "tags": [
+   "הומור",
+   "משפחה"
+  ],
+  "style": [
+   "funny",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ברנדט, אדריכלית גאונה שהפכה לאמא מסתגרת ושונאת אנשים, נעלמת רגע לפני טיול משפחתי לאנטארקטיקה. בתה בי, בת 15, אוספת מיילים ומסמכים כדי למצוא אותה.",
+  "cover": 10395227
+ },
+ {
+  "id": "defending-jacob",
+  "title": "להגן על ג'ייקוב",
+  "author": "ויליאם לנדיי",
+  "en": "Defending Jacob",
+  "enAuthor": "William Landay",
+  "year": 2012,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "משפטי",
+   "משפחה"
+  ],
+  "style": [
+   "twists",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אנדי, תובע ותיק, חוקר רצח של נער בפארק, עד שבנו בן ה-14, ג'ייקוב, נעשה החשוד. עכשיו הוא אבא שצריך להחליט במה הוא מאמין.",
+  "cover": 7387091
+ },
+ {
+  "id": "casual-vacancy",
+  "title": "כיסא פנוי",
+  "author": "ג'יי. קיי. רולינג",
+  "en": "The Casual Vacancy",
+  "enAuthor": "J. K. Rowling",
+  "year": 2012,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "דרמה"
+  ],
+  "style": [
+   "character",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "חבר מועצה אהוב מת פתאום בעיירה אנגלית ציורית, והמושב שלו במועצה מתפנה. הבחירות שמגיעות חושפות את כל הסודות והשנאות של העיירה. רומן למבוגרים מאת מחברת הארי פוטר.",
+  "cover": 9326674
+ },
+ {
+  "id": "tell-the-wolves",
+  "title": "תגידו לזאבים שחזרתי הביתה",
+  "author": "קרול ריפקה בראנט",
+  "en": "Tell the Wolves I'm Home",
+  "enAuthor": "Carol Rifka Brunt",
+  "year": 2012,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "מרגש",
+   "נוער"
+  ],
+  "style": [
+   "emotional",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1987: ג'ון, בת 14, מאבדת את דודה האהוב פין, צייר, לאיידס. אחרי ההלוויה היא מגלה שהיה לו בן זוג שאיש במשפחה לא רצה לדעת עליו, ומתיידדת איתו בסתר.",
+  "cover": 7435474
+ },
+ {
+  "id": "crazy-rich-asians",
+  "title": "אסייתים עשירים מטורפים",
+  "author": "קווין קוואן",
+  "en": "Crazy Rich Asians",
+  "enAuthor": "Kevin Kwan",
+  "year": 2013,
+  "cats": [
+   "light",
+   "romance"
+  ],
+  "tags": [
+   "הומור",
+   "רומנטי"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רייצ'ל, מרצה בניו יורק, נוסעת עם החבר שלה ניק לחתונה בסינגפור, ומגלה שהוא בן למשפחה העשירה ביותר באסיה. כל אחת שם רוצה את ניק, ואמו לא רוצה את רייצ'ל.",
+  "cover": 8251889
+ },
+ {
+  "id": "school-good-evil",
+  "title": "בית הספר לטוב ולרע",
+  "author": "סומן צ'אינאני",
+  "en": "The School for Good and Evil",
+  "enAuthor": "Soman Chainani",
+  "year": 2013,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "פנטזיה"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סופי, שחולמת להיות נסיכה, ואגתה, החברה הקודרת שלה, נחטפות לבית ספר שמגדל גיבורים ונבלים מהאגדות. להפתעת כולן, סופי נשלחת לרע, ואגתה לטוב.",
+  "cover": 7879561
+ },
+ {
+  "id": "orphan-train",
+  "title": "רכבת היתומים",
+  "author": "כריסטינה בייקר קליין",
+  "en": "Orphan Train",
+  "enAuthor": "Christina Baker Kline",
+  "year": 2013,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מרגש"
+  ],
+  "style": [
+   "emotional",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מולי, נערה במשפחת אומנה, עושה עבודות שירות בבית של ויויאן בת ה-91. מסתבר שגם ויויאן הייתה יתומה, שנשלחה ב-1929 ברכבת יתומים מניו יורק למערב התיכון.",
+  "cover": 7434852
+ },
+ {
+  "id": "tsukuru-tazaki",
+  "title": "צקורו טזאקי חסר הצבע ושנות העלייה לרגל שלו",
+  "author": "הארוקי מורקמי",
+  "en": "Colorless Tsukuru Tazaki and His Years of Pilgrimage",
+  "enAuthor": "Haruki Murakami",
+  "year": 2013,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "תעלומה"
+  ],
+  "style": [
+   "slow",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בגיל 20, ארבעת החברים הכי טובים של צקורו ניתקו איתו קשר בלי הסבר. 16 שנה אחר כך, בעידוד אישה שהוא אוהב, הוא יוצא לפגוש אותם ולשאול למה.",
+  "cover": null
+ },
+ {
+  "id": "jerusalem-beauty-queen",
+  "title": "מלכת היופי של ירושלים",
+  "author": "שרית ישי-לוי",
+  "en": "The Beauty Queen of Jerusalem",
+  "enAuthor": "Sarit Yishai-Levi",
+  "year": 2013,
+  "cats": [
+   "trendy",
+   "romance"
+  ],
+  "tags": [
+   "רומן",
+   "משפחה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "historical",
+   "romantic"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "ירושלים של המנדט: לונה, היפה בבנות העיר, גדלה במשפחה ספרדית שבה הנשים מקוללות לא להיות אהובות בידי בעליהן. בתה גבריאלה מנסה להבין את סיפור ארבעת הדורות.",
+  "cover": 11409065
+ },
+ {
+  "id": "life-after-life",
+  "title": "חיים ועוד חיים",
+  "author": "קייט אטקינסון",
+  "en": "Life After Life",
+  "enAuthor": "Kate Atkinson",
+  "year": 2013,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "היסטורי"
+  ],
+  "style": [
+   "smart",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "באורסולה טוד נולדת בליל שלג ב-1910, ומתה מיד. ואז היא נולדת שוב, וחיה קצת יותר. בכל פעם החיים שלה הולכים לכיוון אחר, דרך שתי מלחמות עולם.",
+  "cover": 7268319
+ },
+ {
+  "id": "flora-ulysses",
+  "title": "פלורה ויוליסס",
+  "author": "קייט דיקמילו",
+  "en": "Flora & Ulysses",
+  "enAuthor": "Kate DiCamillo",
+  "year": 2013,
+  "cats": [
+   "ya",
+   "light"
+  ],
+  "tags": [
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פלורה, ילדה צינית שקוראת קומיקס, מצילה סנאי שנשאב לשואב אבק. הסנאי, יוליסס, מתעורר עם כוחות על: הוא חזק מאוד, יכול לעוף, וכותב שירה.",
+  "cover": 7269799
+ },
+ {
+  "id": "monster-calls",
+  "title": "7 דקות אחרי חצות",
+  "author": "פטריק נס",
+  "en": "A Monster Calls",
+  "enAuthor": "Patrick Ness",
+  "year": 2011,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "מרגש",
+   "פנטזיה"
+  ],
+  "style": [
+   "emotional",
+   "short"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "קונור, בן 13 שאמו חולה מאוד, מקבל ביקור בלילה מעץ ענק שהפך למפלצת. המפלצת מספרת לו שלושה סיפורים, ודורשת ממנו את הרביעי: האמת שהוא מפחד ממנה.",
+  "cover": 7011713
+ },
+ {
+  "id": "men-without-women",
+  "title": "גברים ללא נשים",
+  "author": "הארוקי מורקמי",
+  "en": "Men Without Women",
+  "enAuthor": "Haruki Murakami",
+  "year": 2014,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "סיפורים קצרים"
+  ],
+  "style": [
+   "short",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שבעה סיפורים על גברים שאיבדו אישה: שחקן שמתיידד עם הנהגת שלו, רופא מנותח שמתאהב, וגבר שאשתו עזבה. מלנכולי, מוזר ויפה.",
+  "cover": 13768905
+ },
+ {
+  "id": "legend-lu",
+  "title": "אגדה",
+  "author": "מארי לו",
+  "en": "Legend",
+  "enAuthor": "Marie Lu",
+  "year": 2011,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "דיסטופיה"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ברפובליקה הצבאית שהייתה פעם לוס אנג'לס, דיי הוא הפושע המבוקש ביותר, וג'ון היא העילוי שנשלח לתפוס אותו אחרי שאחיה נהרג. כשהם נפגשים, האמת מתחילה להתגלות.",
+  "cover": 7268930
+ },
+ {
+  "id": "the-miniaturist",
+  "title": "המיניאטורות",
+  "author": "ג'סי ברטון",
+  "en": "The Miniaturist",
+  "enAuthor": "Jessie Burton",
+  "year": 2014,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "תעלומה"
+  ],
+  "style": [
+   "mystery",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אמסטרדם, 1686: נלה, כלה בת 18, מגיעה לבית של בעלה הסוחר העשיר, שבקושי מדבר איתה. במתנת חתונה הוא נותן לה בית בובות, והדמויות הקטנות שמגיעות אליו יודעות דברים שאיש לא סיפר.",
+  "cover": 9392424
+ },
+ {
+  "id": "submission",
+  "title": "כניעה",
+  "author": "מישל ולבק",
+  "en": "Submission",
+  "enAuthor": "Michel Houellebecq",
+  "year": 2015,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "פוליטי"
+  ],
+  "style": [
+   "smart",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "צרפת, 2022: מפלגה מוסלמית מתונה מגיעה לשלטון, ומרצה לספרות מתוסכל צופה איך הכול משתנה סביבו, ואיך הוא עצמו מתחיל להסתגל. רומן שעורר סערה.",
+  "cover": 7347449
+ },
+ {
+  "id": "less-greer",
+  "title": "לס",
+  "author": "אנדרו שון גריר",
+  "en": "Less",
+  "enAuthor": "Andrew Sean Greer",
+  "year": 2017,
+  "cats": [
+   "light",
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ארתור לס, סופר כושל שעומד להיות בן 50, מקבל הזמנה לחתונה של האקס שלו. כדי לא ללכת, הוא מקבל את כל ההזמנות לכנסים ברחבי העולם, למסע מצחיק ומרגש.",
+  "cover": 8596367
+ },
+ {
+  "id": "scythe",
+  "title": "חרמש",
+  "author": "ניל שוסטרמן",
+  "en": "Scythe",
+  "enAuthor": "Neal Shusterman",
+  "year": 2016,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "דיסטופיה"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בעולם שבו אנשים כבר לא מתים מעצמם, רק \"מקצרים\" מורשים להמית, כדי לשמור על איזון. שני נערים נבחרים להיות חניכים של מקצר, ורק אחד מהם יקבל את התפקיד.",
+  "cover": 8184999
+ },
+ {
+  "id": "every-heart-door",
+  "title": "כל לב הוא דלת",
+  "author": "שונאן מגווייר",
+  "en": "Every Heart a Doorway",
+  "enAuthor": "Seanan McGuire",
+  "year": 2016,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "פנטזיה",
+   "קצר"
+  ],
+  "style": [
+   "short",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בפנימייה מיוחדת גרים ילדים שעברו פעם דרך דלת קסומה לעולם אחר, וחזרו, ועכשיו רוצים רק לחזור לשם. כשתלמידים מתחילים למות, ננסי החדשה צריכה לגלות למה.",
+  "cover": 7433973
+ },
+ {
+  "id": "cruel-prince",
+  "title": "הנסיך האכזר",
+  "author": "הולי בלאק",
+  "en": "The Cruel Prince",
+  "enAuthor": "Holly Black",
+  "year": 2018,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "נוער",
+   "פנטזיה"
+  ],
+  "style": [
+   "fast",
+   "dark",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'וד, נערה בת אנוש, גדלה בחצר הפיות אחרי שהוריה נרצחו. היא רוצה שיקבלו אותה, והנסיך קרדן, הצעיר והאכזר מכולם, עושה הכול כדי למנוע את זה.",
+  "cover": 8361789
+ },
+ {
+  "id": "blood-and-bone",
+  "title": "ילדי דם ועצם",
+  "author": "טומי אדיימי",
+  "en": "Children of Blood and Bone",
+  "enAuthor": "Tomi Adeyemi",
+  "year": 2018,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "פנטזיה"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בארץ אורישה, המלך העלים את הקסם והרג את המכשפים, ובהם אמה של זליקה. עכשיו יש לזליקה הזדמנות אחת להחזיר את הקסם, עם נסיכה בורחת ועם אויב שרודף אחריהן.",
+  "cover": 8572526
+ },
+ {
+  "id": "machines-like-me",
+  "title": "מכונות כמוני",
+  "author": "איאן מקיואן",
+  "en": "Machines Like Me",
+  "enAuthor": "Ian McEwan",
+  "year": 2019,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "מדע בדיוני"
+  ],
+  "style": [
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לונדון של שנות ה-80, בגרסה אחרת של ההיסטוריה: צ'ארלי קונה אחד האנדרואידים הראשונים, אדם, ומתכנת את אישיותו יחד עם השכנה שהוא אוהב. אדם מתאהב בה גם.",
+  "cover": 10541630
+ },
+ {
+  "id": "songbirds-snakes",
+  "title": "בלדה לנחשים וציפורי שיר",
+  "author": "סוזן קולינס",
+  "en": "The Ballad of Songbirds and Snakes",
+  "enAuthor": "Suzanne Collins",
+  "year": 2020,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "דיסטופיה"
+  ],
+  "style": [
+   "dark",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "64 שנים לפני קטניס: קוריולנוס סנואו בן ה-18 מקבל תפקיד חונך לנערה ממחוז 12 במשחקי הרעב העשירים. הסיפור של מי שיהיה יום אחד הנשיא סנואו.",
+  "cover": 14421833
+ },
+ {
+  "id": "glass-hotel",
+  "title": "מלון הזכוכית",
+  "author": "אמילי סנט ג'ון מנדל",
+  "en": "The Glass Hotel",
+  "enAuthor": "Emily St. John Mandel",
+  "year": 2020,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "תעלומה"
+  ],
+  "style": [
+   "slow",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ונסנט, ברמנית במלון יוקרה על אי מרוחק בקנדה, פוגשת שם איש עסקים עשיר מאוד, ונכנסת איתו לעולם של מותרות. מתחת לעולם הזה מסתתרת הונאה ענקית.",
+  "cover": 9314949
+ },
+ {
+  "id": "sea-tranquility",
+  "title": "ים השלווה",
+  "author": "אמילי סנט ג'ון מנדל",
+  "en": "Sea of Tranquility",
+  "enAuthor": "Emily St. John Mandel",
+  "year": 2022,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "מדע בדיוני"
+  ],
+  "style": [
+   "smart",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1912, 2020, 2203 ו-2401: ארבעה אנשים בתקופות שונות חווים אותו רגע מוזר, צליל של כינור בחשיכה. בלש מהעתיד יוצא לברר מה הקשר.",
+  "cover": 11465138
+ },
+ {
+  "id": "lessons-mcewan",
+  "title": "שיעורים",
+  "author": "איאן מקיואן",
+  "en": "Lessons",
+  "enAuthor": "Ian McEwan",
+  "year": 2022,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן"
+  ],
+  "style": [
+   "slow",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רולנד, ילד בפנימייה אנגלית, עובר חוויה עם מורה לפסנתר שמעצבת את כל חייו. כשאשתו נעלמת ומשאירה אותו עם תינוק, הוא מתחיל לחשבון נפש לאורך שבעים שנה.",
+  "cover": 12901899
+ },
+ {
+  "id": "wizard-kremlin",
+  "title": "המכשף מהקרמלין",
+  "author": "ג'וליאנו דה אמפולי",
+  "en": "The Wizard of the Kremlin",
+  "enAuthor": "Giuliano da Empoli",
+  "year": 2022,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "פוליטי"
+  ],
+  "style": [
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ואדים ברנוב, האסטרטג שעמד מאחורי עלייתו של פוטין, מספר לזר את סיפור השנים שבהן עיצב את רוסיה החדשה. רומן על כוח, תעמולה ועל מה שקורה כשמשחקים באש.",
+  "cover": 14658436
+ },
+ {
+  "id": "you-like-it-darker",
+  "title": "אתם אוהבים את זה אפל יותר",
+  "author": "סטיבן קינג",
+  "en": "You Like It Darker",
+  "enAuthor": "Stephen King",
+  "year": 2024,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "סיפורים קצרים"
+  ],
+  "style": [
+   "dark",
+   "scary"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קובץ סיפורים חדש של סטיבן קינג: חלומות שמנבאים רצח, משפחה שמגלה כוח מוזר, ונחש ענק. סיפורים אפלים, כמו שהקוראים שלו אוהבים.",
+  "cover": 14544172
+ },
+ {
+  "id": "three-investigators",
+  "title": "שלושת הבלשים",
+  "author": "רוברט ארתור",
+  "en": "The Secret of Terror Castle",
+  "enAuthor": "Robert Arthur",
+  "year": 1964,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "תעלומה"
+  ],
+  "style": [
+   "mystery",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ופיטר, פיט ובוב, שלושה נערים מקליפורניה, מקימים משרד בלשים בקרוואן ישן במגרש גרוטאות. התיק הראשון שלהם: טירה רדופה ששום אדם לא יכול לבלות בה לילה.",
+  "cover": 10708237
+ },
+ {
+  "id": "nancy-drew",
+  "title": "ננסי דרו",
+  "author": "קרולין קין",
+  "en": "The Secret of the Old Clock",
+  "enAuthor": "Carolyn Keene",
+  "year": 1930,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "תעלומה"
+  ],
+  "style": [
+   "mystery",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ננסי דרו, בת 18 ובתו של עורך דין, היא הבלשית החובבת הכי חכמה בעיר. בסדרה הקלאסית היא פותרת תעלומות של צוואות אבודות, בתים רדופים ואוצרות.",
+  "cover": 15150724
+ },
+ {
+  "id": "alex-rider",
+  "title": "אלכס ריידר",
+  "author": "אנתוני הורוביץ",
+  "en": "Stormbreaker",
+  "enAuthor": "Anthony Horowitz",
+  "year": 2000,
+  "cats": [
+   "ya",
+   "thriller"
+  ],
+  "tags": [
+   "נוער",
+   "ריגול"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אלכס, בן 14, מגלה שדודו שנהרג היה מרגל, ושהמודיעין הבריטי רוצה שהוא ימשיך במקומו. אחרי אימון מהיר, הוא נשלח לחקור מיליונר שמחלק מחשבים לבתי ספר.",
+  "cover": 5081706
+ },
+ {
+  "id": "eight-after-one",
+  "title": "שמונה בעקבות אחד",
+  "author": "ימימה אבידר-טשרנוביץ",
+  "en": "Eight in Pursuit of One",
+  "enAuthor": "Yemima Avidar-Tchernovitz",
+  "year": 1945,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "נוער",
+   "תעלומה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "mystery",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שמונה ילדים בקיבוץ מבחינים בזר חשוד שמסתובב ליד המשק, ויוצאים לגלות בעצמם מי הוא ומה הוא זומם. קלאסיקה ישראלית לבני נוער.",
+  "cover": null
+ },
+ {
+  "id": "no1-ladies",
+  "title": "סוכנות הבלשיות מספר 1",
+  "author": "אלכסנדר מק'קול סמית'",
+  "en": "The No. 1 Ladies' Detective Agency",
+  "enAuthor": "Alexander McCall Smith",
+  "year": 1998,
+  "cats": [
+   "light",
+   "thriller"
+  ],
+  "tags": [
+   "בלשי",
+   "הומור"
+  ],
+  "style": [
+   "warm",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מְמָה רמוטסווה פותחת את סוכנות הבלשים הראשונה של נשים בבוטסואנה, עם הירושה מאביה. בעזרת שכל ישר וחום היא פותרת תיקים קטנים וגדולים.",
+  "cover": 213299
  }
 ];
