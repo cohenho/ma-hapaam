@@ -14369,6 +14369,7 @@ window.BOOKS = [
   "enAuthor": "Charles Duhigg",
   "year": 2012,
   "cats": [
+   "selfhelp",
    "nonfiction"
   ],
   "tags": [
@@ -14488,6 +14489,7 @@ window.BOOKS = [
   "enAuthor": "Viktor Frankl",
   "year": 1946,
   "cats": [
+   "selfhelp",
    "nonfiction",
    "classic"
   ],
@@ -18528,6 +18530,7 @@ window.BOOKS = [
   "enAuthor": "Jordan Peterson",
   "year": 2018,
   "cats": [
+   "selfhelp",
    "nonfiction"
   ],
   "tags": [
@@ -18617,6 +18620,7 @@ window.BOOKS = [
   "enAuthor": "Morgan Housel",
   "year": 2020,
   "cats": [
+   "selfhelp",
    "nonfiction"
   ],
   "tags": [
@@ -20142,6 +20146,7 @@ window.BOOKS = [
   "enAuthor": "Stephen R. Covey",
   "year": 1989,
   "cats": [
+   "selfhelp",
    "nonfiction"
   ],
   "tags": [
@@ -20164,6 +20169,7 @@ window.BOOKS = [
   "enAuthor": "Dale Carnegie",
   "year": 1936,
   "cats": [
+   "selfhelp",
    "nonfiction"
   ],
   "tags": [
@@ -24590,5 +24596,534 @@ window.BOOKS = [
   "adult": false,
   "summary": "נשמה אחת עוברת מגוף לגוף כבר מאות שנים, עד שהיא מגיעה לגרישה, נער מוזר שחי עם אמו בישראל של היום. היא מספרת בעצמה על כל החיים שעברה. רומן מצחיק, מוזר ומרגש שזכה להצלחה גדולה.",
   "cover": null
+ },
+ {
+  "id": "atomic-habits",
+  "title": "הרגלים אטומיים",
+  "author": "ג'יימס קליר",
+  "en": "Atomic Habits",
+  "enAuthor": "James Clear",
+  "year": 2018,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "העצמה",
+   "הרגלים"
+  ],
+  "style": [
+   "fast",
+   "smart",
+   "short"
+  ],
+  "pop": 5,
+  "adult": false,
+  "summary": "איך שינויים קטנטנים, של אחוז אחד ביום, מצטברים לשינוי גדול. מדריך מעשי וברור לבניית הרגלים טובים ולהיפטר מהרעים, בלי כוח רצון על-אנושי.",
+  "cover": 12539702
+ },
+ {
+  "id": "four-agreements",
+  "title": "ארבע ההסכמות",
+  "author": "דון מיגל רואיס",
+  "en": "The Four Agreements",
+  "enAuthor": "Don Miguel Ruiz",
+  "year": 1997,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "העצמה",
+   "חוכמת חיים"
+  ],
+  "style": [
+   "short",
+   "warm"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "ארבעה כללים פשוטים לחיים שלווים יותר, מבוססים על חוכמת הטולטקים במקסיקו: להיות נקי בדיבור, לא לקחת דברים באופן אישי, לא להניח הנחות, ותמיד לעשות כמיטב יכולתך.",
+  "cover": 924521
+ },
+ {
+  "id": "monk-ferrari",
+  "title": "הנזיר שמכר את הפרארי שלו",
+  "author": "רובין שארמה",
+  "en": "The Monk Who Sold His Ferrari",
+  "enAuthor": "Robin Sharma",
+  "year": 1997,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "העצמה",
+   "משל"
+  ],
+  "style": [
+   "short",
+   "warm"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "עורך דין מצליח קורס מהתקף לב, מוכר את כל רכושו ונוסע להודו. כשהוא חוזר הוא מלמד חבר את מה שלמד מהחכמים שם. סיפור-משל על איזון, מטרה ושלווה.",
+  "cover": 48817
+ },
+ {
+  "id": "5am-club",
+  "title": "מועדון ה-5 בבוקר",
+  "author": "רובין שארמה",
+  "en": "The 5AM Club",
+  "enAuthor": "Robin Sharma",
+  "year": 2018,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "העצמה",
+   "הרגלים"
+  ],
+  "style": [
+   "fast",
+   "warm"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "דרך סיפור על אמנית ואיש עסקים שפוגשים מנטור מוזר, הספר מסביר למה כדאי לקום ב-5 בבוקר ואיך לנצל את השעה הראשונה של היום לגוף, לנפש וללמידה.",
+  "cover": 10326643
+ },
+ {
+  "id": "subtle-art",
+  "title": "חוכמת האדישות",
+  "author": "מארק מנסון",
+  "en": "The Subtle Art of Not Giving a F*ck",
+  "enAuthor": "Mark Manson",
+  "year": 2016,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "העצמה",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast",
+   "smart"
+  ],
+  "pop": 5,
+  "adult": false,
+  "summary": "אנטי-ספר-העצמה: במקום \"תחשבו חיובי\", מנסון אומר שאי אפשר שהכול יהיה אכפת לך, ושצריך לבחור בקפידה על מה כן. כתוב בבוטות ובהומור.",
+  "cover": 8231990
+ },
+ {
+  "id": "rich-dad-poor-dad",
+  "title": "אבא עשיר אבא עני",
+  "author": "רוברט קיוסאקי",
+  "en": "Rich Dad Poor Dad",
+  "enAuthor": "Robert T. Kiyosaki",
+  "year": 1997,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "כסף",
+   "העצמה"
+  ],
+  "style": [
+   "fast",
+   "short"
+  ],
+  "pop": 5,
+  "adult": false,
+  "summary": "הכותב גדל עם שני \"אבות\": אביו, משכיל שתמיד נאבק בכסף, ואבא של חבר, איש עסקים שהתעשר. מה כל אחד מהם לימד אותו על כסף, נכסים ועבודה.",
+  "cover": 8315603
+ },
+ {
+  "id": "the-secret",
+  "title": "הסוד",
+  "author": "רונדה ביירן",
+  "en": "The Secret",
+  "enAuthor": "Rhonda Byrne",
+  "year": 2006,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "העצמה",
+   "חשיבה חיובית"
+  ],
+  "style": [
+   "short",
+   "warm"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "רב-המכר שהפך את \"חוק המשיכה\" למושג עולמי: הרעיון שהמחשבות שלנו מושכות אלינו את מה שקורה לנו, ושאפשר לשנות את החיים בעזרת מחשבה חיובית.",
+  "cover": 845815
+ },
+ {
+  "id": "who-moved-my-cheese",
+  "title": "מי הזיז את הגבינה שלי?",
+  "author": "ספנסר ג'ונסון",
+  "en": "Who Moved My Cheese?",
+  "enAuthor": "Spencer Johnson",
+  "year": 1998,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "העצמה",
+   "משל"
+  ],
+  "style": [
+   "short",
+   "funny"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "משל קצרצר על שני עכברים ושני גמדים שמחפשים גבינה במבוך, ומה קורה כשהגבינה נעלמת. איך מתמודדים עם שינוי בעבודה ובחיים. נקרא בשעה.",
+  "cover": 258839
+ },
+ {
+  "id": "emotional-intelligence",
+  "title": "אינטליגנציה רגשית",
+  "author": "דניאל גולמן",
+  "en": "Emotional Intelligence",
+  "enAuthor": "Daniel Goleman",
+  "year": 1995,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "פסיכולוגיה",
+   "העצמה"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "הספר שטבע את המושג: למה היכולת להבין ולנהל רגשות, שלנו ושל אחרים, חשובה להצלחה ולאושר לא פחות מ-IQ, ואיך אפשר לפתח אותה.",
+  "cover": 1359485
+ },
+ {
+  "id": "grit",
+  "title": "גריט",
+  "author": "אנג'לה דאקוורת'",
+  "en": "Grit",
+  "enAuthor": "Angela Duckworth",
+  "year": 2016,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "פסיכולוגיה",
+   "העצמה"
+  ],
+  "style": [
+   "smart",
+   "fast"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "פסיכולוגית מראה במחקרים שמה שמנבא הצלחה הוא לא כישרון, אלא שילוב של להט והתמדה לאורך זמן, ומסבירה איך לפתח את זה בעצמנו ובילדים.",
+  "cover": 7438753
+ },
+ {
+  "id": "quiet-susan-cain",
+  "title": "שקט: כוחם של המופנמים",
+  "author": "סוזן קיין",
+  "en": "Quiet",
+  "enAuthor": "Susan Cain",
+  "year": 2012,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "פסיכולוגיה",
+   "העצמה"
+  ],
+  "style": [
+   "smart",
+   "warm"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "בעולם שמעריץ את מי שמדבר הכי חזק, הספר מראה מה המופנמים תורמים, למה הם לא צריכים להשתנות, ואיך הם יכולים להצליח בדרך שלהם.",
+  "cover": 7079753
+ },
+ {
+  "id": "daring-greatly",
+  "title": "האומץ להעז",
+  "author": "ברנה בראון",
+  "en": "Daring Greatly",
+  "enAuthor": "Brené Brown",
+  "year": 2012,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "פסיכולוגיה",
+   "העצמה"
+  ],
+  "style": [
+   "emotional",
+   "warm"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "חוקרת הבושה והפגיעות טוענת שלהראות פגיעות זו לא חולשה אלא אומץ, ושזה הבסיס לקשרים קרובים, ליצירתיות ולהורות ולמנהיגות טובות.",
+  "cover": 7367250
+ },
+ {
+  "id": "gifts-of-imperfection",
+  "title": "מושלמים כמו שאנחנו",
+  "author": "ברנה בראון",
+  "en": "The Gifts of Imperfection",
+  "enAuthor": "Brené Brown",
+  "year": 2010,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "פסיכולוגיה",
+   "העצמה"
+  ],
+  "style": [
+   "warm",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "איך להרפות מהצורך להיות מושלמים ולרצות את כולם, ולקבל את עצמנו כמו שאנחנו. עשרה עקרונות לחיים \"בלב שלם\".",
+  "cover": 7237826
+ },
+ {
+  "id": "start-with-why",
+  "title": "להתחיל עם למה",
+  "author": "סיימון סינק",
+  "en": "Start with Why",
+  "enAuthor": "Simon Sinek",
+  "year": 2009,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "מנהיגות",
+   "העצמה"
+  ],
+  "style": [
+   "smart",
+   "fast"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "למה יש אנשים וחברות שמעוררים השראה ואחרים לא? סינק טוען שהסוד הוא להתחיל מה\"למה\" – המטרה והאמונה – ולא מה\"מה\". מבוסס על אחת מהרצאות ה-TED הנצפות ביותר.",
+  "cover": 6395237
+ },
+ {
+  "id": "tuesdays-with-morrie",
+  "title": "ימי שלישי עם מורי",
+  "author": "מיץ' אלבום",
+  "en": "Tuesdays with Morrie",
+  "enAuthor": "Mitch Albom",
+  "year": 1997,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "השראה",
+   "ביוגרפיה"
+  ],
+  "style": [
+   "emotional",
+   "short",
+   "warm"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "עיתונאי מגלה שהמרצה האהוב שלו מהאוניברסיטה גוסס, ומתחיל לבקר אותו בכל יום שלישי. השיחות שלהם על אהבה, משפחה, פחד ומוות הפכו לספר מרגש על מה שחשוב באמת.",
+  "cover": 12560417
+ },
+ {
+  "id": "richest-man-babylon",
+  "title": "האיש העשיר ביותר בבבל",
+  "author": "ג'ורג' קלייסון",
+  "en": "The Richest Man in Babylon",
+  "enAuthor": "George S. Clason",
+  "year": 1926,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "כסף",
+   "משל"
+  ],
+  "style": [
+   "short",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סדרת משלים שמתרחשים בבבל העתיקה ומלמדים את כללי היסוד של חיסכון וכסף: לשמור חלק מכל הכנסה, להשקיע בחוכמה ולהימנע מחובות. קלאסיקה של כמאה שנה.",
+  "cover": 10491331
+ },
+ {
+  "id": "feel-the-fear",
+  "title": "להרגיש את הפחד ובכל זאת לעשות",
+  "author": "סוזן ג'פרס",
+  "en": "Feel the Fear and Do It Anyway",
+  "enAuthor": "Susan Jeffers",
+  "year": 1987,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "העצמה",
+   "פסיכולוגיה"
+  ],
+  "style": [
+   "warm",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הפחד לא ייעלם לפני שנעז, אומרת ג'פרס, ולכן צריך ללמוד לפעול איתו. כלים מעשיים להתמודד עם פחד משינוי, מכישלון ומהחלטות.",
+  "cover": 6498618
+ },
+ {
+  "id": "awaken-giant",
+  "title": "להעיר את הענק שבפנים",
+  "author": "טוני רובינס",
+  "en": "Awaken the Giant Within",
+  "enAuthor": "Tony Robbins",
+  "year": 1991,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "העצמה",
+   "מוטיבציה"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "המאמן האמריקאי המפורסם מסביר איך לקחת שליטה על הרגשות, ההחלטות, הכסף והקשרים, דרך שינוי הרגלי חשיבה ואמונות. ספר עבה ומלא אנרגיה.",
+  "cover": 4002352
+ },
+ {
+  "id": "happier-ben-shahar",
+  "title": "באושר ובאושר",
+  "author": "טל בן שחר",
+  "en": "Happier",
+  "enAuthor": "Tal Ben-Shahar",
+  "year": 2007,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "פסיכולוגיה חיובית",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "warm",
+   "smart"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "טל בן שחר, שלימד בהרווארד את הקורס הפופולרי ביותר בפסיכולוגיה חיובית, מסביר מה המדע אומר על אושר ואיך לשלב הנאה ומשמעות בחיי היומיום.",
+  "cover": 1081755
+ },
+ {
+  "id": "cant-hurt-me",
+  "title": "מה שלא הורג",
+  "author": "דייוויד גוגינס",
+  "en": "Can't Hurt Me",
+  "enAuthor": "David Goggins",
+  "year": 2018,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "השראה",
+   "ביוגרפיה"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "גוגינס גדל בעוני ובאלימות, היה בעל משקל עודף ובלי עתיד, והפך ללוחם קומנדו ולרץ אולטרה-מרתון. סיפור החיים שלו לצד שיטה קשוחה לחיזוק כוח הנפש.",
+  "cover": 8305903
+ },
+ {
+  "id": "think-and-grow-rich",
+  "title": "חשוב והתעשר",
+  "author": "נפוליאון היל",
+  "en": "Think and Grow Rich",
+  "enAuthor": "Napoleon Hill",
+  "year": 1937,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "כסף",
+   "העצמה"
+  ],
+  "style": [
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אחד מספרי ההעצמה הראשונים והנמכרים בהיסטוריה. היל ראיין אנשים עשירים ומצליחים בזמנו, וזיקק מהם 13 עקרונות להצלחה, שמתחילים ברצון ובמטרה ברורה.",
+  "cover": 14542536
+ },
+ {
+  "id": "deep-work",
+  "title": "עבודה עמוקה",
+  "author": "קאל ניופורט",
+  "en": "Deep Work",
+  "enAuthor": "Cal Newport",
+  "year": 2016,
+  "cats": [
+   "selfhelp",
+   "nonfiction"
+  ],
+  "tags": [
+   "פרודוקטיביות",
+   "העצמה"
+  ],
+  "style": [
+   "smart",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בעולם של התראות ומיילים, היכולת להתרכז לאורך זמן הופכת לנדירה ולשווה מאוד. ניופורט מסביר איך לבנות ימים עם זמן לעבודה מרוכזת ואיך להתרחק מהסחות דעת.",
+  "cover": 7988607
  }
 ];
