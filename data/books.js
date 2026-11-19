@@ -17479,5 +17479,1224 @@ window.BOOKS = [
   "adult": false,
   "summary": "מְמָה רמוטסווה פותחת את סוכנות הבלשים הראשונה של נשים בבוטסואנה, עם הירושה מאביה. בעזרת שכל ישר וחום היא פותרת תיקים קטנים וגדולים.",
   "cover": 213299
+ },
+ {
+  "id": "ivanhoe",
+  "title": "אייבנהו",
+  "author": "וולטר סקוט",
+  "en": "Ivanhoe",
+  "enAuthor": "Walter Scott",
+  "year": 1819,
+  "cats": [
+   "classic",
+   "ya"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "היסטורי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "historical",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אנגליה של המאה ה-12: אייבנהו, אביר סקסוני שנושל בידי אביו, חוזר ממסעי הצלב בסתר. בין טורנירים, רובין הוד והיהודייה האמיצה רבקה, הוא נלחם על כבודו.",
+  "cover": 314235
+ },
+ {
+  "id": "ben-hur",
+  "title": "בן חור",
+  "author": "לו וואלאס",
+  "en": "Ben-Hur",
+  "enAuthor": "Lew Wallace",
+  "year": 1880,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "היסטורי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "historical",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יהודה בן חור, נסיך יהודי בירושלים, נבגד בידי חבר ילדותו הרומאי ונשלח לעבודת פרך בספינות. הוא שורד, ומתכנן נקמה במרוץ המרכבות הגדול.",
+  "cover": 6456470
+ },
+ {
+  "id": "quo-vadis",
+  "title": "קוו ואדיס",
+  "author": "הנריק סנקביץ'",
+  "en": "Quo Vadis",
+  "enAuthor": "Henryk Sienkiewicz",
+  "year": 1896,
+  "cats": [
+   "classic",
+   "romance"
+  ],
+  "tags": [
+   "היסטורי",
+   "רומנטי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "historical",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רומא של הקיסר נירון: מרקוס, פטריקי רומאי, מתאהב בליגיה, נערה נוצרייה. רומן גדול על אהבה, רדיפות ושריפת רומא.",
+  "cover": 8026226
+ },
+ {
+  "id": "i-claudius",
+  "title": "אני, קלאודיוס",
+  "author": "רוברט גרייבס",
+  "en": "I, Claudius",
+  "enAuthor": "Robert Graves",
+  "year": 1934,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "היסטורי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "historical",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קלאודיוס, מגמגם וצולע שכולם בטוחים שהוא טיפש, שורד את המזימות והרציחות של משפחת הקיסרים הרומאית, ומספר את הכול. דווקא בגלל שלא לקחו אותו ברצינות, הוא נשאר בחיים.",
+  "cover": 1046819
+ },
+ {
+  "id": "hadrian",
+  "title": "זכרונות אדריאנוס",
+  "author": "מרגריט יורסנאר",
+  "en": "Memoirs of Hadrian",
+  "enAuthor": "Marguerite Yourcenar",
+  "year": 1951,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "היסטורי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "slow",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הקיסר הרומאי אדריאנוס, זקן וחולה, כותב מכתב ליורשו מרקוס אורליוס. הוא מספר על השלטון, על האהבה הגדולה שלו ועל מה שלמד על החיים.",
+  "cover": 15015608
+ },
+ {
+  "id": "other-boleyn-girl",
+  "title": "בת בולין האחרת",
+  "author": "פיליפה גרגורי",
+  "en": "The Other Boleyn Girl",
+  "enAuthor": "Philippa Gregory",
+  "year": 2001,
+  "cats": [
+   "romance",
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "רומנטי"
+  ],
+  "style": [
+   "historical",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מרי בולין, בת 14, הופכת לאהובתו של המלך הנרי השמיני. כשאחותה השאפתנית אן מחליטה לקחת את מקומה, ואפילו להיות מלכה, היריבות בין האחיות משנה את ההיסטוריה.",
+  "cover": 1786985
+ },
+ {
+  "id": "white-queen",
+  "title": "המלכה הלבנה",
+  "author": "פיליפה גרגורי",
+  "en": "The White Queen",
+  "enAuthor": "Philippa Gregory",
+  "year": 2009,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "רומנטי"
+  ],
+  "style": [
+   "historical",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אנגליה, מלחמת השושנים: אליזבת וודוויל, אלמנה יפה, פוגשת את המלך הצעיר אדוארד, ומתחתנים בסתר. כמלכה, היא נלחמת על ילדיה בחצר מלאה אויבים.",
+  "cover": 10959129
+ },
+ {
+  "id": "red-tent",
+  "title": "האוהל האדום",
+  "author": "אניטה דיאמנט",
+  "en": "The Red Tent",
+  "enAuthor": "Anita Diamant",
+  "year": 1997,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "משפחה"
+  ],
+  "style": [
+   "emotional",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "דינה, בתו היחידה של יעקב, מספרת את הסיפור התנ\"כי מנקודת המבט של הנשים: האמהות, הסודות שעוברים באוהל האדום, והאהבה שהשתיקו בספר בראשית.",
+  "cover": 175302
+ },
+ {
+  "id": "cathedral-sea",
+  "title": "הקתדרלה ליד הים",
+  "author": "אילדפונסו פלקונס",
+  "en": "Cathedral of the Sea",
+  "enAuthor": "Ildefonso Falcones",
+  "year": 2006,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ברצלונה של המאה ה-14: ארנאו, בן לאיכר נמלט, גדל לצד בניית כנסיית סנטה מריה דל מאר. הוא עובר מסבל בנמל לחיים של עושר, והאינקוויזיציה לא רחוקה.",
+  "cover": 6280109
+ },
+ {
+  "id": "pope-joan",
+  "title": "האפיפיורית יוהנה",
+  "author": "דונה וולפולק קרוס",
+  "en": "Pope Joan",
+  "enAuthor": "Donna Woolfolk Cross",
+  "year": 1996,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "המאה התשיעית: יוהנה, ילדה מבריקה שאסור לה ללמוד כי היא בת, מתחפשת לנזיר ומטפסת בהיררכיה של הכנסייה עד לרומא. מבוסס על אגדה עתיקה.",
+  "cover": 1023793
+ },
+ {
+  "id": "schindlers-list",
+  "title": "רשימת שינדלר",
+  "author": "תומאס קניאלי",
+  "en": "Schindler's Ark",
+  "enAuthor": "Thomas Keneally",
+  "year": 1982,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מלחמה"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אוסקר שינדלר, איש עסקים גרמני, נהנתן וחבר במפלגה הנאצית, מקים מפעל בקרקוב עם עובדים יהודים. לאט הוא מתחיל להשתמש בכל כספו כדי להציל אותם. סיפור אמיתי.",
+  "cover": 6458534
+ },
+ {
+  "id": "roots",
+  "title": "שורשים",
+  "author": "אלכס היילי",
+  "en": "Roots",
+  "enAuthor": "Alex Haley",
+  "year": 1976,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "משפחה"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קונטה קינטה, נער מגמביה, נחטף ב-1767 ונמכר לעבדות באמריקה. אלכס היילי עוקב אחרי שבעה דורות של משפחתו, ממנו ועד אליו.",
+  "cover": 10027318
+ },
+ {
+  "id": "exodus-uris",
+  "title": "אקסודוס",
+  "author": "לאון יוריס",
+  "en": "Exodus",
+  "enAuthor": "Leon Uris",
+  "year": 1958,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1947: אחות אמריקאית בקפריסין נקלעת למבצע של ארי בן כנען להעלות ספינה מלאה פליטים יהודים לארץ ישראל. סביבם נפרש סיפור הקמת המדינה.",
+  "cover": 975159
+ },
+ {
+  "id": "tai-pan",
+  "title": "טאי פאן",
+  "author": "ג'יימס קלאוול",
+  "en": "Tai-Pan",
+  "enAuthor": "James Clavell",
+  "year": 1966,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "הרפתקאות"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1841: דירק סטרואן, סוחר סקוטי חזק ואמיץ, מקים את מושבת הונג קונג ונאבק על השליטה בה מול יריבו המושבע. רומן הרפתקאות היסטורי גדול.",
+  "cover": 12532339
+ },
+ {
+  "id": "scarlet-pimpernel",
+  "title": "סקרלט פימפרנל",
+  "author": "הברונית אורצי",
+  "en": "The Scarlet Pimpernel",
+  "enAuthor": "Baroness Orczy",
+  "year": 1905,
+  "cats": [
+   "classic",
+   "light"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בזמן המהפכה הצרפתית, גיבור מסתורי מחלץ אצילים מהגיליוטינה ומשאיר אחריו פרח אדום קטן. איש לא יודע מי הוא, אפילו לא אשתו של הג'נטלמן האנגלי המשעמם סר פרסי.",
+  "cover": 479102
+ },
+ {
+  "id": "queen-margot",
+  "title": "המלכה מרגו",
+  "author": "אלכסנדר דיומא",
+  "en": "Queen Margot",
+  "enAuthor": "Alexandre Dumas",
+  "year": 1845,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פריז, 1572: מרגריט, הנסיכה הקתולית, נישאת לאנרי הפרוטסטנטי, וימים ספורים אחר כך מתחיל הטבח בליל ברתולומיאוס. מזימות, רעל ואהבה בחצר המלוכה.",
+  "cover": 11202169
+ },
+ {
+  "id": "last-days-pompeii",
+  "title": "ימי פומפיי האחרונים",
+  "author": "אדוארד בולוור-ליטון",
+  "en": "The Last Days of Pompeii",
+  "enAuthor": "Edward Bulwer-Lytton",
+  "year": 1834,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בשנת 79 לספירה, בעיר העשירה פומפיי, גלאוקוס היווני מתאהב ביונה היפה, וכוהן מצרי מרושע זומם נגדם. מעל כולם, הר הגעש וזוב מתחיל להתעורר.",
+  "cover": 8247711
+ },
+ {
+  "id": "sinuhe",
+  "title": "שאנהת המצרי",
+  "author": "מיקה וולטרי",
+  "en": "The Egyptian",
+  "enAuthor": "Mika Waltari",
+  "year": 1945,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סינוהה, רופא במצרים העתיקה, מספר את סיפור חייו בתקופת הפרעה אחנתון: מסעות, אהבה הרסנית, ומהפכה דתית שמפלגת את הממלכה.",
+  "cover": 777820
+ },
+ {
+  "id": "clan-cave-bear",
+  "title": "שבט דוב המערות",
+  "author": "ז'אן אאול",
+  "en": "The Clan of the Cave Bear",
+  "enAuthor": "Jean M. Auel",
+  "year": 1980,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "הרפתקאות"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לפני 30 אלף שנה, איילה, ילדה בת חמש שאיבדה את משפחתה ברעידת אדמה, נמצאת בידי שבט של ניאנדרטלים. היא גדלה ביניהם, ושונה מהם בכל דבר.",
+  "cover": 12529015
+ },
+ {
+  "id": "midwife-venice",
+  "title": "המיילדת מוונציה",
+  "author": "רוברטה ריץ'",
+  "en": "The Midwife of Venice",
+  "enAuthor": "Roberta Rich",
+  "year": 2011,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מתח"
+  ],
+  "style": [
+   "historical",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ונציה, 1575: חנה, מיילדת יהודייה מהגטו, מתבקשת בלילה לעזור ללידה קשה של אצילה נוצרייה, למרות שזה אסור. הכסף יכול לשחרר את בעלה, ששבוי במלטה.",
+  "cover": 10312711
+ },
+ {
+  "id": "desiree",
+  "title": "דזירה",
+  "author": "אנמרי זלינקו",
+  "en": "Desiree",
+  "enAuthor": "Annemarie Selinko",
+  "year": 1951,
+  "cats": [
+   "romance",
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "רומנטי"
+  ],
+  "style": [
+   "historical",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "דזירה, בת סוחר ממרסיי, מתארסת לגנרל צעיר בשם נפוליאון בונפרטה, שעוזב אותה בשביל ז'וזפין. ביומן שלה היא מספרת על חיים שבסופם היא עצמה הופכת למלכה.",
+  "cover": 14457862
+ },
+ {
+  "id": "man-who-laughs",
+  "title": "האדם הצוחק",
+  "author": "ויקטור הוגו",
+  "en": "The Man Who Laughs",
+  "enAuthor": "Victor Hugo",
+  "year": 1869,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "היסטורי"
+  ],
+  "style": [
+   "dark",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "גוויינפליין, ילד שפניו הושחתו לחיוך נצחי, גדל עם פילוסוף נודד וזאב, ומציל תינוקת עיוורת. כמבוגר הוא מגלה סוד על מוצאו שמוביל אותו לבית הלורדים.",
+  "cover": 11115697
+ },
+ {
+  "id": "michael-strogoff",
+  "title": "מיכאל סטרוגוב",
+  "author": "ז'ול ורן",
+  "en": "Michael Strogoff",
+  "enAuthor": "Jules Verne",
+  "year": 1876,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מיכאל סטרוגוב, שליח של הצאר, נשלח ממוסקבה לאירקוטסק עם מכתב סודי, דרך סיביר שבה פורץ מרד טטרי. המסע ארוך, מסוכן ומלא הרפתקאות.",
+  "cover": 10393209
+ },
+ {
+  "id": "sara-nili",
+  "title": "שרה, גיבורת ניל\"י",
+  "author": "דבורה עומר",
+  "en": "Sarah, Heroine of Nili",
+  "enAuthor": "Devorah Omer",
+  "year": 1967,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "נוער",
+   "היסטורי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סיפורה של שרה אהרונסון מזכרון יעקב, שהקימה עם אחיה ארגון ריגול סודי נגד הטורקים במלחמת העולם הראשונה, ושילמה על כך מחיר כבד.",
+  "cover": null
+ },
+ {
+  "id": "last-runaway",
+  "title": "הנמלטת האחרונה",
+  "author": "טרייסי שבלייה",
+  "en": "The Last Runaway",
+  "enAuthor": "Tracy Chevalier",
+  "year": 2013,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1850: הונור, צעירה קווייקרית מאנגליה, מגיעה לאוהיו אחרי אכזבת אהבה. שם היא נתקלת ב\"מסילה התת-קרקעית\" שמבריחה עבדים לחופש, ונאלצת להחליט אם לעזור.",
+  "cover": 10216477
+ },
+ {
+  "id": "hhhh",
+  "title": "HHhH למוח של הימלר קוראים היידריך",
+  "author": "לורן בינה",
+  "en": "HHhH",
+  "enAuthor": "Laurent Binet",
+  "year": 2010,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מתח"
+  ],
+  "style": [
+   "smart",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1942: שני צנחנים, צ'כי וסלובקי, נשלחים מלונדון לפראג כדי להתנקש בריינהרד היידריך, אחד הנאצים האכזריים ביותר. הסופר מספר את המבצע, ותוך כדי מתווכח עם עצמו איך מספרים היסטוריה.",
+  "cover": 13279649
+ },
+ {
+  "id": "officer-and-spy",
+  "title": "קצין ומרגל",
+  "author": "רוברט הריס",
+  "en": "An Officer and a Spy",
+  "enAuthor": "Robert Harris",
+  "year": 2013,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מותחן"
+  ],
+  "style": [
+   "historical",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פריז, 1895: הקצין הצרפתי פיקאר, ראש המודיעין החדש, מגלה שהקפטן היהודי דרייפוס הורשע בבגידה בלי שום הוכחה, ושהמרגל האמיתי עדיין חופשי. פרשת דרייפוס ממבט מבפנים.",
+  "cover": 10985193
+ },
+ {
+  "id": "munich-harris",
+  "title": "מינכן",
+  "author": "רוברט הריס",
+  "en": "Munich",
+  "enAuthor": "Robert Harris",
+  "year": 2017,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "היסטורי"
+  ],
+  "style": [
+   "historical",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ספטמבר 1938: בזמן ועידת מינכן, שני חברים מאוקספורד, בריטי וגרמני, נפגשים שוב משני צדי המשא ומתן. אחד מהם מחזיק מסמך שיכול לעצור את היטלר.",
+  "cover": 8243185
+ },
+ {
+  "id": "pompeii-harris",
+  "title": "פומפיי",
+  "author": "רוברט הריס",
+  "en": "Pompeii",
+  "enAuthor": "Robert Harris",
+  "year": 2003,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "היסטורי"
+  ],
+  "style": [
+   "historical",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קיץ 79 לספירה: מהנדס המים הצעיר אטיליוס נשלח לתקן את אמת המים הגדולה ליד מפרץ נאפולי, שהפסיקה לזרום. סימנים מוזרים מעידים שמשהו גדול עומד לקרות.",
+  "cover": 417905
+ },
+ {
+  "id": "first-man-rome",
+  "title": "האזרח הראשון ברומא",
+  "author": "קולין מקאלו",
+  "en": "The First Man in Rome",
+  "enAuthor": "Colleen McCullough",
+  "year": 1990,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רומא של סוף המאה השנייה לפני הספירה: גאיוס מריוס, גנרל מבריק ממשפחה לא חשובה, וסולה, אציל עני ושאפתן, נאבקים על השלטון ברפובליקה.",
+  "cover": 2204666
+ },
+ {
+  "id": "kindly-ones",
+  "title": "נוטות החסד",
+  "author": "ג'ונתן ליטל",
+  "en": "The Kindly Ones",
+  "enAuthor": "Jonathan Littell",
+  "year": 2006,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מלחמה"
+  ],
+  "style": [
+   "dark",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "מקסימיליאן אאואה, קצין אס-אס משכיל, מספר בקור רוח על חלקו במלחמה ובהשמדה, מאוקראינה ועד ברלין. רומן ענק וקשה מאוד לקריאה, שעורר ויכוח גדול.",
+  "cover": 6255891
+ },
+ {
+  "id": "ahavat-zion",
+  "title": "אהבת ציון",
+  "author": "אברהם מאפו",
+  "en": "Ahavat Zion",
+  "enAuthor": "Abraham Mapu",
+  "year": 1853,
+  "cats": [
+   "classic",
+   "romance"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "רומנטי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "romantic",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הרומן העברי הראשון: אמנון ותמר, שני צעירים בירושלים של ימי ישעיהו הנביא, מתאהבים, ונאבקים במזימות של נבלים ובטעויות זהות.",
+  "cover": null
+ },
+ {
+  "id": "he-walked-fields",
+  "title": "הוא הלך בשדות",
+  "author": "משה שמיר",
+  "en": "He Walked Through the Fields",
+  "enAuthor": "Moshe Shamir",
+  "year": 1947,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אורי, בן קיבוץ, חוזר מבית הספר החקלאי ומוצא בבית את מיקה, עולה צעירה שניצלה מהשואה. אהבה ראשונה בימים שלפני הקמת המדינה.",
+  "cover": null
+ },
+ {
+  "id": "days-of-ziklag",
+  "title": "ימי צקלג",
+  "author": "ס. יזהר",
+  "en": "Days of Ziklag",
+  "enAuthor": "S. Yizhar",
+  "year": 1958,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ספרות ישראלית",
+   "מלחמה"
+  ],
+  "style": [
+   "slow",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שבעה ימים במלחמת העצמאות, בחייה של מחלקה של חיילים צעירים על גבעה בנגב. רומן ענק שנכנס למחשבות, לפחדים ולשיחות שלהם.",
+  "cover": null
+ },
+ {
+  "id": "monks-death",
+  "title": "מות הנזיר",
+  "author": "אלון חילו",
+  "en": "Death of a Monk",
+  "enAuthor": "Alon Hilu",
+  "year": 2004,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "historical",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "דמשק, 1840: נזיר נעלם, ויהודי העיר מואשמים ברציחתו. עזרא, צעיר יהודי, מספר את הסיפור מנקודת מבט אישית מאוד, שמערערת את כל מה שידוע על הפרשה.",
+  "cover": 892360
+ },
+ {
+  "id": "sof-davar",
+  "title": "סוף דבר",
+  "author": "יעקב שבתאי",
+  "en": "Past Perfect",
+  "enAuthor": "Yaakov Shabtai",
+  "year": 1984,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "slow",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מאיר, אדריכל בגיל העמידה בתל אביב, מתחיל לחשוב שהוא עומד למות. הפחד מהמוות מטלטל אותו, ובמחשבותיו מתערבבים משפחה, אהבה ורצון לחיות.",
+  "cover": 4176317
+ },
+ {
+  "id": "street-of-steps",
+  "title": "רחוב המדרגות",
+  "author": "יהודית הנדל",
+  "en": "Street of Steps",
+  "enAuthor": "Yehudit Hendel",
+  "year": 1955,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ואדי סאליב בחיפה של שנות ה-50: ארל'ה, בת לעולים מאירופה, מתאהבת באברמ'ל, צעיר ממשפחה מזרחית. המשפחות, השכונה והפערים עומדים בדרכם.",
+  "cover": null
+ },
+ {
+  "id": "saul-johanna",
+  "title": "שאול ויוהאנה",
+  "author": "נעמי פרנקל",
+  "en": "Saul and Johanna",
+  "enAuthor": "Naomi Frankel",
+  "year": 1956,
+  "cats": [
+   "classic",
+   "romance"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "ספרות ישראלית",
+   "רומנטי"
+  ],
+  "style": [
+   "historical",
+   "romantic",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ברלין של שנות ה-20 וה-30: משפחה יהודית עשירה ומתבוללת, ובתוכה יוהאנה הצעירה, שמתאהבת בשאול, נער מהתנועה הציונית. טרילוגיה על העולם שנחרב לאט.",
+  "cover": null
+ },
+ {
+  "id": "equal-more-equal",
+  "title": "שווים ושווים יותר",
+  "author": "סמי מיכאל",
+  "en": "All Men Are Equal, But Some Are More",
+  "enAuthor": "Sami Michael",
+  "year": 1974,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "character",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "דוד, צעיר מהמעברה ממוצא עיראקי, מספר על המפגש עם ישראל של שנות ה-50: אפליה, עוני ואהבה לצעירה אשכנזייה. רומן שהיה פורץ דרך בזמנו.",
+  "cover": null
+ },
+ {
+  "id": "refuge-michael",
+  "title": "פחונים וחלומות",
+  "author": "סמי מיכאל",
+  "en": "Refuge",
+  "enAuthor": "Sami Michael",
+  "year": 1979,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חבורת צעירים עולים מעיראק במעברה של שנות ה-50 חולמים על חיים טובים יותר. בין פחונים, עבודה קשה ואהבות, כל אחד מוצא דרך אחרת לשרוד.",
+  "cover": 4743585
+ },
+ {
+  "id": "shira-agnon",
+  "title": "שירה",
+  "author": "ש\"י עגנון",
+  "en": "Shira",
+  "enAuthor": "S. Y. Agnon",
+  "year": 1971,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "slow",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ירושלים של שנות ה-30: מנפרד הרבסט, פרופסור בגיל העמידה ונשוי, פוגש את שירה, אחות קשוחה ועצמאית, ונמשך אליה בלי יכולת לעצור. רומן שעגנון לא הספיק לסיים.",
+  "cover": 4068473
+ },
+ {
+  "id": "beggars-book",
+  "title": "ספר הקבצנים",
+  "author": "מנדלי מוכר ספרים",
+  "en": "The Book of Beggars",
+  "enAuthor": "Mendele Mocher Sforim",
+  "year": 1909,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "הומור",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מנדלי מוכר הספרים נודד בעגלתו בין עיירות יהודיות, ונתקל בחבר שמספר לו על הרפתקאותיו עם להקת קבצנים. הומור עממי וחריף על חיי השטעטל.",
+  "cover": null
+ },
+ {
+  "id": "we-were-the-future",
+  "title": "היינו העתיד",
+  "author": "יעל נאמן",
+  "en": "We Were the Future",
+  "enAuthor": "Yael Neeman",
+  "year": 2011,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יעל נאמן מספרת על ילדותה בקיבוץ יחיעם בשנות ה-60 וה-70, בלינה המשותפת, בתוך חלום של שוויון מוחלט. זיכרונות מדויקים ונוגים, בגוף ראשון רבים.",
+  "cover": 14532103
+ },
+ {
+  "id": "grandfather-shot-me",
+  "title": "אמון: סבא שלי היה יורה בי",
+  "author": "ג'ניפר טגה",
+  "en": "My Grandfather Would Have Shot Me",
+  "enAuthor": "Jennifer Teege",
+  "year": 2013,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "היסטוריה"
+  ],
+  "style": [
+   "emotional",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ניפר, אישה גרמנייה שחורה, מוצאת בספרייה ספר ומגלה שסבא שלה היה אמון גת, מפקד המחנה האכזרי מ\"רשימת שינדלר\". מסע אישי בעקבות סוד משפחתי.",
+  "cover": 7435100
+ },
+ {
+  "id": "existentialist-cafe",
+  "title": "בבית הקפה האקזיסטנציאליסטי",
+  "author": "שרה בייקוול",
+  "en": "At the Existentialist Cafe",
+  "enAuthor": "Sarah Bakewell",
+  "year": 2016,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "פילוסופיה",
+   "ביוגרפיה"
+  ],
+  "style": [
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סארטר, דה בובואר, קאמי והיידגר, אנשים אמיתיים בבתי קפה בפריז, ברחובות ובמלחמה. ספר שמסביר את האקזיסטנציאליזם דרך חיי הפילוסופים, בצורה קלה ומרתקת.",
+  "cover": 7402178
+ },
+ {
+  "id": "12-rules",
+  "title": "12 כללים לחיים",
+  "author": "ג'ורדן פיטרסון",
+  "en": "12 Rules for Life",
+  "enAuthor": "Jordan Peterson",
+  "year": 2018,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "פסיכולוגיה"
+  ],
+  "style": [
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פסיכולוג קליני מציע 12 כללים לחיים טובים יותר, מ\"עמוד זקוף\" ועד \"לטף חתול שאתה פוגש ברחוב\", עם סיפורים מהמיתולוגיה, מהקליניקה ומחייו.",
+  "cover": 8131760
+ },
+ {
+  "id": "how-democracies-die",
+  "title": "איך דמוקרטיות מתות",
+  "author": "סטיבן לויצקי ודניאל זיבלט",
+  "en": "How Democracies Die",
+  "enAuthor": "Steven Levitsky",
+  "year": 2018,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "אקטואליה"
+  ],
+  "style": [
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שני חוקרים מהרווארד מראים, על סמך דוגמאות מרחבי העולם, שדמוקרטיות היום לא נופלות בהפיכה צבאית, אלא נשחקות לאט, דרך נבחרים שמחלישים את המוסדות.",
+  "cover": 8311412
+ },
+ {
+  "id": "talking-to-strangers",
+  "title": "לדבר עם זרים",
+  "author": "מלקולם גלדוול",
+  "en": "Talking to Strangers",
+  "enAuthor": "Malcolm Gladwell",
+  "year": 2019,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "פסיכולוגיה"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "למה אנחנו כל כך גרועים בלהבין אנשים שאנחנו לא מכירים? גלדוול בודק מרגלים, נוכלים ומקרים מפורסמים, ומראה איפה האינטואיציה שלנו טועה.",
+  "cover": 8779682
+ },
+ {
+  "id": "outliers",
+  "title": "מצוינים: ממה עשויה הצלחה",
+  "author": "מלקולם גלדוול",
+  "en": "Outliers",
+  "enAuthor": "Malcolm Gladwell",
+  "year": 2008,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מה מבדיל בין אנשים מצליחים מאוד לכל השאר? לא רק כישרון: גם מזל, תרבות, תאריך לידה ו-10,000 שעות של תרגול. ספר שמשנה את הדרך לחשוב על הצלחה.",
+  "cover": 10021591
+ },
+ {
+  "id": "psychology-of-money",
+  "title": "הפסיכולוגיה של הכסף",
+  "author": "מורגן האוסל",
+  "en": "The Psychology of Money",
+  "enAuthor": "Morgan Housel",
+  "year": 2020,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "כלכלה"
+  ],
+  "style": [
+   "short",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "19 סיפורים קצרים על איך אנשים חושבים על כסף, ולמה התנהגות חשובה יותר מידע. ספר פשוט וברור על חיסכון, סבלנות ומה זה \"מספיק\".",
+  "cover": 10389354
+ },
+ {
+  "id": "promised-land-obama",
+  "title": "ארץ מובטחת",
+  "author": "ברק אובמה",
+  "en": "A Promised Land",
+  "enAuthor": "Barack Obama",
+  "year": 2020,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "אקטואליה"
+  ],
+  "style": [
+   "character",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ברק אובמה מספר על הדרך שלו מפוליטיקה מקומית בשיקגו ועד הבית הלבן, ועל שנות הנשיאות הראשונות: המשבר הכלכלי, חוק הבריאות והמבצע נגד בן לאדן.",
+  "cover": 10449357
+ },
+ {
+  "id": "bibi-story",
+  "title": "ביבי: סיפור חיי",
+  "author": "בנימין נתניהו",
+  "en": "Bibi: My Story",
+  "enAuthor": "Benjamin Netanyahu",
+  "year": 2022,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "אקטואליה"
+  ],
+  "style": [
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בנימין נתניהו מספר על חייו: הילדות בירושלים ובארצות הברית, סיירת מטכ\"ל, מותו של אחיו יוני באנטבה, והדרך לראשות הממשלה.",
+  "cover": 13282194
+ },
+ {
+  "id": "start-up-nation",
+  "title": "מדינת הסטארט-אפ",
+  "author": "דן סינור ושאול זינגר",
+  "en": "Start-up Nation",
+  "enAuthor": "Dan Senor",
+  "year": 2009,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "כלכלה"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "איך מדינה קטנה, צעירה ומוקפת אויבים הפכה למעצמת חדשנות? הספר מחפש תשובות בצבא, בעלייה, בתרבות הישראלית ובחוצפה.",
+  "cover": 8453514
  }
 ];
