@@ -15537,5 +15537,1038 @@ window.BOOKS = [
   "adult": false,
   "summary": "1877, מלחמת רוסיה-טורקיה: ורוורה, צעירה מודרנית, נוסעת לחזית כדי להינשא, ונתקלת בפנדורין. ביחד הם מחפשים מרגל טורקי שמסכל את תוכניות הצבא הרוסי.",
   "cover": 6904870
+ },
+ {
+  "id": "woman-in-window",
+  "title": "האישה בחלון",
+  "author": "א. ג'. פין",
+  "en": "The Woman in the Window",
+  "enAuthor": "A. J. Finn",
+  "year": 2018,
+  "cats": [
+   "thriller",
+   "trendy"
+  ],
+  "tags": [
+   "מותחן",
+   "פסיכולוגי"
+  ],
+  "style": [
+   "twists",
+   "dark"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אנה, פסיכולוגית שלא יוצאת מהבית כבר חודשים, מעבירה את הימים בצפייה בסרטים ישנים ובשכנים. לילה אחד היא רואה דרך החלון משהו נורא בבית ממול, ואף אחד לא מאמין לה.",
+  "cover": 8315362
+ },
+ {
+  "id": "the-fury",
+  "title": "הזעם",
+  "author": "אלכס מיכאלידס",
+  "en": "The Fury",
+  "enAuthor": "Alex Michaelides",
+  "year": 2024,
+  "cats": [
+   "thriller",
+   "trendy"
+  ],
+  "tags": [
+   "מותחן",
+   "תעלומה"
+  ],
+  "style": [
+   "twists",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "כוכבת קולנוע לשעבר מזמינה חברים קרובים לאי היווני הפרטי שלה לסוף שבוע של חג. סערה מנתקת את האי, ומישהו נמצא מת. המספר מבטיח לספר את האמת, אבל לא בהכרח לפי הסדר.",
+  "cover": 14562409
+ },
+ {
+  "id": "one-of-us-lying",
+  "title": "אחד מאיתנו משקר",
+  "author": "קארן מ. מקמנוס",
+  "en": "One of Us Is Lying",
+  "enAuthor": "Karen M. McManus",
+  "year": 2017,
+  "cats": [
+   "ya",
+   "thriller"
+  ],
+  "tags": [
+   "נוער",
+   "תעלומה"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "חמישה תלמידים נכנסים לריתוק, וארבעה יוצאים. סיימון, שמנהל אפליקציית רכילות שחושפת סודות, מת. כל אחד מהארבעה הוא חשוד, ולכל אחד יש סוד.",
+  "cover": 12503935
+ },
+ {
+  "id": "mystic-river",
+  "title": "מיסטיק ריבר",
+  "author": "דניס להיין",
+  "en": "Mystic River",
+  "enAuthor": "Dennis Lehane",
+  "year": 2001,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "דרמה"
+  ],
+  "style": [
+   "dark",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שלושה חברי ילדות מבוסטון נפרדו אחרי שאחד מהם נחטף. 25 שנה אחר כך, בתו של אחד נרצחת, השני הוא הבלש בתיק, והשלישי נעשה חשוד.",
+  "cover": 432349
+ },
+ {
+  "id": "shutter-island",
+  "title": "שאטר איילנד",
+  "author": "דניס להיין",
+  "en": "Shutter Island",
+  "enAuthor": "Dennis Lehane",
+  "year": 2003,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "פסיכולוגי"
+  ],
+  "style": [
+   "twists",
+   "dark"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "1954: מרשל טדי דניאלס מגיע לאי שבו בית חולים לפושעים חולי נפש, כדי לחפש מטופלת שנעלמה מתא נעול. ככל שהוא חוקר, האי נראה מסוכן יותר, וגם הוא עצמו.",
+  "cover": 28990
+ },
+ {
+  "id": "six-years",
+  "title": "שש שנים",
+  "author": "הרלן קובן",
+  "en": "Six Years",
+  "enAuthor": "Harlan Coben",
+  "year": 2013,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "רומנטי"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לפני שש שנים ג'ייק ראה את האישה שהוא אוהב מתחתנת עם אחר, והבטיח לה שלא יחפש אותה. כשהוא רואה מודעת אבל על בעלה, הוא לא עומד בהבטחה, ומגלה שאף אחד לא שמע עליה.",
+  "cover": 7262066
+ },
+ {
+  "id": "the-woods-coben",
+  "title": "היער",
+  "author": "הרלן קובן",
+  "en": "The Woods",
+  "enAuthor": "Harlan Coben",
+  "year": 2007,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לפני עשרים שנה, ארבעה בני נוער נכנסו ליער ליד מחנה קיץ, ורק שניים נמצאו. אחת מהם הייתה אחותו של פול, היום תובע מחוזי. גופה חדשה מעוררת את השאלה: האם היא חיה?",
+  "cover": 4989400
+ },
+ {
+  "id": "sharp-objects",
+  "title": "חפצים חדים",
+  "author": "גיליאן פלין",
+  "en": "Sharp Objects",
+  "enAuthor": "Gillian Flynn",
+  "year": 2006,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "פסיכולוגי"
+  ],
+  "style": [
+   "dark",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "קמיל, עיתונאית שבורה, נשלחת לעיירת הולדתה לסקר רציחות של שתי ילדות. היא חוזרת לגור אצל אמה הקרה ואחותה הצעירה המוזרה, והעבר שלה מתחיל לצוף.",
+  "cover": 167973
+ },
+ {
+  "id": "dark-places",
+  "title": "מקומות אפלים",
+  "author": "גיליאן פלין",
+  "en": "Dark Places",
+  "enAuthor": "Gillian Flynn",
+  "year": 2009,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "פסיכולוגי"
+  ],
+  "style": [
+   "dark",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "כשהייתה בת שבע, ליבי שרדה את הטבח של משפחתה, והעידה נגד אחיה. 25 שנה אחר כך מועדון של חובבי פשע אמיתי משכנע אותה לחזור ולבדוק: אולי טעתה.",
+  "cover": 5728115
+ },
+ {
+  "id": "faceless-killers",
+  "title": "רוצחים ללא פנים",
+  "author": "הנינג מנקל",
+  "en": "Faceless Killers",
+  "enAuthor": "Henning Mankell",
+  "year": 1991,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "בלשי"
+  ],
+  "style": [
+   "dark",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "זוג קשישים נרצח בחווה מבודדת בדרום שוודיה, ולפני מותה האישה לוחשת מילה אחת: \"זרים\". המפקח קורט ולאנדר, עייף ובודד, צריך לפתור את התיק לפני שהעיירה תתפוצץ.",
+  "cover": 10826467
+ },
+ {
+  "id": "people-on-vacation",
+  "title": "אנשים שאנחנו פוגשים בחופשה",
+  "author": "אמילי הנרי",
+  "en": "People We Meet on Vacation",
+  "enAuthor": "Emily Henry",
+  "year": 2021,
+  "cats": [
+   "romance",
+   "light",
+   "trendy"
+  ],
+  "tags": [
+   "רומנטי",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "romantic",
+   "warm"
+  ],
+  "pop": 4,
+  "adult": true,
+  "summary": "פופי ואלכס, חברים הכי טובים ושונים לגמרי, יצאו כל קיץ לחופשה משותפת, עד שלפני שנתיים משהו נהרס. פופי משכנעת אותו לטיול אחד נוסף, כדי לתקן.",
+  "cover": 10476782
+ },
+ {
+  "id": "fourth-wing",
+  "title": "הכנף הרביעית",
+  "author": "רבקה יארוס",
+  "en": "Fourth Wing",
+  "enAuthor": "Rebecca Yarros",
+  "year": 2023,
+  "cats": [
+   "romance",
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה",
+   "רומנטי"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 5,
+  "adult": true,
+  "summary": "ויולט, שהתכוננה להיות סופרת, נשלחת בפקודת אמה הגנרלית לאקדמיה של רוכבי הדרקונים, שבה רוב הצוערים מתים. גם הבחור שהכי מסוכן לה שם, אולי הוא היחיד שיציל אותה.",
+  "cover": 14407898
+ },
+ {
+  "id": "throne-of-glass",
+  "title": "כס הזכוכית",
+  "author": "שרה ג'יי מאס",
+  "en": "Throne of Glass",
+  "enAuthor": "Sarah J. Maas",
+  "year": 2012,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סלינה, המתנקשת המפורסמת בממלכה, מקבלת הצעה מנסיך הכתר: להתחרות על תפקיד האלופה של המלך, ובתמורה לצאת לחופשי. בטירה מתחילים למות מתחרים אחרים.",
+  "cover": 13312488
+ },
+ {
+  "id": "klara-and-sun",
+  "title": "קלרה והשמש",
+  "author": "קאזואו אישיגורו",
+  "en": "Klara and the Sun",
+  "enAuthor": "Kazuo Ishiguro",
+  "year": 2021,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "מדע בדיוני"
+  ],
+  "style": [
+   "slow",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קלרה, \"חברה מלאכותית\", רובוטית שנועדה ללוות ילדים, מתבוננת מחלון החנות ומחכה שמישהו יבחר בה. כשג'וזי החולה לוקחת אותה הביתה, קלרה מנסה להבין את בני האדם, ולעזור.",
+  "cover": 10648686
+ },
+ {
+  "id": "vanishing-half",
+  "title": "החצי הנעלם",
+  "author": "בריט בנט",
+  "en": "The Vanishing Half",
+  "enAuthor": "Brit Bennett",
+  "year": 2020,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "משפחה"
+  ],
+  "style": [
+   "character",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "תאומות שחורות ובהירות עור בורחות בגיל 16 מעיירה קטנה בלואיזיאנה. אחת חוזרת אחרי שנים עם בת, והשנייה חיה כאישה לבנה ומסתירה מבעלה מי היא.",
+  "cover": 10095692
+ },
+ {
+  "id": "circe",
+  "title": "קירקה",
+  "author": "מדלין מילר",
+  "en": "Circe",
+  "enAuthor": "Madeline Miller",
+  "year": 2018,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "מיתולוגיה"
+  ],
+  "style": [
+   "character",
+   "romantic"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "קירקה, בתו של אל השמש, לא דומה לאלים האחרים: יש לה כוחות כישוף, והיא מוגלית לאי בודד. שם היא פוגשת דמויות מהמיתולוגיה, ובהן אודיסאוס.",
+  "cover": 8739376
+ },
+ {
+  "id": "four-winds",
+  "title": "ארבע הרוחות",
+  "author": "כריסטין האנה",
+  "en": "The Four Winds",
+  "enAuthor": "Kristin Hannah",
+  "year": 2021,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "משפחה"
+  ],
+  "style": [
+   "emotional",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1934, טקסס: הבצורת והסופות הופכות את החווה של אלסה לאבק. היא נאלצת להחליט אם להילחם על האדמה או לצאת עם ילדיה לקליפורניה, בחיפוש אחרי חיים טובים יותר.",
+  "cover": 10675593
+ },
+ {
+  "id": "beartown",
+  "title": "עיר הדובים",
+  "author": "פרדריק בקמן",
+  "en": "Beartown",
+  "enAuthor": "Fredrik Backman",
+  "year": 2016,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "דרמה"
+  ],
+  "style": [
+   "emotional",
+   "character"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "בעיירה קטנה ביער השוודי, כולם חיים בשביל קבוצת ההוקי של הנוער, שעומדת לזכות בגמר. לילה אחד במסיבה קורה משהו שמחלק את העיירה לשניים.",
+  "cover": 11202500
+ },
+ {
+  "id": "britt-marie",
+  "title": "בריט-מארי הייתה כאן",
+  "author": "פרדריק בקמן",
+  "en": "Britt-Marie Was Here",
+  "enAuthor": "Fredrik Backman",
+  "year": 2014,
+  "cats": [
+   "light"
+  ],
+  "tags": [
+   "רומן",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בריט-מארי, בת 63, מסודרת ושיפוטית, עוזבת בעל בוגד ומקבלת עבודה במרכז נוער בעיירה מתפוררת. הילדים שם רוצים רק כדורגל, והיא לא יודעת אפילו מה זה.",
+  "cover": 13059669
+ },
+ {
+  "id": "to-all-the-boys",
+  "title": "לכל הבנים שאהבתי",
+  "author": "ג'ני האן",
+  "en": "To All the Boys I've Loved Before",
+  "enAuthor": "Jenny Han",
+  "year": 2014,
+  "cats": [
+   "ya",
+   "romance",
+   "light"
+  ],
+  "tags": [
+   "נוער",
+   "רומנטי"
+  ],
+  "style": [
+   "romantic",
+   "funny"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "לארה ג'ין כתבה מכתב אהבה סודי לכל בן שהתאהבה בו, ושמרה אותם בקופסה. יום אחד המכתבים נשלחים, וכל הבנים מקבלים אותם.",
+  "cover": 7370711
+ },
+ {
+  "id": "everything-everything",
+  "title": "הכול, הכול",
+  "author": "ניקולה יון",
+  "en": "Everything, Everything",
+  "enAuthor": "Nicola Yoon",
+  "year": 2015,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "נוער",
+   "רומנטי"
+  ],
+  "style": [
+   "romantic",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מדלין, בת 18, אלרגית לכל העולם ולא יצאה מהבית מאז שהייתה תינוקת. כשנער חדש עובר לגור ממול, היא מתחילה לרצות לחיות באמת, גם אם זה מסוכן.",
+  "cover": 8140499
+ },
+ {
+  "id": "if-i-stay",
+  "title": "אם אשאר",
+  "author": "גייל פורמן",
+  "en": "If I Stay",
+  "enAuthor": "Gayle Forman",
+  "year": 2009,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "נוער",
+   "מרגש"
+  ],
+  "style": [
+   "emotional",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מיה, צ'לנית מוכשרת בת 17, נפצעת קשה בתאונה. כשהיא במצב קריטי, היא רואה מבחוץ את כל מי שאוהב אותה, וצריכה להחליט אם להישאר.",
+  "cover": 6300478
+ },
+ {
+  "id": "the-selection",
+  "title": "המועמדת",
+  "author": "קירה קאס",
+  "en": "The Selection",
+  "enAuthor": "Kiera Cass",
+  "year": 2012,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "נוער",
+   "רומנטי",
+   "דיסטופיה"
+  ],
+  "style": [
+   "romantic",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "35 נערות נבחרות להתחרות על לבו של הנסיך מקסון ועל חיים בארמון. אמריקה סינגר, שאוהבת מישהו אחר, לא רוצה בכלל להשתתף.",
+  "cover": 7101900
+ },
+ {
+  "id": "love-rosie",
+  "title": "באהבה, רוזי",
+  "author": "ססיליה אהרן",
+  "en": "Where Rainbows End",
+  "enAuthor": "Cecelia Ahern",
+  "year": 2004,
+  "cats": [
+   "romance",
+   "light"
+  ],
+  "tags": [
+   "רומנטי"
+  ],
+  "style": [
+   "romantic",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רוזי ואלכס חברים הכי טובים מגיל חמש. לאורך החיים, דרך מכתבים, מיילים והודעות, הם מתגעגעים, מפספסים ומתאהבים, תמיד בזמן הלא נכון.",
+  "cover": 11688
+ },
+ {
+  "id": "rage-of-angels",
+  "title": "זעם המלאכים",
+  "author": "סידני שלדון",
+  "en": "Rage of Angels",
+  "enAuthor": "Sidney Sheldon",
+  "year": 1980,
+  "cats": [
+   "thriller",
+   "romance"
+  ],
+  "tags": [
+   "מותחן",
+   "משפטי"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ניפר, עורכת דין צעירה ומבריקה, נופלת בפח שטמנה לה המאפיה ביום הראשון שלה. בדרך חזרה לצמרת היא נקרעת בין שני גברים, פוליטיקאי ואיש מאפיה.",
+  "cover": 430162
+ },
+ {
+  "id": "kane-and-abel",
+  "title": "קין והבל",
+  "author": "ג'פרי ארצ'ר",
+  "en": "Kane and Abel",
+  "enAuthor": "Jeffrey Archer",
+  "year": 1979,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "דרמה"
+  ],
+  "style": [
+   "character",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "באותו יום ב-1906 נולדים שני תינוקות: אחד לבנקאי עשיר בבוסטון, והשני לעוני בפולין. חייהם מתנהלים במקביל, עד שהם נפגשים ונעשים אויבים מושבעים.",
+  "cover": 11279169
+ },
+ {
+  "id": "dreamcatcher",
+  "title": "לוכד החלומות",
+  "author": "סטיבן קינג",
+  "en": "Dreamcatcher",
+  "enAuthor": "Stephen King",
+  "year": 2001,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "מדע בדיוני"
+  ],
+  "style": [
+   "scary",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ארבעה חברי ילדות, שיש להם יכולת מיוחדת, נפגשים לשבוע ציד בבקתה ביער. סערת שלג, אדם תועה וחייזרים הופכים את הטיול לסיוט.",
+  "cover": 14651654
+ },
+ {
+  "id": "bird-box",
+  "title": "קופסת הציפורים",
+  "author": "ג'וש מלרמן",
+  "en": "Bird Box",
+  "enAuthor": "Josh Malerman",
+  "year": 2014,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "דיסטופיה"
+  ],
+  "style": [
+   "scary",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "משהו בחוץ גורם לכל מי שרואה אותו להשתגע. מלורי ושני ילדים קטנים יוצאים במסע בסירה, כשעיניהם מכוסות, אל מקום שאולי בטוח.",
+  "cover": 11377399
+ },
+ {
+  "id": "girl-all-gifts",
+  "title": "הנערה עם כל המתנות",
+  "author": "מייק קארי",
+  "en": "The Girl with All the Gifts",
+  "enAuthor": "M. R. Carey",
+  "year": 2014,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "זומבים"
+  ],
+  "style": [
+   "emotional",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מלאני, ילדה מבריקה שאוהבת את המורה שלה, יוצאת לשיעורים כל בוקר כשהיא קשורה לכיסא גלגלים. היא עוד לא יודעת למה, ומה קרה לעולם בחוץ.",
+  "cover": 15204549
+ },
+ {
+  "id": "message-in-bottle",
+  "title": "מכתב בבקבוק",
+  "author": "ניקולס ספארקס",
+  "en": "Message in a Bottle",
+  "enAuthor": "Nicholas Sparks",
+  "year": 1998,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "מרגש"
+  ],
+  "style": [
+   "romantic",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "תרזה, עיתונאית גרושה, מוצאת על החוף בקבוק עם מכתב אהבה מרגש של גבר לאשתו שמתה. היא יוצאת לחפש את הכותב, ומוצאת אותו.",
+  "cover": 540720
+ },
+ {
+  "id": "dear-john",
+  "title": "ג'ון היקר",
+  "author": "ניקולס ספארקס",
+  "en": "Dear John",
+  "enAuthor": "Nicholas Sparks",
+  "year": 2006,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "מרגש"
+  ],
+  "style": [
+   "romantic",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ון, חייל בחופשה, מתאהב בסוואנה, סטודנטית מתוקה, בשבועיים של קיץ. הם מבטיחים לכתוב זה לזה, אבל ה-11 בספטמבר משנה את התוכניות של כולם.",
+  "cover": 13781295
+ },
+ {
+  "id": "the-last-song",
+  "title": "השיר האחרון",
+  "author": "ניקולס ספארקס",
+  "en": "The Last Song",
+  "enAuthor": "Nicholas Sparks",
+  "year": 2009,
+  "cats": [
+   "romance",
+   "ya"
+  ],
+  "tags": [
+   "רומנטי",
+   "משפחה"
+  ],
+  "style": [
+   "romantic",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רוני, בת 17 כועסת, נשלחת לקיץ אצל אביה בעיירת חוף, אחרי שלוש שנים שלא דיברה איתו. הקיץ מביא אהבה ראשונה, וגם השלמה שלא ציפתה לה.",
+  "cover": 6411538
+ },
+ {
+  "id": "slumdog",
+  "title": "נער החידות ממומביי",
+  "author": "ויקאס סווארופ",
+  "en": "Q & A",
+  "enAuthor": "Vikas Swarup",
+  "year": 2005,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "הרפתקאות"
+  ],
+  "style": [
+   "fast",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ראם, מלצר יתום ממומביי, עונה נכון על כל השאלות בשעשועון ענק וזוכה במיליארד רופי. המשטרה בטוחה שהוא רימה, והוא מסביר איך החיים לימדו אותו כל תשובה.",
+  "cover": 8712042
+ },
+ {
+  "id": "extremely-loud",
+  "title": "קרוב להפליא ורועש להחריד",
+  "author": "ג'ונתן ספרן פויר",
+  "en": "Extremely Loud & Incredibly Close",
+  "enAuthor": "Jonathan Safran Foer",
+  "year": 2005,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "מרגש"
+  ],
+  "style": [
+   "emotional",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אוסקר, ילד ממציא בן תשע, איבד את אביו ב-11 בספטמבר. הוא מוצא בארון מפתח במעטפה, ויוצא לחפש ברחבי ניו יורק את המנעול שהוא פותח.",
+  "cover": null
+ },
+ {
+  "id": "marley-and-me",
+  "title": "מארלי ואני",
+  "author": "ג'ון גרוגן",
+  "en": "Marley & Me",
+  "enAuthor": "John Grogan",
+  "year": 2005,
+  "cats": [
+   "light",
+   "nonfiction"
+  ],
+  "tags": [
+   "הומור",
+   "מרגש"
+  ],
+  "style": [
+   "funny",
+   "warm",
+   "emotional"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "זוג צעיר מאמץ גור לברדור מתוק, ומגלה שהוא הכלב הכי משוגע בעולם: הוא אוכל רהיטים, מגורש מבית ספר לאילוף ומחבק את כולם. סיפור אמיתי, מצחיק ומרגש.",
+  "cover": 2312271
+ },
+ {
+  "id": "eat-pray-love",
+  "title": "לאכול, להתפלל, לאהוב",
+  "author": "אליזבת גילברט",
+  "en": "Eat, Pray, Love",
+  "enAuthor": "Elizabeth Gilbert",
+  "year": 2006,
+  "cats": [
+   "light",
+   "nonfiction"
+  ],
+  "tags": [
+   "השראה",
+   "מסע"
+  ],
+  "style": [
+   "warm",
+   "funny"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אחרי גירושים קשים, אליזבת גילברט יוצאת לשנה של מסע: ארבעה חודשים של אוכל באיטליה, ארבעה של מדיטציה בהודו, וארבעה באינדונזיה, שם היא מוצאת איזון ואהבה. סיפור אמיתי.",
+  "cover": 111433
+ },
+ {
+  "id": "half-yellow-sun",
+  "title": "חצי שמש צהובה",
+  "author": "צ'יממנדה נגוזי אדיצ'י",
+  "en": "Half of a Yellow Sun",
+  "enAuthor": "Chimamanda Ngozi Adichie",
+  "year": 2006,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ניגריה של שנות ה-60: אוגוו, נער כפרי שעובד כמשרת אצל פרופסור, אולנה, אהובתו היפה, ואנגלי שמתאהב באחותה. מלחמת ביאפרה משנה את חייהם.",
+  "cover": 8472660
+ },
+ {
+  "id": "americanah",
+  "title": "אמריקנה",
+  "author": "צ'יממנדה נגוזי אדיצ'י",
+  "en": "Americanah",
+  "enAuthor": "Chimamanda Ngozi Adichie",
+  "year": 2013,
+  "cats": [
+   "trendy",
+   "romance"
+  ],
+  "tags": [
+   "רומן",
+   "רומנטי"
+  ],
+  "style": [
+   "character",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "איפמלו ואובינזה התאהבו בתיכון בניגריה. היא נוסעת ללמוד באמריקה ומגלה מה זה להיות שחורה שם, והוא נתקע בלונדון. שנים אחר כך היא חוזרת הביתה.",
+  "cover": 8474037
+ },
+ {
+  "id": "enola-holmes",
+  "title": "אנולה הולמס",
+  "author": "ננסי ספרינגר",
+  "en": "The Case of the Missing Marquess",
+  "enAuthor": "Nancy Springer",
+  "year": 2006,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "בלשי"
+  ],
+  "style": [
+   "mystery",
+   "fast",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ביום הולדתה ה-14 אנולה, אחותו הצעירה של שרלוק הולמס, מגלה שאמה נעלמה. היא בורחת ללונדון כדי לחפש אותה, ונתקלת בתעלומה של לורד צעיר שנעלם.",
+  "cover": 260208
+ },
+ {
+  "id": "edward-tulane",
+  "title": "המסע המופלא של אדוארד טוליין",
+  "author": "קייט דיקמילו",
+  "en": "The Miraculous Journey of Edward Tulane",
+  "enAuthor": "Kate DiCamillo",
+  "year": 2006,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "מרגש"
+  ],
+  "style": [
+   "emotional",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אדוארד, ארנב חרסינה גאה שאוהב רק את עצמו, נופל מאונייה ומתחיל מסע ארוך בין ידיים של אנשים שונים. בדרך הוא לומד לאהוב, ולהיות נאהב.",
+  "cover": 3326249
+ },
+ {
+  "id": "benedict-society",
+  "title": "אגודת בנדיקט המסתורית",
+  "author": "טרנטון לי סטיוארט",
+  "en": "The Mysterious Benedict Society",
+  "enAuthor": "Trenton Lee Stewart",
+  "year": 2007,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "הרפתקאות",
+   "תעלומה"
+  ],
+  "style": [
+   "mystery",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ארבעה ילדים מחוננים עוברים סדרת מבחנים מוזרים, ונשלחים בידי מר בנדיקט למשימה סודית: לחדור לבית ספר על אי, שממנו נשלחים מסרים שמשתלטים על המוחות.",
+  "cover": 10081254
+ },
+ {
+  "id": "hugo-cabret",
+  "title": "התגלית של הוגו קברה",
+  "author": "בריאן סלזניק",
+  "en": "The Invention of Hugo Cabret",
+  "enAuthor": "Brian Selznick",
+  "year": 2007,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "נוער",
+   "תעלומה"
+  ],
+  "style": [
+   "warm",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הוגו, יתום שגר בסתר בין השעונים של תחנת רכבת בפריז, מנסה לתקן רובוט מכני שהשאיר לו אביו. הסוד שלו מתחבר לסוד של זקן נרגן שמוכר צעצועים בתחנה. עם מאות איורים.",
+  "cover": 10986715
+ },
+ {
+  "id": "girls-of-riyadh",
+  "title": "בנות ריאד",
+  "author": "רג'אא אלסאנע",
+  "en": "Girls of Riyadh",
+  "enAuthor": "Rajaa Alsanea",
+  "year": 2005,
+  "cats": [
+   "trendy",
+   "romance"
+  ],
+  "tags": [
+   "רומן",
+   "רומנטי"
+  ],
+  "style": [
+   "character",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ארבע חברות צעירות מהחברה הגבוהה בסעודיה מנסות למצוא אהבה בעולם שמגביל אותן. הסיפור מסופר כסדרת מיילים אנונימיים שמסעירים את כל הממלכה.",
+  "cover": 1119736
+ },
+ {
+  "id": "on-chesil-beach",
+  "title": "על חוף צ'זיל",
+  "author": "איאן מקיואן",
+  "en": "On Chesil Beach",
+  "enAuthor": "Ian McEwan",
+  "year": 2007,
+  "cats": [
+   "trendy",
+   "romance"
+  ],
+  "tags": [
+   "רומן",
+   "קצר"
+  ],
+  "style": [
+   "short",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1962: אדוארד ופלורנס, זוג צעיר ואוהב, מגיעים למלון ליד החוף בליל הכלולות שלהם. שניהם מפחדים, ואף אחד לא מעז לומר מה הוא מרגיש.",
+  "cover": 5016260
  }
 ];
