@@ -81,7 +81,7 @@ const Taste = (() => {
     }
     const seen = new Set();
     for (const b of window.BOOKS) {
-      for (const name of b.author.split(" ו")) {
+      for (const name of splitAuthors(b.author)) {
         const full = norm(name);
         if (seen.has(full)) continue;
         const surname = full.split(" ").pop();
@@ -138,7 +138,7 @@ const Taste = (() => {
       ...book.tags.map((t) => "tag:" + t),
       ...book.style.map((s) => "style:" + s),
       ...book.cats.map((c) => "cat:" + c),
-      ...book.author.split(" ו").map((a) => "author:" + a.trim()),
+      ...splitAuthors(book.author).map((a) => "author:" + a.trim()),
     ];
   }
 

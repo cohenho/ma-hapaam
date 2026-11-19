@@ -1,6 +1,21 @@
 // Everything the app remembers lives in one object, saved in the phone's browser
 // storage (localStorage). Later stages add the taste profile and backups on top of it.
 
+// "סטיבן לויצקי ודניאל זיבלט" → ["סטיבן לויצקי", "דניאל זיבלט"]. The "ו" counts as "and"
+// only between two full names, so surnames like "ויילד", "וונגוט" or "ווטרס" stay whole.
+function splitAuthors(author) {
+  const names = [];
+  let rest = author.replace(/\s+ואחרים$/, "");
+  for (;;) {
+    const m = rest.match(/^(\S+(?:\s+\S+)+?)\s+ו(?!ו)(\S+\s+\S.*)$/);
+    if (!m) break;
+    names.push(m[1]);
+    rest = m[2];
+  }
+  names.push(rest);
+  return names;
+}
+
 const Store = (() => {
   const KEY = "mahapaam";
   const VERSION = 1;

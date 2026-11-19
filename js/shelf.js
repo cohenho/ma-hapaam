@@ -24,9 +24,10 @@ function coverUrl(book, size = "L") {
 const isNonfiction = (book) => book.cats.includes("nonfiction");
 const shelfMark = (book) => (isNonfiction(book) ? "עיון" : "ס");
 
+const hasCoAuthor = (book) => splitAuthors(book.author).length > 1;
+
 function shelfLetters(book) {
-  const firstAuthor = book.author.split(" ו")[0].trim();
-  const surname = firstAuthor.split(/\s+/).pop().replace(/["״.]/g, "");
+  const surname = splitAuthors(book.author)[0].split(/\s+/).pop().replace(/["״.]/g, "");
   // First three letters; a geresh (ג' ז' צ') stays with its letter.
   let out = "", letters = 0;
   for (const ch of surname) {
@@ -122,7 +123,7 @@ const Shelf = (() => {
       <p class="card-summary">${esc(book.summary)}</p>
       <p class="card-where"><b>איפה במדף?</b> ${isNonfiction(book)
         ? `במדפי העיון, לפי נושא. הכי קל לשאול את הספרנית.`
-        : `במדף הסיפורת, לפי שם המשפחה של ${book.author.includes(" ו") ? "הכותבים" : "הסופר/ת"}.
+        : `במדף הסיפורת, לפי שם המשפחה של ${hasCoAuthor(book) ? "הכותבים" : "הסופר/ת"}.
         ${g("חפשי", "חפש", "חפשו")} מדבקה עם <span class="typed">ס</span> ומתחתיה <span class="typed">${esc(shelfLetters(book))}</span>`}</p>
       ${note ? `<p class="card-note">${note}</p>` : ""}
       <div class="card-stamps">

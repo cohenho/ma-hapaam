@@ -98,7 +98,7 @@ const Scan = (() => {
     return window.BOOKS.map((b) => {
       let s = Math.max(titleScore(words, b.title), titleScore(words, b.en) * 0.95);
       // the author's surname on the cover makes us surer
-      const surname = norm(b.author.split(" ו")[0]).split(" ").pop();
+      const surname = norm(splitAuthors(b.author)[0]).split(" ").pop();
       if (surname.length >= 3 && flat.includes(" " + surname + " ")) s = Math.min(1, s + 0.15);
       // very short titles ("זה", "זר") match by chance: be stricter
       if (norm(b.title).replace(/ /g, "").length < 4) s *= 0.7;

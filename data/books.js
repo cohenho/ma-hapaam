@@ -18384,10 +18384,10 @@ window.BOOKS = [
   "cover": null
  },
  {
-  "id": "refuge-michael",
+  "id": "tin-shacks-michael",
   "title": "פחונים וחלומות",
   "author": "סמי מיכאל",
-  "en": "Refuge",
+  "en": "Tin Shacks and Dreams",
   "enAuthor": "Sami Michael",
   "year": 1979,
   "cats": [
@@ -18402,8 +18402,8 @@ window.BOOKS = [
   ],
   "pop": 3,
   "adult": false,
-  "summary": "חבורת צעירים עולים מעיראק במעברה של שנות ה-50 חולמים על חיים טובים יותר. בין פחונים, עבודה קשה ואהבות, כל אחד מוצא דרך אחרת לשרוד.",
-  "cover": 4743585
+  "summary": "נערים ונערות, עולים מעיראק, גדלים במעברה של שנות ה-50. בין פחונים, עוני ועבודה קשה, כל אחד מהם חולם על חיים אחרים ומחפש את מקומו בארץ החדשה.",
+  "cover": null
  },
  {
   "id": "shira-agnon",
@@ -18698,5 +18698,4085 @@ window.BOOKS = [
   "adult": false,
   "summary": "איך מדינה קטנה, צעירה ומוקפת אויבים הפכה למעצמת חדשנות? הספר מחפש תשובות בצבא, בעלייה, בתרבות הישראלית ובחוצפה.",
   "cover": 8453514
+ },
+ {
+  "id": "world-without-end",
+  "title": "עולם ללא קץ",
+  "author": "קן פולט",
+  "en": "World Without End",
+  "enAuthor": "Ken Follett",
+  "year": 2007,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "character",
+   "slow"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "200 שנה אחרי \"עמודי תבל\", בעיירה קינגסברידג': ארבעה ילדים רואים ביער משהו שלא היו אמורים לראות. כשהם גדלים, הסוד, האהבה והמגפה השחורה משנים את חייהם.",
+  "cover": 362346
+ },
+ {
+  "id": "column-of-fire",
+  "title": "עמוד האש",
+  "author": "קן פולט",
+  "en": "A Column of Fire",
+  "enAuthor": "Ken Follett",
+  "year": 2017,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מתח"
+  ],
+  "style": [
+   "historical",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "המאה ה-16: נד ווילארד, צעיר מקינגסברידג', מתאהב בבת של משפחה קתולית, ובתקופה שבה פרוטסטנטים וקתולים הורגים אלה את אלה הוא הופך למרגל של המלכה אליזבת.",
+  "cover": 8465187
+ },
+ {
+  "id": "fall-of-giants",
+  "title": "נפילת ענקים",
+  "author": "קן פולט",
+  "en": "Fall of Giants",
+  "enAuthor": "Ken Follett",
+  "year": 2010,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מלחמה"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חמש משפחות, מוולס ועד רוסיה, אמריקה וגרמניה, נסחפות למלחמת העולם הראשונה ולמהפכה הרוסית. כורה פחם, רוזן, משרתת ושני אחים רוסים, וכולם נפגשים בהיסטוריה.",
+  "cover": 6929288
+ },
+ {
+  "id": "winter-of-world",
+  "title": "שקיעת העולם",
+  "author": "קן פולט",
+  "en": "Winter of the World",
+  "enAuthor": "Ken Follett",
+  "year": 2012,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מלחמה"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ההמשך של \"נפילת ענקים\": ילדי המשפחות גדלים לתוך עליית הנאצים, מלחמת האזרחים בספרד ומלחמת העולם השנייה. כל אחד מהם צריך לבחור צד.",
+  "cover": 9042745
+ },
+ {
+  "id": "talk-about-running",
+  "title": "על מה אני מדבר כשאני מדבר על ריצה",
+  "author": "הארוקי מורקמי",
+  "en": "What I Talk About When I Talk About Running",
+  "enAuthor": "Haruki Murakami",
+  "year": 2007,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "ספורט"
+  ],
+  "style": [
+   "short",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מורקמי מספר על הריצה, תחביב שהפך לדרך חיים: מרתונים, אימונים, גיל שמתקדם, ומה הריצה לימדה אותו על כתיבה. ספר קטן ושקט.",
+  "cover": 13185830
+ },
+ {
+  "id": "plot-against-america",
+  "title": "הקנוניה נגד אמריקה",
+  "author": "פיליפ רות",
+  "en": "The Plot Against America",
+  "enAuthor": "Philip Roth",
+  "year": 2004,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "היסטוריה חלופית",
+   "משפחה"
+  ],
+  "style": [
+   "smart",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מה היה קורה אם צ'רלס לינדברג, הטייס המפורסם שאהד את היטלר, היה נבחר לנשיא אמריקה ב-1940? משפחה יהודית בניו ג'רזי מרגישה איך המדינה משתנה סביבה.",
+  "cover": 8349176
+ },
+ {
+  "id": "yiddish-policemen",
+  "title": "איגוד השוטרים היידים",
+  "author": "מייקל שייבון",
+  "en": "The Yiddish Policemen's Union",
+  "enAuthor": "Michael Chabon",
+  "year": 2007,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "בלשי",
+   "היסטוריה חלופית"
+  ],
+  "style": [
+   "mystery",
+   "smart",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בעולם שבו מדינת ישראל לא קמה, היהודים חיים באלסקה ומדברים יידיש. הבלש מאיר לנדסמן, גרוש ושתיין, חוקר רצח של שחמטאי במלון שלו, ונכנס לקונספירציה גדולה.",
+  "cover": 12745258
+ },
+ {
+  "id": "flowers-algernon",
+  "title": "פרחים לאלג'רנון",
+  "author": "דניאל קיז",
+  "en": "Flowers for Algernon",
+  "enAuthor": "Daniel Keyes",
+  "year": 1966,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "מדע בדיוני"
+  ],
+  "style": [
+   "emotional",
+   "short"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "צ'רלי גורדון, אדם עם מוגבלות שכלית, עובר ניסוי שהצליח קודם על עכבר בשם אלג'רנון. ביומן שלו רואים איך הוא הופך לגאון, ומה זה עושה לו ולאנשים סביבו.",
+  "cover": 12947700
+ },
+ {
+  "id": "american-gods",
+  "title": "אלים אמריקאים",
+  "author": "ניל גיימן",
+  "en": "American Gods",
+  "enAuthor": "Neil Gaiman",
+  "year": 2001,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "dark",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "שאדו משתחרר מהכלא ומגלה שאשתו מתה. איש מסתורי בשם מר וונסדיי מציע לו עבודה, ומתברר שהאלים העתיקים חיים באמריקה ומתכוננים למלחמה באלים החדשים: הטלוויזיה והאינטרנט.",
+  "cover": 8494659
+ },
+ {
+  "id": "anansi-boys",
+  "title": "בני אנאנסי",
+  "author": "ניל גיימן",
+  "en": "Anansi Boys",
+  "enAuthor": "Neil Gaiman",
+  "year": 2005,
+  "cats": [
+   "light"
+  ],
+  "tags": [
+   "פנטזיה",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "צ'רלי, בחור לונדוני משעמם, מגלה בהלוויה של אביו שאבא היה אנאנסי, אל העכביש האפריקאי, ושיש לו אח שהוא לא הכיר. האח מגיע, וחייו של צ'רלי מתהפכים.",
+  "cover": 12049134
+ },
+ {
+  "id": "howls-moving-castle",
+  "title": "הטירה הנעה",
+  "author": "דיאנה וין ג'ונס",
+  "en": "Howl's Moving Castle",
+  "enAuthor": "Diana Wynne Jones",
+  "year": 1986,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "funny",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סופי, הבכורה מבין שלוש אחיות, מקוללת על ידי מכשפה והופכת לזקנה. היא מוצאת מקלט בטירה הנעה של הקוסם האל, שמפחידים בו את כל הבנות בממלכה.",
+  "cover": 8783945
+ },
+ {
+  "id": "watership-down",
+  "title": "גבעת ווטרשיפ",
+  "author": "ריצ'רד אדמס",
+  "en": "Watership Down",
+  "enAuthor": "Richard Adams",
+  "year": 1972,
+  "cats": [
+   "classic",
+   "ya"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "character",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פייבר, ארנב קטן עם תחושות, צופה אסון למחילה שלו. קבוצת ארנבים יוצאת איתו ועם אחיו האזל לחפש בית חדש, במסע מסוכן ומרגש.",
+  "cover": 6450196
+ },
+ {
+  "id": "man-high-castle",
+  "title": "האיש במצודה הרמה",
+  "author": "פיליפ ק. דיק",
+  "en": "The Man in the High Castle",
+  "enAuthor": "Philip K. Dick",
+  "year": 1962,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "היסטוריה חלופית",
+   "מדע בדיוני"
+  ],
+  "style": [
+   "smart",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "גרמניה ויפן ניצחו במלחמת העולם השנייה וחילקו ביניהן את אמריקה. ספר אסור שמסתובב בין אנשים מתאר עולם אחר, שבו בעלות הברית ניצחו.",
+  "cover": 420452
+ },
+ {
+  "id": "neuromancer",
+  "title": "נוירומנסר",
+  "author": "ויליאם גיבסון",
+  "en": "Neuromancer",
+  "enAuthor": "William Gibson",
+  "year": 1984,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קייס, האקר שלא יכול יותר להתחבר לרשת, מקבל הצעה: ריפוי בתמורה לעוד עבודה אחת. הספר שהמציא את המילה \"סייברספייס\" ואת עולם הסייברפאנק.",
+  "cover": 283860
+ },
+ {
+  "id": "artemis-weir",
+  "title": "ארטמיס",
+  "author": "אנדי ויר",
+  "en": "Artemis",
+  "enAuthor": "Andy Weir",
+  "year": 2017,
+  "cats": [
+   "light",
+   "thriller"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'אז, מבריחה צעירה בעיר הראשונה על הירח, מקבלת הצעה לפשע אחד גדול שיפתור את כל בעיות הכסף שלה. כמובן שהכול משתבש.",
+  "cover": 8235551
+ },
+ {
+  "id": "ready-player-two",
+  "title": "שחקן מספר שתיים",
+  "author": "ארנסט קליין",
+  "en": "Ready Player Two",
+  "enAuthor": "Ernest Cline",
+  "year": 2020,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "fast",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ההמשך של \"שחקן מספר אחת\": ווייד מוצא המצאה סודית שהשאיר הליידיי, ופותח מרדף חדש בעולם הווירטואלי, הפעם עם אויב מסוכן יותר.",
+  "cover": 10250001
+ },
+ {
+  "id": "jonathan-strange",
+  "title": "ג'ונתן סטריינג' ומר נורל",
+  "author": "סוזנה קלארק",
+  "en": "Jonathan Strange & Mr Norrell",
+  "enAuthor": "Susanna Clarke",
+  "year": 2004,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה",
+   "היסטורי"
+  ],
+  "style": [
+   "slow",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אנגליה של 1806: הקסם נעלם מזמן, עד שמר נורל, מלומד מסוגר, מחזיר אותו. כשהוא לוקח תלמיד מבריק ונועז, ג'ונתן סטריינג', היחסים ביניהם מסתבכים.",
+  "cover": null
+ },
+ {
+  "id": "last-unicorn",
+  "title": "החדקרן האחרון",
+  "author": "פיטר ביגל",
+  "en": "The Last Unicorn",
+  "enAuthor": "Peter S. Beagle",
+  "year": 1968,
+  "cats": [
+   "classic",
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "warm",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חד-קרן שחי לבד ביער שומע שהיא אולי האחרונה מסוגה. היא יוצאת לחפש את האחרים, ובדרך מצטרפים אליה קוסם לא מוצלח ואישה עם עבר.",
+  "cover": 294651
+ },
+ {
+  "id": "hyperion",
+  "title": "היפריון",
+  "author": "דן סימונס",
+  "en": "Hyperion",
+  "enAuthor": "Dan Simmons",
+  "year": 1989,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שבעה עולי רגל נוסעים לכוכב היפריון כדי לפגוש את השרייק, יצור מפחיד שאיש לא שורד מולו. בדרך, כל אחד מספר את הסיפור שלו, וכל סיפור מז'אנר אחר.",
+  "cover": 380332
+ },
+ {
+  "id": "speaker-for-dead",
+  "title": "קול למתים",
+  "author": "אורסון סקוט קארד",
+  "en": "Speaker for the Dead",
+  "enAuthor": "Orson Scott Card",
+  "year": 1986,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "smart",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "3000 שנה אחרי \"המשחק של אנדר\", אנדר מגיע לכוכב שבו חיים יצורים תבוניים חדשים. הפעם המטרה היא להבין אותם, לפני שתתחיל עוד מלחמה.",
+  "cover": 9315123
+ },
+ {
+  "id": "caves-of-steel",
+  "title": "מערות הפלדה",
+  "author": "אייזק אסימוב",
+  "en": "The Caves of Steel",
+  "enAuthor": "Isaac Asimov",
+  "year": 1954,
+  "cats": [
+   "classic",
+   "thriller"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "בלשי"
+  ],
+  "style": [
+   "mystery",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ניו יורק של העתיד, עיר מקורה ענקית: הבלש אליג'ה ביילי, שלא סובל רובוטים, נאלץ לחקור רצח יחד עם שותף רובוט שנראה כמו בן אדם.",
+  "cover": 13790511
+ },
+ {
+  "id": "sirens-of-titan",
+  "title": "הסירנות של טיטאן",
+  "author": "קורט וונגוט",
+  "en": "The Sirens of Titan",
+  "enAuthor": "Kurt Vonnegut",
+  "year": 1959,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "האיש העשיר באמריקה נשלח למסע מוזר בחלל, ממאדים לכספית ועד טיטאן. סאטירה מצחיקה ועצובה על המשמעות של החיים, ואם יש בכלל.",
+  "cover": 1364468
+ },
+ {
+  "id": "starship-troopers",
+  "title": "לוחמי החלל",
+  "author": "רוברט היינליין",
+  "en": "Starship Troopers",
+  "enAuthor": "Robert A. Heinlein",
+  "year": 1959,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "מלחמה"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'וני ריקו מתגייס לחיל הרגלים המכני של העתיד, ועובר טירונות קשה לפני מלחמה ביצורים דמויי חרקים. ספר שגם מעורר ויכוח על צבא ואזרחות.",
+  "cover": 14630746
+ },
+ {
+  "id": "tombs-of-atuan",
+  "title": "הקברים של אטואן",
+  "author": "אורסולה לה גווין",
+  "en": "The Tombs of Atuan",
+  "enAuthor": "Ursula K. Le Guin",
+  "year": 1971,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "slow",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "טנאר נלקחה כילדה להיות כוהנת של כוחות האופל, שומרת על מבוך קברים תת-קרקעי. יום אחד היא מוצאת בתוכו זר: הקוסם גד, שבא לגנוב משהו.",
+  "cover": 6633403
+ },
+ {
+  "id": "solaris",
+  "title": "סולאריס",
+  "author": "סטניסלב לם",
+  "en": "Solaris",
+  "enAuthor": "Stanisław Lem",
+  "year": 1961,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פסיכולוג מגיע לתחנת מחקר מעל כוכב שמכוסה באוקיינוס חי. בתחנה קורים דברים מוזרים, ואז מופיעה בחדרו אישה שהוא אהב ומתה לפני שנים.",
+  "cover": 12313764
+ },
+ {
+  "id": "roadside-picnic",
+  "title": "פיקניק בשולי הדרך",
+  "author": "ארקדי סטרוגצקי ובוריס סטרוגצקי",
+  "en": "Roadside Picnic",
+  "enAuthor": "Arkady Strugatsky",
+  "year": 1972,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "dark",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חייזרים ביקרו על פני כדור הארץ ועזבו, והשאירו \"אזורים\" מסוכנים מלאים חפצים מוזרים. רד, \"סטוקר\", מתגנב לאזור כדי להבריח מהם החוצה.",
+  "cover": 6752719
+ },
+ {
+  "id": "red-rising",
+  "title": "מרד אדום",
+  "author": "פירס בראון",
+  "en": "Red Rising",
+  "enAuthor": "Pierce Brown",
+  "year": 2014,
+  "cats": [
+   "ya",
+   "thriller"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "דיסטופיה"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "דארו, כורה מהמעמד הנמוך ביותר על מאדים, מגלה שכל חייו היו שקר. הוא עובר שינוי גוף ומסתנן לאקדמיה של המעמד השליט, כדי להפיל אותם מבפנים.",
+  "cover": 7316188
+ },
+ {
+  "id": "mistborn",
+  "title": "הערפילאים: האימפריה האחרונה",
+  "author": "ברנדון סנדרסון",
+  "en": "Mistborn: The Final Empire",
+  "enAuthor": "Brandon Sanderson",
+  "year": 2006,
+  "cats": [
+   "ya",
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בעולם שבו נופל אפר מהשמיים ושליט אלמותי רודה בעם כבר אלף שנה, ון, נערת רחוב, מגלה שיש לה כוחות קסם. חבורת גנבים מגייסת אותה לשוד הגדול מכולם.",
+  "cover": 14658160
+ },
+ {
+  "id": "way-of-kings",
+  "title": "דרך המלכים",
+  "author": "ברנדון סנדרסון",
+  "en": "The Way of Kings",
+  "enAuthor": "Brandon Sanderson",
+  "year": 2010,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "slow",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בעולם של סופות ענק, קלאדין, מנתח שהפך לחייל ואז לעבד, נאבק לשרוד. במקביל, נסיך ומלומדת צעירה מגלים סודות עתיקים. ספר ראשון בסדרה ענקית.",
+  "cover": 14658316
+ },
+ {
+  "id": "elantris",
+  "title": "אלנטריס",
+  "author": "ברנדון סנדרסון",
+  "en": "Elantris",
+  "enAuthor": "Brandon Sanderson",
+  "year": 2005,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "character",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אלנטריס הייתה עיר של אלים, עד שהקסם שלה התקלקל. הנסיך ראודן מתעורר יום אחד מקולל ונשלח לשם, והכלה שלו, שלא פגשה אותו מעולם, מנסה להציל את הממלכה.",
+  "cover": 14658083
+ },
+ {
+  "id": "game-of-thrones",
+  "title": "משחקי הכס",
+  "author": "ג'ורג' ר. ר. מרטין",
+  "en": "A Game of Thrones",
+  "enAuthor": "George R. R. Martin",
+  "year": 1996,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "dark",
+   "character",
+   "twists"
+  ],
+  "pop": 5,
+  "adult": true,
+  "summary": "בממלכת וסטרוז, אדארד סטארק נקרא לשמש יד ימינו של המלך, ונכנס לרשת של מזימות. בצפון החורף מתקרב, ומעבר לים נסיכה גולה מתכננת לחזור. הספר הראשון בסדרה.",
+  "cover": 9269962
+ },
+ {
+  "id": "clash-of-kings",
+  "title": "עימות המלכים",
+  "author": "ג'ורג' ר. ר. מרטין",
+  "en": "A Clash of Kings",
+  "enAuthor": "George R. R. Martin",
+  "year": 1998,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "dark",
+   "character"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "הספר השני בסדרת \"שיר של אש ושל קרח\": חמישה מלכים טוענים לכתר, והממלכה נקרעת במלחמה. כוכב שביט אדום מופיע בשמיים, וכל אחד רואה בו סימן אחר.",
+  "cover": 8231751
+ },
+ {
+  "id": "storm-of-swords",
+  "title": "סופת החרבות",
+  "author": "ג'ורג' ר. ר. מרטין",
+  "en": "A Storm of Swords",
+  "enAuthor": "George R. R. Martin",
+  "year": 2000,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "dark",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "הספר השלישי בסדרה, ואולי המפתיע מכולם: המלחמה נמשכת, בחומה בצפון מתכוננים לאויב ישן, ובחתונות של וסטרוז לא כדאי להרגיש בטוחים.",
+  "cover": 15124196
+ },
+ {
+  "id": "feast-for-crows",
+  "title": "משתה לעורבים",
+  "author": "ג'ורג' ר. ר. מרטין",
+  "en": "A Feast for Crows",
+  "enAuthor": "George R. R. Martin",
+  "year": 2005,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "dark",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "הספר הרביעי: אחרי המלחמה, הממלכה הרוסה, ומי שנשאר נאבק על השרידים. בבירה, המלכה סרסיי שולטת בחשדנות ובפחד.",
+  "cover": 6501256
+ },
+ {
+  "id": "dance-with-dragons",
+  "title": "ריקוד עם דרקונים",
+  "author": "ג'ורג' ר. ר. מרטין",
+  "en": "A Dance with Dragons",
+  "enAuthor": "George R. R. Martin",
+  "year": 2011,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "dark",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "הספר החמישי: דאינריז מנסה לשלוט בעיר רחוקה עם דרקונים שקשה לאלף, וג'ון שלג, על החומה בצפון, צריך להחליט עם מי להילחם ונגד מי.",
+  "cover": 11298743
+ },
+ {
+  "id": "children-of-hurin",
+  "title": "ילדי הורין",
+  "author": "ג'. ר. ר. טולקין",
+  "en": "The Children of Húrin",
+  "enAuthor": "J. R. R. Tolkien",
+  "year": 2007,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "פנטזיה"
+  ],
+  "style": [
+   "dark",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אלפי שנים לפני \"שר הטבעות\", טורין, בנו של הגיבור הורין, חי תחת קללה של אדון האופל. סיפור טרגי וגדול על אומץ, גאווה וגורל.",
+  "cover": 8220298
+ },
+ {
+  "id": "silmarillion",
+  "title": "הסילמריליון",
+  "author": "ג'. ר. ר. טולקין",
+  "en": "The Silmarillion",
+  "enAuthor": "J. R. R. Tolkien",
+  "year": 1977,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "פנטזיה",
+   "קלאסיקה"
+  ],
+  "style": [
+   "slow",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ההיסטוריה העתיקה של עולמו של טולקין: בריאת העולם, האלפים, שלוש אבני חן קסומות שכולם רוצים, ומלחמות ארוכות נגד אדון האופל הראשון.",
+  "cover": 14627042
+ },
+ {
+  "id": "brisingr",
+  "title": "בריסינגר",
+  "author": "כריסטופר פאוליני",
+  "en": "Brisingr",
+  "enAuthor": "Christopher Paolini",
+  "year": 2008,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הרפתקאות"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר השלישי בסדרת \"אראגון\": אראגון והדרקונית ספיירה צריכים לקיים הבטחות למשפחה, לבני ברית ולאויבים, ובינתיים המלחמה בגלבטוריקס מתקרבת.",
+  "cover": 2411585
+ },
+ {
+  "id": "percy-sea-monsters",
+  "title": "פרסי ג'קסון וים המפלצות",
+  "author": "ריק ריורדן",
+  "en": "The Sea of Monsters",
+  "enAuthor": "Rick Riordan",
+  "year": 2006,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "המחנה של חצויי האלים בסכנה, והדרך היחידה להציל אותו עוברת בים המפלצות. פרסי, אנבת' ואח חדש ומפתיע יוצאים למסע.",
+  "cover": 108909
+ },
+ {
+  "id": "percy-titans-curse",
+  "title": "פרסי ג'קסון וקללת הטיטאן",
+  "author": "ריק ריורדן",
+  "en": "The Titan's Curse",
+  "enAuthor": "Rick Riordan",
+  "year": 2007,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אנבת' נעלמת, והאלה ארטמיס נחטפת. פרסי וחבריו יוצאים לחלץ אותן, בזמן שהטיטאנים צוברים כוח.",
+  "cover": 14601475
+ },
+ {
+  "id": "percy-labyrinth",
+  "title": "פרסי ג'קסון והקרב על המבוך",
+  "author": "ריק ריורדן",
+  "en": "The Battle of the Labyrinth",
+  "enAuthor": "Rick Riordan",
+  "year": 2008,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יש כניסה סודית למבוך של דדלוס, ממש בתוך המחנה. פרסי וחבריו נכנסים למבוך כדי לעצור פלישה, ומגלים שהוא מתחת לכל אמריקה.",
+  "cover": 6274739
+ },
+ {
+  "id": "percy-last-olympian",
+  "title": "פרסי ג'קסון ותקוות האולימפוס",
+  "author": "ריק ריורדן",
+  "en": "The Last Olympian",
+  "enAuthor": "Rick Riordan",
+  "year": 2009,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "fast",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר החמישי והאחרון: פרסי בן 16, והנבואה עליו עומדת להתגשם. קרונוס תוקף את ניו יורק, וחצויי האלים צריכים להגן על האולימפוס.",
+  "cover": 6624107
+ },
+ {
+  "id": "lost-hero",
+  "title": "הגיבור האבוד",
+  "author": "ריק ריורדן",
+  "en": "The Lost Hero",
+  "enAuthor": "Rick Riordan",
+  "year": 2010,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ייסון מתעורר באוטובוס בלי שום זיכרון, ליד חברה שהוא לא זוכר וחבר טוב שהוא לא מכיר. הם מגיעים למחנה החצויים ומקבלים משימה חדשה. סדרת ההמשך של פרסי ג'קסון.",
+  "cover": 12848687
+ },
+ {
+  "id": "inkspell",
+  "title": "כשף של דיו",
+  "author": "קורנליה פונקה",
+  "en": "Inkspell",
+  "enAuthor": "Cornelia Funke",
+  "year": 2005,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "warm",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ההמשך של \"לב של דיו\": מגי נקראת לתוך עולם הדיו, העולם של הספר, ומגלה שהסיפור כבר לא הולך לפי מה שכתוב.",
+  "cover": 4918575
+ },
+ {
+  "id": "inkdeath",
+  "title": "מוות של דיו",
+  "author": "קורנליה פונקה",
+  "en": "Inkdeath",
+  "enAuthor": "Cornelia Funke",
+  "year": 2007,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "emotional",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר השלישי והאחרון בטרילוגיה: מו, אביה של מגי, הפך בעולם הדיו לגיבור שודד, והוא צריך לעשות עסקה מסוכנת עם המוות עצמו.",
+  "cover": 9781906
+ },
+ {
+  "id": "new-moon",
+  "title": "מולד הירח",
+  "author": "סטפני מאייר",
+  "en": "New Moon",
+  "enAuthor": "Stephenie Meyer",
+  "year": 2006,
+  "cats": [
+   "romance",
+   "ya"
+  ],
+  "tags": [
+   "רומנטי",
+   "נוער",
+   "ערפדים"
+  ],
+  "style": [
+   "romantic",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ההמשך של \"דמדומים\": אדוארד עוזב את בלה כדי להגן עליה. שבורת לב, היא מוצאת נחמה בחברות עם ג'ייקוב, שיש לו סוד משלו.",
+  "cover": 12643406
+ },
+ {
+  "id": "eclipse-meyer",
+  "title": "ליקוי חמה",
+  "author": "סטפני מאייר",
+  "en": "Eclipse",
+  "enAuthor": "Stephenie Meyer",
+  "year": 2007,
+  "cats": [
+   "romance",
+   "ya"
+  ],
+  "tags": [
+   "רומנטי",
+   "נוער",
+   "ערפדים"
+  ],
+  "style": [
+   "romantic",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סיאטל מוכת רציחות מסתוריות, וערפדית נקמנית מחפשת את בלה. בלה צריכה לבחור בין אהבתה לאדוארד לבין חברותה עם ג'ייקוב.",
+  "cover": 12643410
+ },
+ {
+  "id": "breaking-dawn",
+  "title": "שחר מפציע",
+  "author": "סטפני מאייר",
+  "en": "Breaking Dawn",
+  "enAuthor": "Stephenie Meyer",
+  "year": 2008,
+  "cats": [
+   "romance",
+   "ya"
+  ],
+  "tags": [
+   "רומנטי",
+   "נוער",
+   "ערפדים"
+  ],
+  "style": [
+   "romantic",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר האחרון בסדרת \"דמדומים\": בלה ואדוארד מתחתנים, ואז קורה משהו שאיש לא האמין שאפשר. משפחת קאלן עומדת מול הסכנה הגדולה ביותר שלה.",
+  "cover": 12643419
+ },
+ {
+  "id": "catching-fire",
+  "title": "משחקי הרעב: התלקחות",
+  "author": "סוזן קולינס",
+  "en": "Catching Fire",
+  "enAuthor": "Suzanne Collins",
+  "year": 2009,
+  "cats": [
+   "ya",
+   "thriller"
+  ],
+  "tags": [
+   "מתח",
+   "דיסטופיה",
+   "נוער"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "קטניס ופיטה ניצחו במשחקי הרעב, אבל הניצחון שלהם הצית ניצוץ של מרד במחוזות. הנשיא סנואו מחליט שמשחקי השנה יהיו מיוחדים.",
+  "cover": 12646539
+ },
+ {
+  "id": "mockingjay",
+  "title": "משחקי הרעב: עורבני חקיין",
+  "author": "סוזן קולינס",
+  "en": "Mockingjay",
+  "enAuthor": "Suzanne Collins",
+  "year": 2010,
+  "cats": [
+   "ya",
+   "thriller"
+  ],
+  "tags": [
+   "מתח",
+   "דיסטופיה",
+   "נוער"
+  ],
+  "style": [
+   "dark",
+   "fast"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "הספר האחרון בטרילוגיה: המרד פרץ, וקטניס הופכת לסמל שלו, \"העורבני החקיין\". אבל במלחמה גם הצד הטוב לא תמיד טוב.",
+  "cover": 12646459
+ },
+ {
+  "id": "girl-played-fire",
+  "title": "הנערה ששיחקה באש",
+  "author": "סטיג לארסון",
+  "en": "The Girl Who Played with Fire",
+  "enAuthor": "Stieg Larsson",
+  "year": 2006,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "סקנדינבי"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 4,
+  "adult": true,
+  "summary": "ההמשך של \"נערה עם קעקוע דרקון\": שני עיתונאים שחקרו סחר בנשים נרצחים, וטביעות האצבעות של ליסבת סלנדר על הנשק. מיקאל בלומקוויסט בטוח שהיא חפה מפשע.",
+  "cover": 10639656
+ },
+ {
+  "id": "girl-hornets-nest",
+  "title": "הנערה שבעטה בקן הצרעות",
+  "author": "סטיג לארסון",
+  "en": "The Girl Who Kicked the Hornets' Nest",
+  "enAuthor": "Stieg Larsson",
+  "year": 2007,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "סקנדינבי"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "הספר השלישי בטרילוגיית מילניום: ליסבת פצועה בבית חולים ועומדת למשפט, ומאחורי הקלעים, קבוצה סודית בשירות הביטחון רוצה שתשתוק לתמיד.",
+  "cover": 8352108
+ },
+ {
+  "id": "sarahs-key",
+  "title": "המפתח של שרה",
+  "author": "טטיאנה דה רוניי",
+  "en": "Sarah's Key",
+  "enAuthor": "Tatiana de Rosnay",
+  "year": 2007,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "שואה",
+   "רומן היסטורי"
+  ],
+  "style": [
+   "emotional",
+   "historical"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "פריז, 1942: שרה, בת 10, נועלת את אחיה הקטן בארון כדי להציל אותו מהמשטרה הצרפתית, ובטוחה שתחזור בקרוב. 60 שנה אחר כך, עיתונאית אמריקאית מגלה את הסיפור.",
+  "cover": 8370189
+ },
+ {
+  "id": "the-pearl",
+  "title": "הפנינה",
+  "author": "ג'ון סטיינבק",
+  "en": "The Pearl",
+  "enAuthor": "John Steinbeck",
+  "year": 1947,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה"
+  ],
+  "style": [
+   "short",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קינו, דייג פנינים עני במקסיקו, מוצא את הפנינה הגדולה בעולם. היא אמורה להביא למשפחתו חיים טובים, ובמקום זה מביאה קנאה, חמדנות וסכנה. ספר קצר.",
+  "cover": 2523104
+ },
+ {
+  "id": "little-princess",
+  "title": "נסיכה קטנה",
+  "author": "פרנסס הודג'סון ברנט",
+  "en": "A Little Princess",
+  "enAuthor": "Frances Hodgson Burnett",
+  "year": 1905,
+  "cats": [
+   "classic",
+   "ya"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ילדות"
+  ],
+  "style": [
+   "warm",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שרה קרו, בת של אב עשיר, מגיעה לפנימייה בלונדון ומתייחסים אליה כמו לנסיכה. כשהאב מת ומשאיר אותה חסרת כל, היא הופכת למשרתת, אבל נשארת נסיכה מבפנים.",
+  "cover": 2328315
+ },
+ {
+  "id": "pollyanna",
+  "title": "פוליאנה",
+  "author": "אלינור פורטר",
+  "en": "Pollyanna",
+  "enAuthor": "Eleanor H. Porter",
+  "year": 1913,
+  "cats": [
+   "classic",
+   "ya"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ילדות"
+  ],
+  "style": [
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פוליאנה, יתומה בת 11, עוברת לגור אצל דודה קשוחה. יש לה משחק שאבא לימד אותה: למצוא משהו לשמוח בו בכל דבר. המשחק משנה את כל העיירה.",
+  "cover": 902113
+ },
+ {
+  "id": "daddy-long-legs",
+  "title": "אבא ארך רגליים",
+  "author": "ג'ין וובסטר",
+  "en": "Daddy-Long-Legs",
+  "enAuthor": "Jean Webster",
+  "year": 1912,
+  "cats": [
+   "classic",
+   "romance",
+   "light"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "רומנטי"
+  ],
+  "style": [
+   "warm",
+   "funny",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ודי, יתומה מבית יתומים, מקבלת מלגה ללימודים מנדיב אלמוני, בתנאי שתכתוב לו מכתבים. המכתבים שלה מצחיקים, חכמים, ולאט לאט מגלים גם אהבה.",
+  "cover": 8266414
+ },
+ {
+  "id": "the-idiot",
+  "title": "אידיוט",
+  "author": "פיודור דוסטויבסקי",
+  "en": "The Idiot",
+  "enAuthor": "Fyodor Dostoevsky",
+  "year": 1869,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה"
+  ],
+  "style": [
+   "slow",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הנסיך מישקין, אדם טוב ותמים לגמרי, חוזר לרוסיה אחרי שנים בבית מרפא בשווייץ. בחברה של סנט פטרבורג, מלאה בכסף, תשוקה וגאווה, קוראים לו \"אידיוט\".",
+  "cover": 10249475
+ },
+ {
+  "id": "wind-up-bird",
+  "title": "קורות הציפור המכנית",
+  "author": "הארוקי מורקמי",
+  "en": "The Wind-Up Bird Chronicle",
+  "enAuthor": "Haruki Murakami",
+  "year": 1995,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן יפני",
+   "סוריאליסטי"
+  ],
+  "style": [
+   "slow",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "טורו אוקדה, מובטל בטוקיו, מחפש את החתול שלו שנעלם, ואז גם את אשתו. החיפוש מוביל אותו לנשים מוזרות, לבאר יבשה ולזיכרונות מהמלחמה.",
+  "cover": null
+ },
+ {
+  "id": "selfish-gene",
+  "title": "הגן האנוכיי",
+  "author": "ריצ'רד דוקינס",
+  "en": "The Selfish Gene",
+  "enAuthor": "Richard Dawkins",
+  "year": 1976,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "מדע"
+  ],
+  "style": [
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ספר מדע מפורסם שמסביר את האבולוציה מנקודת המבט של הגנים: איך גם התנהגות של עזרה לאחרים יכולה לנבוע מ\"אנוכיות\" של גנים. כאן נולדה גם המילה \"מם\".",
+  "cover": 133936
+ },
+ {
+  "id": "night-wiesel",
+  "title": "הלילה",
+  "author": "אלי ויזל",
+  "en": "Night",
+  "enAuthor": "Elie Wiesel",
+  "year": 1958,
+  "cats": [
+   "nonfiction",
+   "classic"
+  ],
+  "tags": [
+   "שואה",
+   "ביוגרפיה"
+  ],
+  "style": [
+   "short",
+   "emotional",
+   "dark"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אלי ויזל, נער דתי בן 15 מסיגט, נשלח עם משפחתו לאושוויץ ובוכנוואלד. עדות קצרה וקשה על השנה שבה איבד את משפחתו ואת אמונתו.",
+  "cover": 7732035
+ },
+ {
+  "id": "born-a-crime",
+  "title": "מחוץ לחוק: ילדות בדרום אפריקה",
+  "author": "טרבור נואה",
+  "en": "Born a Crime",
+  "enAuthor": "Trevor Noah",
+  "year": 2016,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הקומיקאי טרבור נואה נולד בדרום אפריקה של האפרטהייד לאבא לבן ולאמא שחורה, בזמן שזה היה פשע. סיפורי ילדות מצחיקים וקשים, ומעל כולם, אמא שלו.",
+  "cover": 8294078
+ },
+ {
+  "id": "seven-habits",
+  "title": "7 ההרגלים של אנשים אפקטיביים במיוחד",
+  "author": "סטיבן קובי",
+  "en": "The 7 Habits of Highly Effective People",
+  "enAuthor": "Stephen R. Covey",
+  "year": 1989,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "העצמה"
+  ],
+  "style": [
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אחד מספרי ההעצמה המפורסמים בעולם: שבעה הרגלים, מ\"היה פרואקטיבי\" ועד \"השחז את המסור\", שאמורים לעזור בעבודה, במשפחה ובחיים.",
+  "cover": 10079937
+ },
+ {
+  "id": "win-friends",
+  "title": "כיצד לרכוש ידידים והשפעה",
+  "author": "דייל קרנגי",
+  "en": "How to Win Friends and Influence People",
+  "enAuthor": "Dale Carnegie",
+  "year": 1936,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "העצמה"
+  ],
+  "style": [
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ספר קלאסי מ-1936 על איך להסתדר עם אנשים: להקשיב, לזכור שמות, לא לבקר. עצות פשוטות עם הרבה סיפורים, שעדיין נקראות היום.",
+  "cover": 13314878
+ },
+ {
+  "id": "power-of-now",
+  "title": "כוחו של הרגע הזה",
+  "author": "אקהרט טולה",
+  "en": "The Power of Now",
+  "enAuthor": "Eckhart Tolle",
+  "year": 1997,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "רוחניות"
+  ],
+  "style": [
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ספר רוחני שמציע להפסיק לחיות במחשבות על העבר והעתיד, ולשים לב לרגע שבו אנחנו נמצאים עכשיו. כתוב בשאלות ותשובות.",
+  "cover": 551262
+ },
+ {
+  "id": "tipping-point",
+  "title": "נקודת המפנה",
+  "author": "מלקולם גלדוול",
+  "en": "The Tipping Point",
+  "enAuthor": "Malcolm Gladwell",
+  "year": 2000,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "איך רעיונות, אופנות ומגמות מתפשטים כמו מגפה? גלדוול מראה איך דברים קטנים ואנשים מסוימים יכולים ליצור שינוי גדול פתאום.",
+  "cover": 10873292
+ },
+ {
+  "id": "oreach-nata-lalun",
+  "title": "אורח נטה ללון",
+  "author": "ש\"י עגנון",
+  "en": "A Guest for the Night",
+  "enAuthor": "S. Y. Agnon",
+  "year": 1939,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "slow",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מספר שגר בארץ ישראל חוזר לבקר בעיירת הולדתו בגליציה אחרי מלחמת העולם הראשונה, ומוצא אותה הרוסה ועניה. הוא מקבל את המפתח לבית המדרש הישן ומנסה להחיות אותו.",
+  "cover": 4966209
+ },
+ {
+  "id": "hachnasat-kala",
+  "title": "הכנסת כלה",
+  "author": "ש\"י עגנון",
+  "en": "The Bridal Canopy",
+  "enAuthor": "S. Y. Agnon",
+  "year": 1931,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ספרות ישראלית",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ר' יודל, חסיד עני ותמים מברודי, יוצא לנדוד בין עיירות גליציה כדי לאסוף כסף לנדוניה לבנותיו. בדרך הוא פוגש אנשים ומספר ושומע סיפורים, בהומור עדין.",
+  "cover": 4712114
+ },
+ {
+  "id": "breakdown-bereavement",
+  "title": "שכול וכישלון",
+  "author": "יוסף חיים ברנר",
+  "en": "Breakdown and Bereavement",
+  "enAuthor": "Yosef Haim Brenner",
+  "year": 1920,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "dark",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יחזקאל חפץ, חלוץ צעיר, נפצע בעבודה במושבה ועובר לירושלים, לבית קרובי משפחה עניים. רומן נוקב על חלומות שהתנפצו בארץ ישראל של העלייה השנייה.",
+  "cover": null
+ },
+ {
+  "id": "ad-yerushalayim",
+  "title": "עד ירושלים",
+  "author": "אהרן ראובני",
+  "en": "Until Jerusalem",
+  "enAuthor": "Aharon Reuveni",
+  "year": 1954,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "historical",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ירושלים בזמן מלחמת העולם הראשונה: רעב, גירושים ושלטון טורקי קשה. טרילוגיה על אנשים שונים מאוד, עולים, פועלים ומשכילים, שמנסים לשרוד בעיר.",
+  "cover": null
+ },
+ {
+  "id": "et-hazamir",
+  "title": "עת הזמיר",
+  "author": "חיים באר",
+  "en": "Feathers",
+  "enAuthor": "Haim Be'er",
+  "year": 1987,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "נחום גבירץ, צעיר ירושלמי רגיש, מתגייס לצבא ומוצא את עצמו ברבנות הצבאית, בין רבנים, קברנים ובירוקרטיה. סאטירה מצחיקה ועצובה על ישראל של אחרי מלחמת ששת הימים.",
+  "cover": 1949057
+ },
+ {
+  "id": "simcha-gdola",
+  "title": "שמחה גדולה בשמים",
+  "author": "אמונה אלון",
+  "en": "Great Joy in Heaven",
+  "enAuthor": "Emuna Elon",
+  "year": 2004,
+  "cats": [
+   "trendy",
+   "romance"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "רומנטי"
+  ],
+  "style": [
+   "romantic",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שלומציון, צעירה דתייה וקיצונית, מתאהבת באהבה גדולה ואסורה, שמעמידה למבחן את האמונה, את המשפחה ואת כל מה שחשבה על עצמה.",
+  "cover": null
+ },
+ {
+  "id": "dont-tell-brother",
+  "title": "אל תספר לאחיך",
+  "author": "מאיר שלו",
+  "en": "Don't Tell Your Brother",
+  "enAuthor": "Meir Shalev",
+  "year": 2022,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "משפחה"
+  ],
+  "style": [
+   "warm",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שני אחים נפגשים ללילה אחד של שיחה, ומעלים זיכרונות על ההורים, על המשפחה ועל עצמם. הספר האחרון של מאיר שלו, עם ההומור והחום המוכרים שלו.",
+  "cover": null
+ },
+ {
+  "id": "two-she-bears",
+  "title": "שתיים דובים",
+  "author": "מאיר שלו",
+  "en": "Two She-Bears",
+  "enAuthor": "Meir Shalev",
+  "year": 2013,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "משפחה"
+  ],
+  "style": [
+   "dark",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רותה, מורה לתנ\"ך במושב בעמק, מספרת לחוקרת על סבא שלה ועל סיפורים ישנים במושב: אהבה, קנאה ואלימות שקטה שעוברת מדור לדור.",
+  "cover": 13085888
+ },
+ {
+  "id": "spanish-charity",
+  "title": "חסד ספרדי",
+  "author": "א. ב. יהושע",
+  "en": "The Retrospective",
+  "enAuthor": "A. B. Yehoshua",
+  "year": 2011,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יאיר מוזס, במאי קולנוע בן 70, מוזמן לספרד לרטרוספקטיבה של סרטיו הישנים. שם הוא נתקל בתמונת קיר מוזרה, ובעבר שלו עם התסריטאי שעבד איתו.",
+  "cover": 11044130
+ },
+ {
+  "id": "keafapei-shachar",
+  "title": "כעפעפי שחר",
+  "author": "חיים סבתו",
+  "en": "Like the Eyelids of Morning",
+  "enAuthor": "Haim Sabato",
+  "year": 2005,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "מסורת"
+  ],
+  "style": [
+   "warm",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רומן על קהילת יהודי חאלב בירושלים, בשירת הבקשות של הלילות, בזיכרונות ובאמונה. שקט, מוזיקלי ומלא חום.",
+  "cover": null
+ },
+ {
+  "id": "boi-haruach",
+  "title": "בואי הרוח",
+  "author": "חיים סבתו",
+  "en": "From the Four Winds",
+  "enAuthor": "Haim Sabato",
+  "year": 2008,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "משפחה"
+  ],
+  "style": [
+   "warm",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סיפורה של משפחה אחת, שהוא בעצם סיפור של העם היהודי במאה השנים האחרונות: גלות, עלייה, מעברה ומלחמות, בעיני מי שגדל בתוכם.",
+  "cover": 12965643
+ },
+ {
+  "id": "maidens-farm",
+  "title": "חוות העלמות",
+  "author": "שולמית לפיד",
+  "en": "The Maidens' Farm",
+  "enAuthor": "Shulamit Lapid",
+  "year": 2006,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "תקופת העלייה השנייה, על חוף הכנרת: חווה שבה צעירות לומדות חקלאות ומנסות להוכיח שגם נשים יכולות לעבוד את האדמה. ההמשך של \"גיא אוני\".",
+  "cover": null
+ },
+ {
+  "id": "templer-lover",
+  "title": "אהובת הטמפלר מעמק רפאים",
+  "author": "גד שמרון",
+  "en": "The Templar's Lover",
+  "enAuthor": "Gad Shimron",
+  "year": 2013,
+  "cats": [
+   "romance",
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "רומנטי"
+  ],
+  "style": [
+   "historical",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ירושלים של ימי המנדט: אהבה בין צעירה יהודייה לצעיר גרמני ממושבת הטמפלרים בעמק רפאים, כשבאירופה הנאצים עולים לשלטון ושני העולמות מתנגשים.",
+  "cover": null
+ },
+ {
+  "id": "heroes-fly-for-her",
+  "title": "בשבילה גיבורים עפים",
+  "author": "אמיר גוטפרוינד",
+  "en": "Heroes Fly for Her",
+  "enAuthor": "Amir Gutfreund",
+  "year": 2008,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "התבגרות"
+  ],
+  "style": [
+   "character",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חמישה חברי ילדות מחיפה, מסוף שנות ה-70 ועד שנות ה-2000: אהבות, צבא, מלחמה, הצלחות וכישלונות. רומן גדול על דור אחד ועל ישראל שמשתנה סביבו.",
+  "cover": null
+ },
+ {
+  "id": "hagar-eilat",
+  "title": "מה קרה להגר באילת?",
+  "author": "עופרה עופר אורן",
+  "en": "What Happened to Hagar in Eilat?",
+  "enAuthor": "Ofra Offer Oren",
+  "year": 2022,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "התבגרות"
+  ],
+  "style": [
+   "emotional",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רומן שכתוב כולו בסונטות, שירים קצרים בחרוזים, על נערה בשם הגר ועל מה שקרה לה באילת. ספר יוצא דופן שזכה בפרס ספיר.",
+  "cover": null
+ },
+ {
+  "id": "temporary-detective",
+  "title": "בלש זמני",
+  "author": "שאול בצר",
+  "en": "Temporary Detective",
+  "enAuthor": "Shaul Betser",
+  "year": 2014,
+  "cats": [
+   "thriller",
+   "light"
+  ],
+  "tags": [
+   "בלשי",
+   "ספרות ישראלית",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מיכאל קריגר, סופר כושל, משלים הכנסה כחוקר פרטי. תיק שנראה פשוט מושך אותו לעולם מסוכן הרבה יותר ממה שתכנן. מותחן ישראלי עם הרבה הומור.",
+  "cover": null
+ },
+ {
+  "id": "pitzei-bagrut",
+  "title": "פצעי בגרות",
+  "author": "חנוך ברטוב",
+  "en": "The Brigade",
+  "enAuthor": "Hanoch Bartov",
+  "year": 1965,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "מלחמה"
+  ],
+  "style": [
+   "emotional",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אלישע קרוק, חייל צעיר בבריגדה היהודית, מגיע לאירופה מיד אחרי מלחמת העולם השנייה. הוא חולם על נקמה בגרמנים, ומגלה שזה מסובך יותר משחשב.",
+  "cover": 6598373
+ },
+ {
+  "id": "shesh-knafayim",
+  "title": "שש כנפיים לאחד",
+  "author": "חנוך ברטוב",
+  "en": "Each Had Six Wings",
+  "enAuthor": "Hanoch Bartov",
+  "year": 1954,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "character",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ירושלים אחרי מלחמת העצמאות: עולים חדשים מקבלים בתים נטושים במושבה הגרמנית. שכונה שלמה של אנשים מכל העולם מנסה לבנות חיים חדשים ביחד.",
+  "cover": null
+ },
+ {
+  "id": "mekimi",
+  "title": "מקימי",
+  "author": "נועה ירון-דיין",
+  "en": "Mekimi",
+  "enAuthor": "Noa Yaron-Dayan",
+  "year": 2007,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "אמונה"
+  ],
+  "style": [
+   "emotional",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "עלמה, מנחת טלוויזיה ושדרנית רדיו חילונית מתל אביב, מתחילה לחפש משמעות, ולאט לאט חוזרת בתשובה. רומן אישי, מבוסס על חיי הכותבת.",
+  "cover": null
+ },
+ {
+  "id": "seven-deadly",
+  "title": "שבע מידות רעות",
+  "author": "מאיה ערד",
+  "en": "Seven Moral Tales",
+  "enAuthor": "Maya Arad",
+  "year": 2006,
+  "cats": [
+   "light"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "הומור",
+   "סאטירה"
+  ],
+  "style": [
+   "funny",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קבוצת ישראלים באוניברסיטה אמריקאית: מרצים, דוקטורנטים ובני זוג. שבעה פרקים, כל אחד על \"מידה רעה\" אחרת, כמו קנאה, גאווה ועצלות. סאטירה חכמה ומצחיקה.",
+  "cover": null
+ },
+ {
+  "id": "kivsat-harash",
+  "title": "כבשת הרש",
+  "author": "משה שמיר",
+  "en": "The King of Flesh and Blood",
+  "enAuthor": "Moshe Shamir",
+  "year": 1957,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אוריה החתי, החייל הנאמן של דוד המלך, כותב את סיפור חייו לפני שהוא נשלח אל מותו. סיפור דוד ובת שבע מנקודת המבט של הבעל.",
+  "cover": 6806875
+ },
+ {
+  "id": "hanivchar-kalo",
+  "title": "הנבחר",
+  "author": "שלמה קאלו",
+  "en": "The Chosen",
+  "enAuthor": "Shlomo Kalo",
+  "year": 1985,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "תנ\"ך"
+  ],
+  "style": [
+   "historical",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "גלות בבל: נער יהודי בשם דניאל נלקח לחצר המלך נבוכדנצר. רומן על הנביא דניאל, על חכמה, אמונה ושרידות בחצר של מלכים.",
+  "cover": null
+ },
+ {
+  "id": "biotope",
+  "title": "ביוטופ",
+  "author": "אורלי קסטל-בלום",
+  "en": "Biotope",
+  "enAuthor": "Orly Castel-Bloom",
+  "year": 2022,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "ספרות ישראלית",
+   "תל אביב"
+  ],
+  "style": [
+   "funny",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שדרות שאול המלך בתל אביב, ליד הקניון: הדיירים, השכנים והאנשים שעוברים ברחוב. רומן מוזר ומצחיק על החיים בעיר.",
+  "cover": null
+ },
+ {
+  "id": "blue-black-dream",
+  "title": "חלום בתכלת שחור",
+  "author": "יפתח ספקטור",
+  "en": "A Dream in Blue and Black",
+  "enAuthor": "Iftach Spector",
+  "year": 2008,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "צבא"
+  ],
+  "style": [
+   "fast",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יפתח ספקטור, אחד מטייסי הקרב הטובים בתולדות חיל האוויר, מספר על הטיסות, הקרבות והחברים שנפלו. ספר אישי ומרתק על חיי טייס.",
+  "cover": null
+ },
+ {
+  "id": "adel-brandes",
+  "title": "אדל",
+  "author": "יוכי ברנדס",
+  "en": "Adel",
+  "enAuthor": "Yochi Brandes",
+  "year": 2021,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "חסידות"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סיפורם של הבעל שם טוב, מייסד החסידות, ובתו אדל: אישה חכמה וחזקה בעולם של גברים, שהייתה שותפה לדרכו של אביה.",
+  "cover": null
+ },
+ {
+  "id": "orange-peel-path",
+  "title": "שביל קליפות התפוזים",
+  "author": "נחום גוטמן",
+  "en": "Path of the Orange Peels",
+  "enAuthor": "Nahum Gutman",
+  "year": 1958,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "נוער",
+   "היסטורי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "warm",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הצייר נחום גוטמן מספר על הרפתקאות ילדותו בתל אביב הקטנה של ראשית המאה ה-20: חולות, פרדסים, יפו, ושביל של קליפות תפוזים שמוביל לפרדס.",
+  "cover": 13150118
+ },
+ {
+  "id": "jewish-dog",
+  "title": "הכלב היהודי",
+  "author": "אשר קרביץ",
+  "en": "The Jewish Dog",
+  "enAuthor": "Asher Kravitz",
+  "year": 2007,
+  "cats": [
+   "trendy",
+   "ya"
+  ],
+  "tags": [
+   "שואה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "כלב שגדל אצל משפחה יהודית בברלין מספר את סיפורו בזמן השואה: מבית חם, לרחוב, למחנה, ולבעלים חדשים. מבט מיוחד ונוגע ללב.",
+  "cover": 13083277
+ },
+ {
+  "id": "61-hours",
+  "title": "61 שעות",
+  "author": "לי צ'יילד",
+  "en": "61 Hours",
+  "enAuthor": "Lee Child",
+  "year": 2010,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ג'ק ריצ'ר"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סופת שלגים בדקוטה הדרומית: ג'ק ריצ'ר נתקע בעיירה קטנה ומסכים לעזור לשמור על עדה אמיצה מול כנופיה. השעון מתקתק, ואף אחד לא מגיע לעזור.",
+  "cover": 9747748
+ },
+ {
+  "id": "gone-tomorrow",
+  "title": "מחר תמות",
+  "author": "לי צ'יילד",
+  "en": "Gone Tomorrow",
+  "enAuthor": "Lee Child",
+  "year": 2009,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ג'ק ריצ'ר"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רכבת תחתית בניו יורק, שתיים בלילה: ג'ק ריצ'ר מזהה אישה שמתנהגת כמו מחבלת מתאבדת. מה שקורה אחר כך מוביל אותו לסודות של הצבא ולאויבים מסוכנים.",
+  "cover": 14425142
+ },
+ {
+  "id": "one-shot",
+  "title": "הצלף",
+  "author": "לי צ'יילד",
+  "en": "One Shot",
+  "enAuthor": "Lee Child",
+  "year": 2005,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ג'ק ריצ'ר"
+  ],
+  "style": [
+   "fast",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "צלף הורג חמישה אנשים בעיר קטנה באינדיאנה, וכל הראיות מובילות לחייל לשעבר. הוא מבקש רק דבר אחד: \"תביאו את ג'ק ריצ'ר\". ריצ'ר מגיע, ומשהו לא מסתדר לו.",
+  "cover": 14424685
+ },
+ {
+  "id": "echo-park",
+  "title": "אקו פארק",
+  "author": "מייקל קונלי",
+  "en": "Echo Park",
+  "enAuthor": "Michael Connelly",
+  "year": 2006,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "בלשי",
+   "הארי בוש"
+  ],
+  "style": [
+   "mystery",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רוצח סדרתי מוכן להודות ברצח של צעירה שנעלמה לפני 13 שנה, תיק שהבלש הארי בוש לא שכח מעולם. אבל משהו בהודאה לא מרגיש נכון.",
+  "cover": 11936503
+ },
+ {
+  "id": "lady-in-lake",
+  "title": "האישה באגם",
+  "author": "ריימונד צ'נדלר",
+  "en": "The Lady in the Lake",
+  "enAuthor": "Raymond Chandler",
+  "year": 1943,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "בלשי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "mystery",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הבלש הפרטי פיליפ מרלו נשכר למצוא אישה של איש עשיר, שנעלמה מבקתה ליד אגם בהרים. ואז נמצאת גופה באגם. בלש קלאסי בסגנון \"נואר\".",
+  "cover": 254507
+ },
+ {
+  "id": "long-goodbye",
+  "title": "שלום ולא להתראות",
+  "author": "ריימונד צ'נדלר",
+  "en": "The Long Goodbye",
+  "enAuthor": "Raymond Chandler",
+  "year": 1953,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "בלשי",
+   "קלאסיקה"
+  ],
+  "style": [
+   "mystery",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פיליפ מרלו מתיידד עם טרי לנוקס, שתיין מנומס עם עבר מלחמתי. כשאשתו של לנוקס נמצאת מתה והוא בורח, מרלו מסרב להאמין שחברו רוצח.",
+  "cover": 1284561
+ },
+ {
+  "id": "caribbean-mystery",
+  "title": "הרצח באיים הקריביים",
+  "author": "אגתה כריסטי",
+  "en": "A Caribbean Mystery",
+  "enAuthor": "Agatha Christie",
+  "year": 1964,
+  "cats": [
+   "thriller",
+   "light"
+  ],
+  "tags": [
+   "בלשי",
+   "מיס מארפל"
+  ],
+  "style": [
+   "mystery",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מיס מארפל בחופשה באיים הקריביים. רב-סרן זקן ופטפטן מתחיל לספר לה על רוצח שהוא מכיר, ולמחרת נמצא מת. מיס מארפל מחליטה שזה לא היה מקרי.",
+  "cover": 14578132
+ },
+ {
+  "id": "big-four",
+  "title": "מסתרי ארבעת הגדולים",
+  "author": "אגתה כריסטי",
+  "en": "The Big Four",
+  "enAuthor": "Agatha Christie",
+  "year": 1927,
+  "cats": [
+   "thriller",
+   "light"
+  ],
+  "tags": [
+   "בלשי",
+   "הרקול פוארו"
+  ],
+  "style": [
+   "mystery",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הרקול פוארו והייסטינגס נאבקים בארבעה פושעים בינלאומיים שרוצים לשלוט בעולם. הרפתקה בסגנון ריגול, יותר מאשר תעלומת רצח רגילה.",
+  "cover": 12996529
+ },
+ {
+  "id": "seven-dials",
+  "title": "תעלומת שבעת המחוגים",
+  "author": "אגתה כריסטי",
+  "en": "The Seven Dials Mystery",
+  "enAuthor": "Agatha Christie",
+  "year": 1929,
+  "cats": [
+   "thriller",
+   "light"
+  ],
+  "tags": [
+   "בלשי"
+  ],
+  "style": [
+   "mystery",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "במסיבה בבית כפרי, צעירים מכוונים שמונה שעונים מעוררים כדי להעיר חבר שתמיד ישן עד מאוחר. בבוקר הוא מת, ושבעה שעונים מסודרים על המדף. ליידי איילין \"בנדל\" מתחילה לחקור.",
+  "cover": 14575632
+ },
+ {
+  "id": "destination-unknown",
+  "title": "המרגלת היפה",
+  "author": "אגתה כריסטי",
+  "en": "Destination Unknown",
+  "enAuthor": "Agatha Christie",
+  "year": 1954,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "ריגול"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מדענים מבריקים נעלמים מכל רחבי אירופה. הילרי קרייבן, אישה שאין לה מה להפסיד, מסכימה להתחזות לאשתו של אחד מהם ולצאת בעקבותיו.",
+  "cover": 6487762
+ },
+ {
+  "id": "fear-index",
+  "title": "מדד הפחד",
+  "author": "רוברט הריס",
+  "en": "The Fear Index",
+  "enAuthor": "Robert Harris",
+  "year": 2011,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "כלכלה"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יממה אחת בחייו של אלכס הופמן, פיזיקאי גאון שבנה תוכנה שמרוויחה מיליארדים בבורסה מפחד של אנשים. ואז מתחילים לקרות דברים מפחידים גם לו.",
+  "cover": 10093465
+ },
+ {
+  "id": "fist-of-god",
+  "title": "אגרוף האל",
+  "author": "פרדריק פורסיית",
+  "en": "The Fist of God",
+  "enAuthor": "Frederick Forsyth",
+  "year": 1994,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ריגול"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מלחמת המפרץ, 1991: המודיעין הבריטי חושד שלסדאם חוסיין יש נשק סודי ונורא. מייק מרטין, קצין שנראה כמו ערבי, נשלח לבגדד כמרגל.",
+  "cover": 3946600
+ },
+ {
+  "id": "devils-alternative",
+  "title": "הברירה השטנית",
+  "author": "פרדריק פורסיית",
+  "en": "The Devil's Alternative",
+  "enAuthor": "Frederick Forsyth",
+  "year": 1979,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ריגול"
+  ],
+  "style": [
+   "twists",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ברית המועצות על סף רעב, מכלית נפט ענקית נחטפת בים הצפוני, ונשיא ארצות הברית צריך לבחור בין שתי אפשרויות שכל אחת מהן נוראית.",
+  "cover": 4400638
+ },
+ {
+  "id": "icon-forsyth",
+  "title": "המניפסט השחור",
+  "author": "פרדריק פורסיית",
+  "en": "Icon",
+  "enAuthor": "Frederick Forsyth",
+  "year": 1996,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ריגול"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רוסיה של סוף שנות ה-90: פוליטיקאי לאומני עומד לזכות בבחירות. מסמך סודי שנגנב ממשרדו חושף מה הוא באמת מתכנן, וסוכן CIA לשעבר נשלח לעצור אותו.",
+  "cover": 3852560
+ },
+ {
+  "id": "avenger-forsyth",
+  "title": "הנוקם",
+  "author": "פרדריק פורסיית",
+  "en": "Avenger",
+  "enAuthor": "Frederick Forsyth",
+  "year": 2003,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קאל דקסטר, עורך דין שקט ולוחם מנהרות לשעבר בווייטנאם, מוצא אנשים שמשפחותיהם רוצות למצוא. המשימה החדשה: פושע מלחמה סרבי שרצח צעיר אמריקאי.",
+  "cover": 8547867
+ },
+ {
+  "id": "plum-island",
+  "title": "אי המגפות",
+  "author": "נלסון דה-מיל",
+  "en": "Plum Island",
+  "enAuthor": "Nelson DeMille",
+  "year": 1997,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "בלשי"
+  ],
+  "style": [
+   "funny",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ון קורי, בלש ניו יורקי פצוע ועוקצני, מחלים בלונג איילנד. זוג מדענים שעבד במעבדה סודית לחקר מחלות נרצח, וכולם חוששים מנשק ביולוגי.",
+  "cover": 12903429
+ },
+ {
+  "id": "the-lion-demille",
+  "title": "האריה",
+  "author": "נלסון דה-מיל",
+  "en": "The Lion",
+  "enAuthor": "Nelson DeMille",
+  "year": 2010,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן"
+  ],
+  "style": [
+   "fast",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ון קורי, עכשיו בכוח המשימה נגד טרור, צריך לעצור את אסד חליל, מחבל לובי מסוכן שחזר לאמריקה כדי לסגור חשבון אישי, גם עם קורי.",
+  "cover": 6391229
+ },
+ {
+  "id": "sum-of-all-fears",
+  "title": "כל הפחדים כולם",
+  "author": "טום קלנסי",
+  "en": "The Sum of All Fears",
+  "enAuthor": "Tom Clancy",
+  "year": 1991,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ג'ק ראיין"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פצצה גרעינית ישראלית שאבדה במלחמת יום הכיפורים נמצאת בידי טרוריסטים. ג'ק ראיין, איש CIA, מנסה למנוע אסון ומלחמה בין המעצמות.",
+  "cover": 270528
+ },
+ {
+  "id": "debt-of-honor",
+  "title": "חוב של כבוד",
+  "author": "טום קלנסי",
+  "en": "Debt of Honor",
+  "enAuthor": "Tom Clancy",
+  "year": 1994,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ג'ק ראיין"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "איש עסקים יפני עשיר יוזם מלחמה כלכלית וצבאית נגד ארצות הברית. ג'ק ראיין, היועץ לביטחון לאומי, צריך לעצור את המשבר.",
+  "cover": 3884459
+ },
+ {
+  "id": "executive-orders",
+  "title": "צו נשיאותי",
+  "author": "טום קלנסי",
+  "en": "Executive Orders",
+  "enAuthor": "Tom Clancy",
+  "year": 1996,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ג'ק ראיין"
+  ],
+  "style": [
+   "slow",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אחרי מתקפה שמחסלת כמעט את כל הממשל, ג'ק ראיין הופך פתאום לנשיא ארצות הברית. הוא צריך לבנות מחדש את המדינה, ואויבים מבחוץ מנצלים את הרגע.",
+  "cover": 7888554
+ },
+ {
+  "id": "bear-and-dragon",
+  "title": "הדוב והדרקון",
+  "author": "טום קלנסי",
+  "en": "The Bear and the Dragon",
+  "enAuthor": "Tom Clancy",
+  "year": 2000,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ג'ק ראיין"
+  ],
+  "style": [
+   "slow",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הנשיא ג'ק ראיין מגלה שסין מתכננת לפלוש לסיביר העשירה בזהב ובנפט. אמריקה ורוסיה, אויבות לשעבר, צריכות להילחם יחד.",
+  "cover": 271976
+ },
+ {
+  "id": "red-rabbit",
+  "title": "ארנב אדום",
+  "author": "טום קלנסי",
+  "en": "Red Rabbit",
+  "enAuthor": "Tom Clancy",
+  "year": 2002,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "ריגול"
+  ],
+  "style": [
+   "fast",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1982: ג'ק ראיין הצעיר עובד ב-CIA בלונדון. פקיד סובייטי רוצה לערוק, ויש לו מידע מפחיד: הק.ג.ב מתכנן להתנקש באפיפיור.",
+  "cover": 373638
+ },
+ {
+  "id": "sahara-cussler",
+  "title": "סהרה",
+  "author": "קלייב קאסלר",
+  "en": "Sahara",
+  "enAuthor": "Clive Cussler",
+  "year": 1992,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "מותחן"
+  ],
+  "style": [
+   "fast",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "דירק פיט, הרפתקן ימי, מגלה זיהום רעיל שמתפשט מאפריקה לאוקיינוס ומאיים על העולם. בדרך הוא מחפש גם ספינת מלחמה אבודה ממלחמת האזרחים האמריקאית, שאיכשהו נמצאת במדבר.",
+  "cover": 6903541
+ },
+ {
+  "id": "force-10-navarone",
+  "title": "גיבורי נברון",
+  "author": "אליסטר מקלין",
+  "en": "Force 10 from Navarone",
+  "enAuthor": "Alistair MacLean",
+  "year": 1968,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "מותחן",
+   "מלחמה"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ההמשך של \"התותחים של נברון\": מאלורי, מילר ואנדריאה נשלחים ליוגוסלביה הכבושה למשימה סודית, ומגלים שאי אפשר לסמוך על אף אחד.",
+  "cover": 3430
+ },
+ {
+  "id": "hms-ulysses",
+  "title": "הסיירת יוליסס",
+  "author": "אליסטר מקלין",
+  "en": "HMS Ulysses",
+  "enAuthor": "Alistair MacLean",
+  "year": 1955,
+  "cats": [
+   "thriller",
+   "classic"
+  ],
+  "tags": [
+   "מלחמה"
+  ],
+  "style": [
+   "dark",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מלחמת העולם השנייה: סיירת בריטית מלווה שיירת אספקה לברית המועצות דרך הים הארקטי, בקור קיצוני, בסערות ובהתקפות של צוללות ומטוסים. צוות מותש נלחם לשרוד.",
+  "cover": 11645475
+ },
+ {
+  "id": "ripleys-game",
+  "title": "המשחק של ריפלי",
+  "author": "פטרישיה הייסמית",
+  "en": "Ripley's Game",
+  "enAuthor": "Patricia Highsmith",
+  "year": 1974,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן פסיכולוגי"
+  ],
+  "style": [
+   "dark",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "טום ריפלי, נוכל מקסים וחסר מצפון, מציע לממסגר תמונות חולה וחסר כסף עבודה אחת: רצח, בתמורה להרבה כסף למשפחה. ואז דברים מתחילים להסתבך.",
+  "cover": 93432
+ },
+ {
+  "id": "ripley-under-water",
+  "title": "ריפלי מתחת למים",
+  "author": "פטרישיה הייסמית",
+  "en": "Ripley Under Water",
+  "enAuthor": "Patricia Highsmith",
+  "year": 1991,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן פסיכולוגי"
+  ],
+  "style": [
+   "dark",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר האחרון על טום ריפלי: זוג אמריקאים חטטני עובר לגור בכפר הצרפתי שלו, ומתחיל לחפור בעבר שלו. ריפלי לא מתכוון לתת להם למצוא משהו.",
+  "cover": 488512
+ },
+ {
+  "id": "luciana-b",
+  "title": "מותה האטי של לוסיאנה ב'",
+  "author": "גיירמו מרטינס",
+  "en": "The Book of Murder",
+  "enAuthor": "Guillermo Martínez",
+  "year": 2007,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן"
+  ],
+  "style": [
+   "twists",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לוסיאנה, שעבדה פעם כקלדנית אצל סופר מפורסם, משוכנעת שהוא רוצח את בני משפחתה אחד אחרי השני, כנקמה. היא מבקשת עזרה מסופר אחר. האם היא צודקת?",
+  "cover": 6798884
+ },
+ {
+  "id": "oxford-murders",
+  "title": "רציחות נוסח אוקספורד",
+  "author": "גיירמו מרטינס",
+  "en": "The Oxford Murders",
+  "enAuthor": "Guillermo Martínez",
+  "year": 2003,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "בלשי"
+  ],
+  "style": [
+   "smart",
+   "mystery",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סטודנט ארגנטינאי למתמטיקה באוקספורד מוצא את בעלת הבית שלו מתה. לוגיקן מפורסם קיבל פתק עם סמל מוזר, ועוד רציחות מגיעות, כל אחת עם סמל. תעלומה מתמטית.",
+  "cover": 213322
+ },
+ {
+  "id": "venetian-betrayal",
+  "title": "בגידה בוונציה",
+  "author": "סטיב ברי",
+  "en": "The Venetian Betrayal",
+  "enAuthor": "Steve Berry",
+  "year": 2007,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "הרפתקאות"
+  ],
+  "style": [
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קוטון מאלון, סוכן לשעבר שהפך לסוחר ספרים עתיקים בקופנהגן, נגרר לחיפוש אחרי קברו האבוד של אלכסנדר מוקדון, ולמזימה שמשלבת היסטוריה ומחלות.",
+  "cover": 1185498
+ },
+ {
+  "id": "no-time-goodbye",
+  "title": "בלי לומר שלום",
+  "author": "לינווד ברקלי",
+  "en": "No Time for Goodbye",
+  "enAuthor": "Linwood Barclay",
+  "year": 2007,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן"
+  ],
+  "style": [
+   "twists",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "כשסינתיה הייתה בת 14, היא התעוררה בבוקר וגילתה שכל המשפחה שלה נעלמה, בלי שום עקבות. 25 שנה אחר כך, רמזים מוזרים מתחילים להגיע.",
+  "cover": 374264
+ },
+ {
+  "id": "dark-room-walters",
+  "title": "החדר החשוך",
+  "author": "מינט וולטרס",
+  "en": "The Dark Room",
+  "enAuthor": "Minette Walters",
+  "year": 1995,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן פסיכולוגי"
+  ],
+  "style": [
+   "mystery",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ינקס מתעוררת בבית חולים אחרי תאונת דרכים, בלי זיכרון מהימים האחרונים. ארוסה עזב אותה בשביל החברה הכי טובה שלה, ואז שניהם נמצאים מתים.",
+  "cover": 258410
+ },
+ {
+  "id": "end-of-watch",
+  "title": "סוף המשמרת",
+  "author": "סטיבן קינג",
+  "en": "End of Watch",
+  "enAuthor": "Stephen King",
+  "year": 2016,
+  "cats": [
+   "thriller",
+   "horror"
+  ],
+  "tags": [
+   "מותחן",
+   "אימה"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר השלישי והאחרון על הבלש בדימוס ביל הודג'ס: בריידי, הרוצח שכמעט פוצץ אולם מלא בני נוער, שוכב משותק בבית חולים. אבל גל של התאבדויות מוזרות מתחיל בעיר.",
+  "cover": 12376085
+ },
+ {
+  "id": "buick-8",
+  "title": "מתוך הביואיק",
+  "author": "סטיבן קינג",
+  "en": "From a Buick 8",
+  "enAuthor": "Stephen King",
+  "year": 2002,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה"
+  ],
+  "style": [
+   "scary",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שוטרים בתחנה כפרית בפנסילבניה שומרים במחסן, כבר 20 שנה, מכונית ביואיק שמישהו השאיר. היא לא באמת מכונית, ומדי פעם יוצא ממנה משהו.",
+  "cover": 6502777
+ },
+ {
+  "id": "desperation",
+  "title": "דספריישן",
+  "author": "סטיבן קינג",
+  "en": "Desperation",
+  "enAuthor": "Stephen King",
+  "year": 1996,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה"
+  ],
+  "style": [
+   "scary",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "כביש מדברי בנבדה: שוטר ענק ומוזר עוצר נוסעים ולוקח אותם לעיירת כורים בשם דספריישן, שכמעט כל תושביה מתים. השורדים צריכים להבין מה השתלט עליו.",
+  "cover": 8757374
+ },
+ {
+  "id": "the-twelve",
+  "title": "התריסר",
+  "author": "ג'סטין קרונין",
+  "en": "The Twelve",
+  "enAuthor": "Justin Cronin",
+  "year": 2012,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "פוסט-אפוקליפטי"
+  ],
+  "style": [
+   "dark",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר השני בטרילוגיית \"המעבר\": אמריקה הרוסה בידי יצורים דמויי ערפדים, ושורדים מכמה דורות מנסים להשמיד את שנים-עשר היצורים הראשונים.",
+  "cover": 12884497
+ },
+ {
+  "id": "city-of-mirrors",
+  "title": "עיר המראות",
+  "author": "ג'סטין קרונין",
+  "en": "The City of Mirrors",
+  "enAuthor": "Justin Cronin",
+  "year": 2016,
+  "cats": [
+   "horror"
+  ],
+  "tags": [
+   "אימה",
+   "פוסט-אפוקליפטי"
+  ],
+  "style": [
+   "dark",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר האחרון בטרילוגיית \"המעבר\": האנושות חושבת שהסכנה עברה ומתחילה לבנות מחדש, אבל היצור הראשון מכולם עדיין מחכה בחושך.",
+  "cover": 12884475
+ },
+ {
+  "id": "groosham-grange",
+  "title": "כפר אשמדים",
+  "author": "אנתוני הורוביץ",
+  "en": "Groosham Grange",
+  "enAuthor": "Anthony Horowitz",
+  "year": 1988,
+  "cats": [
+   "ya",
+   "horror"
+  ],
+  "tags": [
+   "נוער",
+   "אימה",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "scary"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "דייוויד, ילד שההורים שלו לא סובלים אותו, נשלח לפנימייה על אי מבודד. המורים מוזרים מאוד, ולאט הוא מבין שזה בית ספר לכישוף. אימה מצחיקה לנוער.",
+  "cover": 482261
+ },
+ {
+  "id": "hannibal-rising",
+  "title": "חניבעל: מקור הרוע",
+  "author": "תומאס האריס",
+  "en": "Hannibal Rising",
+  "enAuthor": "Thomas Harris",
+  "year": 2006,
+  "cats": [
+   "thriller",
+   "horror"
+  ],
+  "tags": [
+   "מותחן"
+  ],
+  "style": [
+   "dark",
+   "scary"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "איך חניבעל לקטר הפך לחניבעל לקטר? ליטא בזמן מלחמת העולם השנייה, ילד שרואה את אחותו הקטנה נלקחת, ונקמה שמתחילה שנים אחר כך בצרפת.",
+  "cover": 9257616
+ },
+ {
+  "id": "dead-famous",
+  "title": "מתים להתפרסם",
+  "author": "בן אלטון",
+  "en": "Dead Famous",
+  "enAuthor": "Ben Elton",
+  "year": 2001,
+  "cats": [
+   "thriller",
+   "light"
+  ],
+  "tags": [
+   "בלשי",
+   "הומור",
+   "סאטירה"
+  ],
+  "style": [
+   "funny",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בבית של תוכנית ריאליטי, עשרות מצלמות מצלמות כל רגע, ובכל זאת אחד המשתתפים נרצח, ואף אחד לא ראה מי. מפקח משטרה צריך לפתור את התעלומה. סאטירה מצחיקה.",
+  "cover": 386214
+ },
+ {
+  "id": "twenty-years-after",
+  "title": "אחרי עשרים שנה",
+  "author": "אלכסנדר דיומא",
+  "en": "Twenty Years After",
+  "enAuthor": "Alexandre Dumas",
+  "year": 1845,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "fast",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ההמשך של \"שלושת המוסקטרים\": ד'ארטניאן מגייס שוב את אתוס, פורתוס וארמיס, אבל עכשיו הם בצדדים שונים של מלחמת אזרחים בצרפת ובאנגליה.",
+  "cover": 11929973
+ },
+ {
+  "id": "bragelonne",
+  "title": "הוויקונט דה בראז'לון",
+  "author": "אלכסנדר דיומא",
+  "en": "The Vicomte of Bragelonne",
+  "enAuthor": "Alexandre Dumas",
+  "year": 1847,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "historical",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "החלק האחרון בסיפור המוסקטרים, בחצר המלך הצעיר לואי ה-14: אהבה, מזימות, ותעלומת האסיר במסכת הברזל.",
+  "cover": 14564690
+ },
+ {
+  "id": "black-tulip",
+  "title": "הצבעוני השחור",
+  "author": "אלכסנדר דיומא",
+  "en": "The Black Tulip",
+  "enAuthor": "Alexandre Dumas",
+  "year": 1850,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "רומנטי"
+  ],
+  "style": [
+   "romantic",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הולנד, 1672: עיר הולנדית מציעה פרס גדול למי שיגדל צבעוני שחור. מגדל פרחים צעיר כמעט מצליח, ואז נזרק לכלא בגלל קנאה. בת הסוהר מחליטה לעזור לו.",
+  "cover": 14565101
+ },
+ {
+  "id": "angelique",
+  "title": "אנג'ליק",
+  "author": "אן גולון",
+  "en": "Angélique",
+  "enAuthor": "Anne Golon",
+  "year": 1957,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "רומנטי"
+  ],
+  "style": [
+   "romantic",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "צרפת של המאה ה-17: אנג'ליק, בת אצילים עניים ויפהפייה, נישאת בכפייה לרוזן מבוגר עם צלקת ומוניטין רע. היא לא מצפה לאהבה, ואז מגלה מי הוא באמת.",
+  "cover": 8405036
+ },
+ {
+  "id": "ides-of-march",
+  "title": "אידי מארס",
+  "author": "תורנטון וויילדר",
+  "en": "The Ides of March",
+  "enAuthor": "Thornton Wilder",
+  "year": 1948,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "smart",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "החודשים האחרונים של יוליוס קיסר, דרך מכתבים, יומנים ושמועות של האנשים סביבו: קליאופטרה, משוררים, אויבים וחברים, עד ההתנקשות.",
+  "cover": 21466
+ },
+ {
+  "id": "augustus-williams",
+  "title": "אוגוסטוס",
+  "author": "ג'ון ויליאמס",
+  "en": "Augustus",
+  "enAuthor": "John Williams",
+  "year": 1972,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חייו של אוגוסטוס, הקיסר הראשון של רומא, דרך מכתבים ויומנים של חבריו, אויביו ובתו. רומן על כוח, על משפחה ועל המחיר של להיות שליט.",
+  "cover": 746850
+ },
+ {
+  "id": "musa-dagh",
+  "title": "ארבעים הימים של מוסה דאג",
+  "author": "פרנץ ורפל",
+  "en": "The Forty Days of Musa Dagh",
+  "enAuthor": "Franz Werfel",
+  "year": 1933,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מלחמה"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1915: כשהטורקים מגרשים ומשמידים את הארמנים, תושבי שבעה כפרים ארמנים עולים להר מוסה דאג ומחליטים להילחם. מבוסס על סיפור אמיתי.",
+  "cover": 14905735
+ },
+ {
+  "id": "gai-jin",
+  "title": "גאי-ג'ין",
+  "author": "ג'יימס קלאוול",
+  "en": "Gai-Jin",
+  "enAuthor": "James Clavell",
+  "year": 1993,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "יפן, 1862: סוחרים ודיפלומטים זרים, ה\"גאי-ג'ין\", מנסים להשתלט על הסחר, בזמן שסמוראים זועמים רוצים לגרש אותם. בהמשך לסאגה של \"טאי פאן\".",
+  "cover": 11199679
+ },
+ {
+  "id": "red-queen-gregory",
+  "title": "המלכה האדומה",
+  "author": "פיליפה גרגורי",
+  "en": "The Red Queen",
+  "enAuthor": "Philippa Gregory",
+  "year": 2010,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מרגרט בופור, נערה אדוקה ושאפתנית מבית לנקסטר, מתחתנת שוב ושוב בשביל הפוליטיקה, ומקדישה את חייה למטרה אחת: להפוך את בנה למלך אנגליה.",
+  "cover": 9588120
+ },
+ {
+  "id": "white-princess",
+  "title": "הנסיכה הלבנה",
+  "author": "פיליפה גרגורי",
+  "en": "The White Princess",
+  "enAuthor": "Philippa Gregory",
+  "year": 2013,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אליזבת מיורק, בתה של \"המלכה הלבנה\", נאלצת להתחתן עם הנרי טיודור, האויב שניצח את המשפחה שלה. היא צריכה לבחור בין המשפחה הישנה לחדשה.",
+  "cover": 11539053
+ },
+ {
+  "id": "song-of-troy",
+  "title": "שירתה של טרויה",
+  "author": "קולין מקאלו",
+  "en": "The Song of Troy",
+  "enAuthor": "Colleen McCullough",
+  "year": 1998,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מיתולוגיה"
+  ],
+  "style": [
+   "historical",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מלחמת טרויה כפי שלא סופרה: בלי אלים, רק בני אדם. אכילס, הלנה, הקטור ואודיסאוס מספרים כל אחד את חלקו בסיפור.",
+  "cover": 3324691
+ },
+ {
+  "id": "winemakers-wife",
+  "title": "סודות בית השמפניה",
+  "author": "קריסטין הרמל",
+  "en": "The Winemaker's Wife",
+  "enAuthor": "Kristin Harmel",
+  "year": 2019,
+  "cats": [
+   "trendy",
+   "romance"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מלחמה"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "צרפת הכבושה, 1940: בית שמפניה באזור ריימס מסתיר סודות מתחת למרתפים שלו. שנים אחר כך, אישה צעירה מגלה את הסיפור של סבתה.",
+  "cover": 8754912
+ },
+ {
+  "id": "room-rue-amelie",
+  "title": "הדירה ברחוב אמלי",
+  "author": "קריסטין הרמל",
+  "en": "The Room on Rue Amélie",
+  "enAuthor": "Kristin Harmel",
+  "year": 2018,
+  "cats": [
+   "trendy",
+   "romance"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מלחמה"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פריז במלחמת העולם השנייה: רובי, אמריקאייה שהתחתנה עם צרפתי, נערה יהודייה מהבניין, וטייס בריטי שהופל. שלושה אנשים, גבורה, אהבה והקרבה.",
+  "cover": 9211456
+ },
+ {
+  "id": "sweetness-forgetting",
+  "title": "המתיקות שבשכחה",
+  "author": "קריסטין הרמל",
+  "en": "The Sweetness of Forgetting",
+  "enAuthor": "Kristin Harmel",
+  "year": 2012,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "משפחה",
+   "היסטורי"
+  ],
+  "style": [
+   "warm",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הופ, בעלת מאפייה קטנה בקייפ קוד, מקבלת מסבתה החולה רשימת שמות ובקשה: לנסוע לפריז ולגלות מה קרה למשפחה שלה במלחמה. ארבעה דורות של נשים, וסוד אחד.",
+  "cover": 10374351
+ },
+ {
+  "id": "physick-book",
+  "title": "רוקחת הרפואות מסיילם",
+  "author": "קתרין האו",
+  "en": "The Physick Book of Deliverance Dane",
+  "enAuthor": "Katherine Howe",
+  "year": 2009,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "מכשפות"
+  ],
+  "style": [
+   "mystery",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קוני, דוקטורנטית בהרווארד, מסדרת את הבית הנטוש של סבתה ומוצאת מפתח עם שם של אישה מימי משפטי המכשפות בסיילם. החיפוש מוביל אותה לספר רפואות עתיק, ולסודות משפחתיים.",
+  "cover": 8373705
+ },
+ {
+  "id": "dragonfly-amber",
+  "title": "שפירית בענבר",
+  "author": "דיאנה גבלדון",
+  "en": "Dragonfly in Amber",
+  "enAuthor": "Diana Gabaldon",
+  "year": 1992,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "מסע בזמן",
+   "היסטורי"
+  ],
+  "style": [
+   "romantic",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "הספר השני בסדרת \"זרה\": קלייר חוזרת לסקוטלנד אחרי 20 שנה עם בתה, ומספרת לה מה קרה בעבר: איך היא וג'יימי ניסו לעצור את המרד שיחסל את הסקוטים.",
+  "cover": 6920490
+ },
+ {
+  "id": "voyager-gabaldon",
+  "title": "נוסעת מעבר לזמן",
+  "author": "דיאנה גבלדון",
+  "en": "Voyager",
+  "enAuthor": "Diana Gabaldon",
+  "year": 1993,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "מסע בזמן",
+   "היסטורי"
+  ],
+  "style": [
+   "romantic",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "הספר השלישי בסדרת \"זרה\": קלייר מגלה שג'יימי שרד, ומחליטה לחזור בזמן כדי למצוא אותו, אחרי 20 שנה בנפרד. מסע שיוביל אותם עד לאיים הקריביים.",
+  "cover": 238962
+ },
+ {
+  "id": "english-german-girl",
+  "title": "נערה מברלין",
+  "author": "ג'ייק וואליס סימונס",
+  "en": "The English German Girl",
+  "enAuthor": "Jake Wallis Simons",
+  "year": 2011,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "שואה"
+  ],
+  "style": [
+   "historical",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רוזה, נערה יהודייה מברלין, נשלחת לבדה לאנגליה ב\"קינדרטרנספורט\" לפני המלחמה. סיפור על גדילה בארץ זרה, אהבה, ומשפחה שנשארה מאחור.",
+  "cover": 7783857
+ },
+ {
+  "id": "plague-year",
+  "title": "יומן שנת המגפה",
+  "author": "דניאל דפו",
+  "en": "A Journal of the Plague Year",
+  "enAuthor": "Daniel Defoe",
+  "year": 1722,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "היסטורי"
+  ],
+  "style": [
+   "slow",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לונדון, 1665: מגפת הדבר מתפשטת, ואדם אחד שנשאר בעיר מתאר מה ראה: בתים נעולים, פחד, שמועות ועגלות של מתים. מאת כותב \"רובינזון קרוזו\".",
+  "cover": 11731046
+ },
+ {
+  "id": "captains-daughter",
+  "title": "בת הקפיטן",
+  "author": "אלכסנדר פושקין",
+  "en": "The Captain's Daughter",
+  "enAuthor": "Alexander Pushkin",
+  "year": 1836,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "רומנטי"
+  ],
+  "style": [
+   "short",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פיוטר, קצין צעיר, נשלח למבצר נידח בערבות רוסיה ומתאהב בבת של המפקד. אז פורץ מרד האיכרים של פוגצ'וב, והאהבה צריכה לשרוד מלחמה.",
+  "cover": 7954101
+ },
+ {
+  "id": "toilers-of-sea",
+  "title": "עובדי הים",
+  "author": "ויקטור הוגו",
+  "en": "The Toilers of the Sea",
+  "enAuthor": "Victor Hugo",
+  "year": 1866,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "הרפתקאות"
+  ],
+  "style": [
+   "slow",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "באי גרנזי, ז'יליאט, דייג בודד שכולם חושדים בו, מנסה להציל מנוע של ספינה טרופה בין סלעים בלב הים, כדי לזכות באישה שהוא אוהב. מאבק אדם מול הים.",
+  "cover": 8245447
+ },
+ {
+  "id": "salammbo",
+  "title": "שלמבו",
+  "author": "גוסטב פלובר",
+  "en": "Salammbô",
+  "enAuthor": "Gustave Flaubert",
+  "year": 1862,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן היסטורי"
+  ],
+  "style": [
+   "historical",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קרתגו, המאה השלישית לפני הספירה: שכירי חרב שלא קיבלו שכר מורדים בעיר. מנהיגם מתאהב בשלמבו, כוהנת ובת של גנרל. רומן היסטורי צבעוני ואכזרי.",
+  "cover": 3078356
+ },
+ {
+  "id": "the-island-hislop",
+  "title": "האי של סופייה",
+  "author": "ויקטוריה היסלופ",
+  "en": "The Island",
+  "enAuthor": "Victoria Hislop",
+  "year": 2005,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "משפחה"
+  ],
+  "style": [
+   "emotional",
+   "historical"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אלקסיס נוסעת לכרתים כדי לגלות את עברה של אמה, ומגיעה לכפר מול ספינלונגה, אי שבו בודדו פעם חולי צרעת. סיפור של ארבעה דורות, ואהבה מעבר למים.",
+  "cover": 503126
+ },
+ {
+  "id": "everything-illuminated",
+  "title": "הכול מואר",
+  "author": "ג'ונתן ספרן פויר",
+  "en": "Everything Is Illuminated",
+  "enAuthor": "Jonathan Safran Foer",
+  "year": 2002,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "שואה",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ונתן, צעיר יהודי אמריקאי, נוסע לאוקראינה לחפש את האישה שהצילה את סבו מהנאצים. המדריך שלו, אלכס, מדבר אנגלית משובשת ומצחיקה. מסע מצחיק ושובר לב.",
+  "cover": 1011104
+ },
+ {
+  "id": "tipping-velvet",
+  "title": "לגעת בקטיפה",
+  "author": "שרה ווטרס",
+  "en": "Tipping the Velvet",
+  "enAuthor": "Sarah Waters",
+  "year": 1998,
+  "cats": [
+   "romance",
+   "trendy"
+  ],
+  "tags": [
+   "רומנטי",
+   "היסטורי",
+   "להט\"ב"
+  ],
+  "style": [
+   "romantic",
+   "character"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "אנגליה הוויקטוריאנית: נאן, בת למשפחה שמוכרת צדפות, מתאהבת בזמרת שמופיעה בתחפושת של גבר, ונוסעת בעקבותיה ללונדון. מסע של אהבה, תיאטרון ומציאת עצמה.",
+  "cover": 3091767
+ },
+ {
+  "id": "the-kites",
+  "title": "עפיפונים",
+  "author": "רומן גארי",
+  "en": "The Kites",
+  "enAuthor": "Romain Gary",
+  "year": 1980,
+  "cats": [
+   "classic",
+   "romance"
+  ],
+  "tags": [
+   "מלחמה",
+   "רומנטי"
+  ],
+  "style": [
+   "emotional",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "נורמנדי: לודו, ילד עם זיכרון מופלא, גדל אצל דוד שבונה עפיפונים, ומתאהב בלילה, נערה פולנייה אצילה. מלחמת העולם השנייה מפרידה ביניהם, אבל הוא לא מוותר.",
+  "cover": 13872275
+ },
+ {
+  "id": "silk-merchants-daughter",
+  "title": "בתו של סוחר המשי",
+  "author": "דינה ג'פריס",
+  "en": "The Silk Merchant's Daughter",
+  "enAuthor": "Dinah Jefferies",
+  "year": 2016,
+  "cats": [
+   "romance",
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "רומנטי"
+  ],
+  "style": [
+   "romantic",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "וייטנאם, 1952: ניקול, בת לאב צרפתי ולאם וייטנאמית, תמיד הרגישה שלא שייכת. כשהצרפתים מאבדים את השליטה, היא נקרעת בין שני העולמות, ובין שני גברים.",
+  "cover": 10846876
+ },
+ {
+  "id": "chaim-grade-yeshiva",
+  "title": "צמח אטלס: הישיבה",
+  "author": "חיים גראדה",
+  "en": "The Yeshiva",
+  "enAuthor": "Chaim Grade",
+  "year": 1967,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "קלאסיקה",
+   "יהדות"
+  ],
+  "style": [
+   "slow",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ליטא בין המלחמות: צמח אטלס, ראש ישיבה של תנועת המוסר, נאבק בספקות שלו באמונה, ותלמיד צעיר מחפש את דרכו. רומן גדול על עולם שנעלם.",
+  "cover": 4650602
+ },
+ {
+  "id": "when-nietzsche-wept",
+  "title": "כשניטשה בכה",
+  "author": "ארווין יאלום",
+  "en": "When Nietzsche Wept",
+  "enAuthor": "Irvin D. Yalom",
+  "year": 1992,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פסיכולוגיה",
+   "פילוסופיה"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "וינה, 1882: הרופא יוסף ברויאר מסכים לטפל בפילוסוף פרידריך ניטשה, שסובל מייאוש ומכאבי ראש, בלי שניטשה יידע. לאט מתברר שגם ברויאר עצמו צריך עזרה.",
+  "cover": 34307
+ },
+ {
+  "id": "measuring-world",
+  "title": "מודדים את העולם",
+  "author": "דניאל קלמן",
+  "en": "Measuring the World",
+  "enAuthor": "Daniel Kehlmann",
+  "year": 2005,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שני גאונים גרמנים: אלכסנדר פון הומבולדט, שמטייל בג'ונגלים כדי למדוד הכול, וקרל פרידריך גאוס, מתמטיקאי שלא זז מהבית. רומן מצחיק על מדע ועל אנשים מוזרים.",
+  "cover": 1165201
+ },
+ {
+  "id": "the-zahir",
+  "title": "הזאהיר",
+  "author": "פאולו קואלו",
+  "en": "The Zahir",
+  "enAuthor": "Paulo Coelho",
+  "year": 2005,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רוחניות"
+  ],
+  "style": [
+   "slow",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סופר מצליח מגלה שאשתו, כתבת מלחמה, נעלמה בלי הסבר. המחשבה עליה הופכת לאובססיה, והחיפוש אחריה מוביל אותו עד ערבות קזחסטן.",
+  "cover": 10998270
+ },
+ {
+  "id": "the-years-ernaux",
+  "title": "השנים",
+  "author": "אנני ארנו",
+  "en": "The Years",
+  "enAuthor": "Annie Ernaux",
+  "year": 2008,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "צרפתי"
+  ],
+  "style": [
+   "smart",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אנני ארנו, זוכת פרס נובל, מספרת את חייה מ-1940 ועד שנות ה-2000, אבל דרך תמונות, שירים, פרסומות ושיחות של כל הדור שלה. אוטוביוגרפיה של תקופה שלמה.",
+  "cover": 968944
+ },
+ {
+  "id": "indignation",
+  "title": "זעם",
+  "author": "פיליפ רות",
+  "en": "Indignation",
+  "enAuthor": "Philip Roth",
+  "year": 2008,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "התבגרות"
+  ],
+  "style": [
+   "short",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "1951: מרקוס, בן של קצב יהודי מניו ג'רזי, בורח מאבא חרד ושתלטן לקולג' באוהיו. בזמן שמלחמת קוריאה ברקע, כל החלטה קטנה שלו מקבלת משקל גדול מאוד.",
+  "cover": 6954022
+ },
+ {
+  "id": "physics-impossible",
+  "title": "הפיזיקה של הבלתי אפשרי",
+  "author": "מיצ'יו קאקו",
+  "en": "Physics of the Impossible",
+  "enAuthor": "Michio Kaku",
+  "year": 2008,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "עיון",
+   "מדע"
+  ],
+  "style": [
+   "smart",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שדות כוח, טלפורטציה, מסע בזמן ורובוטים חושבים: הפיזיקאי מיצ'יו קאקו בודק מה מהמדע הבדיוני יכול באמת לקרות, ומתי.",
+  "cover": 6307967
+ },
+ {
+  "id": "nation-pratchett",
+  "title": "אומה",
+  "author": "טרי פראצ'ט",
+  "en": "Nation",
+  "enAuthor": "Terry Pratchett",
+  "year": 2008,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "הרפתקאות",
+   "נוער"
+  ],
+  "style": [
+   "funny",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "צונאמי מחסל את כל השבט של מאו, נער מאי בדרום האוקיינוס. השורדת היחידה מספינה טרופה היא נערה אנגלייה. יחד הם בונים מחדש עולם, ומתווכחים עם אלים.",
+  "cover": 14645691
+ },
+ {
+  "id": "city-of-thieves",
+  "title": "עיר הגנבים",
+  "author": "דייוויד בניוף",
+  "en": "City of Thieves",
+  "enAuthor": "David Benioff",
+  "year": 2008,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "מלחמה",
+   "הרפתקאות",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לנינגרד הנצורה, 1942: נער יהודי וחייל עריק ופטפטן נעצרים, ומקבלים הצעה: אם ימצאו תריסר ביצים לחתונה של בת הקולונל, יחיו. בעיר שאין בה אוכל בכלל.",
+  "cover": 10132618
+ },
+ {
+  "id": "brodecks-report",
+  "title": "הדו\"ח של ברודק",
+  "author": "פיליפ קלודל",
+  "en": "Brodeck's Report",
+  "enAuthor": "Philippe Claudel",
+  "year": 2007,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מלחמה"
+  ],
+  "style": [
+   "dark",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בכפר קטן אחרי המלחמה, אנשי הכפר הורגים זר שהגיע אליהם, ומבקשים מברודק לכתוב דו\"ח רשמי שיסביר מה קרה. ככל שהוא כותב, הוא מגלה דברים שעדיף שלא יידעו.",
+  "cover": 7729604
+ },
+ {
+  "id": "tokyo-vice",
+  "title": "טוקיו וייס",
+  "author": "ג'ייק אדלשטיין",
+  "en": "Tokyo Vice",
+  "enAuthor": "Jake Adelstein",
+  "year": 2009,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "ביוגרפיה",
+   "פשע"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "ג'ייק אדלשטיין, יהודי ממיזורי, הופך לכתב הזר הראשון במדור הפלילים של עיתון יפני גדול. 12 שנה של סיקור היאקוזה, עד שהוא מגלה סיפור שמסכן את חייו.",
+  "cover": 6418686
+ },
+ {
+  "id": "golden-calf",
+  "title": "עגל הזהב",
+  "author": "איליה אילף ויבגני פטרוב",
+  "en": "The Little Golden Calf",
+  "enAuthor": "Ilf and Petrov",
+  "year": 1931,
+  "cats": [
+   "classic",
+   "light"
+  ],
+  "tags": [
+   "הומור",
+   "סאטירה",
+   "קלאסיקה"
+  ],
+  "style": [
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אוסטאפ בנדר, הנוכל המקסים, יוצא עם שותפים מצחיקים במסע ברחבי ברית המועצות כדי לסחוט מיליון רובל ממיליונר סודי. סאטירה קלאסית ומצחיקה מאוד.",
+  "cover": null
+ },
+ {
+  "id": "black-sisters-street",
+  "title": "ברחוב האחיות השחורות",
+  "author": "צ'יקה אוניגווה",
+  "en": "On Black Sisters Street",
+  "enAuthor": "Chika Unigwe",
+  "year": 2009,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "אפריקה"
+  ],
+  "style": [
+   "dark",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "ארבע נשים אפריקאיות חולקות דירה באנטוורפן ועובדות בזנות. כשאחת מהן נרצחת, השלוש האחרות מספרות סוף סוף זו לזו מאיפה באו ואיך הגיעו לשם.",
+  "cover": 13064553
+ },
+ {
+  "id": "leonardos-swans",
+  "title": "הברבורים של לאונרדו",
+  "author": "קארן אסקס",
+  "en": "Leonardo's Swans",
+  "enAuthor": "Karen Essex",
+  "year": 2006,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "אמנות"
+  ],
+  "style": [
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "איטליה של הרנסנס: שתי אחיות, איזבלה וביאטריצ'ה ד'אסטה, נשואות לשליטים חזקים, מתחרות זו בזו בכל דבר, ובמיוחד על מי תצויר בידי לאונרדו דה וינצ'י.",
+  "cover": 8556315
+ },
+ {
+  "id": "fragile-things",
+  "title": "דברים שבירים",
+  "author": "ניל גיימן",
+  "en": "Fragile Things",
+  "enAuthor": "Neil Gaiman",
+  "year": 2006,
+  "cats": [
+   "horror",
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה",
+   "סיפורים קצרים"
+  ],
+  "style": [
+   "dark",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אוסף של סיפורים קצרים ושירים של ניל גיימן: אגדות, אימה, הומור ומוזרות, כולל סיפור המשך קצר ל\"אלים אמריקאים\". טוב לקריאה בחלקים.",
+  "cover": 46488
+ },
+ {
+  "id": "girl-green-sweater",
+  "title": "הילדה בסוודר הירוק",
+  "author": "קריסטינה חיגר",
+  "en": "The Girl in the Green Sweater",
+  "enAuthor": "Krystyna Chiger",
+  "year": 2008,
+  "cats": [
+   "nonfiction"
+  ],
+  "tags": [
+   "שואה",
+   "ביוגרפיה"
+  ],
+  "style": [
+   "emotional",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לבוב, 1943: קריסטינה, ילדה בת שבע, מסתתרת עם משפחתה ועוד יהודים במשך 14 חודשים בביוב של העיר, בעזרת עובד ביוב פולני. סיפור אמיתי על הישרדות.",
+  "cover": 5356243
+ },
+ {
+  "id": "hasut",
+  "title": "חסות",
+  "author": "סמי מיכאל",
+  "en": "Refuge",
+  "enAuthor": "Sami Michael",
+  "year": 1977,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "character",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חיפה, ימי מלחמת יום הכיפורים: יהודים וערבים, חברים בארגון שמאל קטן, מתבקשים לתת מחסה למשורר פלסטיני. המלחמה מעמידה כל אחד מהם מול נאמנויות סותרות.",
+  "cover": 4743585
  }
 ];
