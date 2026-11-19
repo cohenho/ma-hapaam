@@ -658,10 +658,11 @@ button {
   justify-content: space-around;
   height: calc(var(--tabbar-h) + env(safe-area-inset-bottom));
   padding-bottom: env(safe-area-inset-bottom);
-  background: rgba(255, 253, 246, .95);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  background: rgb(255, 253, 246);
   border-top: 1px solid var(--edge);
+  /* its own layer, so iPhone keeps it glued to the bottom while scrolling */
+  transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 .tabbar button {
@@ -865,7 +866,7 @@ body.onboarding #view { padding-bottom: calc(env(safe-area-inset-bottom) + 28px)
 .mic-no { display: block; margin: 10px auto 0; }
 
 /* returned books: a paler stack */
-.my-stack.returned-stack .bk { filter: saturate(.45) brightness(1.05); opacity: .85; }
+.my-stack.returned-stack .bk, .my-library.returned-stack .bk { filter: saturate(.45) brightness(1.05); opacity: .85; }
 
 /* ---------- rating: the "return card" ---------- */
 
@@ -1302,3 +1303,41 @@ body.onboarding #view { padding-bottom: calc(env(safe-area-inset-bottom) + 28px)
 .lib-top .lib-item { width: 40%; max-width: 170px; }
 .lib-soon { margin: 6px 0 0; text-align: center; font-size: 17px; color: var(--soft); }
 .tabbar button { font-size: 12px; }
+
+/* ---------- הספרייה שלי ---------- */
+
+.more-books {
+  display: block;
+  margin: 12px 0 0 auto;
+  padding: 8px 14px;
+  font-family: var(--sans);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--blue);
+  background: rgba(255, 253, 246, .8);
+  border: 1.5px solid var(--blue);
+  border-radius: 4px;
+}
+
+.lib-tools { margin: 14px 0 4px; }
+.lib-search {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 12px;
+  font: 16px var(--sans);
+  color: var(--ink);
+  background: var(--paper-2);
+  border: 1px solid #c9b994;
+  border-radius: 4px;
+}
+.lib-sorts { display: flex; flex-wrap: wrap; gap: 8px; }
+.lib-sort {
+  padding: 5px 12px;
+  font: 600 14px var(--sans);
+  color: var(--soft);
+  background: transparent;
+  border: 1.5px solid #c9b994;
+  border-radius: 999px;
+}
+.lib-sort.on { color: var(--paper-2); background: var(--ink); border-color: var(--ink); }
+.my-library .desk { margin-top: 8px; }

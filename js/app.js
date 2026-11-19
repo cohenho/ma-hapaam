@@ -312,22 +312,34 @@ function wireBooks(container, onPick) {
 
 // ---------- my books: your own stacks ----------
 
-function showMyBooks() {
-  setTab("mybooks");
-  const entries = Object.entries(Store.state.books)
+const MY_RECENT = 5; // how many books each pile on "הספרים שלי" shows
+
+function myEntries() {
+  return Object.entries(Store.state.books)
     .map(([id, info]) => ({ book: bookById(id), ...info }))
     .filter((e) => e.book)
     .sort((a, b) => b.date.localeCompare(a.date));
+}
+
+function deskHtml(books, status) {
+  return `<div class="desk small" data-status="${status}"><div class="desk-books">${Shelf.stackHtml(books)}</div><div class="desk-top"></div></div>`;
+}
+
+function showMyBooks() {
+  setTab("mybooks");
+  const entries = myEntries();
   const of = (status) => entries.filter((e) => e.status === status);
 
-  const stackBlock = (status, title, empty) => {
+  // "Taken" books are few, so all of them show; the other piles show the latest few
+  // and the rest wait in "הספרייה שלי".
+  const stackBlock = (status, title, empty, more) => {
     const list = of(status);
+    const shown = status === "taken" ? list : list.slice(0, MY_RECENT);
     return `
       <section class="my-stack ${status === "rejected" ? "returned-stack" : ""}">
         <h3>${title} <span class="count typed">${list.length}</span></h3>
-        ${list.length
-          ? `<div class="desk small" data-status="${status}"><div class="desk-books">${Shelf.stackHtml(list.map((e) => e.book))}</div><div class="desk-top"></div></div>`
-          : `<p class="empty-note">${empty}</p>`}
+        ${list.length ? deskHtml(shown.map((e) => e.book), status) : `<p class="empty-note">${empty}</p>`}
+        ${list.length > shown.length ? `<button class="more-books" data-all="${status}">${more(list.length)} ←</button>` : ""}
       </section>`;
   };
 
@@ -335,16 +347,79 @@ function showMyBooks() {
     <header class="page-head"><h2 class="page-title">הספרים שלי</h2></header>
     ${stackBlock("taken", "לקחתי",
       `עוד לא לקחת ספרים. ${g("כשתלחצי", "כשתלחץ", "כשתלחצו")} "לקחתי", הספר יחכה כאן.`)}
-    ${stackBlock("read", "קראתי", "כאן יחכו ספרים שכבר קראת.")}
+    ${stackBlock("read", "קראתי לאחרונה", "כאן יחכו ספרים שכבר קראת.",
+      (n) => `לכל ${n} הספרים בספרייה שלי`)}
     ${stackBlock("rejected", "החזרתי לערימה",
-      `כאן יחכו ספרים ${g("שהחזרת", "שהחזרת", "שהחזרתם")} לערימה. אם ${g("תתחרטי", "תתחרט", "תתחרטו")}, אפשר להחזיר אותם להמלצות.`)}
+      `כאן יחכו ספרים ${g("שהחזרת", "שהחזרת", "שהחזרתם")} לערימה. אם ${g("תתחרטי", "תתחרט", "תתחרטו")}, אפשר להחזיר אותם להמלצות.`,
+      (n) => `לכל ${n} הספרים ${g("שהחזרת", "שהחזרת", "שהחזרתם")}`)}
   `, "mybooks");
 
   view.querySelectorAll(".desk-books").forEach((area) =>
-    wireBooks(area, (book, spine) => openMyBook(book, spine)));
+    wireBooks(area, (book, spine) => openMyBook(book, spine, showMyBooks)));
+  view.querySelectorAll("[data-all]").forEach((btn) =>
+    btn.addEventListener("click", () => showMyLibrary(btn.dataset.all)));
 }
 
-function openMyBook(book, spine) {
+// ---------- הספרייה שלי: every book read (or returned), shelf after shelf ----------
+
+const SHELF_SIZE = 6;
+let librarySort = "date";
+let libraryQuery = "";
+
+function showMyLibrary(status = "read") {
+  setTab("mybooks");
+  const all = myEntries().filter((e) => e.status === status);
+  const sorts = status === "read"
+    ? [["date", "אחרונים"], ["rating", "לפי דירוג"], ["title", "לפי שם"]]
+    : [["date", "אחרונים"], ["title", "לפי שם"]];
+  if (!sorts.some(([id]) => id === librarySort)) librarySort = "date";
+
+  render(`
+    <header class="page-head">
+      <button class="back">→ חזרה לספרים שלי</button>
+    </header>
+    <h2 class="page-title">${status === "read" ? "הספרייה שלי" : "החזרתי לערימה"}</h2>
+    <p class="hint">${status === "read"
+      ? `כל ${all.length} הספרים ${g("שקראת", "שקראת", "שקראתם")}.`
+      : `כל ${all.length} הספרים ${g("שהחזרת", "שהחזרת", "שהחזרתם")} לערימה.`}</p>
+    <div class="lib-tools">
+      ${all.length > 8 ? `<input class="lib-search" type="search" placeholder="חיפוש לפי שם הספר או הסופר" value="${esc(libraryQuery)}">` : ""}
+      <div class="lib-sorts">${sorts.map(([id, label]) =>
+        `<button class="lib-sort ${id === librarySort ? "on" : ""}" data-sort="${id}">${label}</button>`).join("")}</div>
+    </div>
+    <div class="my-library ${status === "rejected" ? "returned-stack" : ""}"></div>
+  `, "mylibrary");
+
+  const shelves = view.querySelector(".my-library");
+  const draw = () => {
+    const q = libraryQuery.trim();
+    let list = all.filter((e) => !q || e.book.title.includes(q) || e.book.author.includes(q));
+    if (librarySort === "rating") list = [...list].sort((a, b) => (b.rating || 0) - (a.rating || 0));
+    if (librarySort === "title") list = [...list].sort((a, b) => a.book.title.localeCompare(b.book.title, "he"));
+    const rows = [];
+    for (let i = 0; i < list.length; i += SHELF_SIZE) rows.push(list.slice(i, i + SHELF_SIZE));
+    shelves.innerHTML = rows.length
+      ? rows.map((row) => deskHtml(row.map((e) => e.book), status)).join("")
+      : `<p class="empty-note">${q ? "לא מצאתי ספר כזה." : "עוד אין כאן ספרים."}</p>`;
+    fitTitles(shelves);
+  };
+  draw();
+  wireBooks(shelves, (book, spine) => openMyBook(book, spine, () => {
+    const y = window.scrollY;
+    showMyLibrary(status);
+    window.scrollTo(0, y);
+  }));
+
+  view.querySelector(".back").addEventListener("click", () => { libraryQuery = ""; showMyBooks(); });
+  view.querySelector(".lib-search")?.addEventListener("input", (e) => { libraryQuery = e.target.value; draw(); });
+  view.querySelectorAll("[data-sort]").forEach((btn) => btn.addEventListener("click", () => {
+    librarySort = btn.dataset.sort;
+    view.querySelectorAll("[data-sort]").forEach((b) => b.classList.toggle("on", b === btn));
+    draw();
+  }));
+}
+
+function openMyBook(book, spine, refresh = showMyBooks) {
   const rec = Store.state.books[book.id];
   const actions =
     rec.status === "taken" ? [
@@ -378,7 +453,7 @@ function openMyBook(book, spine) {
         spine.classList.remove("pulled");
         spine.closest(".stack")?.classList.remove("has-pulled");
         Rating.open(book, {
-          onSaved: () => { showMyBooks(); Toast.show("הדירוג נשמר, וההמלצות ילמדו ממנו."); },
+          onSaved: () => { refresh(); Toast.show("הדירוג נשמר, וההמלצות ילמדו ממנו."); },
           onSnoozed: () => Toast.show(`בסדר, ${g("אזכיר לך", "אזכיר לך", "אזכיר לכם")} בעוד שבוע.`),
         });
         return;
@@ -388,11 +463,11 @@ function openMyBook(book, spine) {
         id === "disliked" ? applyChoice(book, "read", { liked: false }) :
         id === "restore" ? applyChoice(book, null, null) :
         applyChoice(book, null, null);
-      showMyBooks();
+      refresh();
       Toast.show(
         id === "remove" ? "הוצאתי מהרשימה." :
         id === "restore" ? "הספר חזר להמלצות." : "הספר עבר לערימת \"קראתי\".",
-        () => { undo(); showMyBooks(); });
+        () => { undo(); refresh(); });
     },
   });
 }
