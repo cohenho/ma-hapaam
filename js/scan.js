@@ -25,7 +25,7 @@ const Scan = (() => {
     return new Promise((resolve, reject) => {
       const img = new Image();
       img.onload = () => {
-        const scale = Math.min(1, 1600 / Math.max(img.width, img.height));
+        const scale = Math.min(1, 1000 / Math.max(img.width, img.height)); // covers have big letters
         const c = document.createElement("canvas");
         c.width = Math.round(img.width * scale);
         c.height = Math.round(img.height * scale);
@@ -40,16 +40,21 @@ const Scan = (() => {
     });
   }
 
+  // The reader takes a while to start, so it starts as soon as the camera opens
+  // (while you're taking the photo) and then stays ready for the next cover.
+  // Hebrew only: the English data is five times bigger and library covers are in Hebrew.
+  let worker = null;
+  function warmUp() {
+    worker ||= loadTesseract()
+      .then(() => Tesseract.createWorker("heb"))
+      .catch((err) => { worker = null; throw err; });
+    return worker;
+  }
+
   async function readCover(file) {
-    await loadTesseract();
-    const canvas = await prepare(file);
-    const worker = await Tesseract.createWorker(["heb", "eng"]);
-    try {
-      const { data } = await worker.recognize(canvas);
-      return data.text || "";
-    } finally {
-      worker.terminate();
-    }
+    const [w, canvas] = await Promise.all([warmUp(), prepare(file)]);
+    const { data } = await w.recognize(canvas);
+    return data.text || "";
   }
 
   // ---------- finding the book ----------
@@ -200,11 +205,17 @@ const Scan = (() => {
     const { close } = overlay(`
       <div class="scan-photo"><img src="${thumb}" alt="התמונה שצילמת"><span class="scan-beam" aria-hidden="true"></span></div>
       <h2>קוראת את הכריכה…</h2>
-      <p class="install-intro">זה לוקח כמה שניות. התמונה לא נשלחת לשום מקום, הכול קורה בטלפון.</p>`);
+      <p class="install-intro">התמונה לא נשלחת לשום מקום, הכול קורה בטלפון.</p>
+      <button class="card-link scan-skip">אין לי סבלנות, ${g("אקליד", "אקליד", "נקליד")} את השם</button>`);
+    let skipped = false;
+    document.querySelector(".scan .scan-skip").addEventListener("click", () => {
+      skipped = true; close(); setTimeout(() => typeInstead("איזה ספר זה?"), 320);
+    });
     let text;
     try {
       text = await readCover(file);
     } catch (err) {
+      if (skipped) return;
       close();
       setTimeout(() => typeInstead(err.message === "offline"
         ? "כדי לקרוא כריכה בפעם הראשונה צריך אינטרנט"
@@ -213,6 +224,7 @@ const Scan = (() => {
     } finally {
       URL.revokeObjectURL(thumb);
     }
+    if (skipped) return;
     const found = match(text);
     close();
     setTimeout(() => {
@@ -223,6 +235,7 @@ const Scan = (() => {
   }
 
   function start() {
+    warmUp().catch(() => {}); // the error, if any, shows after the photo
     const input = document.createElement("input");
     input.type = "file";
     input.accept = "image/*"; // on iPhone: take a photo or choose one
