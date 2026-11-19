@@ -92,6 +92,10 @@ function showHome() {
         </button>`).join("")}
     </section>
   `, "home");
+  if (view.querySelector(".privacy-slip") && !Store.state.privacyShown) {
+    Store.state.privacyShown = true; Store.save();
+    Cloud.trackOpen();
+  }
   view.querySelector(".privacy-ok")?.addEventListener("click", (e) => {
     Store.state.privacySeen = true; Store.save();
     e.target.closest(".privacy-slip").remove();

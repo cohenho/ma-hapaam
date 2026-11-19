@@ -77,7 +77,9 @@ const Cloud = (() => {
     return Store.state.anonId;
   }
 
-  const sharing = () => enabled && Store.state.settings.share !== false && Store.state.privacySeen;
+  // Starts once the privacy note has been on screen (tapping "הבנתי" isn't needed);
+  // turning it off in the settings stops it.
+  const sharing = () => enabled && Store.state.settings.share !== false && (Store.state.privacySeen || Store.state.privacyShown);
 
   // kind: open | taken | read | disliked | rejected | restored | rated
   function track(kind, bookId = null, rating = null) {

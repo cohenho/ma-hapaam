@@ -148,7 +148,7 @@ function showTaste() {
 // ---------- הגדרות ----------
 // How the app addresses you and your age are set once, in the introduction.
 
-const APP_VERSION = "15";
+const APP_VERSION = "16";
 let versionTaps = 0;
 
 function showSettings() {
