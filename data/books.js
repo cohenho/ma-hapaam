@@ -23719,5 +23719,876 @@ window.BOOKS = [
   "adult": false,
   "summary": "השמש התחממה, הקרחונים נמסו, ולונדון היא ביצה טרופית מוצפת. ביולוג שחוקר את העיר מתחיל לחלום חלומות מוזרים, ולא רוצה לעזוב.",
   "cover": 5540959
+ },
+ {
+  "id": "tsohar-waves",
+  "title": "כשהגלים מתחזקים",
+  "author": "שרון צוהר",
+  "en": "Kshehagalim Mitchazkim",
+  "enAuthor": "Sharon Zohar",
+  "year": 2017,
+  "cats": [
+   "romance",
+   "trendy"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "צבא"
+  ],
+  "style": [
+   "romantic",
+   "fast",
+   "emotional"
+  ],
+  "pop": 4,
+  "adult": true,
+  "summary": "מורן סתיו עומדת להיות האישה הראשונה בשייטת, והקצין הראל שי, שמפקד עליה בצוות, נחוש להוכיח לה שאין שם מקום לבחורות. בין אימונים קשוחים ומאבק על מקומה נרקם ביניהם סיפור אהבה סוער. רב-מכר שעובד גם לסדרה.",
+  "cover": null
+ },
+ {
+  "id": "tsohar-five-fingers",
+  "title": "חמש אצבעות על היעד",
+  "author": "שרון צוהר",
+  "en": "Hamesh Etzbaot Al Hayaad",
+  "enAuthor": "Sharon Zohar",
+  "year": 2022,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "צבא",
+   "מתח"
+  ],
+  "style": [
+   "romantic",
+   "fast",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "אביתר כספי, קצין בשייטת שהשתנה מאוד אחרי קרב קשה, יוצא למשימה אחת: לעשות צדק. בדרך הוא נתקל שוב ברותם גונן, שהכירה אותו פעם, ולא מוכנה לוותר עליו. סיפור אהבה עם מתח ואקשן, ספר ראשון בדואט.",
+  "cover": null
+ },
+ {
+  "id": "tsohar-fall-in-love-survive",
+  "title": "להתאהב ולהישאר בחיים",
+  "author": "שרון צוהר",
+  "en": "Lehitahev Ulehisha'er Bachaim",
+  "enAuthor": "Sharon Zohar",
+  "year": 2023,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "צבא"
+  ],
+  "style": [
+   "romantic",
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "רותי רצתה רק לילה אחד כדי לשכוח, ואז פגשה בחתונה את אלמוג, לוחם שייטת שגילה מאוחר מדי שהיא אחותו הקטנה של החבר הכי טוב שלו. שניהם קבעו כללים ברורים, ושניהם עומדים להפר אותם. ספר נוסף בסדרת \"כשהגלים מתחזקים\".",
+  "cover": null
+ },
+ {
+  "id": "tsohar-place-to-live",
+  "title": "מקום לגור בו",
+  "author": "שרון צוהר",
+  "en": "Makom Lagur Bo",
+  "enAuthor": "Sharon Zohar",
+  "year": 2024,
+  "cats": [
+   "romance",
+   "light"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "הומור"
+  ],
+  "style": [
+   "romantic",
+   "funny",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "ביום הולדתה ה-25, יהל, מפתחת משחקי מחשב שאפתנית, מגלה שהיא נאלצת לחלוק בית עם ים, בחור שנכנס פתאום והכריז שהוא השותף החדש שלה. שניהם בטוחים שהם הפכים גמורים. סיפור אהבה מצחיק ומרגש.",
+  "cover": null
+ },
+ {
+  "id": "tsohar-angels",
+  "title": "מלאכים מעל העיר",
+  "author": "שרון צוהר",
+  "en": "Malachim Me'al Ha'ir",
+  "enAuthor": "Sharon Zohar",
+  "year": 2017,
+  "cats": [
+   "romance",
+   "thriller"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "מתח"
+  ],
+  "style": [
+   "romantic",
+   "dark",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "דנה גורדון, רופאה ישראלית שמתמחה בלוס אנג'לס, מקבלת מדי לילה נשים פגועות שזר מסתורי הציל ברחוב. במקביל מגיע לעיר תומר קליין, שמחפש את אהובתו לשעבר ונגרר אל המקומות האפלים ביותר בעיר. רומן מתח ואהבה.",
+  "cover": null
+ },
+ {
+  "id": "tsohar-dust-settles",
+  "title": "עד שהאבק ישקע",
+  "author": "שרון צוהר",
+  "en": "Ad Sheha'avak Yishka",
+  "enAuthor": "Sharon Zohar",
+  "year": 2020,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "זוגיות"
+  ],
+  "style": [
+   "romantic",
+   "emotional",
+   "character"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "עופר ומאיה שטרית נפרדו אחרי משבר ששבר את שניהם, אבל האמא של עופר לא מוכנה לקבל את זה וממשיכה להתערב. רומן סוחף על זוג שנאבק על אהבתו מול המשברים הגדולים ביותר, ועל השאלה אם אפשר לסלוח.",
+  "cover": null
+ },
+ {
+  "id": "tsohar-many-roads",
+  "title": "רבות הדרכים",
+  "author": "שרון צוהר",
+  "en": "Rabot Hadrachim",
+  "enAuthor": "Sharon Zohar",
+  "year": 2019,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "הוליווד"
+  ],
+  "style": [
+   "romantic",
+   "emotional",
+   "character"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "לירז, תסריטאית ישראלית, עומדת למכור להוליווד את הספר היחיד שנשבעה שאיש לא יקרא, ספר על העבר שלה. המפגש הכפוי מפגיש אותה שוב עם כרמל, מפיק ישראלי מצליח שעומד להתחתן. רומן על אהבה שלא באמת מתה.",
+  "cover": null
+ },
+ {
+  "id": "tsohar-shifting-sands",
+  "title": "חולות נודדים",
+  "author": "שרון צוהר",
+  "en": "Cholot Nodedim",
+  "enAuthor": "Sharon Zohar",
+  "year": 2020,
+  "cats": [
+   "romance",
+   "thriller"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "מתח",
+   "מדבר"
+  ],
+  "style": [
+   "romantic",
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "בחוות מור שבמדבר כל אחד הגיע כדי להיעלם. יום אחד מושלך בוואדי הסמוך גבר מוכה, טיראן עילם, ורוני אדלמן מבינה שהוא מביא איתו צרות אל המקום השקט. רומן מתח ורומנטיקה שאפשר לקרוא כספר בודד.",
+  "cover": null
+ },
+ {
+  "id": "tsohar-truth-inside",
+  "title": "האמת שבפנים",
+  "author": "שרון צוהר",
+  "en": "Ha'emet Shebifnim",
+  "enAuthor": "Sharon Zohar",
+  "year": 2018,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "משפחה"
+  ],
+  "style": [
+   "romantic",
+   "emotional",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "עדי ימיני חוזר לישראל אחרי עשר שנים, להלוויה של אביו, ומתכנן להישאר עשרה ימים בלבד. אלה עילם, שנאבקת להציל את חוות הסוסים הטיפולית שלה, רואה בו איום על כל מה שבנתה. רומן על אהבה, משפחה ואדמה.",
+  "cover": null
+ },
+ {
+  "id": "tsohar-darkest-hour",
+  "title": "השעה האפלה ביותר",
+  "author": "שרון צוהר",
+  "en": "Hasha'a Ha'afela Beyoter",
+  "enAuthor": "Sharon Zohar",
+  "year": 2025,
+  "cats": [
+   "romance",
+   "thriller"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "מתח",
+   "ריגול"
+  ],
+  "style": [
+   "romantic",
+   "dark",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "אליס הבינה שהייתה רק כלי בידי כוחות גדולים ממנה, ורצתה להיעלם. אבל המקום שאליו ברחה מפגיש אותה עם גאטו, גבר אפל וערמומי, ושם כל מה שהאמינה בו מתהפך. ספר ראשון בדואט \"הנעלם\".",
+  "cover": null
+ },
+ {
+  "id": "salama-sworn-blood",
+  "title": "נשבעת בדם",
+  "author": "ליליאן סלמה נחום",
+  "en": "Nishba'at Bedam",
+  "enAuthor": "Liliane Salama Nahum",
+  "year": 2016,
+  "cats": [
+   "romance",
+   "thriller"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "מאפיה",
+   "אירוטי"
+  ],
+  "style": [
+   "romantic",
+   "dark",
+   "fast"
+  ],
+  "pop": 4,
+  "adult": true,
+  "summary": "נינה נוימן, שוטרת לשעבר שאיבדה הכול בגלל טעות אחת, בורחת לחיים בלי כיוון. מפגש לא צפוי עם לורנזו טורנטיני, מהמאפיה האיטלקית, הופך אותה לאסירה שלו. רומן פשע רומנטי, הראשון בסדרת המאפיה האיטלקית.",
+  "cover": null
+ },
+ {
+  "id": "salama-haunted",
+  "title": "רדופה",
+  "author": "ליליאן סלמה נחום",
+  "en": "Redufa",
+  "enAuthor": "Liliane Salama Nahum",
+  "year": 2017,
+  "cats": [
+   "romance",
+   "thriller"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "מאפיה",
+   "אירוטי"
+  ],
+  "style": [
+   "romantic",
+   "dark",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "ענת בנתה את חייה מחדש אחרי אהבה אלימה ונשבעה לא להתאהב שוב. ואז היא פוגשת את רומאו, שהקדיש את חייו למאפיה האיטלקית ויודע שיאבד אותה ביום שיספר לה את האמת. הספר השני בסדרת המאפיה האיטלקית.",
+  "cover": null
+ },
+ {
+  "id": "salama-two-worlds",
+  "title": "בין שני עולמות",
+  "author": "ליליאן סלמה נחום",
+  "en": "Bein Shnei Olamot",
+  "enAuthor": "Liliane Salama Nahum",
+  "year": 2015,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "אירוטי"
+  ],
+  "style": [
+   "romantic",
+   "dark",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "לין עוזבת את ישראל ללוס אנג'לס כדי להתחיל מחדש, ופוגשת את לוקאס, עבריין קר ואלים מהברונקס. הוא ההפך הגמור ממנה, וכל אחד מהם הולך לשנות את חיי השני. רומן הביכורים של הסופרת.",
+  "cover": null
+ },
+ {
+  "id": "salama-unbreakable",
+  "title": "בלתי שבירה",
+  "author": "ליליאן סלמה נחום",
+  "en": "Bilti Shvira",
+  "enAuthor": "Liliane Salama Nahum",
+  "year": 2020,
+  "cats": [
+   "romance",
+   "thriller"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "מאפיה",
+   "אירוטי"
+  ],
+  "style": [
+   "romantic",
+   "dark",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "אחרי שאמה נרצחת, אלמה מגלה שכל חייה היו שקר, ושרוצחים מחפשים את אביה. האדם היחיד שיכול להציל אותה הוא זר מסוכן, והדרך שלו לעשות זאת היא להתחתן איתה. ספר ראשון בדואט.",
+  "cover": null
+ },
+ {
+  "id": "salama-mafia-princess",
+  "title": "נסיכת המאפיה",
+  "author": "ליליאן סלמה נחום",
+  "en": "Nesichat Hamafia",
+  "enAuthor": "Liliane Salama Nahum",
+  "year": 2024,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "מאפיה",
+   "אירוטי"
+  ],
+  "style": [
+   "romantic",
+   "emotional",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "בת למשפחת פשע איטלקית ויתרה על הריקוד כדי להיות אשתו של ג'יי, אבל כשהאהבה שלהם מתרסקת היא נלחמת לקבוע לעצמה את גורלה. ואז נכנס לחייה אמאדו. ספר ראשון בטרילוגיית הנסיכים, ואפשר לקרוא אותו בלי הסדרה הקודמת.",
+  "cover": null
+ },
+ {
+  "id": "elmoznino-angel",
+  "title": "אנג'ל",
+  "author": "ענבל אלמוזנינו",
+  "en": "Angel",
+  "enAuthor": "Inbal Elmoznino",
+  "year": 2016,
+  "cats": [
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "ספרות ישראלית",
+   "אירוטי"
+  ],
+  "style": [
+   "romantic",
+   "mystery",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "גבריאל מור, מפתחת תוכנה מבריקה, נשלחת לניו יורק להוביל פרויקט עולמי ונסחפת לאימפריה של משפחת וייט, עולם מלא סודות ושקרים. בינה לבין כריסטופר, אחד הבנים, ניצתת תשוקה סוערת. רומן ביכורים שמשלב מתח, ארוטיקה ואהבה.",
+  "cover": null
+ },
+ {
+  "id": "elmoznino-four-hands",
+  "title": "בארבע ידיים",
+  "author": "ענבל אלמוזנינו",
+  "en": "Be'arba Yadayim",
+  "enAuthor": "Inbal Elmoznino",
+  "year": 2017,
+  "cats": [
+   "thriller",
+   "romance"
+  ],
+  "tags": [
+   "מותחן",
+   "ספרות ישראלית",
+   "רומנטי"
+  ],
+  "style": [
+   "fast",
+   "twists",
+   "romantic"
+  ],
+  "pop": 4,
+  "adult": true,
+  "summary": "שלוש נערות נחטפות מבית ספר יוקרתי במנהטן. סאם רדפילד, עיתונאית פלילים מבוסטון, מסקרת את החקירה מקרוב, ונאלצת לעבוד לצד מפקד המחלקה ג'ייקוב טורס, שיש לה איתו עבר. מותחן עם סיפור אהבה סוער.",
+  "cover": null
+ },
+ {
+  "id": "elmoznino-white-morality",
+  "title": "מוסר לבן",
+  "author": "ענבל אלמוזנינו",
+  "en": "Musar Lavan",
+  "enAuthor": "Inbal Elmoznino",
+  "year": 2019,
+  "cats": [
+   "thriller",
+   "romance"
+  ],
+  "tags": [
+   "מותחן",
+   "ספרות ישראלית",
+   "רומנטי",
+   "מאפיה"
+  ],
+  "style": [
+   "dark",
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "ניקולס מורנו הוא רוצח שכיר בתחפושת של איש עסקים, המתנקש המסתורי שראשי הפשע בשיקגו מכנים \"מוסר לבן\". הוא חי למען נקמה, עד שהוא נתקל במיקלה גליאנו, האישה שלא צפה. מותחן פסיכולוגי ורומנטי.",
+  "cover": null
+ },
+ {
+  "id": "elmoznino-black-conscience",
+  "title": "מצפון שחור",
+  "author": "ענבל אלמוזנינו",
+  "en": "Matzpun Shachor",
+  "enAuthor": "Inbal Elmoznino",
+  "year": 2020,
+  "cats": [
+   "thriller",
+   "romance"
+  ],
+  "tags": [
+   "מותחן",
+   "ספרות ישראלית",
+   "רומנטי",
+   "מאפיה"
+  ],
+  "style": [
+   "dark",
+   "twists",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": true,
+  "summary": "ההמשך הישיר של \"מוסר לבן\". מיקלה גליאנו מסתתרת ממי שרוצים להרוג אותה, והעבר ממשיך לרדוף אותה. בין שקרים ומשחקי מוחות היא הופכת ללוחמת.",
+  "cover": null
+ },
+ {
+  "id": "woman-beyond-sea",
+  "title": "אישה מעבר לים",
+  "author": "שרית ישי-לוי",
+  "en": "The Woman Beyond the Sea",
+  "enAuthor": "Sarit Yishai-Levi",
+  "year": 2019,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "משפחה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "historical",
+   "character"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אליה חוזרת מפריז לתל אביב אחרי שבעלה עזב אותה בבית קפה, ונתקלת שוב באמה הקרה, לילי, שננטשה כתינוקת בליל שלג בפתח מנזר בירושלים. רומן שנע בין ירושלים של המנדט, תל אביב של שנות השבעים ופריז, על שלוש נשים וחוט של נטישה שעובר ביניהן.",
+  "cover": null
+ },
+ {
+  "id": "chag-hameshek",
+  "title": "חג המשק",
+  "author": "שני הדר",
+  "en": "Chag Hameshek",
+  "enAuthor": "Shani Hadar",
+  "year": 2022,
+  "cats": [
+   "light",
+   "romance"
+  ],
+  "tags": [
+   "רומנטי",
+   "הומור",
+   "קיבוץ",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "funny",
+   "warm",
+   "romantic"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "קיבוץ מתכונן לחגוג שישים שנה להיווסדו, ובאותו זמן כולם בלחץ לקראת היום שבו יוכרע עתיד הדירות בהפרטה. קומדיה רומנטית שנונה ומאוד ישראלית, שמתארת את חיי הקיבוץ באהבה, עם הומור לצד כאבים מהעבר.",
+  "cover": null
+ },
+ {
+  "id": "ram-oren-seduction",
+  "title": "פיתוי",
+  "author": "רם אורן",
+  "en": "Seduction",
+  "enAuthor": "Ram Oren",
+  "year": 1994,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "פשע",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "fast",
+   "twists",
+   "romantic"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אישה נשואה ואם מרמת השרון נסחפת לרומן סודי עם זר, ואפילו מלווה לו סכום כסף גדול, עד שהוא נעלם. האהבה האסורה הופכת לסכנה שמאיימת עליה ועל משפחתה. מותחן עם אהבה, כסף, עיתונות ופשע, שעובד גם לסרט.",
+  "cover": null
+ },
+ {
+  "id": "matalon-face-us",
+  "title": "זה עם הפנים אלינו",
+  "author": "רונית מטלון",
+  "en": "The One Facing Us",
+  "enAuthor": "Ronit Matalon",
+  "year": 1995,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן",
+   "משפחה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "character",
+   "slow",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אסתר, נערה ישראלית בת שלוש-עשרה, נשלחת לגור אצל משפחת דודה בקמרון שבאפריקה. דרך תמונות משפחתיות וסיפורים היא מגלה את ההיסטוריה של משפחה יהודית ממצרים שהתפזרה בעולם. אחד הרומנים החשובים בספרות העברית.",
+  "cover": null
+ },
+ {
+  "id": "shoham-evidence",
+  "title": "משחק הראיות",
+  "author": "ליעד שהם",
+  "en": "Mishak Hare'ayot",
+  "enAuthor": "Liad Shoham",
+  "year": 2009,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "משפטי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "fast",
+   "twists",
+   "mystery"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אורי דולב, בנו של שופט בבית המשפט העליון ושופט מחמיר בעצמו, תמיד היה חלק מהאצולה של עולם המשפט. פתאום הוא מוצא את עצמו בצד השני, על ספסל הנאשמים. מותחן משפטי מאת מי שמכונה \"ג'ון גרישם הישראלי\".",
+  "cover": null
+ },
+ {
+  "id": "shoham-lineup",
+  "title": "מסדר זיהוי",
+  "author": "ליעד שהם",
+  "en": "Lineup",
+  "enAuthor": "Liad Shoham",
+  "year": 2011,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "משטרתי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "fast",
+   "twists",
+   "dark"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "צעירה מותקפת באכזריות ליד ביתה בתל אביב, והמפקח אלי נחום בטוח שתפס את האשם אחרי מסדר זיהוי. אבל הצעיר שנעצר אולי פשוט היה במקום הלא נכון. מותחן משטרתי שתורגם לשפות רבות.",
+  "cover": null
+ },
+ {
+  "id": "shoham-asylum-city",
+  "title": "עיר מקלט",
+  "author": "ליעד שהם",
+  "en": "Asylum City",
+  "enAuthor": "Liad Shoham",
+  "year": 2013,
+  "cats": [
+   "thriller"
+  ],
+  "tags": [
+   "מותחן",
+   "משטרתי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "dark",
+   "mystery",
+   "fast"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "פעילה למען מבקשי מקלט נרצחת בדרום תל אביב, והחוקרת הצעירה ענת נחמיאס מקבלת את התיק. החקירה מובילה אותה אל עולם הפליטים שאיש לא רואה. מותחן שעובד לסדרת טלוויזיה.",
+  "cover": null
+ },
+ {
+  "id": "ragen-sotah",
+  "title": "ואל אישך תשוקתך",
+  "author": "נעמי רגן",
+  "en": "Sotah",
+  "enAuthor": "Naomi Ragen",
+  "year": 1995,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "חרדים",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "character",
+   "romantic"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "דינה, אישה צעירה מהחברה החרדית בירושלים, נחשדת בבגידה בבעלה ונאלצת לעזוב את ביתה ואת משפחתה אל אמריקה. רב-מכר על אהבה, קהילה ומחיר השמועות, מבפנים העולם החרדי.",
+  "cover": null
+ },
+ {
+  "id": "ragen-tamar",
+  "title": "עקדת תמר",
+  "author": "נעמי רגן",
+  "en": "The Sacrifice of Tamar",
+  "enAuthor": "Naomi Ragen",
+  "year": 1997,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "חרדים",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "dark",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "תמר, אישה חרדית נשואה באושר, מותקפת בידי זר ומגלה שהיא בהריון. היא מחליטה לשמור את הסוד מבעלה ומהקהילה, ומחיר השתיקה הולך וגדל במשך שנים. רומן סוחף ומטלטל.",
+  "cover": null
+ },
+ {
+  "id": "ragen-jephte",
+  "title": "בת יפתח",
+  "author": "נעמי רגן",
+  "en": "Jephte's Daughter",
+  "enAuthor": "Naomi Ragen",
+  "year": 1998,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "חרדים",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "character",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בת שבע, בתו של רב חסידי עשיר מאמריקה, נישאת בשידוך לתלמיד חכם צעיר ועוברת איתו לירושלים. החיים שלצידו הופכים לכלא, והיא נאבקת על החופש שלה ועל בנה. ספר הביכורים של רגן, רב-מכר בעולם.",
+  "cover": null
+ },
+ {
+  "id": "brandes-kings-3",
+  "title": "מלכים ג",
+  "author": "יוכי ברנדס",
+  "en": "Melachim Gimel",
+  "enAuthor": "Yochi Brandes",
+  "year": 2008,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "תנ\"ך",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "historical",
+   "smart",
+   "character"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "סיפור חלופי לימי שאול, דוד ושלמה, מסופר מנקודת המבט של הנשים שנשארו משושלת שאול וחיו בארמון המלך בירושלים. רומן תנ\"כי שמציג את סיפורי המלכים המוכרים באור אחר לגמרי.",
+  "cover": null
+ },
+ {
+  "id": "brandes-akiva",
+  "title": "הפרדס של עקיבא",
+  "author": "יוכי ברנדס",
+  "en": "The Orchard",
+  "enAuthor": "Yochi Brandes",
+  "year": 2012,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן היסטורי",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "historical",
+   "romantic",
+   "smart"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "רחל, בתו של אחד העשירים בירושלים, בוחרת ברועה עני ובור בשם עקיבא, והופכת אותו לגדול חכמי ישראל. רומן על תקופת החכמים אחרי חורבן בית המקדש השני, ועל אהבה גדולה. זכה בפרס סטימצקי.",
+  "cover": null
+ },
+ {
+  "id": "brandes-confession",
+  "title": "וידוי",
+  "author": "יוכי ברנדס",
+  "en": "Vidui",
+  "enAuthor": "Yochi Brandes",
+  "year": 2005,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "משפחה",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "emotional",
+   "historical",
+   "character"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "תמר, אוצרת במוזיאון, פוגשת אישה מבוגרת שמחזיקה ציור, והמפגש פותח סיפור על נשים ועל רגשות אשמה, מפרעות קישינב בתחילת המאה העשרים ועד ישראל של היום. רומן על אמהות, בנות וסבתות.",
+  "cover": null
+ },
+ {
+  "id": "inbari-home",
+  "title": "הביתה",
+  "author": "אסף ענברי",
+  "en": "Home",
+  "enAuthor": "Assaf Inbari",
+  "year": 2009,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "רומן",
+   "קיבוץ",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "historical",
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הסיפור של קיבוץ אפיקים, מהימים שבהם קבוצת חלוצים צעירים הקימה אותו ועד ההפרטה. רומן על חלום הקיבוץ, על הדורות שגדלו בו ועל מה שנשאר ממנו. זכה בפרסים ונחשב לאחד הרומנים הגדולים על הקיבוץ.",
+  "cover": null
+ },
+ {
+  "id": "roy-chen-souls",
+  "title": "נשמות",
+  "author": "רועי חן",
+  "en": "Souls",
+  "enAuthor": "Roy Chen",
+  "year": 2020,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן",
+   "הומור",
+   "ספרות ישראלית"
+  ],
+  "style": [
+   "funny",
+   "smart",
+   "character"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "נשמה אחת עוברת מגוף לגוף כבר מאות שנים, עד שהיא מגיעה לגרישה, נער מוזר שחי עם אמו בישראל של היום. היא מספרת בעצמה על כל החיים שעברה. רומן מצחיק, מוזר ומרגש שזכה להצלחה גדולה.",
+  "cover": null
  }
 ];
