@@ -22778,5 +22778,946 @@ window.BOOKS = [
   "adult": false,
   "summary": "חיפה, ימי מלחמת יום הכיפורים: יהודים וערבים, חברים בארגון שמאל קטן, מתבקשים לתת מחסה למשורר פלסטיני. המלחמה מעמידה כל אחד מהם מול נאמנויות סותרות.",
   "cover": 4743585
+ },
+ {
+  "id": "harry-potter-2",
+  "title": "הארי פוטר וחדר הסודות",
+  "author": "ג'יי קיי רולינג",
+  "en": "Harry Potter and the Chamber of Secrets",
+  "enAuthor": "J. K. Rowling",
+  "year": 1998,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "fast",
+   "mystery"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "השנה השנייה של הארי בהוגוורטס: גמדון בית מזהיר אותו לא לחזור, תלמידים מתחילים להיות מאובנים, וכתובת על הקיר מודיעה שחדר הסודות נפתח.",
+  "cover": 15158664
+ },
+ {
+  "id": "harry-potter-3",
+  "title": "הארי פוטר והאסיר מאזקבאן",
+  "author": "ג'יי קיי רולינג",
+  "en": "Harry Potter and the Prisoner of Azkaban",
+  "enAuthor": "J. K. Rowling",
+  "year": 1999,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "סיריוס בלק, אסיר מסוכן, בורח מהכלא הקשה ביותר בעולם הקוסמים, וכולם בטוחים שהוא בא בשביל הארי. סוהרי אזקבאן המפחידים שומרים על בית הספר.",
+  "cover": 10580435
+ },
+ {
+  "id": "harry-potter-4",
+  "title": "הארי פוטר וגביע האש",
+  "author": "ג'יי קיי רולינג",
+  "en": "Harry Potter and the Goblet of Fire",
+  "enAuthor": "J. K. Rowling",
+  "year": 2000,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "fast",
+   "dark"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "הוגוורטס מארחת את טורניר הקוסמים המשולש, ומשום מה גביע האש בוחר גם בהארי, למרות שהוא צעיר מדי. שלוש משימות מסוכנות, ומישהו רוצה שהוא ייכשל.",
+  "cover": 12059372
+ },
+ {
+  "id": "harry-potter-5",
+  "title": "הארי פוטר ומסדר עוף החול",
+  "author": "ג'יי קיי רולינג",
+  "en": "Harry Potter and the Order of the Phoenix",
+  "enAuthor": "J. K. Rowling",
+  "year": 2003,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "dark",
+   "character"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "אף אחד לא מאמין להארי שוולדמורט חזר. משרד הקסמים שולח לבית הספר מורה אכזרית, והארי וחבריו מקימים בסתר קבוצה שלומדת להילחם.",
+  "cover": 15158666
+ },
+ {
+  "id": "harry-potter-6",
+  "title": "הארי פוטר והנסיך חצוי-הדם",
+  "author": "ג'יי קיי רולינג",
+  "en": "Harry Potter and the Half-Blood Prince",
+  "enAuthor": "J. K. Rowling",
+  "year": 2005,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "dark",
+   "emotional"
+  ],
+  "pop": 4,
+  "adult": false,
+  "summary": "דמבלדור מתחיל ללמד את הארי על העבר של וולדמורט. בשיעורי שיקויים הארי מוצא ספר ישן עם הערות של \"הנסיך חצוי-הדם\", ומשהו נורא מתקרב.",
+  "cover": 10716273
+ },
+ {
+  "id": "harry-potter-7",
+  "title": "הארי פוטר ואוצרות המוות",
+  "author": "ג'יי קיי רולינג",
+  "en": "Harry Potter and the Deathly Hallows",
+  "enAuthor": "J. K. Rowling",
+  "year": 2007,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "dark",
+   "fast",
+   "emotional"
+  ],
+  "pop": 5,
+  "adult": false,
+  "summary": "הספר האחרון: הארי, רון והרמיוני לא חוזרים לבית הספר, אלא יוצאים לחפש ולהשמיד את הסודות שמחזיקים את וולדמורט בחיים. הקרב הגדול מתקרב.",
+  "cover": 15158660
+ },
+ {
+  "id": "artemis-fowl-2",
+  "title": "ארטמיס פאול: התקרית בקוטב הצפוני",
+  "author": "אואן קולפר",
+  "en": "Artemis Fowl: The Arctic Incident",
+  "enAuthor": "Eoin Colfer",
+  "year": 2002,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ארטמיס, הגאון הפושע בן ה-13, מגלה שאביו שנעלם אולי חי ברוסיה. הפעם הוא צריך את עזרת הפיות שהוא עצמו חטף פעם, כי גם אצלן יש בוגד.",
+  "cover": 8231795
+ },
+ {
+  "id": "artemis-fowl-3",
+  "title": "ארטמיס פאול: צופן הנצח",
+  "author": "אואן קולפר",
+  "en": "Artemis Fowl: The Eternity Code",
+  "enAuthor": "Eoin Colfer",
+  "year": 2003,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ארטמיס בנה מחשב-על מטכנולוגיה של פיות, ואיש עסקים אמריקאי אכזר גונב אותו. אם הסוד יתגלה, עולם הפיות כולו בסכנה.",
+  "cover": 12174575
+ },
+ {
+  "id": "artemis-fowl-4",
+  "title": "ארטמיס פאול: המזימה של אופאל",
+  "author": "אואן קולפר",
+  "en": "Artemis Fowl: The Opal Deception",
+  "enAuthor": "Eoin Colfer",
+  "year": 2005,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ארטמיס לא זוכר שום דבר על הפיות, כי מחקו לו את הזיכרון. בינתיים אופאל, פיה גאונה ומרושעת, בורחת ומתכננת נקמה בכולם.",
+  "cover": 11369022
+ },
+ {
+  "id": "artemis-fowl-5",
+  "title": "ארטמיס פאול: המושבה האבודה",
+  "author": "אואן קולפר",
+  "en": "Artemis Fowl: The Lost Colony",
+  "enAuthor": "Eoin Colfer",
+  "year": 2006,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שדים מתחילים להופיע בעולם בני האדם, וארטמיס הוא היחיד שהבין מתי ואיפה. אבל מתברר שיש עוד גאון צעיר, ועוד יותר מהיר ממנו.",
+  "cover": 12636224
+ },
+ {
+  "id": "son-of-neptune",
+  "title": "בן נפטון",
+  "author": "ריק ריורדן",
+  "en": "The Son of Neptune",
+  "enAuthor": "Rick Riordan",
+  "year": 2011,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "פרסי ג'קסון מתעורר בלי זיכרון ומגיע למחנה של חצויי אלים רומאים. עם שני חברים חדשים הוא יוצא למשימה באלסקה, כדי לשחרר את אל המוות.",
+  "cover": 13012024
+ },
+ {
+  "id": "blood-of-olympus",
+  "title": "דם האולימפוס",
+  "author": "ריק ריורדן",
+  "en": "The Blood of Olympus",
+  "enAuthor": "Rick Riordan",
+  "year": 2014,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "fast",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר האחרון בסדרת \"גיבורי האולימפוס\": שבעת החצויים מיוון ומרומא צריכים לעצור את גאיה, אמא אדמה, לפני שתתעורר ותשמיד את העולם.",
+  "cover": 7303498
+ },
+ {
+  "id": "red-pyramid",
+  "title": "הפירמידה האדומה",
+  "author": "ריק ריורדן",
+  "en": "The Red Pyramid",
+  "enAuthor": "Rick Riordan",
+  "year": 2010,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "קרטר וסיידי קיין, אחים שגדלו בנפרד, רואים את אביהם הארכאולוג משחרר אל מצרי מסוכן במוזיאון הבריטי. עכשיו הם מגלים שיש להם כוחות קסם מצריים.",
+  "cover": 11272966
+ },
+ {
+  "id": "bree-tanner",
+  "title": "החיים השניים הקצרים של ברי טאנר",
+  "author": "סטפני מאייר",
+  "en": "The Short Second Life of Bree Tanner",
+  "enAuthor": "Stephenie Meyer",
+  "year": 2010,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "נוער",
+   "ערפדים"
+  ],
+  "style": [
+   "short",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "נובלה קצרה מעולם \"דמדומים\": ברי, ערפדה חדשה, שייכת לצבא של ערפדים צעירים שמישהו בונה בסיאטל. הסיפור של \"ליקוי חמה\" מהצד השני.",
+  "cover": 6390898
+ },
+ {
+  "id": "city-of-ashes",
+  "title": "עיר של אפר",
+  "author": "קסנדרה קלייר",
+  "en": "City of Ashes",
+  "enAuthor": "Cassandra Clare",
+  "year": 2008,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "רומנטי"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הספר השני בסדרת \"בני הנפילים\": קלרי עדיין מתמודדת עם הגילוי על המשפחה שלה, ובניו יורק מישהו רוצח ילדים מעולם הצללים. ג'ייס נחשד בבגידה.",
+  "cover": 8783750
+ },
+ {
+  "id": "city-of-glass",
+  "title": "עיר של זכוכית",
+  "author": "קסנדרה קלייר",
+  "en": "City of Glass",
+  "enAuthor": "Cassandra Clare",
+  "year": 2009,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "רומנטי"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "כדי להציל את אמה, קלרי מגיעה לאידריס, עיר המולדת של ציידי הצללים, שבה המגדלים עשויים זכוכית. שם היא מגלה סודות על עצמה, ומלחמה מתקרבת.",
+  "cover": 10397651
+ },
+ {
+  "id": "lady-midnight",
+  "title": "גבירת חצות",
+  "author": "קסנדרה קלייר",
+  "en": "Lady Midnight",
+  "enAuthor": "Cassandra Clare",
+  "year": 2016,
+  "cats": [
+   "ya",
+   "romance"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "רומנטי"
+  ],
+  "style": [
+   "romantic",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לוס אנג'לס, חמש שנים אחרי המלחמה הגדולה: אמה, ציידת צללים צעירה, מחפשת מי רצח את הוריה, יחד עם ג'וליאן, השותף שהיא אסורה להתאהב בו.",
+  "cover": 10503897
+ },
+ {
+  "id": "amulet-samarkand",
+  "title": "הקמיע מסמרקנד",
+  "author": "ג'ונתן סטראוד",
+  "en": "The Amulet of Samarkand",
+  "enAuthor": "Jonathan Stroud",
+  "year": 2003,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער",
+   "הומור"
+  ],
+  "style": [
+   "funny",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "לונדון שבה קוסמים שולטים בממשלה: נתנאל, שוליית קוסם בן 12, מזמן את ברטימאוס, שד בן 5000 שנה וחצוף מאוד, ושולח אותו לגנוב קמיע מקוסם חזק.",
+  "cover": 14369347
+ },
+ {
+  "id": "five-children-it",
+  "title": "חמישה ילדים והזהו",
+  "author": "אדית נסביט",
+  "en": "Five Children and It",
+  "enAuthor": "E. Nesbit",
+  "year": 1902,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "פנטזיה",
+   "ילדות",
+   "קלאסיקה"
+  ],
+  "style": [
+   "funny",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "חמישה אחים מוצאים בבור חול יצור עתיק ונרגן שמגשים משאלה אחת ביום. כל משאלה נגמרת בבלגן: כנפיים, עושר, או אח קטן שגדל פתאום.",
+  "cover": 28174
+ },
+ {
+  "id": "wizard-of-oz",
+  "title": "הקוסם מארץ עוץ",
+  "author": "ל. פרנק באום",
+  "en": "The Wonderful Wizard of Oz",
+  "enAuthor": "L. Frank Baum",
+  "year": 1900,
+  "cats": [
+   "ya",
+   "classic"
+  ],
+  "tags": [
+   "פנטזיה",
+   "קלאסיקה",
+   "ילדות"
+  ],
+  "style": [
+   "warm",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סופת טורנדו מעיפה את דורותי ואת הכלב טוטו מקנזס לארץ קסומה. כדי לחזור הביתה, היא הולכת בדרך הלבנים הצהובות לקוסם הגדול, עם דחליל, איש פח ואריה פחדן.",
+  "cover": 552443
+ },
+ {
+  "id": "through-looking-glass",
+  "title": "מבעד למראה ומה אליס מצאה שם",
+  "author": "לואיס קרול",
+  "en": "Through the Looking-Glass",
+  "enAuthor": "Lewis Carroll",
+  "year": 1871,
+  "cats": [
+   "classic",
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "קלאסיקה"
+  ],
+  "style": [
+   "funny",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ההמשך של \"אליס בארץ הפלאות\": אליס עוברת דרך המראה בסלון לעולם הפוך, שבנוי כמו משחק שחמט ענק. בדרך היא פוגשת את המפטי דמפטי, את המלכה האדומה וחרוזים מטורפים.",
+  "cover": 11272464
+ },
+ {
+  "id": "night-watch",
+  "title": "משמר הלילה",
+  "author": "סרגיי לוקיאננקו",
+  "en": "Night Watch",
+  "enAuthor": "Sergei Lukyanenko",
+  "year": 1998,
+  "cats": [
+   "trendy",
+   "horror"
+  ],
+  "tags": [
+   "פנטזיה",
+   "אורבני"
+  ],
+  "style": [
+   "dark",
+   "fast"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "במוסקבה חיים בסתר \"אחרים\", מכשפים וערפדים, של האור ושל החושך, בשביתת נשק עתיקה. אנטון, קוסם צעיר של האור, משגיח בלילות שהחושך לא יפר את ההסכם.",
+  "cover": 274462
+ },
+ {
+  "id": "nightingale-floor",
+  "title": "פסיעות על רצפת הזמיר",
+  "author": "ליאן הרן",
+  "en": "Across the Nightingale Floor",
+  "enAuthor": "Lian Hearn",
+  "year": 2002,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "יפן"
+  ],
+  "style": [
+   "fast",
+   "romantic"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בעולם שדומה ליפן העתיקה, הכפר של טאקאו נטבח ואציל מציל אותו. טאקאו מגלה שיש לו כוחות של מתנקש, ושאיש ממשפחתו החדשה מצפה ממנו לנקמה.",
+  "cover": 824090
+ },
+ {
+  "id": "hardboiled-wonderland",
+  "title": "ארץ פלאות קשוחה וסוף העולם",
+  "author": "הארוקי מורקמי",
+  "en": "Hard-Boiled Wonderland and the End of the World",
+  "enAuthor": "Haruki Murakami",
+  "year": 1985,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "רומן יפני",
+   "סוריאליסטי"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "שני סיפורים לסירוגין: בטוקיו, מומחה הצפנה נרדף בעולם של מדענים מוזרים ויצורים מתחת לאדמה. ובעיר מוקפת חומה, אדם בלי צל קורא חלומות. איך הם קשורים?",
+  "cover": 14558822
+ },
+ {
+  "id": "keeper-lost-cities",
+  "title": "שומרת הערים האבודות",
+  "author": "שאנון מסנג'ר",
+  "en": "Keeper of the Lost Cities",
+  "enAuthor": "Shannon Messenger",
+  "year": 2012,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "fast",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "סופי, בת 12, תמיד שמעה מחשבות של אנשים, ולא הבינה למה. ואז נער מסתורי מגלה לה שהיא בכלל לא בת אדם, ולוקח אותה לעולם סודי של אלפים.",
+  "cover": 9320507
+ },
+ {
+  "id": "magisterium-iron-trial",
+  "title": "מגיסטריום: מבחן הברזל",
+  "author": "הולי בלק וקסנדרה קלייר",
+  "en": "The Iron Trial",
+  "enAuthor": "Holly Black",
+  "year": 2014,
+  "cats": [
+   "ya"
+  ],
+  "tags": [
+   "פנטזיה",
+   "נוער"
+  ],
+  "style": [
+   "fast",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אבא של קאלום הזהיר אותו כל חייו מבית הספר לקסם. קאלום מנסה בכוונה להיכשל במבחן הכניסה, ונכשל גם בזה. הוא מתקבל, ומגלה למה אבא פחד.",
+  "cover": 8476280
+ },
+ {
+  "id": "wimpy-kid-2",
+  "title": "יומנו של חנון - רודריק שולט",
+  "author": "ג'ף קיני",
+  "en": "Diary of a Wimpy Kid: Rodrick Rules",
+  "enAuthor": "Jeff Kinney",
+  "year": 2008,
+  "cats": [
+   "ya",
+   "light"
+  ],
+  "tags": [
+   "הומור",
+   "ילדות"
+  ],
+  "style": [
+   "funny",
+   "short"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "גרג הפלי מנסה לשרוד שנה נוספת בחטיבה, אבל הבעיה הגדולה היא אחיו הגדול רודריק, שיודע סוד מביך מהחופש הגדול. מצחיק ומאויר.",
+  "cover": 8371462
+ },
+ {
+  "id": "old-mans-war",
+  "title": "מלחמת האדם הזקן",
+  "author": "ג'ון סקאלזי",
+  "en": "Old Man's War",
+  "enAuthor": "John Scalzi",
+  "year": 2005,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "fast",
+   "funny"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "ג'ון פרי, בן 75, מתגייס לצבא שנלחם בחייזרים בחלל, כמו הרבה זקנים אחרים. הוא לא מבין איך זקנים ילחמו, עד שהוא מקבל גוף חדש וצעיר.",
+  "cover": 524402
+ },
+ {
+  "id": "planet-of-apes",
+  "title": "כוכב הקופים",
+  "author": "פייר בול",
+  "en": "Planet of the Apes",
+  "enAuthor": "Pierre Boulle",
+  "year": 1963,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "קלאסיקה"
+  ],
+  "style": [
+   "short",
+   "twists"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "עיתונאי צרפתי ושני מדענים נוחתים על כוכב רחוק, שבו קופים מדברים, חכמים ושולטים, ובני האדם הם חיות פרא. ספר קצר עם סוף מפתיע.",
+  "cover": 108082
+ },
+ {
+  "id": "doomsday-book",
+  "title": "ספר יום הדין",
+  "author": "קוני ויליס",
+  "en": "Doomsday Book",
+  "enAuthor": "Connie Willis",
+  "year": 1992,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "היסטורי"
+  ],
+  "style": [
+   "emotional",
+   "historical"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "אוקספורד של 2054: היסטוריונית צעירה נשלחת במכונת זמן לאנגליה של ימי הביניים, לחוויה של כמה שבועות. אבל משהו משתבש, והיא נוחתת בשנה הלא נכונה.",
+  "cover": 369478
+ },
+ {
+  "id": "long-dark-teatime",
+  "title": "שעת התה הארוכה והאפלה של הנפש",
+  "author": "דאגלס אדמס",
+  "en": "The Long Dark Tea-Time of the Soul",
+  "enAuthor": "Douglas Adams",
+  "year": 1988,
+  "cats": [
+   "light"
+  ],
+  "tags": [
+   "הומור",
+   "מדע בדיוני",
+   "בלשי"
+  ],
+  "style": [
+   "funny",
+   "mystery"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "דלפק צ'ק-אין בשדה התעופה הית'רו מתפוצץ, ואף אחד לא יודע למה. דירקג'נטלי, \"בלש הוליסטי\" שמאמין שהכול קשור להכול, מגלה שאלים נורדיים מסתובבים בלונדון.",
+  "cover": 11465134
+ },
+ {
+  "id": "hard-to-be-god",
+  "title": "קשה להיות אל",
+  "author": "ארקדי סטרוגצקי ובוריס סטרוגצקי",
+  "en": "Hard to Be a God",
+  "enAuthor": "Arkady Strugatsky",
+  "year": 1964,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "dark",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מדען מכדור הארץ חי בסתר כאציל על כוכב שנמצא בימי הביניים שלו. מותר לו רק לצפות, לא להתערב, גם כשהאכזריות סביבו הולכת וגדלה.",
+  "cover": 12660746
+ },
+ {
+  "id": "robots-of-dawn",
+  "title": "רובוטים של שחר",
+  "author": "אייזק אסימוב",
+  "en": "The Robots of Dawn",
+  "enAuthor": "Isaac Asimov",
+  "year": 1983,
+  "cats": [
+   "classic",
+   "thriller"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "בלשי"
+  ],
+  "style": [
+   "mystery",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "הבלש אליג'ה ביילי נשלח לכוכב אורורה כדי לפתור תעלומה מוזרה: רובוט דמוי אדם \"נרצח\", כלומר המוח שלו נהרס, ורק אדם אחד מסוגל היה לעשות את זה.",
+  "cover": 14372309
+ },
+ {
+  "id": "canticle-leibowitz",
+  "title": "הימנון ללייבוביץ",
+  "author": "וולטר מ. מילר",
+  "en": "A Canticle for Leibowitz",
+  "enAuthor": "Walter M. Miller Jr.",
+  "year": 1959,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "פוסט-אפוקליפטי"
+  ],
+  "style": [
+   "smart",
+   "slow"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "מאות שנים אחרי מלחמה גרעינית, נזירים במנזר במדבר שומרים ומעתיקים שרידי ידע מדעי שהם לא מבינים. סיפור שמשתרע על אלפי שנים, על ידע, אמונה ובני אדם.",
+  "cover": 10221348
+ },
+ {
+  "id": "demolished-man",
+  "title": "האיש המושמד",
+  "author": "אלפרד בסטר",
+  "en": "The Demolished Man",
+  "enAuthor": "Alfred Bester",
+  "year": 1953,
+  "cats": [
+   "classic",
+   "thriller"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "בלשי"
+  ],
+  "style": [
+   "fast",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בעתיד שבו טלפתים קוראים מחשבות, אף אחד לא הצליח לבצע רצח כבר 70 שנה. בן רייך, איש עסקים עשיר, מחליט לנסות, ובלש טלפת מנסה לתפוס אותו.",
+  "cover": 6874573
+ },
+ {
+  "id": "out-silent-planet",
+  "title": "מחוץ לכוכב השקט",
+  "author": "ק. ס. לואיס",
+  "en": "Out of the Silent Planet",
+  "enAuthor": "C. S. Lewis",
+  "year": 1938,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "slow",
+   "warm"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "רנסום, בלשן מקיימברידג', נחטף ונלקח בחללית למאדים. שם הוא בורח מחוטפיו ומגלה עולם עם יצורים תבוניים שונים מאוד. מאת כותב \"נרניה\".",
+  "cover": 9321665
+ },
+ {
+  "id": "contact-sagan",
+  "title": "מגע",
+  "author": "קרל סייגן",
+  "en": "Contact",
+  "enAuthor": "Carl Sagan",
+  "year": 1985,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "smart",
+   "emotional"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "האסטרונומית אלי ארוויי קולטת אות מכוכב רחוק: רצף של מספרים ראשוניים, ובתוכו הוראות לבנות מכונה. העולם מתווכח אם לבנות אותה, ומי ייסע בה.",
+  "cover": 4143957
+ },
+ {
+  "id": "scanner-darkly",
+  "title": "סורק אפלה",
+  "author": "פיליפ ק. דיק",
+  "en": "A Scanner Darkly",
+  "enAuthor": "Philip K. Dick",
+  "year": 1977,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני"
+  ],
+  "style": [
+   "dark",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בוב ארקטור, שוטר סמוי, מתחזה למכור לסם חדש כדי לחשוף את הספקים. כשהמשטרה מבקשת ממנו לרגל אחרי עצמו, ההתמכרות כבר מתחילה לפרק לו את המוח.",
+  "cover": 911131
+ },
+ {
+  "id": "fifth-season",
+  "title": "העונה החמישית",
+  "author": "נ. ק. ג'מיסין",
+  "en": "The Fifth Season",
+  "enAuthor": "N. K. Jemisin",
+  "year": 2015,
+  "cats": [
+   "trendy"
+  ],
+  "tags": [
+   "פנטזיה",
+   "מדע בדיוני"
+  ],
+  "style": [
+   "dark",
+   "smart"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "בעולם שבו רעידות אדמה גורמות לחורפים של מאות שנים, אישה עם כוח לשלוט באדמה מגלה שבעלה רצח את בנם. היא יוצאת לחפש את הבת, בזמן שהעולם נגמר.",
+  "cover": 8133598
+ },
+ {
+  "id": "drowned-world",
+  "title": "העולם הטובע",
+  "author": "ג'יי. ג'י. באלארד",
+  "en": "The Drowned World",
+  "enAuthor": "J. G. Ballard",
+  "year": 1962,
+  "cats": [
+   "classic"
+  ],
+  "tags": [
+   "מדע בדיוני",
+   "פוסט-אפוקליפטי"
+  ],
+  "style": [
+   "slow",
+   "dark"
+  ],
+  "pop": 3,
+  "adult": false,
+  "summary": "השמש התחממה, הקרחונים נמסו, ולונדון היא ביצה טרופית מוצפת. ביולוג שחוקר את העיר מתחיל לחלום חלומות מוזרים, ולא רוצה לעזוב.",
+  "cover": 5540959
  }
 ];
